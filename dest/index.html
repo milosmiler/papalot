@@ -2,32 +2,102 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Nombre sitio</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Papalote</title>
     <meta name="description" content="descripcion del sitio web">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
   <body>
+    <section class="sedes-contactos flex">
+      <ul class="sede">
+        <li><a href="#">Chapultepec</a></li>
+        <li><a href="#">Iztapalapa</a></li>
+        <li><a href="#">Monterrey</a></li>
+        <li><a href="#">Cuernavaca</a></li>
+      </ul>
+      <ul class="promociones">
+        <li><a href="#">Horarios</a></li>
+        <li><a href="#">Precios y promociones</a></li>
+        <li><a href="#">Compra en linea</a></li>
+      </ul>
+    </section>
     <header>
-      <div class="container">
-        <figure class="logo"><img src="images/logo.png"></figure>
+      <div class="container flex">
+        <figure class="logo"><img src="images/papalote-logo.png"></figure>
         <nav>
           <ul>
-            <li:a href="">Familias</li:a>
-            <li:a href="">Niños</li:a>
-            <li:a href="">ABC Papalote</li:a>
-            <li:a href="">Grupos y eventos</li:a>
-            <li:a href="">¿Cómo ayudar?</li:a>
-            <li:a href="">Blog</li:a>
+            <li><a href="">Familias</a></li>
+            <li><a href="">Niños</a></li>
+            <li><a href="">ABC Papalote</a></li>
+            <li><a href="">Grupos y eventos</a></li>
+            <li><a href="">¿Cómo ayudar?</a></li>
+            <li><a href="">Blog</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="container"><a class="general waves-effect" href="">hola a todos como estan</a></div>
+    <section class="flexslider">
+      <ul class="slides">
+        <li><img src="images/papalote.jpg"></li>
+        <li><img src="images/papalote.jpg"></li>
+        <li><img src="images/papalote.jpg"></li>
+        <li><img src="images/papalote.jpg"></li>
+      </ul>
+    </section>
     <footer>
-      <div class="container"></div>
+      <div class="container">
+        <aside class="social flex">
+          <input class="newsletter" type="email" placeholder="Suscríbete a nuestro newsletter">
+          <div class="social flex">
+            <h2>Síguenos en redes sociales</h2><i><a class="fa fa-facebook" href=""></a></i><i><a class="fa fa-twitter" href=""></a></i><i><a class="fa fa-youtube-play" href=""></a></i><i><a class="fa" href=""></a></i>
+          </div>
+        </aside>
+        <section class="contactanos">
+          <div class="column">
+            <h2>Papalote museo del niño</h2>
+            <ul>
+              <li>Dirección
+                <p>2da sección de Chapultepec</p>
+                <p>Av. Constituyentes 268</p>
+                <p>Col. Daniel Garza, CDMX.</p>
+              </li>
+              <li>Información
+                <p>5237 1781</p>
+              </li>
+              <li>Venta de boletos
+                <p>5237 1778 /5237 1779</p>
+              </li>
+            </ul>
+          </div>
+          <div class="column">
+            <h2>Información</h2>
+            <ul class="lista">
+              <li class="fa-chevron-circle-right"><a href="">Preguntas frecuentes</a></li>
+              <li class="fa-chevron-circle-right"><a href="">Bolsa de trabajo</a></li>
+              <li class="fa-chevron-circle-right"><a href="">Prensa</a></li>
+              <li class="fa-chevron-circle-right"><a href="">Transparencia</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h2>Contáctanos</h2>
+            <form class="enviar">
+              <input class="nombre" type="text" placeholder="Nombre(s)*">
+              <input class="email" type="text" placeholder="Correo electronico*">
+              <select class="comentario">
+                <option value=" ">PAÍS</option>
+                <option value=" ">México</option>
+              </select>
+              <textarea placeholder="Mensaje*"></textarea>
+              <button class="enviar">Enviar</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </footer>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/index.js" type="text/javascript"></script>
   </body>
 </html>

@@ -2,14 +2,49 @@ doctype html
 html(lang="es")
 	head
 		meta(charset="utf-8")
-		title Nombre sitio
-		link(href="css/style.css", rel="stylesheet", type="text/css")
+		title Papalote
 		meta(name='description', content='descripcion del sitio web')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+		
+
 	body
+		section.sedes-contactos.flex
+			ul.sede
+				li
+					a(href="#") Chapultepec
+				li
+					a(href="#") Iztapalapa
+				li
+					a(href="#") Monterrey
+				li
+					a(href="#") Cuernavaca
+			ul.promociones
+				li
+					a(href="#") Horarios
+				li
+					a(href="#") Precios y promociones
+				li
+					a(href="#") Compra en linea
+
 		include block/header.pug
-		.container
-			a(href="" class="general waves-effect") hola a todos como estan
+		section.flexslider
+			ul.slides
+				li
+					img(src='images/papalote.jpg')
+					//- p.flex-caption Adventurer Cheesecake Brownie
+				li
+					img(src='images/papalote.jpg')
+					//- p.flex-caption Adventurer Lemon
+				li
+					img(src='images/papalote.jpg')
+					//- p.flex-caption Adventurer Donut
+				li
+					img(src='images/papalote.jpg')
+					//- p.flex-caption Adventurer Caramel
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
 		script(src='js/index.js', type="text/javascript")
