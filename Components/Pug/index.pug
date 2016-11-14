@@ -7,10 +7,9 @@ html(lang="es")
 		meta(name='description', content='descripcion del sitio web')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 	body
+		include block/header.pug
 		.container
-			header
-				
-
-			footer
+			a(href="" class="general waves-effect") hola a todos como estan
+		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(src='js/index.js', type="text/javascript")
