@@ -8,8 +8,6 @@ html(lang="es")
 		link(href="css/style.css", rel="stylesheet", type="text/css")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
-		
-
 	body
 		section.sedes-contactos.flex
 			ul.sede
@@ -30,20 +28,15 @@ html(lang="es")
 					a(href="#") Compra en linea
 
 		include block/header.pug
-		section.flexslider
-			ul.slides
-				li
-					img(src='images/papalote.jpg')
-					//- p.flex-caption Adventurer Cheesecake Brownie
-				li
-					img(src='images/papalote.jpg')
-					//- p.flex-caption Adventurer Lemon
-				li
-					img(src='images/papalote.jpg')
-					//- p.flex-caption Adventurer Donut
-				li
-					img(src='images/papalote.jpg')
-					//- p.flex-caption Adventurer Caramel
+		include block/slider.pug
+		section.plan
+			h2 Planea tu visita
+		section.renovado
+			img(src="images/papalote-renovado.png")
+			.column
+				h2 Papalote #[br] renovado
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod libero et arcu tincidunt suscipit. Curabitur finibus eros quis nisi maximus hendrerit.
+				a(href="" class="boton-general sombra") Conoce más
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(src="js/jquery.flexslider-min.js")
