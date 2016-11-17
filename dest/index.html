@@ -69,16 +69,20 @@
     <section class="plan">
       <h2>Planea tu visita</h2>
     </section>
-    <section class="renovado"><img src="images/papalote-renovado.png">
-      <div class="column">
-        <h2>Papalote <br> renovado</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod libero et arcu tincidunt suscipit. Curabitur finibus eros quis nisi maximus hendrerit.</p><a class="boton-general sombra" href="">Conoce más</a>
+    <section class="renovado"><img class="bg" src="images/papalote-renovado.png">
+      <div class="container">
+        <div class="column">
+          <h2>Papalote <br> renovado</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod libero et arcu tincidunt suscipit. Curabitur finibus eros quis nisi maximus hendrerit.</p><a class="boton-general sombra" href="">Conoce más</a>
+        </div>
       </div>
-    </section>
+    </section><span class="ir-arriba"></span>
     <footer>
       <div class="container">
         <aside class="social flex">
-          <input class="newsletter" type="email" placeholder="Suscríbete a nuestro newsletter">
+          <div class="container-newsletter">
+            <input class="newsletter" type="email" placeholder="Suscríbete a nuestro newsletter"><i class="fa fa-envelope"></i>
+          </div>
           <div class="social flex">
             <h2>Síguenos en</h2><i><a class="fa fa-facebook" href=""></a></i><i><a class="fa fa-twitter" href=""></a></i><i><a class="fa fa-youtube-play" href=""></a></i><i><a class="fa" href=""></a></i>
           </div>
@@ -92,10 +96,10 @@
                 <p>Av. Constituyentes 268</p>
                 <p>Col. Daniel Garza, CDMX.</p>
               </li>
-              <li>Información
+              <li>Información<i class="fa fa-phone"></i>
                 <p>5237 1781</p>
               </li>
-              <li>Venta de boletos
+              <li>Venta de boletos<i class="fa fa-phone"></i>
                 <p>5237 1778 /5237 1779</p>
               </li>
             </ul>
@@ -115,13 +119,21 @@
               <input class="nombre" type="text" placeholder="Nombre(s)*">
               <input class="email" type="text" placeholder="Correo electronico*">
               <select class="comentario">
-                <option value=" ">PAÍS</option>
+                <option value=" ">¿A qué departamento va dirigido tu comentario?*</option>
                 <option value=" ">México</option>
               </select>
-              <textarea placeholder="Mensaje*"></textarea><a class="enviar" href="#">Enviar</a>
+              <textarea placeholder="Mensaje*"></textarea>
+              <input id="cbtest" type="checkbox">
+              <label class="check-box" for="cbtest"></label><a class="enviar" href="#">Enviar</a>
             </form>
           </div>
         </section>
+        <div class="nav-footer">
+          <ul>
+            <li><a href="#">Aviso de privacidad</a><a href="#">Términos y condiciones</a><a href="#">© Papalote Museo del Niño 2017</a></li>
+          </ul>
+          <figure class="aprendo"><img src="images/aprendo.png"></figure>
+        </div>
       </div>
     </footer>
     <script src="js/jquery-1.11.3.min.js"></script>

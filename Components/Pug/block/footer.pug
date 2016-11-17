@@ -1,7 +1,9 @@
 footer
 	.container
 		aside.social.flex
-			input.newsletter(type="email", placeholder="Suscríbete a nuestro newsletter")
+			.container-newsletter
+				input.newsletter(type="email", placeholder="Suscríbete a nuestro newsletter")
+				i.fa.fa-envelope
 			.social.flex
 				h2 Síguenos en
 				i
@@ -21,8 +23,10 @@ footer
 						p Av. Constituyentes 268
 						p Col. Daniel Garza, CDMX.
 					li Información
+						i.fa.fa-phone
 						p 5237 1781
 					li Venta de boletos
+						i.fa.fa-phone
 						p 5237 1778 /5237 1779
 
 			.column
@@ -42,10 +46,22 @@ footer
 					input.nombre(type="text" placeholder="Nombre(s)*")
 					input.email(type="text" placeholder="Correo electronico*")
 					select.comentario
-						option(value=" ") PAÍS
+						option(value=" ") ¿A qué departamento va dirigido tu comentario?*
 						option(value=" ") México
 					textarea(placeholder="Mensaje*")
+					input#cbtest(type='checkbox')
+					label.check-box(for='cbtest')
 					a.enviar(href="#") Enviar
+		.nav-footer
+			ul
+				li
+					a(href="#") Aviso de privacidad
+					a(href="#") Términos y condiciones
+					a(href="#") © Papalote Museo del Niño 2017
+			figure.aprendo
+				img(src='images/aprendo.png')
+
+
 
 
 		
