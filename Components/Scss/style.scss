@@ -44,16 +44,19 @@
 
 @import "_reset.scss";
 @import "_variables-mixin.scss";
+/********** HEADER ***********/
+@import "_header.scss";
+/********** SECCIONES ***********/
 @import "section/_sedes.scss";
 @import "section/_slider.scss";
 @import "section/_renovado.scss";
 @import "section/_plan.scss";
 @import "section/_notas.scss";
 @import "section/_padrinos.scss";
-@import "_header.scss";
+/********** FOOTER *************/
 @import "_footer.scss";
 
-
+/********** RESPONSIVE ***********/
 @import "responsive/_desktop.scss";
 @import "responsive/_tablet.scss";
 @import "responsive/_movil.scss";
