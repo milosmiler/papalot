@@ -43,7 +43,7 @@ gulp.task('default',() => {
         server:'./dest'
     });
 
-    gulp.watch('Components/Scss/*.scss',['sass']);
+    gulp.watch('Components/Scss/**/*.scss',['sass']);
     gulp.watch('Components/Pug/**/*.pug',['pug']);
 
 })

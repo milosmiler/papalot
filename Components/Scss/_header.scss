@@ -1,0 +1,35 @@
+header{
+	background-color:rgba(8, 64, 92, 0.8);
+    position: absolute;
+    top: 39px;
+    z-index: 9999;
+    width: 100%;
+    padding: 10px 0px;
+    .container{
+        align-items: center;
+      figure.logo{
+          max-width: 70px;
+          height: auto;
+          margin-right: 80px;
+          img{
+              width: 100%;}
+      }
+      nav{
+          ul{
+              list-style: none;
+              li{
+                   display: inline-block;
+                   margin-right: 2.5rem; 
+                   &:last-child{
+                      margin-right: 0px;}
+                  a{
+                      text-decoration: none;
+                      font-size: 1.25rem;
+                      font-family: 'VAGRounded-bold';
+                      color: #fff;}
+              }
+          }
+          
+      }
+    }
+}

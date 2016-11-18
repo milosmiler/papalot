@@ -9,35 +9,14 @@ html(lang="es")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
-		section.sedes-contactos.flex
-			ul.sede
-				li
-					a(href="#") Chapultepec
-				li
-					a(href="#") Iztapalapa
-				li
-					a(href="#") Monterrey
-				li
-					a(href="#") Cuernavaca
-			ul.promociones
-				li
-					a(href="#") Horarios
-				li
-					a(href="#") Precios y promociones
-				li
-					a(href="#") Compra en linea
-
+		
+		include block/sedes.pug
 		include block/header.pug
 		include block/slider.pug
-		section.plan
-			h2 Planea tu visita
-		section.renovado
-			img.bg(src="images/papalote-renovado.png")
-			.container
-				.column
-					h2 Papalote #[br] renovado
-					p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod libero et arcu tincidunt suscipit. Curabitur finibus eros quis nisi maximus hendrerit.
-					a(href="" class="boton-general sombra") Conoce más
+		include block/renovado.pug
+		include block/plan.pug
+		include block/notas.pug
+		include block/slider-patrocinador.pug
 		span.ir-arriba
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")

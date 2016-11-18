@@ -139,9 +139,8 @@ h3 {
   -moz-osx-font-smoothing: grayscale; }
 
 p {
-  font-size: 18px;
-  font-family: 'Montserrat';
-  font-weight: 400;
+  font-size: 1.125rem;
+  font-family: 'montserrat-regular';
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -160,6 +159,7 @@ section {
 /** colores  top menu **/
 /** identificadores de secciones  **/
 /** contenido del sitio   **/
+/** checkbox  **/
 /********** GENERAL ***********/
 .container {
   max-width: 1200px;
@@ -229,12 +229,12 @@ header {
       list-style: none; }
       header .container nav ul li {
         display: inline-block;
-        margin-right: 40px; }
+        margin-right: 2.5rem; }
         header .container nav ul li:last-child {
           margin-right: 0px; }
         header .container nav ul li a {
           text-decoration: none;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-family: 'VAGRounded-bold';
           color: #fff; }
 
@@ -261,26 +261,129 @@ section.renovado {
       color: #08405C; }
     section.renovado .column a.boton-general {
       background-color: #EF096E;
-      border-radius: 50px;
+      border-radius: 3.125rem;
       clear: both;
       cursor: pointer;
       color: #fff;
+      font-family: 'VAGRounded-bold';
       display: block;
-      font-size: 22px;
-      height: 50px;
+      font-size: 1.125rem;
+      height: 3.125rem;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
+      text-align: left;
+      padding-left: 1.125rem;
+      padding-top: 0.9375rem;
       text-decoration: none;
-      width: 200px;
-      padding: 13px 0px;
-      font-size: 18px;
+      width: 12.5rem;
       position: relative; }
       section.renovado .column a.boton-general:before {
         content: "\f061";
         position: absolute;
-        right: 28px;
+        right: 1.4375rem;
         font-family: 'FontAwesome'; }
+
+section.notas {
+  padding: 110px 0px;
+  background-image: url("../images/fondo-nota.jpg");
+  background-size: cover; }
+  section.notas .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    section.notas .container article.nota {
+      max-width: 579px;
+      height: auto;
+      background: #fff;
+      margin: 0px 5px; }
+      section.notas .container article.nota figure.imagen-nota {
+        max-width: 579px;
+        height: auto; }
+        section.notas .container article.nota figure.imagen-nota img {
+          width: 100%; }
+      section.notas .container article.nota h2 {
+        font-size: 3.125rem;
+        color: #08405C;
+        margin: 0px 2.1875rem 2.1875rem; }
+      section.notas .container article.nota h3 {
+        color: #A4CD40;
+        font-size: 0.875rem;
+        margin: 2.1875rem 2.1875rem 1rem; }
+      section.notas .container article.nota p {
+        font-family: 'montserratlight';
+        color: #08405C;
+        margin-bottom: 1.5rem;
+        margin-left: 2.1875rem; }
+      section.notas .container article.nota a.boton.nota {
+        background-color: #A4CD40;
+        border-radius: 3.125rem;
+        clear: both;
+        cursor: pointer;
+        color: #fff;
+        font-family: 'VAGRounded-bold';
+        display: block;
+        font-size: 1.125rem;
+        height: 3.125rem;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        text-align: left;
+        padding-left: 1.125rem;
+        padding-top: 0.9375rem;
+        text-decoration: none;
+        width: 12.5rem;
+        position: relative;
+        margin-bottom: 1.625rem;
+        margin-left: 2.1875rem; }
+        section.notas .container article.nota a.boton.nota:before {
+          content: "\f061";
+          position: absolute;
+          right: 1.4375rem;
+          font-family: 'FontAwesome'; }
+
+section.padrinos article.marcas {
+  width: 73%;
+  float: left; }
+
+section.padrinos article.leyenda-content {
+  background-color: #FF4200;
+  color: #fff;
+  max-width: 431px;
+  float: right;
+  padding-right: 75px;
+  padding-left: 75px;
+  text-align: right; }
+  section.padrinos article.leyenda-content h2 {
+    margin-top: 110px;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-align: center; }
+  section.padrinos article.leyenda-content p {
+    font-family: 'montserrat-regular';
+    margin-bottom: 29px; }
+  section.padrinos article.leyenda-content a.boton-patrocinador {
+    background-color: #fff;
+    border-radius: 3.125rem;
+    clear: both;
+    cursor: pointer;
+    color: #FF4200;
+    font-family: 'VAGRounded-bold';
+    display: block;
+    font-size: 1.125rem;
+    height: 3.125rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: left;
+    padding-left: 1.125rem;
+    padding-top: 0.9375rem;
+    text-decoration: none;
+    width: 12.5rem;
+    position: relative;
+    float: right; }
+    section.padrinos article.leyenda-content a.boton-patrocinador:before {
+      content: "\f061";
+      position: absolute;
+      right: 1.4375rem;
+      font-family: 'FontAwesome'; }
 
 footer {
   width: 100%;
@@ -370,7 +473,6 @@ footer {
         margin-bottom: 48px;
         font-size: 1.375rem; }
       footer section.contactanos .column p {
-        font-size: 1.125rem;
         font-family: 'montserratlight';
         margin: 0px; }
       footer section.contactanos .column input {
@@ -388,9 +490,9 @@ footer {
           -moz-osx-font-smoothing: grayscale; }
           footer section.contactanos .column ul li .fa-phone:before {
             position: absolute;
-            font-size: 40px;
-            left: -49px;
-            top: 2px;
+            font-size: 2.5rem;
+            left: -3.0625rem;
+            top: 0.125rem;
             content: "\f095"; }
       footer section.contactanos .column form.enviar input::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
@@ -506,20 +608,23 @@ footer {
   body {
     height: 100vh; }
   .container {
-    max-width: 959px !important; } }
+    max-width: 959px !important;
+    padding: 0px 10px; } }
 
 @media only screen and (max-width: 767px) {
-  html {
-    overflow: hidden; }
-  section.contactanos .column {
-    display: block !important;
-    width: 100% !important; } }
+  header .container nav {
+    display: none; }
+  section.contactanos {
+    padding: 5px; }
+    section.contactanos .column {
+      display: block !important;
+      width: 100% !important; } }
 
 /*** clases de ayuda ***/
 span.link {
   position: relative;
   color: #EF096E;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-family: 'VAGRounded-bold'; }
   span.link:before {
     content: "\f061";
@@ -534,6 +639,12 @@ span.link {
 
 .sombra {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
+
+.z-depth-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
 
 .lista a {
   color: inherit;
@@ -564,8 +675,8 @@ span.link {
   position: relative; }
   .flexslider li .meta {
     position: absolute;
-    top: 200px;
-    left: 100px;
+    top: 12.5rem;
+    left: 6.25rem;
     color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -580,36 +691,73 @@ span.link {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
-  .flexslider li h2 {
-    margin-bottom: 0;
-    font-size: 70px;
-    text-shadow: 1px 2px 7px black;
-    letter-spacing: 1px; }
-  .flexslider li .category {
+  .flexslider li .meta-horario {
+    position: absolute;
+    bottom: 3.125rem;
+    left: 6.25rem;
+    color: white;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    .flexslider li .category p {
-      background: #e43837;
-      margin-right: 7px;
-      padding: 12px 18px 10px;
-      font-weight: 300; }
-
-.flexslider li .category span {
-  background: #e43837;
-  margin-top: 17px;
-  padding: 8px 12px 0;
-  font-weight: 300;
-  height: 26px; }
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .flexslider li .meta-horario h3 {
+      font-family: 'VAGRounded-bold';
+      font-size: 1.125rem;
+      margin: 0px 0px 10px; }
+    .flexslider li .meta-horario p {
+      color: #EF096E;
+      margin: 0px; }
+      .flexslider li .meta-horario p i.fa-clock-o:before {
+        content: "\f017";
+        font-size: 1.125rem;
+        margin-right: 15px; }
+  .flexslider li .meta-boton {
+    position: absolute;
+    right: 11rem;
+    bottom: 3.125rem; }
+    .flexslider li .meta-boton a.comprar-slider {
+      background-color: #FF7100;
+      border-radius: 3.125rem;
+      clear: both;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'VAGRounded-bold';
+      display: block;
+      font-size: 1.125rem;
+      height: 3.125rem;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      text-align: left;
+      padding-left: 1.125rem;
+      padding-top: 0.9375rem;
+      text-decoration: none;
+      width: 12.5rem;
+      position: relative; }
+      .flexslider li .meta-boton a.comprar-slider:before {
+        content: "\f061";
+        position: absolute;
+        right: 1.4375rem;
+        font-family: 'FontAwesome'; }
+  .flexslider li h2 {
+    margin: 0;
+    font-size: 4.375rem;
+    text-shadow: 1px 2px 7px black;
+    letter-spacing: 0.0625rem; }
 
 .flexslider li h2,
 .flexslider li span.link,
-.flexslider li .category p,
-.flexslider li .category span {
+.flexslider li h3,
+.flexslider li p,
+.flexslider li a.comprar-slider {
   -webkit-animation-duration: .6s;
   animation-duration: .6s;
   -webkit-animation-fill-mode: both;
@@ -619,8 +767,9 @@ span.link {
 
 .flexslider li.flex-active-slide .meta h2,
 .flexslider li.flex-active-slide .meta span.link,
-.flexslider li.flex-active-slide .meta .category p,
-.flexslider li.flex-active-slide .meta .category span {
+.flexslider li.flex-active-slide .meta-horario h3,
+.flexslider li.flex-active-slide .meta-horario p,
+.flexslider li.flex-active-slide .meta-boton a.comprar-slider {
   -webkit-animation-delay: .4s;
   animation-delay: .4s;
   -webkit-animation-duration: .6s;
@@ -634,13 +783,17 @@ span.link {
   -webkit-animation-delay: .5s;
   animation-delay: .5s; }
 
-.flexslider li.flex-active-slide .meta .category p {
+.flexslider li.flex-active-slide .meta-horario h3 {
   -webkit-animation-delay: .6s;
   animation-delay: .6s; }
 
-.flexslider li.flex-active-slide .meta .category span {
+.flexslider li.flex-active-slide .meta-horario p {
   -webkit-animation-delay: .8s;
   animation-delay: .8s; }
+
+.flexslider li.flex-active-slide .meta-boton a.comprar-slider {
+  -webkit-animation-delay: .9s;
+  animation-delay: .9s; }
 
 .flex-direction-nav {
   position: absolute;
@@ -798,7 +951,7 @@ input[type=checkbox]:checked + .check-box,
   transition: all 0.2s ease-in;
   color: rgba(255, 255, 255, 0.5);
   font-family: 'montserrat-regular';
-  font-size: 12px; }
+  font-size: 0.75rem; }
   .select-styled:after {
     content: "\f107";
     font-family: 'FontAwesome';
