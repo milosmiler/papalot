@@ -1,0 +1,44 @@
+section.notas{
+    padding: 110px 0px;
+    background-image: url('../images/fondo-nota.jpg');
+    background-size: cover;
+    .container{
+        justify-content: space-between;
+        article.nota{
+            max-width: 579px;
+            height: auto;
+            background: #fff;
+            margin: 0px 5px;
+            figure.imagen-nota{
+                max-width: 579px;
+                height: auto;
+                img{
+                    width: 100%;
+                }
+            }
+            h2{
+                font-size: 3.125rem;
+                color: $color-azul100;
+                margin: 0px 2.1875rem 2.1875rem;
+
+            }
+            h3{
+                color: $color-verde;
+                font-size: 0.875rem;
+                margin: 2.1875rem 2.1875rem 1rem;
+            }
+            p{
+                font-family: 'montserratlight';
+                color: $color-azul100;
+                margin-bottom: 1.5rem;
+                margin-left: 2.1875rem;
+            }
+            a.boton.nota{
+                @include boton($ancho: 12.5rem, $fondo: $color-verde , $color: #fff);
+                position: relative;
+                margin-bottom: 1.625rem;
+                margin-left: 2.1875rem;
+            }
+        }
+    }
+}

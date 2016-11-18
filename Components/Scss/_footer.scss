@@ -1,0 +1,191 @@
+footer{
+    width: 100%;
+    background-color:$color-footer;
+    height: auto;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    aside.social{
+        border-bottom: 3px solid $color-azul-footer;
+        color: #fff;
+        padding-bottom: 30px;
+        justify-content: space-between;
+        align-items: center;
+        .container-newsletter{
+             width: 23.4%;
+             position:relative;
+            input.newsletter{
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                background-color: #35485D;
+                input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 14px; font-family:'montserratlight';}
+                input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 14px; font-family:'montserratlight';}
+                input:-moz-placeholder {color: rgba(255, 255, 255, 0.5);font-size: 14px; font-family:'montserratlight';}
+                input:-ms-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 14px; font-family:'montserratlight';}
+                padding: 5px 20px;
+                height: 40px;
+                width: 100%;}
+            .fa-envelope:before {
+                color: rgba(255, 255, 255, 0.5);
+                position: absolute;
+                top: 14px;
+                right: 10px;}
+            }
+        .social{
+            align-items: center;
+            justify-content: space-between;
+            width: 425px;
+            position: relative;
+            h2{
+              font-size: 1.125rem;
+              color:$color-azul-footer;}
+
+             i{
+                background-color: rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: 10px;
+                position: relative;
+                height: 38px;
+                width: 38px;
+                a{
+                    color: $color-footer;
+                    text-decoration: none;
+                    font-size: 1.3125rem;
+                    position: absolute;
+                    top: 50%;  
+                    left: 50%; 
+                    transform: translate(-50%, -50%);}
+            }
+        }
+    }
+    section.contactanos{
+        display: table;
+        .column{
+            display: table-cell;
+            color: #fff;
+            width: 30%;
+            position: relative;
+            h2{
+                color: $color-azul-footer;
+                margin-top: 33px;
+                margin-bottom: 48px;
+                font-size: 1.375rem;}
+            p{
+                font-family: 'montserratlight';
+                margin:0px;}
+            input{
+                background: transparent;}
+            ul{
+                list-style: none;
+                margin-left: 50px;
+                li{
+                    margin-bottom: 26px;
+                    font-size: 1.125rem;
+                    font-family: 'VAGRounded-bold';
+                    text-rendering: auto; 
+                    position: relative;
+                    -webkit-font-smoothing: antialiased; 
+                    -moz-osx-font-smoothing: grayscale;
+
+                    .fa-phone:before {
+                        position: absolute;
+                        font-size: 2.5rem;
+                        left: -3.0625rem;
+                        top: 0.125rem;
+                        content: "\f095";}
+                    }
+            }
+            form.enviar{
+                input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 0.75rem; font-family:'montserrat-regular';}
+                input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 0.75rem; font-family:'montserrat-regular';}
+                input:-moz-placeholder {color: rgba(255, 255, 255, 0.5);font-size: 0.75rem; font-family:'montserrat-regular';}
+                input:-ms-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 0.75rem; font-family:'montserrat-regular';}
+                 input.email {
+                    border-top: 1px solid rgba(255, 255, 255, 0.5);
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                    border-left: none;
+                    border-right: 1px solid rgba(255, 255, 255, 0.5);
+                    padding-left:23px;
+                    width: 50%;
+                    height: 45px;
+                    float: left;}
+                input.nombre{
+                    float: right;
+                     padding-left:23px;
+                    width: 50%;
+                    border-top: 1px solid rgba(255, 255, 255, 0.5);
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                    border-left: none;
+                    border-right: none;
+                    height: 45px;}
+
+                select.comentario{
+                    width: 100%;}
+
+                textarea{
+                    width: 100%;
+                    background: transparent;
+                    border-top: 1px solid rgba(255, 255, 255, 0.5);
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+                    border-left: none;
+                    border-right: none;
+                    padding-left:23px;
+                    padding-top: 17px;
+                    height: 122px;}
+                a.enviar{
+                    @include boton-borde( $color-turqueza, 140px, $color-turqueza);
+                    font-family: 'VAGRounded-bold';
+                    padding-top: 10px;
+                    text-align: center;
+                    position: relative;
+                    &:before{
+                        content: "\f061";
+                        position: absolute;
+                        right: 20px;
+                        font-family: 'FontAwesome';}
+                    }
+            }
+            
+        }
+
+    }
+    .nav-footer{
+        width: 100%;
+        overflow: hidden;
+        margin-top: 54px;
+        ul{
+            float: left;
+            list-style: none;
+            li{
+                
+                a{
+                    color: rgba(255, 255, 255, 0.5);
+                    text-decoration: none;
+                    font-size: 0.75rem;
+                    font-family: 'montserratlight';
+                    margin-right: 26px;
+                    position: relative;
+                    &:last-of-type{
+                        font-family: 'VAGRounded-bold';
+                        color:#fff;}
+                    &:first-child:after{
+                        content: "|";
+                        color: rgba(255, 255, 255, 0.5);
+                        position:absolute;
+                        right: -15px;
+                    }
+                }
+            }
+        }
+        figure.aprendo{
+            float: right;
+            max-width: 200px;
+            height: auto;
+            padding-top: 5px;
+            img{
+                vertical-align: middle;
+                width: 100%;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,32 @@
+section.padrinos{
+    article.marcas{
+            width: 73%;
+            float: left;
+    }
+    article.leyenda-content{
+        background-color: $color-Naranja100;
+        color: #fff;
+         max-width: 431px;
+         float: right;
+         padding-right: 75px;
+         padding-left: 75px;
+         text-align: right;
+         h2{
+            margin-top: 110px;
+            font-size: 32px;
+            margin-bottom: 25px;
+            text-align: center;
+
+         }
+         p{
+            font-family: 'montserrat-regular';
+            margin-bottom: 29px;
+         }
+         a.boton-patrocinador{
+            @include boton($ancho: 12.5rem, $fondo: #fff , $color: $color-Naranja100);
+            position: relative;
+            float: right;
+
+         }
+    }
+}

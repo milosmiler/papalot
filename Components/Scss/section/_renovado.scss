@@ -1,0 +1,19 @@
+section.renovado{
+  position: relative;
+  img{
+      width: 100%;}
+  .column{
+    max-width: 383px;
+    height: auto;
+    h2{
+      font-size: 50px;
+      color: $color-azul100;}
+    p{
+      font-family: 'montserratlight';
+      color: $color-azul100;}
+    a.boton-general{
+      @include boton;
+      position: relative;}
+      
+  }
+}

@@ -1,3 +1,42 @@
+/*.icon-database:before {
+    content: "\e000";
+}*/
+/*** FONT FACE ***/
+@font-face {
+  font-family: 'VAGRounded-bold';
+  src: url("../fonts/vag_rounded_bold-webfont.woff2") format("woff2"), url("../fonts/vag_rounded_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'VAGRounded-light';
+  src: url("../fonts/vag_rounded_light_1-webfont.woff2") format("woff2"), url("../fonts/vag_rounded_light_1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat-regular';
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/********** GENERAL ***********/
+.container {
+  max-width: 1200px;
+  margin: auto; }
+
 /*
 Theme Name: papalote
 Theme URI: 
@@ -89,40 +128,6 @@ figure {
   speak: none;
   font-weight: normal; }
 
-/*.icon-database:before {
-    content: "\e000";
-}*/
-/*** FONT FACE ***/
-@font-face {
-  font-family: 'VAGRounded-bold';
-  src: url("../fonts/vag_rounded_bold-webfont.woff2") format("woff2"), url("../fonts/vag_rounded_bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'VAGRounded-light';
-  src: url("../fonts/vag_rounded_light_1-webfont.woff2") format("woff2"), url("../fonts/vag_rounded_light_1-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'montserrat-bold';
-  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'montserratlight';
-  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'montserrat-regular';
-  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 /*** SIZING WITH REM ***/
 h2 {
   font-weight: 700;
@@ -155,15 +160,68 @@ section {
   height: auto;
   overflow: hidden; }
 
+/*** clases de ayuda ***/
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.sombra {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+
+.z-depth-2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
+
+.z-depth-4 {
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
+
+.lista a {
+  color: inherit;
+  font-family: 'montserratlight';
+  font-size: 1.125rem;
+  font-weight: lighter;
+  text-decoration: none;
+  line-height: 1.875rem; }
+  .lista a:before {
+    font-family: 'FontAwesome';
+    content: "\f138";
+    font-size: 14px;
+    position: absolute;
+    left: -25px; }
+
+.ir-arriba {
+  display: none;
+  padding: 20px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  background-image: url("../images/subir.png");
+  width: 65px;
+  height: 82px; }
+
+.bg {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  top: 0px; }
+
 /** colores primarios **/
 /** colores  top menu **/
 /** identificadores de secciones  **/
 /** contenido del sitio   **/
 /** checkbox  **/
-/********** GENERAL ***********/
-.container {
-  max-width: 1200px;
-  margin: auto; }
+span.link {
+  position: relative;
+  color: #EF096E;
+  font-size: 1.125rem;
+  font-family: 'VAGRounded-bold'; }
+  span.link:before {
+    content: "\f061";
+    position: absolute;
+    right: -30px;
+    font-family: 'FontAwesome'; }
 
 section.sedes-contactos {
   -webkit-box-align: center;
@@ -208,43 +266,170 @@ section.sedes-contactos {
         padding: 5px;
         text-decoration: none; }
 
-header {
-  background-color: rgba(8, 64, 92, 0.8);
-  position: absolute;
-  top: 39px;
-  z-index: 9999;
-  width: 100%;
-  padding: 10px 0px; }
-  header .container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    header .container figure.logo {
-      max-width: 70px;
-      height: auto;
-      margin-right: 80px; }
-      header .container figure.logo img {
-        width: 100%; }
-    header .container nav ul {
-      list-style: none; }
-      header .container nav ul li {
-        display: inline-block;
-        margin-right: 2.5rem; }
-        header .container nav ul li:last-child {
-          margin-right: 0px; }
-        header .container nav ul li a {
-          text-decoration: none;
-          font-size: 1.25rem;
-          font-family: 'VAGRounded-bold';
-          color: #fff; }
+.flexslider li {
+  position: relative; }
+  .flexslider li .meta {
+    position: absolute;
+    top: 12.5rem;
+    left: 6.25rem;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .flexslider li .meta-horario {
+    position: absolute;
+    bottom: 3.125rem;
+    left: 6.25rem;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .flexslider li .meta-horario h3 {
+      font-family: 'VAGRounded-bold';
+      font-size: 1.125rem;
+      margin: 0px 0px 10px; }
+    .flexslider li .meta-horario p {
+      color: #EF096E;
+      margin: 0px; }
+      .flexslider li .meta-horario p i.fa-clock-o:before {
+        content: "\f017";
+        font-size: 1.125rem;
+        margin-right: 15px; }
+  .flexslider li .meta-boton {
+    position: absolute;
+    right: 11rem;
+    bottom: 3.125rem; }
+    .flexslider li .meta-boton a.comprar-slider {
+      background-color: #FF7100;
+      border-radius: 3.125rem;
+      clear: both;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'VAGRounded-bold';
+      display: block;
+      font-size: 1.125rem;
+      height: 3.125rem;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      text-align: left;
+      padding-left: 1.125rem;
+      padding-top: 0.9375rem;
+      text-decoration: none;
+      width: 12.5rem;
+      position: relative; }
+      .flexslider li .meta-boton a.comprar-slider:before {
+        content: "\f061";
+        position: absolute;
+        right: 1.4375rem;
+        font-family: 'FontAwesome'; }
+  .flexslider li h2 {
+    margin: 0;
+    font-size: 4.375rem;
+    text-shadow: 1px 2px 7px black;
+    letter-spacing: 0.0625rem; }
 
-section.plan {
-  color: #5D2B86;
-  text-align: center;
-  font-size: 32px;
-  padding: 50px 0px; }
-  section.plan h2 {
-    margin: 0px; }
+.flexslider li h2,
+.flexslider li span.link,
+.flexslider li h3,
+.flexslider li p,
+.flexslider li a.comprar-slider {
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft; }
+
+.flexslider li.flex-active-slide .meta h2,
+.flexslider li.flex-active-slide .meta span.link,
+.flexslider li.flex-active-slide .meta-horario h3,
+.flexslider li.flex-active-slide .meta-horario p,
+.flexslider li.flex-active-slide .meta-boton a.comprar-slider {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+.flexslider li.flex-active-slide .meta span.link {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s; }
+
+.flexslider li.flex-active-slide .meta-horario h3 {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s; }
+
+.flexslider li.flex-active-slide .meta-horario p {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s; }
+
+.flexslider li.flex-active-slide .meta-boton a.comprar-slider {
+  -webkit-animation-delay: .9s;
+  animation-delay: .9s; }
+
+.flex-direction-nav {
+  position: absolute;
+  top: 100px;
+  left: 30px; }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
 
 section.renovado {
   position: relative; }
@@ -282,6 +467,14 @@ section.renovado {
         position: absolute;
         right: 1.4375rem;
         font-family: 'FontAwesome'; }
+
+section.plan {
+  color: #5D2B86;
+  text-align: center;
+  font-size: 32px;
+  padding: 50px 0px; }
+  section.plan h2 {
+    margin: 0px; }
 
 section.notas {
   padding: 110px 0px;
@@ -384,6 +577,36 @@ section.padrinos article.leyenda-content {
       position: absolute;
       right: 1.4375rem;
       font-family: 'FontAwesome'; }
+
+header {
+  background-color: rgba(8, 64, 92, 0.8);
+  position: absolute;
+  top: 39px;
+  z-index: 9999;
+  width: 100%;
+  padding: 10px 0px; }
+  header .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .container figure.logo {
+      max-width: 70px;
+      height: auto;
+      margin-right: 80px; }
+      header .container figure.logo img {
+        width: 100%; }
+    header .container nav ul {
+      list-style: none; }
+      header .container nav ul li {
+        display: inline-block;
+        margin-right: 2.5rem; }
+        header .container nav ul li:last-child {
+          margin-right: 0px; }
+        header .container nav ul li a {
+          text-decoration: none;
+          font-size: 1.25rem;
+          font-family: 'VAGRounded-bold';
+          color: #fff; }
 
 footer {
   width: 100%;
@@ -619,229 +842,6 @@ footer {
     section.contactanos .column {
       display: block !important;
       width: 100% !important; } }
-
-/*** clases de ayuda ***/
-span.link {
-  position: relative;
-  color: #EF096E;
-  font-size: 1.125rem;
-  font-family: 'VAGRounded-bold'; }
-  span.link:before {
-    content: "\f061";
-    position: absolute;
-    right: -30px;
-    font-family: 'FontAwesome'; }
-
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.sombra {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
-
-.z-depth-2 {
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3); }
-
-.z-depth-4 {
-  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
-
-.lista a {
-  color: inherit;
-  font-family: 'montserratlight';
-  font-size: 1.125rem;
-  font-weight: lighter;
-  text-decoration: none;
-  line-height: 1.875rem; }
-  .lista a:before {
-    font-family: 'FontAwesome';
-    content: "\f138";
-    font-size: 14px;
-    position: absolute;
-    left: -25px; }
-
-.ir-arriba {
-  display: none;
-  padding: 20px;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 50px;
-  background-image: url("../images/subir.png");
-  width: 65px;
-  height: 82px; }
-
-.flexslider li {
-  position: relative; }
-  .flexslider li .meta {
-    position: absolute;
-    top: 12.5rem;
-    left: 6.25rem;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-  .flexslider li .meta-horario {
-    position: absolute;
-    bottom: 3.125rem;
-    left: 6.25rem;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-    .flexslider li .meta-horario h3 {
-      font-family: 'VAGRounded-bold';
-      font-size: 1.125rem;
-      margin: 0px 0px 10px; }
-    .flexslider li .meta-horario p {
-      color: #EF096E;
-      margin: 0px; }
-      .flexslider li .meta-horario p i.fa-clock-o:before {
-        content: "\f017";
-        font-size: 1.125rem;
-        margin-right: 15px; }
-  .flexslider li .meta-boton {
-    position: absolute;
-    right: 11rem;
-    bottom: 3.125rem; }
-    .flexslider li .meta-boton a.comprar-slider {
-      background-color: #FF7100;
-      border-radius: 3.125rem;
-      clear: both;
-      cursor: pointer;
-      color: #fff;
-      font-family: 'VAGRounded-bold';
-      display: block;
-      font-size: 1.125rem;
-      height: 3.125rem;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      text-align: left;
-      padding-left: 1.125rem;
-      padding-top: 0.9375rem;
-      text-decoration: none;
-      width: 12.5rem;
-      position: relative; }
-      .flexslider li .meta-boton a.comprar-slider:before {
-        content: "\f061";
-        position: absolute;
-        right: 1.4375rem;
-        font-family: 'FontAwesome'; }
-  .flexslider li h2 {
-    margin: 0;
-    font-size: 4.375rem;
-    text-shadow: 1px 2px 7px black;
-    letter-spacing: 0.0625rem; }
-
-.flexslider li h2,
-.flexslider li span.link,
-.flexslider li h3,
-.flexslider li p,
-.flexslider li a.comprar-slider {
-  -webkit-animation-duration: .6s;
-  animation-duration: .6s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeOutLeft;
-  animation-name: fadeOutLeft; }
-
-.flexslider li.flex-active-slide .meta h2,
-.flexslider li.flex-active-slide .meta span.link,
-.flexslider li.flex-active-slide .meta-horario h3,
-.flexslider li.flex-active-slide .meta-horario p,
-.flexslider li.flex-active-slide .meta-boton a.comprar-slider {
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s;
-  -webkit-animation-duration: .6s;
-  animation-duration: .6s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft; }
-
-.flexslider li.flex-active-slide .meta span.link {
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s; }
-
-.flexslider li.flex-active-slide .meta-horario h3 {
-  -webkit-animation-delay: .6s;
-  animation-delay: .6s; }
-
-.flexslider li.flex-active-slide .meta-horario p {
-  -webkit-animation-delay: .8s;
-  animation-delay: .8s; }
-
-.flexslider li.flex-active-slide .meta-boton a.comprar-slider {
-  -webkit-animation-delay: .9s;
-  animation-delay: .9s; }
-
-.flex-direction-nav {
-  position: absolute;
-  top: 100px;
-  left: 30px; }
-
-@-webkit-keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none; } }
-
-@-webkit-keyframes fadeOutLeft {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
-
-@keyframes fadeOutLeft {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0); } }
-
-.bg {
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  left: 50%;
-  top: 0px; }
 
 @-webkit-keyframes dothabottomcheck {
   0% {

@@ -1,0 +1,154 @@
+.flexslider{
+  li{
+    position: relative;
+    .meta{
+        position: absolute;
+        top: 12.5rem;
+        left: 6.25rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;}
+    .meta-horario{
+        position: absolute;
+        bottom: 3.125rem;
+        left: 6.25rem;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        h3{
+            font-family: 'VAGRounded-bold';
+            font-size: 1.125rem;
+            margin: 0px 0px 10px;
+            }
+        p{
+            color: $color-rosa;
+            margin: 0px;
+            i.fa-clock-o:before {
+                content: "\f017";
+                font-size: 1.125rem;
+                margin-right: 15px;}
+            }
+        }
+    .meta-boton{
+        position: absolute;
+        right: 11rem;
+        bottom: 3.125rem;
+        a.comprar-slider{
+            @include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff);
+            position: relative;}
+    }
+    h2{
+        margin:0;
+        font-size: 4.375rem;
+        text-shadow: 1px 2px 7px rgba(0, 0, 0, 1);
+        letter-spacing: 0.0625rem;
+    }
+  }
+}
+
+
+.flexslider li h2,
+.flexslider li span.link,
+.flexslider li h3,
+.flexslider li p,
+.flexslider li a.comprar-slider {
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+}
+
+.flexslider li.flex-active-slide .meta h2,
+.flexslider li.flex-active-slide .meta span.link,
+.flexslider li.flex-active-slide .meta-horario h3,
+.flexslider li.flex-active-slide .meta-horario p,
+.flexslider li.flex-active-slide .meta-boton a.comprar-slider  {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+.flexslider li.flex-active-slide .meta span.link, {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+
+.flexslider li.flex-active-slide .meta-horario h3 {
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.flexslider li.flex-active-slide .meta-horario p {
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+}
+
+.flexslider li.flex-active-slide .meta-boton a.comprar-slider {
+    -webkit-animation-delay: .9s;
+    animation-delay: .9s;
+}
+
+.flex-direction-nav {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}

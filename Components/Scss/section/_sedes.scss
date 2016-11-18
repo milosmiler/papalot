@@ -1,0 +1,47 @@
+section.sedes-contactos{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    ul.sede{
+        margin: 0px;
+    li{
+        float: left;
+        margin-right: 25px;
+
+        a{
+            font-size: 12px;
+            font-family: 'montserratlight';
+            text-decoration: none;
+            color:$color-gris;
+            &:hover{
+                color: $color-azul100;
+                font-family: 'montserrat-bold';
+              }
+        }
+
+    }
+}
+    ul.promociones{
+        margin: 0px;
+        list-style: none;
+        li{
+            float: left;
+            background-color: $color-turqueza;
+            width: 180px;
+            height: 39px;
+            text-align: center;
+            padding-top: 10px;
+            &:nth-child(2){
+                    background-color: $color-amarillo;}
+            &:nth-child(3){
+                    background-color: $color-naranja;}
+            a{
+                color: #fff;
+                font-family: 'VAGRounded-bold';
+                font-size: 16px;
+                padding: 5px;
+                text-decoration: none;}
+        }
+    }
+}
