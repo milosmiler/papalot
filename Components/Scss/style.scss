@@ -1,3 +1,6 @@
+@import "_reset.scss";
+@import "_variables-mixin.scss";
+
 /*** FONT FACE ***/
 @font-face {
     font-family: 'VAGRounded-bold';
@@ -81,16 +84,21 @@
 }
 .icon-left-arrow:before {
   content: "\e90c";
+  
 }
 .icon-right-arrow:before {
   content: "\e90d";
+  
 }
 .icon-instagram:before {
   content: "\e90e";
-  color: #fff;
+  color: $color-footer;
 }
 .icon-mariposa:before {
   content: "\e90f";
+  position: absolute;
+  font-size: 2.5rem;
+  left: -3.0625rem;
 }
 
 /********** GENERAL ***********/
@@ -99,8 +107,7 @@
 	margin: auto;}
 
 
-@import "_reset.scss";
-@import "_variables-mixin.scss";
+
 /********** HEADER ***********/
 @import "_header.scss";
 /********** SECCIONES ***********/
