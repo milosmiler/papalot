@@ -91,14 +91,12 @@ figure {
 
 /*** SIZING WITH REM ***/
 h2 {
-  font-weight: 700;
   font-family: 'VAGRounded-bold';
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 h3 {
-  font-weight: 700;
   font-family: 'VAGRounded-bold';
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -941,6 +939,44 @@ section.mega-pantalla {
     position: relative; }
     section.mega-pantalla figure.video-megapantalla img {
       width: 100%; }
+
+section.precio-paquete h2 {
+  font-size: 4.375rem;
+  color: #08405C; }
+
+section.precio-paquete section.paquetes h3 {
+  font-size: 3.125rem;
+  color: #00C0F2; }
+
+section.precio-paquete section.paquetes p {
+  font-family: 'montserrat-bold';
+  color: #08405C;
+  font-size: 1.125rem; }
+
+section.precio-paquete section.paquetes article.paquete-items {
+  width: 45%; }
+  section.precio-paquete section.paquetes article.paquete-items h4 {
+    color: #00C0F2;
+    font-size: 2.5rem; }
+  section.precio-paquete section.paquetes article.paquete-items figure.image-paquete {
+    width: 100%;
+    border-bottom: 3px solid #EDCF00; }
+  section.precio-paquete section.paquetes article.paquete-items p {
+    color: #08405C;
+    font-size: 1.375rem; }
+  section.precio-paquete section.paquetes article.paquete-items ul li {
+    font-size: 32px;
+    font-family: "VAGRounded-bold";
+    color: #08405C; }
+  section.precio-paquete section.paquetes article.paquete-items span.precio-paquete {
+    color: #FF7100;
+    font-size: 3.125rem;
+    font-family: 'VAGRounded-bold';
+    float: right; }
+    section.precio-paquete section.paquetes article.paquete-items span.precio-paquete p {
+      font-size: 12px;
+      font-family: 'montserratlight';
+      color: #364659; }
 
 /********** FOOTER *************/
 footer {

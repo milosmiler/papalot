@@ -1,0 +1,42 @@
+section.precio-paquete{
+	h2{
+		font-size:4.375rem;
+		color: $color-azul100;}
+	section.paquetes{
+		h3{
+			font-size: 3.125rem;
+			color: $color-azul;}
+		p{
+			font-family: 'montserrat-bold';
+			color: $color-azul100;
+			font-size: 1.125rem;}
+		article.paquete-items{
+			width: 45%;
+			h4{
+				color: $color-azul;
+				font-size: 2.5rem; 
+			}
+			figure.image-paquete{
+				width: 100%;
+				border-bottom: 3px solid $color-amarillo;}
+			p{
+				color: $color-azul100;
+				font-size: 1.375rem;}
+			ul{
+				li{font-size: 32px; font-family: "VAGRounded-bold"; color: $color-azul100;}
+			}
+			span.precio-paquete{
+				color: $color-naranja;
+				font-size: 3.125rem;
+				font-family: 'VAGRounded-bold';
+				float: right;
+				p{
+					font-size: 12px;
+					font-family: 'montserratlight';
+					color: $color-footer;
+				}
+			} 
+				
+		}
+	}
+}
