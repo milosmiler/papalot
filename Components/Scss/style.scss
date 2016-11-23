@@ -35,6 +35,16 @@
          url('../fonts/montserrat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;}
+
+@font-face {
+    font-family: 'montserratsemi-bold';
+    src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?2219ij');
@@ -54,33 +64,93 @@
 }
 .icon-bebe:before {
   content: "\e902";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-taquilla:before {
   content: "\e903";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-discapacidad:before {
   content: "\e904";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-nino:before {
   content: "\e905";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-nina:before {
   content: "\e906";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-tenedor:before {
   content: "\e907";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-mochila:before {
   content: "\e908";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-Papalote-Renovado:before {
   content: "\e909";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-lapiz:before {
   content: "\e90a";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-Group-2-Copy:before {
   content: "\e90b";
+  position: absolute;
+  top: 50%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
 }
 .icon-left-arrow:before {
   content: "\e90c";
@@ -112,6 +182,7 @@
 @import "_header.scss";
 /********** SECCIONES ***********/
 @import "section/_sedes.scss";
+@import "section/_cover.scss";
 @import "section/_slider.scss";
 @import "section/_renovado.scss";
 @import "section/_plan.scss";
@@ -119,6 +190,8 @@
 @import "section/_padrinos.scss";
 @import "section/_nota-contenido.scss";
 @import "section/_servicio-espacio.scss";
+@import "section/_megapantalla.scss";
+@import "section/_precio-paquete.scss";
 /********** FOOTER *************/
 @import "_footer.scss";
 

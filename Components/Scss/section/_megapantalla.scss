@@ -1,0 +1,48 @@
+section.mega-pantalla{
+	margin-bottom: 88px;
+	article.nota-megapantalla{
+		float: left;
+		width: 50%;
+		padding: 54px 28px 0px;
+		h2{
+			font-size: 3.125rem;
+			color: $color-azul100;}
+		p{
+			font-size: 1.125rem;
+			color: $color-azul100;
+			font-family: 'montserratlight';}
+		.container-horarios{
+			display: table;
+			width: 100%;
+			.horarios{
+				display: table-cell;
+				h3{
+					color: $color-turqueza;
+					font-size: 1.125rem;
+					font-family: 'VAGRounded-bold';}
+				p{
+					font-size: 1rem;
+					color: $color-azul100;
+					font-family: 'montserratsemi-bold';}
+				span{
+					font-family: 'montserratlight';
+					font-size: 1rem;}
+			}
+			.horarios-boton{
+				display: table-cell;
+				vertical-align: bottom;
+				a.mega-compra{
+					@include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
+					position: relative;
+					margin-bottom: 20px;}
+			}
+		}
+	}
+	figure.video-megapantalla{
+		float: left;
+		width: 50%;
+		position: relative;
+		img{
+			width: 100%;}
+	}
+}

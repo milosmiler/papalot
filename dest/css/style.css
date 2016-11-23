@@ -216,6 +216,12 @@ span.link {
   font-style: normal; }
 
 @font-face {
+  font-family: 'montserratsemi-bold';
+  src: url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?2219ij");
   src: url("../fonts/icomoon.eot?2219ij#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?2219ij") format("truetype"), url("../fonts/icomoon.woff?2219ij") format("woff"), url("../fonts/icomoon.svg?2219ij#icomoon") format("svg");
@@ -229,34 +235,104 @@ span.link {
   content: "\e901"; }
 
 .icon-bebe:before {
-  content: "\e902"; }
+  content: "\e902";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-taquilla:before {
-  content: "\e903"; }
+  content: "\e903";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-discapacidad:before {
-  content: "\e904"; }
+  content: "\e904";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-nino:before {
-  content: "\e905"; }
+  content: "\e905";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-nina:before {
-  content: "\e906"; }
+  content: "\e906";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-tenedor:before {
-  content: "\e907"; }
+  content: "\e907";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-mochila:before {
-  content: "\e908"; }
+  content: "\e908";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-Papalote-Renovado:before {
-  content: "\e909"; }
+  content: "\e909";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-lapiz:before {
-  content: "\e90a"; }
+  content: "\e90a";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-Group-2-Copy:before {
-  content: "\e90b"; }
+  content: "\e90b";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
 .icon-left-arrow:before {
   content: "\e90c"; }
@@ -353,6 +429,38 @@ section.sedes-contactos {
         font-size: 16px;
         padding: 5px;
         text-decoration: none; }
+
+section.cover {
+  position: relative; }
+  section.cover img {
+    width: 100%; }
+  section.cover h2 {
+    font-size: 4.375rem;
+    text-shadow: 1px 2px 7px black;
+    letter-spacing: 0.0625rem;
+    position: absolute;
+    z-index: 9999;
+    top: 8.0625rem;
+    left: 6.25rem;
+    color: #fff; }
+
+section.cover-intro {
+  max-width: 1310px; }
+  section.cover-intro figure.imagen-cover {
+    width: 54.2%;
+    float: left; }
+    section.cover-intro figure.imagen-cover img {
+      width: 100%; }
+  section.cover-intro article.leyenda-intro {
+    width: 44%;
+    float: right; }
+    section.cover-intro article.leyenda-intro h2 {
+      font-size: 2.5rem;
+      color: #08405C; }
+    section.cover-intro article.leyenda-intro p {
+      font-size: 1.125rem;
+      font-family: 'montserratlight';
+      color: #08405C; }
 
 .flexslider li {
   position: relative; }
@@ -726,14 +834,18 @@ section.nota-contenido-derecho {
         font-family: 'montserrat-bold'; }
 
 section.servicio-espacios .container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   section.servicio-espacios .container h2 {
     color: #08405C;
     font-size: 4.375rem;
+    width: 100%; }
+  section.servicio-espacios .container h3 {
+    color: #EF096E;
+    text-align: center;
+    font-size: 3.125rem;
     width: 100%; }
   section.servicio-espacios .container article.espacios {
     width: 380px;
@@ -758,6 +870,77 @@ section.servicio-espacios .container {
     section.servicio-espacios .container article.espacios p {
       color: #08405C;
       font-family: 'montserratlight'; }
+    section.servicio-espacios .container article.espacios i {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      border: 5px solid #404042;
+      background: #C4E86B;
+      display: block;
+      position: relative; }
+
+section.mega-pantalla {
+  margin-bottom: 88px; }
+  section.mega-pantalla article.nota-megapantalla {
+    float: left;
+    width: 50%;
+    padding: 54px 28px 0px; }
+    section.mega-pantalla article.nota-megapantalla h2 {
+      font-size: 3.125rem;
+      color: #08405C; }
+    section.mega-pantalla article.nota-megapantalla p {
+      font-size: 1.125rem;
+      color: #08405C;
+      font-family: 'montserratlight'; }
+    section.mega-pantalla article.nota-megapantalla .container-horarios {
+      display: table;
+      width: 100%; }
+      section.mega-pantalla article.nota-megapantalla .container-horarios .horarios {
+        display: table-cell; }
+        section.mega-pantalla article.nota-megapantalla .container-horarios .horarios h3 {
+          color: #00B3D0;
+          font-size: 1.125rem;
+          font-family: 'VAGRounded-bold'; }
+        section.mega-pantalla article.nota-megapantalla .container-horarios .horarios p {
+          font-size: 1rem;
+          color: #08405C;
+          font-family: 'montserratsemi-bold'; }
+        section.mega-pantalla article.nota-megapantalla .container-horarios .horarios span {
+          font-family: 'montserratlight';
+          font-size: 1rem; }
+      section.mega-pantalla article.nota-megapantalla .container-horarios .horarios-boton {
+        display: table-cell;
+        vertical-align: bottom; }
+        section.mega-pantalla article.nota-megapantalla .container-horarios .horarios-boton a.mega-compra {
+          background-color: #FF7100;
+          border-radius: 3.125rem;
+          clear: both;
+          cursor: pointer;
+          color: #fff;
+          font-family: 'VAGRounded-bold';
+          display: block;
+          font-size: 1.125rem;
+          height: 3.125rem;
+          -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+          text-align: left;
+          padding-left: 1.125rem;
+          padding-top: 0.9375rem;
+          text-decoration: none;
+          width: 12.5rem;
+          position: relative;
+          margin-bottom: 20px; }
+          section.mega-pantalla article.nota-megapantalla .container-horarios .horarios-boton a.mega-compra:before {
+            content: "\f061";
+            position: absolute;
+            right: 1.4375rem;
+            font-family: 'FontAwesome'; }
+  section.mega-pantalla figure.video-megapantalla {
+    float: left;
+    width: 50%;
+    position: relative; }
+    section.mega-pantalla figure.video-megapantalla img {
+      width: 100%; }
 
 /********** FOOTER *************/
 footer {

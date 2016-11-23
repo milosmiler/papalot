@@ -1,10 +1,15 @@
 section.servicio-espacios{
 	.container{
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 		h2 {
 			color: $color-azul100;
 			font-size: 4.375rem;
+			width: 100%;}
+		h3{
+			color: $color-rosa;
+			text-align: center;
+			font-size: 3.125rem;
 			width: 100%;
 		}
 		article.espacios{
@@ -31,6 +36,15 @@ section.servicio-espacios{
 			p{
 				color: $color-azul100;
 				font-family: 'montserratlight';}
+			i{
+				width: 75px;
+				height: 75px;
+				border-radius: 50%;
+				border: 5px solid #404042;
+				background: $color-verde-100;
+				display: block;
+				position: relative;
+			}
 		}
 	}
 }
