@@ -99,6 +99,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav {
   *height: 0;
+  width: 300px;
 }
 .flex-direction-nav a {
   text-decoration: none;
@@ -130,25 +131,34 @@ html[xmlns] .flexslider .slides {
   transform: translate(-50%, -50%);}
 }
 .flex-direction-nav a.flex-next:before {
+  font-family: 'icomoon';
   content: "\e90d";
 }
 .flex-direction-nav .flex-prev {
-  left: -50px;
+  right: -93px;
+  top: -11px;
+  content: "\e90c";
+  -moz-transform: scaleX(-1); /* Firefox */
+  -o-transform: scaleX(-1); /* Opera */
+  -webkit-transform: scaleX(-1); /* Chrome y Safari */
+  transform: scaleX(-1); /* w3org */
+  filter: FlipH; /* Internet Explorer */
 }
 .flex-direction-nav .flex-next {
-  right: -50px;
+  left: 2px;
+  top: -52px;
   text-align: right;
+  font-family: 'icomoon';
+  content: "\e90d";
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
-  left: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
 .flexslider:hover .flex-direction-nav .flex-next {
   opacity: 0.7;
-  right: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;
