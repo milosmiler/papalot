@@ -1,0 +1,42 @@
+section.aviso-terminos{
+	padding-top: 145px;
+	h2{
+		font-size: 70px;
+		margin-top: 0px;
+		margin-bottom: 72px;
+		color: $color-azul100;}
+	h3 {
+		font-size: 22px;
+		margin-top: 0px;
+		margin-bottom: 22px;
+		color: #364659;}
+	h4{
+		color: $color-azul;}
+
+	p{
+		font-size: 18px;
+		color: 364659;
+		margin-bottom: 31px;
+		font-family: 'montserrat-regular';}
+	.column-derecha{
+		float: right;
+		width: 24%;
+		margin-top: 150px;
+		a{
+			font-size: 22px;
+			color: $color-azul100;
+			text-decoration: none;
+			font-family: 'VAGRounded-bold';
+			display: block;
+			margin-bottom: 24px;
+			&:hover{
+				color: $color-azul;
+			}
+		}
+		
+	}
+	.column-izquierda{
+		float: left;
+		width: 70%;
+		}
+}
