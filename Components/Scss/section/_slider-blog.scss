@@ -1,0 +1,51 @@
+section.slider-blog{
+	article.leyenda-blog{
+		width: 379px;
+		height: auto;
+		h2{
+			font-size: 50px;
+			color: $color-azul100;
+			margin-bottom: 20px;
+			margin-top: 0px;
+		}
+		p{
+			font-size: 18px;
+			font-family: 'montserratlight';
+			color: $color-azul100;
+			margin-bottom: 37px;
+		}
+	}
+	.container-items-blog{
+		width: 100%;
+		article.item-blog{
+			width: 380px;
+			height: auto;
+			figure.image-blog{
+				max-width: 380px;
+				img{
+					width: 100%;}
+				}
+			.content{
+				width: 100%;
+				padding: 0px 25px 34px;
+				span.date{
+					float: left;
+					font-size: 14px;}
+				span.cat{
+					float: right;
+				}
+				h3{
+					font-size: 22px;
+					color: $color-azul100;
+					margin-top: 26px;
+					margin-bottom: 19px;
+					clear: both;
+					text-align: center;}
+				p{
+					font-size: 18px;
+					font-family: 'montserratlight';
+					color: $color-azul100;}
+			}
+		}
+	}
+}

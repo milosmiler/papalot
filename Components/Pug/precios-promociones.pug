@@ -1,0 +1,48 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+	body
+		
+		include block/sedes.pug
+		include block/header.pug
+		section.flexslider
+			ul.slides
+				li
+					img(src='images/promociones.png')
+					.meta
+						h2 Este jueves vuelve #[br] a ser niño
+						span.link Explorar el museo
+					.meta-horario
+						h3 Jueves de noche especial | Niños también son bienvenidos #[br]
+						p
+							i.fa.fa-clock-o 
+							| 19:00 hrs - 23:00 hrs
+					.meta-boton
+						a.comprar-slider.sombra(href="") Comprar en linea
+				li
+					img(src='images/promociones.png')
+					.meta
+						h2 Este jueves vuelve #[br] a ser niño
+						span.link Explorar el museo
+					.meta-horario
+						h3 Jueves de noche especial | Niños también son bienvenidos
+						p
+							i.fa.fa-clock-o 
+							| 19:00 hrs - 23:00 hrs
+					.meta-boton
+						a.comprar-slider.sombra(href="") Comprar en linea
+				
+				
+		include block/precio-paquete.pug
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src='js/index.js', type="text/javascript")

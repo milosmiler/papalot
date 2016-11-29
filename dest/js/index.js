@@ -141,8 +141,8 @@ function rellenar_dias(){
                 contador++
             }
             if(contador==dia_fecha+1 && mes==fecha.getMonth() && año==(fecha.getYear())+2000-100){
-                dia[i][j].style.color="pink";
-                dia[i][j].style.border="2px solid pink";
+                dia[i][j].style.color="white";
+                dia[i][j].style.background="#00B3D0";
             }
                 
         }
@@ -211,4 +211,14 @@ function inicio_rellenar(){
 }
 
 inicio_rellenar();
+
+
+$("#owl-demo").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items : 2,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+ 
+  });
 

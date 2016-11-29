@@ -1,7 +1,21 @@
+section.horarios{
+   padding-top: 100px;
+   padding-bottom: 100px;
+  h2{
+    font-size: 70px;
+    color: $color-azul100;
+    float: left;
+    margin: 0px;
+
+  }
+}
+
 .container-calendario{
   background-color: $color-grisCL100;
   max-width: 800px;
   overflow: hidden;
+  float: right;
+   margin-bottom: 28px;
 }
 
 .contenedor_aplicacion{
@@ -37,7 +51,7 @@
   display: table;
   overflow: hidden;
 }
-h3{
+.contenedor_calendario h3{
   text-align: center;
   font-size: 40px;
   font-family: 'VAGRounded-bold';
@@ -62,6 +76,7 @@ h3{
   border-radius: 100%;
   color: $color-azul100;
   font-size: 16px;
+  padding: 10px;
 }
 .semana{
   text-transform: uppercase;
@@ -71,3 +86,52 @@ h3{
   border:none;
   color: $color-azul100;
 }
+
+.container-leyenda-horario{
+  float: left;
+  h3{
+    font-size: 18px;
+    color: $color-azul100;
+  }
+  .bloque{
+    color: #fff;
+    padding: 27px 42px;
+    margin-bottom: 21px;
+    h4{
+      font-size: 20px;
+      color:#fff; 
+      font-family: 'VAGRounded-bold';
+      margin-bottom: 21px;
+    }
+    p{
+      font-family: 'montserratlight';
+      font-size: 18px;
+      margin-bottom: 21px;
+    }
+    a{
+      text-decoration: underline;
+      color: #fff;
+      font-size: 18px;
+      font-family: 'montserratsemi-bold';
+      margin-bottom: 11px;
+      display: block;
+    }
+  }
+}
+.container-boton-horario{
+  width: 100%;
+  clear: both;
+  a{
+    @include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
+    position: relative;
+    float: right;
+  }
+}
+
+.rosa{
+  background-color: $color-rosa;
+}
+.verde{
+  background-color: $color-verde;
+}
+

@@ -429,7 +429,8 @@ section.sedes-contactos {
         text-decoration: none; }
 
 section.cover {
-  position: relative; }
+  position: relative;
+  margin-bottom: 69px; }
   section.cover img {
     width: 100%; }
   section.cover h2 {
@@ -443,7 +444,8 @@ section.cover {
     color: #fff; }
 
 section.cover-intro {
-  max-width: 1310px; }
+  max-width: 1310px;
+  margin-bottom: 95px; }
   section.cover-intro figure.imagen-cover {
     width: 54.2%;
     float: left; }
@@ -1219,10 +1221,21 @@ section.aviso-terminos {
     float: left;
     width: 70%; }
 
+section.horarios {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  section.horarios h2 {
+    font-size: 70px;
+    color: #08405C;
+    float: left;
+    margin: 0px; }
+
 .container-calendario {
   background-color: #FAFAFA;
   max-width: 800px;
-  overflow: hidden; }
+  overflow: hidden;
+  float: right;
+  margin-bottom: 28px; }
 
 .contenedor_aplicacion {
   display: table;
@@ -1257,7 +1270,7 @@ section.aviso-terminos {
   display: table;
   overflow: hidden; }
 
-h3 {
+.contenedor_calendario h3 {
   text-align: center;
   font-size: 40px;
   font-family: 'VAGRounded-bold';
@@ -1281,7 +1294,8 @@ h3 {
   font-family: 'montserratlight';
   border-radius: 100%;
   color: #08405C;
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 10px; }
 
 .semana {
   text-transform: uppercase;
@@ -1290,6 +1304,109 @@ h3 {
   font-family: 'montserrat-regular';
   border: none;
   color: #08405C; }
+
+.container-leyenda-horario {
+  float: left; }
+  .container-leyenda-horario h3 {
+    font-size: 18px;
+    color: #08405C; }
+  .container-leyenda-horario .bloque {
+    color: #fff;
+    padding: 27px 42px;
+    margin-bottom: 21px; }
+    .container-leyenda-horario .bloque h4 {
+      font-size: 20px;
+      color: #fff;
+      font-family: 'VAGRounded-bold';
+      margin-bottom: 21px; }
+    .container-leyenda-horario .bloque p {
+      font-family: 'montserratlight';
+      font-size: 18px;
+      margin-bottom: 21px; }
+    .container-leyenda-horario .bloque a {
+      text-decoration: underline;
+      color: #fff;
+      font-size: 18px;
+      font-family: 'montserratsemi-bold';
+      margin-bottom: 11px;
+      display: block; }
+
+.container-boton-horario {
+  width: 100%;
+  clear: both; }
+  .container-boton-horario a {
+    background-color: #FF7100;
+    border-radius: 3.125rem;
+    clear: both;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'VAGRounded-bold';
+    display: block;
+    font-size: 1.125rem;
+    height: 3.125rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: left;
+    padding-left: 1.125rem;
+    padding-top: 0.9375rem;
+    text-decoration: none;
+    width: 12.5rem;
+    position: relative;
+    float: right; }
+    .container-boton-horario a:before {
+      content: "\f061";
+      position: absolute;
+      right: 1.4375rem;
+      font-family: 'FontAwesome'; }
+
+.rosa {
+  background-color: #EF096E; }
+
+.verde {
+  background-color: #A4CD40; }
+
+section.slider-blog article.leyenda-blog {
+  width: 379px;
+  height: auto; }
+  section.slider-blog article.leyenda-blog h2 {
+    font-size: 50px;
+    color: #08405C;
+    margin-bottom: 20px;
+    margin-top: 0px; }
+  section.slider-blog article.leyenda-blog p {
+    font-size: 18px;
+    font-family: 'montserratlight';
+    color: #08405C;
+    margin-bottom: 37px; }
+
+section.slider-blog .container-items-blog {
+  width: 100%; }
+  section.slider-blog .container-items-blog article.item-blog {
+    width: 380px;
+    height: auto; }
+    section.slider-blog .container-items-blog article.item-blog figure.image-blog {
+      max-width: 380px; }
+      section.slider-blog .container-items-blog article.item-blog figure.image-blog img {
+        width: 100%; }
+    section.slider-blog .container-items-blog article.item-blog .content {
+      width: 100%;
+      padding: 0px 25px 34px; }
+      section.slider-blog .container-items-blog article.item-blog .content span.date {
+        float: left;
+        font-size: 14px; }
+      section.slider-blog .container-items-blog article.item-blog .content span.cat {
+        float: right; }
+      section.slider-blog .container-items-blog article.item-blog .content h3 {
+        font-size: 22px;
+        color: #08405C;
+        margin-top: 26px;
+        margin-bottom: 19px;
+        clear: both;
+        text-align: center; }
+      section.slider-blog .container-items-blog article.item-blog .content p {
+        font-size: 18px;
+        font-family: 'montserratlight';
+        color: #08405C; }
 
 /********** FOOTER *************/
 footer {
