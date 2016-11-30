@@ -1,42 +1,101 @@
 section.aviso-terminos{
-	padding-top: 145px;
+	padding-top: 9.0625rem;
 	h2{
-		font-size: 70px;
+		font-size: 4.375rem;
 		margin-top: 0px;
-		margin-bottom: 72px;
+		margin-bottom: 4.5rem;
 		color: $color-azul100;}
 	h3 {
-		font-size: 22px;
+		font-size: 1.375rem;
 		margin-top: 0px;
-		margin-bottom: 22px;
+		margin-bottom: 1.375rem;
 		color: #364659;}
 	h4{
 		color: $color-azul;}
 
 	p{
-		font-size: 18px;
-		color: 364659;
-		margin-bottom: 31px;
-		font-family: 'montserrat-regular';}
+		font-size: 1rem;
+		color: $color-footer;
+		margin-bottom: 1.9375rem;
+		font-family: 'montserratlight';}
 	.column-derecha{
 		float: right;
 		width: 24%;
-		margin-top: 150px;
+		margin-top: 9.375rem;
 		a{
-			font-size: 22px;
+			font-size: 1.375rem;
 			color: $color-azul100;
 			text-decoration: none;
 			font-family: 'VAGRounded-bold';
 			display: block;
-			margin-bottom: 24px;
+			margin-bottom: 1.5rem;
 			&:hover{
 				color: $color-azul;
 			}
+
+		}
+		.azul{
+			color: $color-azul;
 		}
 		
 	}
 	.column-izquierda{
 		float: left;
 		width: 70%;
+		span.azul{
+			color: $color-azul;}
+		}
+		span.resaltar-bold{
+			font-family: 'VAGRounded-bold';
+		}
+		h5{
+			font-size: 1.125rem;
+			font-family: 'montserrat-bold';
+			color: $color-footer;
+			margin-bottom: 1.75rem;}
+		p.destacar{
+			font-size: 1.125rem;
+			color: $color-footer;
+			font-family: 'montserrat-regular';}
+		ul.contactanos {
+			margin-left: 0px;
+			margin-bottom: 2.8125rem;
+			list-style: none;
+			li{
+				font-size: 1.125rem;
+				color: $color-footer;
+				font-family: 'montserrat-regular';}
+		}
+		ol.politicas-ventas{
+			margin-left: 0.9375rem;
+			li{
+				font-size: 1rem;
+				color: $color-footer;
+				margin-bottom: 1.9375rem;
+				text-rendering: auto; 
+				-webkit-font-smoothing: antialiased; 
+				-moz-osx-font-smoothing: grayscale;
+				font-family: 'montserratlight';}
+		}
+		ol.facturacion{
+			margin-left: 0.9375rem;
+			li{
+				font-size: 1rem;
+				color: $color-footer;
+				text-rendering: auto; 
+				-webkit-font-smoothing: antialiased; 
+				-moz-osx-font-smoothing: grayscale;
+				font-family: 'montserratlight';}
+		}
+		ul{
+			margin-left: 0.9375rem;
+			li{
+				font-size: 1rem;
+				color: $color-footer;
+				text-rendering: auto; 
+				-webkit-font-smoothing: antialiased; 
+				-moz-osx-font-smoothing: grayscale;
+				font-family: 'montserratlight';
+			}
 		}
 }

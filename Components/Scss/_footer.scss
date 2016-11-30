@@ -2,17 +2,16 @@ footer{
     width: 100%;
     background-color:$color-footer;
     height: auto;
-    padding-top: 33px;
-    padding-bottom: 33px;
+    padding: 2.0625rem 10px;
     clear: both;
     aside.social{
         border-bottom: 3px solid $color-azul-footer;
         color: #fff;
-        padding-bottom: 30px;
+        padding-bottom: 1.875rem;
         justify-content: space-between;
         align-items: center;
         .container-newsletter{
-             width: 23.4%;
+             width: 280px;
              position:relative;
             input.newsletter{
                 border: 1px solid rgba(255, 255, 255, 0.5);
@@ -21,19 +20,19 @@ footer{
                 input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 14px; font-family:'montserratlight';}
                 input:-moz-placeholder {color: rgba(255, 255, 255, 0.5);font-size: 14px; font-family:'montserratlight';}
                 input:-ms-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 14px; font-family:'montserratlight';}
-                padding: 5px 20px;
+                padding: 0.3125rem 1.25rem;
                 height: 40px;
                 width: 100%;}
             .fa-envelope:before {
                 color: rgba(255, 255, 255, 0.5);
                 position: absolute;
-                top: 14px;
-                right: 10px;}
+                top: 0.875rem;
+                right: 0.625rem;}
             }
         .social{
             align-items: center;
             justify-content: space-between;
-            width: 425px;
+            width: 32%;
             position: relative;
             h2{
               font-size: 1.125rem;
@@ -43,10 +42,10 @@ footer{
                 background-color: rgba(255, 255, 255, 0.5);
                 border-radius: 50%;
                 display: inline-block;
-                margin-right: 10px;
+                margin-right: 0.625rem;
                 position: relative;
-                height: 38px;
-                width: 38px;
+                height: 2.375rem;
+                width: 2.375rem;
                 a{
                     color: $color-footer;
                     text-decoration: none;
@@ -59,16 +58,17 @@ footer{
         }
     }
     section.contactanos{
-        display: table;
+        overflow: hidden;
         .column{
-            display: table-cell;
+            float: left;
+            width: 50%;
             color: #fff;
-            width: 30%;
             position: relative;
+            transition: all 0.3s;
             h2{
                 color: $color-azul-footer;
-                margin-top: 33px;
-                margin-bottom: 48px;
+                margin-top: 2.0625rem;
+                margin-bottom: 3rem;
                 font-size: 1.375rem;}
             p{
                 font-family: 'montserratlight';
@@ -77,9 +77,9 @@ footer{
                 background: transparent;}
             ul{
                 list-style: none;
-                margin-left: 50px;
+                margin-left: 3.125rem;
                 li{
-                    margin-bottom: 26px;
+                    margin-bottom: 1.625rem;
                     font-size: 1.125rem;
                     font-family: 'VAGRounded-bold';
                     text-rendering: auto; 
@@ -95,12 +95,34 @@ footer{
                         content: "\f095";}
                     }
             }
-            form.enviar{
+            
+        }
+        .column2{
+            float: right;
+            color: #fff;
+            width: 39%;
+            transition: all 0.3s;
+            h2{
+                color: $color-azul-footer;
+                margin-top: 2.0625rem;
+                margin-bottom: 3rem;
+                font-size: 1.375rem;}
+            p{
+                font-family: 'montserratlight';
+                margin:0px;}
+           form.enviar{
                 input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 0.75rem; font-family:'montserrat-regular';}
                 input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 0.75rem; font-family:'montserrat-regular';}
                 input:-moz-placeholder {color: rgba(255, 255, 255, 0.5);font-size: 0.75rem; font-family:'montserrat-regular';}
                 input:-ms-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 0.75rem; font-family:'montserrat-regular';}
-                 input.email {
+                input{
+                background: transparent;}
+                span.leyenda-privacidad{
+                    margin-left:0.625rem;
+                    font-family: 'montserratlight';
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 0.75rem;}
+                input.email {
                     border-top: 1px solid rgba(255, 255, 255, 0.5);
                     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
                     border-left: none;
@@ -118,41 +140,41 @@ footer{
                     border-left: none;
                     border-right: none;
                     height: 45px;}
-
                 select.comentario{
                     width: 100%;}
-
                 textarea{
+                    margin-bottom: 0.875rem;
                     width: 100%;
                     background: transparent;
                     border-top: 1px solid rgba(255, 255, 255, 0.5);
                     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
                     border-left: none;
                     border-right: none;
-                    padding-left:23px;
-                    padding-top: 17px;
-                    height: 122px;}
+                    padding-left:1.4375rem;
+                    padding-top: 1.0625rem;
+                    height: 7.625rem;}
                 a.enviar{
-                    @include boton-borde( $color-turqueza, 140px, $color-turqueza);
+                    @include boton-borde( $color-turqueza, 8.75rem, $color-turqueza);
                     font-family: 'VAGRounded-bold';
-                    padding-top: 10px;
+                    padding-top: 0.625rem;
                     text-align: center;
                     position: relative;
+                    float: right;
                     &:before{
                         content: "\f061";
                         position: absolute;
-                        right: 20px;
+                        right: 1.25rem;
                         font-family: 'FontAwesome';}
                     }
             }
-            
         }
 
     }
+
     .nav-footer{
         width: 100%;
         overflow: hidden;
-        margin-top: 54px;
+        margin-top: 3.375rem;
         ul{
             float: left;
             list-style: none;
@@ -163,7 +185,7 @@ footer{
                     text-decoration: none;
                     font-size: 0.75rem;
                     font-family: 'montserratlight';
-                    margin-right: 26px;
+                    margin-right: 1.625rem;
                     position: relative;
                     &:last-of-type{
                         font-family: 'VAGRounded-bold';
@@ -172,7 +194,7 @@ footer{
                         content: "|";
                         color: rgba(255, 255, 255, 0.5);
                         position:absolute;
-                        right: -15px;
+                        right: -0.9375rem;
                     }
                 }
             }
@@ -181,7 +203,7 @@ footer{
             float: right;
             max-width: 200px;
             height: auto;
-            padding-top: 5px;
+            padding-top: 0.3125rem;
             img{
                 vertical-align: middle;
                 width: 100%;

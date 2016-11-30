@@ -115,13 +115,13 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   position: relative;
 }
 .flex-direction-nav a:before {
   font-family: 'icomoon';
-  font-size: 65px;
+  font-size: 4.0625rem;
   display: inline-block;
   content: "\e90c";
   color: #fff;
@@ -135,8 +135,8 @@ html[xmlns] .flexslider .slides {
   content: "\e90d";
 }
 .flex-direction-nav .flex-prev {
-  right: -93px;
-  top: -11px;
+  right: -5.8125rem;
+  top: -0.6875rem;
   content: "\e90c";
   -moz-transform: scaleX(-1); /* Firefox */
   -o-transform: scaleX(-1); /* Opera */
@@ -145,8 +145,8 @@ html[xmlns] .flexslider .slides {
   filter: FlipH; /* Internet Explorer */
 }
 .flex-direction-nav .flex-next {
-  left: 2px;
-  top: -52px;
+  left: 0.125rem;
+  top: -3.25rem;
   text-align: right;
   font-family: 'icomoon';
   content: "\e90d";

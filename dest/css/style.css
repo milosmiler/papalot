@@ -380,8 +380,9 @@ header {
           margin-right: 0px; }
         header .container nav ul li a {
           text-decoration: none;
-          font-size: 1.25rem;
+          font-size: 1rem;
           font-family: 'VAGRounded-bold';
+          text-transform: uppercase;
           color: #fff; }
 
 /********** SECCIONES ***********/
@@ -731,7 +732,8 @@ section.notas {
 
 section.padrinos article.marcas {
   width: 73%;
-  float: left; }
+  float: left;
+  position: relative; }
 
 section.padrinos article.leyenda-content {
   background-color: #FF4200;
@@ -1186,40 +1188,91 @@ section#timeline article:nth-child(2n+2) div.inner h2:after {
   left: -0.3125rem; }
 
 section.aviso-terminos {
-  padding-top: 145px; }
+  padding-top: 9.0625rem; }
   section.aviso-terminos h2 {
-    font-size: 70px;
+    font-size: 4.375rem;
     margin-top: 0px;
-    margin-bottom: 72px;
+    margin-bottom: 4.5rem;
     color: #08405C; }
   section.aviso-terminos h3 {
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-top: 0px;
-    margin-bottom: 22px;
+    margin-bottom: 1.375rem;
     color: #364659; }
   section.aviso-terminos h4 {
     color: #00C0F2; }
   section.aviso-terminos p {
-    font-size: 18px;
-    color: 364659;
-    margin-bottom: 31px;
-    font-family: 'montserrat-regular'; }
+    font-size: 1rem;
+    color: #364659;
+    margin-bottom: 1.9375rem;
+    font-family: 'montserratlight'; }
   section.aviso-terminos .column-derecha {
     float: right;
     width: 24%;
-    margin-top: 150px; }
+    margin-top: 9.375rem; }
     section.aviso-terminos .column-derecha a {
-      font-size: 22px;
+      font-size: 1.375rem;
       color: #08405C;
       text-decoration: none;
       font-family: 'VAGRounded-bold';
       display: block;
-      margin-bottom: 24px; }
+      margin-bottom: 1.5rem; }
       section.aviso-terminos .column-derecha a:hover {
         color: #00C0F2; }
+    section.aviso-terminos .column-derecha .azul {
+      color: #00C0F2; }
   section.aviso-terminos .column-izquierda {
     float: left;
     width: 70%; }
+    section.aviso-terminos .column-izquierda span.azul {
+      color: #00C0F2; }
+  section.aviso-terminos span.resaltar-bold {
+    font-family: 'VAGRounded-bold'; }
+  section.aviso-terminos h5 {
+    font-size: 1.125rem;
+    font-family: 'montserrat-bold';
+    color: #364659;
+    margin-bottom: 1.75rem; }
+  section.aviso-terminos p.destacar {
+    font-size: 1.125rem;
+    color: #364659;
+    font-family: 'montserrat-regular'; }
+  section.aviso-terminos ul.contactanos {
+    margin-left: 0px;
+    margin-bottom: 2.8125rem;
+    list-style: none; }
+    section.aviso-terminos ul.contactanos li {
+      font-size: 1.125rem;
+      color: #364659;
+      font-family: 'montserrat-regular'; }
+  section.aviso-terminos ol.politicas-ventas {
+    margin-left: 0.9375rem; }
+    section.aviso-terminos ol.politicas-ventas li {
+      font-size: 1rem;
+      color: #364659;
+      margin-bottom: 1.9375rem;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: 'montserratlight'; }
+  section.aviso-terminos ol.facturacion {
+    margin-left: 0.9375rem; }
+    section.aviso-terminos ol.facturacion li {
+      font-size: 1rem;
+      color: #364659;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: 'montserratlight'; }
+  section.aviso-terminos ul {
+    margin-left: 0.9375rem; }
+    section.aviso-terminos ul li {
+      font-size: 1rem;
+      color: #364659;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-family: 'montserratlight'; }
 
 section.horarios {
   padding-top: 100px;
@@ -1413,13 +1466,12 @@ footer {
   width: 100%;
   background-color: #364659;
   height: auto;
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding: 2.0625rem 10px;
   clear: both; }
   footer aside.social {
     border-bottom: 3px solid #4CD1FF;
     color: #fff;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1427,12 +1479,12 @@ footer {
         -ms-flex-align: center;
             align-items: center; }
     footer aside.social .container-newsletter {
-      width: 23.4%;
+      width: 280px;
       position: relative; }
       footer aside.social .container-newsletter input.newsletter {
         border: 1px solid rgba(255, 255, 255, 0.5);
         background-color: #35485D;
-        padding: 5px 20px;
+        padding: 0.3125rem 1.25rem;
         height: 40px;
         width: 100%; }
         footer aside.social .container-newsletter input.newsletter input::-webkit-input-placeholder {
@@ -1454,8 +1506,8 @@ footer {
       footer aside.social .container-newsletter .fa-envelope:before {
         color: rgba(255, 255, 255, 0.5);
         position: absolute;
-        top: 14px;
-        right: 10px; }
+        top: 0.875rem;
+        right: 0.625rem; }
     footer aside.social .social {
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -1463,7 +1515,7 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      width: 425px;
+      width: 32%;
       position: relative; }
       footer aside.social .social h2 {
         font-size: 1.125rem;
@@ -1472,10 +1524,10 @@ footer {
         background-color: rgba(255, 255, 255, 0.5);
         border-radius: 50%;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 0.625rem;
         position: relative;
-        height: 38px;
-        width: 38px; }
+        height: 2.375rem;
+        width: 2.375rem; }
         footer aside.social .social i a {
           color: #364659;
           text-decoration: none;
@@ -1486,16 +1538,18 @@ footer {
           -webkit-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%); }
   footer section.contactanos {
-    display: table; }
+    overflow: hidden; }
     footer section.contactanos .column {
-      display: table-cell;
+      float: left;
+      width: 50%;
       color: #fff;
-      width: 30%;
-      position: relative; }
+      position: relative;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
       footer section.contactanos .column h2 {
         color: #4CD1FF;
-        margin-top: 33px;
-        margin-bottom: 48px;
+        margin-top: 2.0625rem;
+        margin-bottom: 3rem;
         font-size: 1.375rem; }
       footer section.contactanos .column p {
         font-family: 'montserratlight';
@@ -1504,9 +1558,9 @@ footer {
         background: transparent; }
       footer section.contactanos .column ul {
         list-style: none;
-        margin-left: 50px; }
+        margin-left: 3.125rem; }
         footer section.contactanos .column ul li {
-          margin-bottom: 26px;
+          margin-bottom: 1.625rem;
           font-size: 1.125rem;
           font-family: 'VAGRounded-bold';
           text-rendering: auto;
@@ -1519,23 +1573,44 @@ footer {
             left: -3.0625rem;
             top: 0.125rem;
             content: "\f095"; }
-      footer section.contactanos .column form.enviar input::-webkit-input-placeholder {
+    footer section.contactanos .column2 {
+      float: right;
+      color: #fff;
+      width: 39%;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s; }
+      footer section.contactanos .column2 h2 {
+        color: #4CD1FF;
+        margin-top: 2.0625rem;
+        margin-bottom: 3rem;
+        font-size: 1.375rem; }
+      footer section.contactanos .column2 p {
+        font-family: 'montserratlight';
+        margin: 0px; }
+      footer section.contactanos .column2 form.enviar input::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column form.enviar input::-webkit-input-placeholder {
+      footer section.contactanos .column2 form.enviar input::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column form.enviar input:-moz-placeholder {
+      footer section.contactanos .column2 form.enviar input:-moz-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column form.enviar input:-ms-input-placeholder {
+      footer section.contactanos .column2 form.enviar input:-ms-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column form.enviar input.email {
+      footer section.contactanos .column2 form.enviar input {
+        background: transparent; }
+      footer section.contactanos .column2 form.enviar span.leyenda-privacidad {
+        margin-left: 0.625rem;
+        font-family: 'montserratlight';
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.75rem; }
+      footer section.contactanos .column2 form.enviar input.email {
         border-top: 1px solid rgba(255, 255, 255, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         border-left: none;
@@ -1544,7 +1619,7 @@ footer {
         width: 50%;
         height: 45px;
         float: left; }
-      footer section.contactanos .column form.enviar input.nombre {
+      footer section.contactanos .column2 form.enviar input.nombre {
         float: right;
         padding-left: 23px;
         width: 50%;
@@ -1553,19 +1628,20 @@ footer {
         border-left: none;
         border-right: none;
         height: 45px; }
-      footer section.contactanos .column form.enviar select.comentario {
+      footer section.contactanos .column2 form.enviar select.comentario {
         width: 100%; }
-      footer section.contactanos .column form.enviar textarea {
+      footer section.contactanos .column2 form.enviar textarea {
+        margin-bottom: 0.875rem;
         width: 100%;
         background: transparent;
         border-top: 1px solid rgba(255, 255, 255, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         border-left: none;
         border-right: none;
-        padding-left: 23px;
-        padding-top: 17px;
-        height: 122px; }
-      footer section.contactanos .column form.enviar a.enviar {
+        padding-left: 1.4375rem;
+        padding-top: 1.0625rem;
+        height: 7.625rem; }
+      footer section.contactanos .column2 form.enviar a.enviar {
         border-radius: 50px;
         background: transparent;
         border: 4px solid #00B3D0;
@@ -1576,20 +1652,21 @@ footer {
         font-size: 14px;
         height: 45px;
         text-decoration: none;
-        width: 140px;
+        width: 8.75rem;
         font-family: 'VAGRounded-bold';
-        padding-top: 10px;
+        padding-top: 0.625rem;
         text-align: center;
-        position: relative; }
-        footer section.contactanos .column form.enviar a.enviar:before {
+        position: relative;
+        float: right; }
+        footer section.contactanos .column2 form.enviar a.enviar:before {
           content: "\f061";
           position: absolute;
-          right: 20px;
+          right: 1.25rem;
           font-family: 'FontAwesome'; }
   footer .nav-footer {
     width: 100%;
     overflow: hidden;
-    margin-top: 54px; }
+    margin-top: 3.375rem; }
     footer .nav-footer ul {
       float: left;
       list-style: none; }
@@ -1598,7 +1675,7 @@ footer {
         text-decoration: none;
         font-size: 0.75rem;
         font-family: 'montserratlight';
-        margin-right: 26px;
+        margin-right: 1.625rem;
         position: relative; }
         footer .nav-footer ul li a:last-of-type {
           font-family: 'VAGRounded-bold';
@@ -1607,12 +1684,12 @@ footer {
           content: "|";
           color: rgba(255, 255, 255, 0.5);
           position: absolute;
-          right: -15px; }
+          right: -0.9375rem; }
     footer .nav-footer figure.aprendo {
       float: right;
       max-width: 200px;
       height: auto;
-      padding-top: 5px; }
+      padding-top: 0.3125rem; }
       footer .nav-footer figure.aprendo img {
         vertical-align: middle;
         width: 100%; }
@@ -1634,17 +1711,29 @@ footer {
   body {
     height: 100vh; }
   .container {
-    max-width: 959px !important;
-    padding: 0px 10px; } }
+    max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
   header .container nav {
     display: none; }
-  section.contactanos {
-    padding: 5px; }
-    section.contactanos .column {
-      display: block !important;
-      width: 100% !important; } }
+  footer aside.social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  footer aside.social .social {
+    width: 90%;
+    margin-top: 10px; }
+  footer section.contactanos .column {
+    width: 90%;
+    float: none;
+    display: block;
+    margin: auto; }
+  footer section.contactanos .column2 {
+    width: 95%;
+    float: none;
+    display: block;
+    margin: auto; } }
 
 @-webkit-keyframes dothabottomcheck {
   0% {

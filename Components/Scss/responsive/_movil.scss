@@ -2,19 +2,33 @@
     header{
         .container{
             nav{
-                display: none;
-            }
+                display: none;}
         }
     }
 
-
-   section.contactanos{
-    padding: 5px;
-        .column{
-            display: block!important;
-            width: 100%!important;
-        }
+    footer aside.social{
+        flex-direction: column;
     }
+
+    footer aside.social .social{
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    footer section.contactanos .column{
+        width: 90%;
+        float: none;
+        display: block;
+        margin: auto;}
+
+    footer section.contactanos .column2{
+        width: 95%;
+        float: none;
+        display: block;
+        margin: auto;}
+
+
+   
 }
 
 
