@@ -7,6 +7,7 @@ html(lang="es")
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(href="css/style.css", rel="stylesheet", type="text/css")
 		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
 		include block/sedes.pug
@@ -14,12 +15,13 @@ html(lang="es")
 		//- include block/aviso.pug
 		//- include block/termino.pug
 		include block/slider.pug
+		include block/slider-reino.pug
 		//- include block/slider-blog.pug
 		//- include block/horarios.pug
 		//- include block/cover.pug
 		//- include block/renovado.pug
 		//- include block/plan.pug
-		//- include block/notas.pug
+		include block/notas.pug
 		include block/slider-patrocinador.pug
 		//- include block/experiencia-contenido.pug
 		//- include block/precio-paquete.pug
@@ -31,4 +33,6 @@ html(lang="es")
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(src="js/jquery.flexslider-min.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
 		script(src='js/index.js', type="text/javascript")

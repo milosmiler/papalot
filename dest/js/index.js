@@ -1,7 +1,33 @@
 $(function(){
-	 $('.flexslider').flexslider({
-    animation: "slide"
-  });
+
+    $('.bxslider').bxSlider();
+    
+    $('.flexslider').flexslider({
+        animation: "slide"
+    });
+      $('#slider-1').flexboxslider({
+        max_height: 500,
+        items: 1,
+        interval: 6000,
+        timer: true,
+        // show_nav:false,
+        // animation_duration: 600,
+        // easing:'easeOutSine' //with jquery ui
+        // etc ...
+    });
+
+    $('#slider-2').flexboxslider({
+        max_height: 300,
+        // items:3,
+        timer: false
+    });
+
+    $('#slider-3').flexboxslider({
+        //  max_height:300,
+        items: 4
+    });
+
+
 
 })
 

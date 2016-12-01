@@ -1,0 +1,43 @@
+section.slider-reino{
+	ul.bxslider{
+		li{
+			padding-right: 5px;
+			padding-left: 5px;
+			.content{
+				padding-left: 58px;
+				padding-bottom: 48px;
+				width: 46%;
+				height: auto;
+				position: absolute;
+				background: #fff;
+				-webkit-transform: translateX(-50%);
+			    -moz-transform: translateX(-50%);
+			    -ms-transform: translateX(-50%);
+			    transform: translateX(-50%);
+			    left: 40%;
+			    top: 20%;
+			    h2{
+			    	font-size: 50px;
+			    	color: $color-azul100;
+			    	margin-bottom: 36px;
+			    	margin-top: 0px;}
+			    p{
+			    	font-family: 'montserratlight';
+			    	font-size: 18px;
+			    	color: $color-azul100;
+			    	margin-bottom: 33px;}
+			    a.comprar-slider{
+			    	@include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
+			    	position: relative;
+			    }
+			}
+			figure.image-reino{
+				float: right;
+				width: 64%;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

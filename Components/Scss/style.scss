@@ -154,10 +154,12 @@
 }
 .icon-left-arrow:before {
   content: "\e90c";
+  color: #08405C;
   
 }
 .icon-right-arrow:before {
   content: "\e90d";
+  color: #08405C;
   
 }
 .icon-instagram:before {
@@ -197,6 +199,7 @@
 @import "section/_aviso-termino.scss";
 @import "section/_horarios.scss";
 @import "section/_slider-blog.scss";
+@import "section/_slider-reino.scss";
 
 /********** FOOTER *************/
 @import "_footer.scss";
