@@ -5,7 +5,7 @@ section.nota-contenido{
 	padding-right: 5px;
 	margin-bottom:93px;
 	figure.imagen-contenido{
-		max-width: 58%;
+		    max-width: 51.9%;
 		height: auto;
 		img{
 			width: 100%;
@@ -14,14 +14,17 @@ section.nota-contenido{
 	}
 	article.leyenda-contenido{
 		background: #fff;
-		max-width: 676px;
+		max-width: 680px;
 		position: absolute;
 		left: 41.875rem;
-		top: 6.25rem;
+		top: 2.25rem;
 		padding-left: 3.25rem;
+		padding-right: 67px;
+		padding-bottom: 85px;
 		h2{
 			color: $color-azul100;
 			font-size: 3.125rem;
+			margin-top: 83px;
 			margin-bottom: 1.6875rem; 
 		}
 		p{
@@ -29,9 +32,7 @@ section.nota-contenido{
 			color: $color-azul100;
 			margin-bottom: 2rem;
 			span{
-				font-family: 'montserrat-bold';
-
-			}
+				font-family: 'montserrat-bold';}
 		}
 
 	}
@@ -58,8 +59,10 @@ section.nota-contenido-derecho{
 		max-width: 676px;
 		position: absolute;
 		right: 41.875rem;
-		top: 6.25rem;
-		padding-left: 3.25rem;
+		top: 2.25rem;
+    	padding-right: 3.25rem;
+    	padding-left: 4.1875rem;
+    	text-align: right;
 		h2{
 			color: $color-azul100;
 			font-size: 3.125rem;

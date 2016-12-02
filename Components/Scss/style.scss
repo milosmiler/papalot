@@ -78,7 +78,7 @@
   left: 50%; 
   transform: translate(-50%, -50%);
   color: #404042;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 .icon-discapacidad:before {
   content: "\e904";
@@ -200,6 +200,7 @@
 @import "section/_horarios.scss";
 @import "section/_slider-blog.scss";
 @import "section/_slider-reino.scss";
+@import "section/_papalote-renovado.scss";
 
 /********** FOOTER *************/
 @import "_footer.scss";

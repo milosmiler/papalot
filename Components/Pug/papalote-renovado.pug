@@ -1,0 +1,80 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+	body
+		include block/sedes.pug
+		include block/header.pug
+		section.cover
+			img(src="images/papalote-renovado1.png")
+			h2 Conoce PAPALOTE #[br] RENOVADO
+
+		section.desplegado
+			article.column
+				h2 Te presentamos #[br] PAPALOTE RENOVADO
+				.row
+					figure.image-renovado
+						img(src="images/nino1.png")
+					.content
+						h3 23 años generando sonrisas
+				.row
+					figure.image-renovado
+						img(src="images/nino2.png")
+					.content
+						h3 Un mágico edificio
+						p Mejores instalaciones
+						ul
+							li Salón de usos multiples
+							li Zona de comida
+							li Tienda
+						ul
+							li Vestíbulo
+							li Estacionamiento
+							li Jardín escolar
+				.row
+					figure.image-renovado
+						img(src="images/nino3.png")
+					.content
+						h3 No se te olvide incluir un graaaan jardín exterior de 2 mil metros cuadrados
+				.row
+					figure.image-renovado
+						img(src="images/nino4.png")
+					.content
+						h3 Una nueva historia que contar: 
+							span.azul “Hay una estrella en ti.”
+				.row
+					figure.image-renovado
+						img(src="images/nino5.png")
+					.content
+						h3 Para jugar en equipo,
+						p ¡se integran 6 divertidísimos amigos!
+						h4 La pandilla PAPALOTE 
+						ul
+							li Ojitos
+							li Animalón
+							li Pelusa y Peludín
+						ul
+							li Chimuelina
+							li Savichi
+			article.column2
+					img(src="images/PapaloteRenovado_Desplegado.png")
+
+		section.experiencia
+			h2 Nuevas experiencias en seis #[br] increíbles contenidos
+		include block/experiencia-contenido.pug
+		include block/servicio-espacio.pug
+
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")
