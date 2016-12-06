@@ -227,7 +227,7 @@ function inicio_rellenar(){
 inicio_rellenar();
 
 
-$('section.mega-pantalla  figure.video-megapantalla a#play-video').click(function(e){
+$('#play-video').click(function(e){
     e.preventDefault();
 
       $('#video-overlay').addClass('open');

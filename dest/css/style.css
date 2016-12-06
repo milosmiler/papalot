@@ -1813,58 +1813,60 @@ section.slider-blog .container-items-blog {
         font-family: 'montserratlight';
         color: #08405C; }
 
-section.slider-reino ul.bxslider li {
-  padding-right: 5px;
-  padding-left: 5px; }
-  section.slider-reino ul.bxslider li .content {
-    padding-left: 58px;
-    padding-bottom: 48px;
-    width: 46%;
-    height: auto;
-    position: absolute;
-    background: #fff;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    left: 40%;
-    top: 20%; }
-    section.slider-reino ul.bxslider li .content h2 {
-      font-size: 50px;
-      color: #08405C;
-      margin-bottom: 36px;
-      margin-top: 0px; }
-    section.slider-reino ul.bxslider li .content p {
-      font-family: 'montserratlight';
-      font-size: 18px;
-      color: #08405C;
-      margin-bottom: 33px; }
-    section.slider-reino ul.bxslider li .content a.comprar-slider {
-      background-color: #FF7100;
-      border-radius: 3.125rem;
-      clear: both;
-      cursor: pointer;
-      color: #fff;
-      font-family: 'VAGRounded-bold';
-      display: block;
-      font-size: 1.125rem;
-      height: 3.125rem;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      text-align: left;
-      padding-left: 1.125rem;
-      padding-top: 0.9375rem;
-      text-decoration: none;
-      width: 12.5rem;
-      position: relative; }
-      section.slider-reino ul.bxslider li .content a.comprar-slider:before {
-        content: "\f061";
-        position: absolute;
-        right: 1.4375rem;
-        font-family: 'FontAwesome'; }
-  section.slider-reino ul.bxslider li figure.image-reino {
-    float: right;
-    width: 64%; }
-    section.slider-reino ul.bxslider li figure.image-reino img {
-      width: 100%; }
+section.slider-reino ul.bxslider {
+  margin: auto; }
+  section.slider-reino ul.bxslider li {
+    padding-right: 5px;
+    padding-left: 5px; }
+    section.slider-reino ul.bxslider li .content {
+      padding-left: 58px;
+      padding-bottom: 48px;
+      width: 46%;
+      height: auto;
+      position: absolute;
+      background: #fff;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 40%;
+      top: 20%; }
+      section.slider-reino ul.bxslider li .content h2 {
+        font-size: 50px;
+        color: #08405C;
+        margin-bottom: 36px;
+        margin-top: 0px; }
+      section.slider-reino ul.bxslider li .content p {
+        font-family: 'montserratlight';
+        font-size: 18px;
+        color: #08405C;
+        margin-bottom: 33px; }
+      section.slider-reino ul.bxslider li .content a.comprar-slider {
+        background-color: #FF7100;
+        border-radius: 3.125rem;
+        clear: both;
+        cursor: pointer;
+        color: #fff;
+        font-family: 'VAGRounded-bold';
+        display: block;
+        font-size: 1.125rem;
+        height: 3.125rem;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        text-align: left;
+        padding-left: 1.125rem;
+        padding-top: 0.9375rem;
+        text-decoration: none;
+        width: 12.5rem;
+        position: relative; }
+        section.slider-reino ul.bxslider li .content a.comprar-slider:before {
+          content: "\f061";
+          position: absolute;
+          right: 1.4375rem;
+          font-family: 'FontAwesome'; }
+    section.slider-reino ul.bxslider li figure.image-reino {
+      float: right;
+      width: 64%; }
+      section.slider-reino ul.bxslider li figure.image-reino img {
+        width: 100%; }
 
 section.desplegado {
   overflow: hidden;
@@ -2454,7 +2456,21 @@ footer {
     width: 95%;
     float: none;
     display: block;
-    margin: auto; } }
+    margin: auto; }
+  footer .nav-footer figure.aprendo {
+    float: none;
+    margin: auto; }
+  footer .nav-footer ul {
+    text-align: center;
+    width: 100%; }
+  section.aviso-terminos .column-izquierda {
+    float: none;
+    width: 100%;
+    padding: 0px 10px; }
+  section.aviso-terminos h2 {
+    text-align: center; }
+  section.aviso-terminos .column-derecha {
+    display: none; } }
 
 @-webkit-keyframes dothabottomcheck {
   0% {

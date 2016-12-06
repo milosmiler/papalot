@@ -41,10 +41,6 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border:  5px solid #fff;
 	left: -5px;
 	background: #fff;
 	
@@ -128,9 +124,7 @@
 	font-size: 22px;
 }
 
-.bx-wrapper .bx-controls-direction a:before{
-	font-family: 'icomoon';
-}
+
 
 .bx-wrapper .bx-prev:hover {
 	background-position: 0 0;
@@ -151,6 +145,12 @@
 	z-index: 9999;
 }
 
+.bx-wrapper .bx-controls-direction a.bx-prev {
+	left: 10px;
+	content: "\e90c";
+	font-family: 'icomoon';
+	color: #08405C;
+}
 .bx-wrapper .bx-controls-direction a.disabled {
 	display: none;
 }
