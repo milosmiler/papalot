@@ -9,12 +9,74 @@ html(lang="es")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
-		
 		include block/sedes.pug
 		include block/header.pug
-		include block/cover.pug
-		include block/megapantalla.pug
+		section.cover
+			img(src="images/ado-megapantalla.png")
+			h2 ADO Megapantalla #[br]IMAX
+		section.cover-intro
+			figure.imagen-cover
+				img(src="images/Pois_imax_04g.png")
+			article.leyenda-intro
+				h2 ¡La ADO Megapantalla IMAX de PAPALOTE es una de las salas IMAX más grandes del mundo! 
+
+				p A lo largo de 23 años, los visitantes han realizado increíbles viajes a los confines de nuestro planeta, como el Polo Norte, la sabana africana o las Islas Galápagos; han conocido otras culturas como la Maya, Árabe, Egipcia, Griega, entre otras; e incluso han recorrido el interior del cuerpo humano, y aprendido sobre la tecnología de los helicópteros y la estación espacial en más de 70 películas.
+
+				p Gracias a su tecnología, que utiliza una pantalla curva de 17x24 metros, butacas colocadas estratégicamente frente a la pantalla, sonido envolvente y gran nitidez, la ADO Megapantalla IMAX es un espacio único “donde vives las imágenes”.
+
+		.container
+			section.mega-pantalla.z-depth-4
+				article.nota-megapantalla
+					span.cat ADO MEGAPANTALLA IMAX
+					h2 Ballenas 3D
+					p Vive una nueva aventura marina y sumérgete en el reino oculto del mamífero más grande y fascinante del mundo. En un chapuzón de 45 minutos, con impresionantes imágenes en tercera dimensión y una emotiva banda sonora, descubrirás cómo es la vida marina desde la visión de las ballenas jorobadas: ¿Cómo se comunican?, ¿Qué cantan?, ¿Cómo se alimentan?, ¿Qué juegan? y ¿Cómo cuidan a sus pequeños? Además, comprenderás los peligros que enfrentan y las razones por las que hace 50 años estuvieron a punto de extinguirse. 
+					.container-horarios
+						.horarios
+							h3 horarios
+							p Lunes a viernes: #[br]
+								span 10:30, 12:30, 14:30 y 16:30 hrs.
+							p Jueves (función adicionales): #[br] 
+								span 20:30 hrs.
+							p Sábado, domingo y días festivos: #[br] 
+								span 10:30, 12:30, 14:30, 16:30 y 18:30 hrs.
+						.horarios-boton
+							a.mega-compra.sombra(href="") Comprar en linea
+
+				figure.video-megapantalla
+					img(src="images/ballenas.png")
+					a#play-video.video-play-button(href='#')
+						span
+					#video-overlay.video-overlay
+						a.video-overlay-close ×
+			
+
+			section.mega-pantalla.z-depth-4
+				figure.video-megapantalla
+
+					img(src="images/america.png")
+						
+					a#play-video.video-play-button(href='#')
+						span
+
+				article.nota-megapantalla
+					span.cat ADO MEGAPANTALLA IMAX
+					h2 Parques Nacionales: La Aventura en América Salvaje 3D
+					p Acompaña a un grupo de exploradores para conocer los parques nacionales más famosos de Norteamérica. Recorrerás increíbles cañones, montañas cubiertas de nieve, lagos de agua cristalina y bosques de grandes árboles en parques nacionales como Yosemite, Yellowstone, el Gran Cañón, el Parque Nacional Redwood y el Parque Nacional Everglades. ¡Saca al aventurero que llevas dentro y disfruta esta aventura fuera de serie!
+
+					.container-horarios
+						.horarios
+							h3 horarios
+							p Lunes a viernes: #[br]
+								span 11:30, 13:30 y 15:30 hrs.
+							p Jueves (función adicional): #[br] 
+								span 19:30 y 21:30 hrs.
+							p Sábado, domingo y días festivos: #[br] 
+								span 11:30, 13:30, 15:30 y 17:30 hrs
+						.horarios-boton
+							a.mega-compra(href="") Comprar en linea
 		span.ir-arriba
+		#video-overlay.video-overlay
+						a.video-overlay-close ×
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(src="js/jquery.flexslider-min.js")

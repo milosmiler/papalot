@@ -1,0 +1,207 @@
+section.zona{
+	padding-top: 5.9375rem;
+	h2{
+		font-size: 3.125rem;
+		color: $color-azul100;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 3.125rem;
+	}
+	.circulo{
+		margin-right: 1.875rem;
+		width: 10.4375rem;
+		height: 10.4375rem;
+		border: 6px solid $color-azul;
+		float: left;
+		text-align: center;
+		border-radius: 6.25rem;
+		-webkit-box-shadow: 0px 2px 34px -6px rgba(0,0,0,0.48);
+		-moz-box-shadow: 0px 2px 34px -6px rgba(0,0,0,0.48);
+		box-shadow: 0px 2px 34px -6px rgba(0,0,0,0.48);
+		&:last-child{
+			margin-right: 0px;
+		}
+		h3{
+			font-size: 1.375rem;
+			color: $color-azul100;
+			margin-top: 0.75rem;
+			margin-bottom: 0px;
+		}
+		h4{
+			color: $color-gris;
+			font-size: 0.875rem;
+			margin-top: 1.6875rem;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+section.mega-familia{
+	position:relative;
+	margin: 120px 0px;
+	.content{
+		padding-left: 3.625rem;
+		padding-bottom: 3rem;
+		width: 31.8%;
+		height: auto;
+		position: absolute;
+		background: #fff;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		right:20%;
+		top: 9%;
+		h2{
+			font-size: 3.125rem;
+			color: $color-azul100;
+			margin-bottom: 2.25rem;
+			margin-top: 0px;}
+		p{
+			font-family: 'montserratlight';
+			font-size: 1.125rem;
+			color: $color-azul100;
+			margin-bottom: 2.0625rem;}
+		a.comprar-slider{
+			@include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
+			position: relative;}
+		span.cat{
+			color: #729F02;
+			margin-top: 2.8125rem;
+			margin-bottom: 1.375rem;
+			font-size: 0.875rem;
+			display: block;
+			font-family: 'montserratlight';
+		}
+	}
+
+	figure.image-reino{
+				float: right;
+				width: 44.2%;
+				img{
+					width: 100%;}
+			
+		}
+
+}
+
+section.mega-familia-izquierdo{
+	position:relative;
+	margin: 120px 0px;
+	.content{
+		padding-left: 3.625rem;
+		padding-bottom: 3rem;
+		width: 31.8%;
+		height: auto;
+		position: absolute;
+		background: #fff;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		left: 53%;
+    	top: 9%;
+		h2{
+			font-size: 3.125rem;
+			color: $color-azul100;
+			margin-bottom: 2.25rem;
+			margin-top: 0px;}
+		p{
+			font-family: 'montserratlight';
+			font-size: 1.125rem;
+			color: $color-azul100;
+			margin-bottom: 33px;}
+		a.comprar-slider{
+			@include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
+			position: relative;}
+		span.cat{
+			color: #729F02;
+			margin-top: 2.8125rem;
+			margin-bottom: 1.375rem;
+			font-size: 0.875rem;
+			display: block;
+			font-family: 'montserratlight';
+		}
+	}
+
+	figure.image-reino{
+				float: left;
+				width: 44.2%;
+				img{
+					width: 100%;}
+			
+		}
+}
+
+section.programas{
+	text-align: center;
+	padding-bottom: 118px;
+	h2{
+		font-size: 3.125rem;
+		width: 100%;
+		margin-bottom: 1.0625rem;
+		color: $color-azul100;}
+	p{
+		color: $color-morado;
+		font-size: 1.875rem;
+		width: 100%;
+		font-family: 'montserratlight';
+		margin-bottom: 56px;}
+	.container{
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		article.actividades{
+			width: 380px;
+			padding-bottom: 30px;
+			h3{
+				margin-top: 1.5625rem;
+				margin-bottom: 4.375rem;
+				font-size: 1.875rem;
+				height: 30px;
+				color: $color-azul100;}
+			a.conoce-actividad{
+				position: relative;
+				@include boton($ancho: 12.5rem, $fondo: $color-morado , $color: #fff );
+				display: block;
+				margin: auto; 
+			}
+		}
+	}
+}
+
+section.plan-familia{
+	text-align: center;
+	position: relative;
+	h2{
+		color: $color-rosa;
+		font-size:2rem;
+		position: relative;
+		display: inline-block;
+		&:before{
+            content: "\f061";
+            position: absolute;
+            right: -42px;
+            font-family: 'FontAwesome';}
+	}
+	&:after{
+		content: '';
+		width: 1.25rem;
+		height: 7.5rem;
+		position: absolute;
+		bottom: 0px;
+		background:  $color-rosa;
+		left: 0px;
+
+	}
+	&:before{
+		content: '';
+		width: 1.25rem;
+		height: 7.5rem;
+		position: absolute;
+		bottom: 0px;
+		background:  $color-rosa;
+		right: 0px;
+	}
+}
+			

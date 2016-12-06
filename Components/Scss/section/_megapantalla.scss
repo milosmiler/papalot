@@ -147,12 +147,13 @@ section.mega-pantalla{
 
 .video-overlay {
   position: fixed;
-  z-index: -1;
+  // z-index: -1;
+  z-index: 99999;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,0,0,0.80);
+  background: rgba(0, 30, 45, 0.8);
   opacity: 0;
   transition: all ease 500ms;
 }
@@ -171,7 +172,7 @@ section.mega-pantalla{
   font-size: 36px;
   line-height: 1;
   font-weight: 400;
-  color: #fff;
+  color: $color-turqueza;
   text-decoration: none;
   cursor: pointer;
   transition: all 200ms;

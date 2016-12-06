@@ -90,3 +90,29 @@ section#timeline article:nth-child(2n+2) div.inner {
 section#timeline article:nth-child(2n+2) div.inner h2:after {
   left: -0.3125rem;
 }
+
+section.comer{
+  .container{
+    text-align: center;
+    h2{
+      font-size: 3.125rem;
+      color: $color-azul100;
+      margin-bottom: 1.1875rem;
+      margin-top: 0px;
+    }
+    p{
+      font-size: 1.375rem;
+      font-family: 'montserrat-regular';
+      color: $color-azul100;
+    }
+    figure.comer-time{
+      max-width: 920px;
+      height: auto;
+      display: block;
+      margin: auto;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
