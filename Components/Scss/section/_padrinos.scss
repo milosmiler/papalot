@@ -1,18 +1,24 @@
 section.padrinos{
-    justify-content: space-between;
     article.marcas{
             width: 70%;
             position: relative;
             .content-logo-marca{
-              width: 78.1%;
-              figure.marca{
-                width: 105px;
-                height: auto;
-                margin-left: 21px;
-                margin-right: 21px;
-                img{
+              width: 77.1%;
+              overflow: hidden;
+              h3{
+                  font-size: 2rem;
                   width: 100%;
-                }
+                  margin-top: 0px;
+                  margin-bottom: 0px;
+                  color: $color-azul100;}
+              figure.marca{
+                width: 6.5625rem;
+                height: 1.875rem;
+                margin: 2.5rem 1.3125rem;
+                display: inline-block;
+                img{
+                  width: 100%;}
+
               }
             }
     }
@@ -49,9 +55,6 @@ section.padrinos{
 .slider {
   display: block;
   width: 100%;
-  //    border: 4px solid #fff;
-  //    border-radius: 2px;
-  //    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
 }
@@ -92,11 +95,8 @@ section.padrinos{
     width: 100%;
     color: $color-Naranja100;
     font-size: 3.125rem;}
-h3{
-    font-size: 2rem;
-    width: 100%;
-    margin-top: 0px;
-    color: $color-azul100;}
+
+
 }
 
 .slider-button--prev,

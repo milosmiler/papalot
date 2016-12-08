@@ -53,8 +53,8 @@
 
 		// CONTROLS
 		controls: true,
-		nextText: 'Next',
-		prevText: 'Prev',
+		nextText: ' ',
+		prevText: ' ',
 		nextSelector: null,
 		prevSelector: null,
 		autoControls: false,

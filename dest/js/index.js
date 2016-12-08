@@ -246,3 +246,6 @@ $(document).keyup(function(e){
 function close_video() {
   $('.video-overlay.open').removeClass('open').find('iframe').remove();
 };
+
+
+

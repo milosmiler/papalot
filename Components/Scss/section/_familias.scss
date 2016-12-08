@@ -26,6 +26,7 @@ section.zona{
 			color: $color-azul100;
 			margin-top: 0.75rem;
 			margin-bottom: 0px;
+			line-height: 21px;
 		}
 		h4{
 			color: $color-gris;
@@ -39,19 +40,19 @@ section.zona{
 section.mega-familia{
 	position:relative;
 	margin: 120px 0px;
+	max-width: 1303px;
+    float: right;
 	.content{
-		padding-left: 3.625rem;
+		padding-left: 3.5rem;
+		padding-right: 5px;
 		padding-bottom: 3rem;
-		width: 31.8%;
+		width: 50%;
 		height: auto;
 		position: absolute;
 		background: #fff;
-		-webkit-transform: translateX(-50%);
-		-moz-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		transform: translateX(-50%);
-		right:20%;
-		top: 9%;
+		transform: translate(-50%,-50%);
+		right: 17%;
+		top: 50%;
 		h2{
 			font-size: 3.125rem;
 			color: $color-azul100;
@@ -77,7 +78,7 @@ section.mega-familia{
 
 	figure.image-reino{
 				float: right;
-				width: 44.2%;
+				width: 64%;
 				img{
 					width: 100%;}
 			
@@ -88,19 +89,18 @@ section.mega-familia{
 section.mega-familia-izquierdo{
 	position:relative;
 	margin: 120px 0px;
+	max-width: 1303px;
+    float: left;
 	.content{
 		padding-left: 3.625rem;
 		padding-bottom: 3rem;
-		width: 31.8%;
+		width: 50%;
 		height: auto;
 		position: absolute;
 		background: #fff;
-		-webkit-transform: translateX(-50%);
-		-moz-transform: translateX(-50%);
-		-ms-transform: translateX(-50%);
-		transform: translateX(-50%);
-		left: 53%;
-    	top: 9%;
+		transform: translate(-50%,-50%);
+		right: -23%;
+		top: 50%;
 		h2{
 			font-size: 3.125rem;
 			color: $color-azul100;
@@ -126,7 +126,7 @@ section.mega-familia-izquierdo{
 
 	figure.image-reino{
 				float: left;
-				width: 44.2%;
+				width: 64%;
 				img{
 					width: 100%;}
 			

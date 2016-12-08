@@ -1,0 +1,33 @@
+section.cover-renovado{
+	position: relative;
+	img{
+		width: 100%;}
+	.content-museo{
+		position: absolute;
+		transform: translate(-50%,-50%);
+		top: 34%;
+    	left: 20%;
+		h3{
+			color: $color-rosa;
+			font-family: 'montserratlight';
+			font-size: 0.875rem;
+			margin-bottom: 0.9375rem;}
+		h2{
+			font-size: 3.125rem;
+			color: $color-azul100;
+			margin-top: 0px;
+			margin-bottom: 1.6875rem;}
+		p{
+			font-size: 1.125rem;
+			font-family: 'montserratlight';
+			color: $color-azul100;
+			margin-bottom: 2rem;
+			span{
+				font-family: 'montserrat-bold';}
+		}
+		a.comprar-museo{
+			position: relative;
+			 @include boton($ancho: 12.5rem, $fondo: $color-rosa , $color: #fff);}
+	}
+
+}
