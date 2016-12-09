@@ -1,0 +1,96 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+	body
+		include block/sedes.pug
+		include block/header.pug
+		section.cover
+			img(src="images/Cover_ProgramasInterpretativos.jpg")
+			h2 Actividades #[br]especiales
+		section.text
+			h2 ¡Conoce nuestras actividades del mes aquí!
+		section.hologramas
+			.container
+				h2 Diciembre 
+					span 2016
+				.cuadro laboratorio de ideas
+				.cuadro Mexico vivo
+				.cuadro Area de descubrimiento Alpura
+				.cuadro patio de aventuras
+		section.laboratorio
+			.container
+				h2 Laboratorio de ideas
+			.container.z-depth-4
+				article.izquiera
+					h3 Creador invitado
+					p Esta temporada, ¡Michael Chamú será nuestro Creador invitado!
+					p Michael es un diseñador egresado de la Escuela de Diseño del Instituto Nacional de Bellas Artes y Literatura. Ha experimentado en las ramas de diseño editorial, textil, moda, mobiliario, web, videomapping, ¡y ahora colaborará con PAPALOTE para crear el tradicional nacimiento navideño! ¿Te animas a participar?
+				article.derecha
+					p ¿Cómo? . Crearemos un gran mural con telas, inspirados en las muchas y distintas tradiciones alrededor de esta época de renovación, haciendo uso diferentes materiales, textiles y herramientas. ¡Tu imaginación será el ingrediente más importante!
+
+					p ¿Para quién? . Niñas y niños de 6 a 12 años.
+
+					p ¿Y los adultos? . También compartirán sus historias participando en la elaboración del mural en compañía de su familia.
+
+					p ¿Cuándo? . A partir de diciembre. Consulta fechas y horarios aquí
+
+					p ¿Dónde? . En Creador invitado.
+			.container.z-depth-4
+				article.izquiera
+					h3 Gelatinas sorpresa
+					p ¡Sigue nuestra receta y prepara una gelatina que te asombrará!
+
+				article.derecha
+
+					p ¿Para quién? . Niñas y niños de 6 a 12 años.
+
+					p ¿Y los adultos? . Ellos también podrán hacer su gelatina y guiar a sus niños por si algo se les dificulta.
+
+					p ¿Dónde? . En Experimentos comestibles.
+
+			.container.z-depth-4
+				article.izquiera
+					h3 Circuitos de grafito
+					p ¿Si dibujas un cable puede servir para encender un foco? ¡En esta actividad te retamos a lograrlo!
+
+				article.derecha
+					p ¿Para quién? . Niñas y niños de 6 a 12 años.
+
+					p ¿Y los adultos? . Acompañarán a sus niños en el proceso de resolver el reto, dándoles información, apoyo y la seguridad de que pueden lograrlo.
+
+					p ¿Dónde? . En ¡Dibuja, pinta y pega!
+
+			.container.z-depth-4
+				article.izquiera
+					h3 Motor magnético
+					p Construye un motor con las fuerzas del magnetismo y pon a girar y girar un cable.
+
+				article.derecha
+					p ¿Para quién? . Niñas y niños de 6 a 12 años.
+
+					p ¿Y los adultos? . Acompañarán a sus niños en el proceso de resolver el reto, dándoles información, apoyo y la seguridad de que pueden lograrlo.
+
+					p ¿Dónde? . En Estudio robot.
+
+
+
+
+
+
+
+
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")

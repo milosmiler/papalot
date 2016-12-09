@@ -7,7 +7,7 @@ section.precio-paquete{
 		margin-bottom:5rem;
 		h3{
 			font-size: 3.125rem;
-			margin: 0px 0px 0.75rem;
+			margin: 0px 0px 2.1875rem;
 			color: $color-azul;}
 		p{
 			font-family: 'montserrat-bold';
@@ -25,17 +25,51 @@ section.precio-paquete{
 				color: $color-azul;
 				margin: 1.25rem 0px 1.4375rem;
 				font-size: 2.5rem; 
+				font-family: 'VAGRounded-bold';
 				padding-left: 1.25rem;}
 			figure.image-paquete{
 				width: 100%;
-				border-bottom: 5px solid $color-amarillo;
+				position: relative;
+				&:after{
+					content: '';
+					width: 80%;
+					height: 10px;
+					background-color: #00FF5B;
+					position: absolute;
+					left: 0px;
+					bottom: 0px;}
 				img{
 					display: table;
 					width: 100%;}
-				}
+				span.circulo{
+					z-index: 9999;
+					display: block;
+					background-color: #00FF5B;
+					position: absolute;
+					right: 0.625rem;
+					bottom: -7.1875rem;
+					width: 9.8125rem;
+					height: 9.8125rem;
+					border-radius: 6.25rem;
+					transform: rotate(22deg);
+					h2{
+						font-size: 1.375rem;
+						text-align: center;
+						margin-top:1.3125rem;
+						margin-bottom: 0.5rem;
+						color: #000;}
+					p{
+						font-size: 3.75rem;
+						font-family: 'VAGRounded-bold';
+						text-align: center;
+						color: #000;}
+					}
+			}
+
 			p{
 				color: $color-azul100;
 				padding-left: 1.25rem;
+				margin-bottom: 1.0625rem;
 				font-size: 1.375rem;}
 			ul{
 				padding-left: 1.25rem;
@@ -66,12 +100,46 @@ section.precio-paquete{
     		background-color: $color-grisCL100;
 			figure.image-doble{
 				float: left;
-				border-right: 5px solid $color-amarillo;
 				width: 50%;
+				position: relative;
+				&:after{
+					content: '';
+					width: 0.625rem;
+					height: 26.25rem;
+					background-color: #00FF5B;
+					position: absolute;
+					right:0px;
+					top: 0px;}
 				img{
 					width: 100%;
-					display: table;
+					display: table;}
+				span.circulo{
+					z-index: 9999;
+					display: block;
+					background-color: #00FF5B;
+					position: absolute;
+					right: -7.625rem;
+					bottom: 1.25rem;
+					width: 9.8125rem;
+					height: 9.8125rem;
+					transform: rotate(7deg);
+					border-radius: 6.25rem;
+					h2{
+						font-size: 1.375rem;
+						text-align: center;
+						margin-top:1.3125rem;
+						margin-bottom: 0.5rem;
+						color: #000;}
+					p{
+						font-size: 3.75rem;
+						font-family: 'VAGRounded-bold';
+						text-align: center;
+						color: #000;}
 				}
+			}
+			.content2{
+				padding-left: 8.5rem;
+
 			}
 			.content{
 				float: left;
@@ -80,13 +148,15 @@ section.precio-paquete{
 				h4{
 					font-size: 2.5rem;
 					color: $color-azul;
-					margin-bottom: 0.875rem;
+					margin-bottom: 1.0625rem;
 					font-family: 'VAGRounded-bold';}
 				p{
 					font-size: 1.375rem;
+					text-align: left;
 					color: #364659;}
 				ul{
 					list-style: none;
+					margin: 0px;
 					li{
 						font-size: 2rem;
     					color: #364659;
@@ -101,6 +171,10 @@ section.precio-paquete{
 					font-family: 'VAGRounded-bold';
 					float: right;
 					margin-top: 1.5rem;
+					p{
+						font-size: 0.75rem;
+						font-family: 'montserratlight';
+					}
 
 				}
 			}
@@ -123,33 +197,56 @@ section.precio-paquete{
 			margin-bottom: 2.625rem;
 			color: $color-azul100;}
 		article.individual{
-			width: 380px;
+			width: 31.7%;
 			height: auto;
 			margin: 0px 0.3125rem;
 			figure{
 				width: 100%;
 				height: auto;
+				position: relative;
+				&:after{
+					content: '';
+					width: 40%;
+					height: 0.625rem;
+					background-color: #00FF5B;
+					position: absolute;
+					left: 0px;
+					bottom: 0px;}
 				img{
 					width: 100%;
 					display: table;}
 			}
 			h2{
 				font-size: 1.75rem;
+				margin-left: 2rem;
 				color:$color-azul;
 				margin-top: 1.125rem;
-				margin-bottom: 0.9375rem;}
+				margin-bottom: 1.0625rem;}
 			span.precio-paquete{
 				color: $color-naranja;
-				font-size: 3.125rem;
+				font-size:3.75rem;
+				margin-right: 2.0625rem;
+				margin-bottom: 3.3125rem;
 				font-family: 'VAGRounded-bold';
 				float: right;}
-			p{
-				text-align: center;
-				font-size: 0.75rem;
-				color:$color-footer;
-				margin-top: 2.0625rem;
-				clear: both;
+			a.comprar-line{
+				position: relative;
+				@include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
+				float: right;
+				margin-right: 2.0625rem;
+				margin-bottom: 2.125rem;
 			}
 		}
+	}
+}
+
+section.leyenda-precio{
+	max-width: 1200px;
+	margin: auto;
+	p{
+		font-size: 1rem;
+		font-family: 'montserratlight';
+		color: #364659;
+		margin-bottom: 7.5rem;
 	}
 }

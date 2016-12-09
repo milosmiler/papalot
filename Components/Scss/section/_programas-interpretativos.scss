@@ -1,0 +1,45 @@
+section.laboratorio{
+	.container{
+		display: table;
+		margin-bottom: 25px;
+		article.izquiera{
+			display: table-cell;
+			width: 40%;}
+		article.derecha{
+			display: table-cell;
+			width: 60%;
+			background: #CCF9FF;
+		}
+	}
+}
+section.text{
+	h2{
+		text-align: center;
+		font-size: 32px;
+		color: $color-azul100;
+	}
+}
+section.hologramas{
+	.container{
+		background: #F5F5F5;
+		h2{
+			font-size: 32px;
+			color: $color-azul100;
+		}
+		.cuadro{
+			width: 38px;
+			height: 38px;
+			border: 2px solid #000;
+		}
+	}
+}
+
+section.laboratorio{
+	.container{
+		h2{
+			color: $color-azul;
+			font-size: 3.125rem;
+			text-align: left;
+		}
+	}
+}

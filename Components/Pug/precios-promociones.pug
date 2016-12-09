@@ -15,9 +15,9 @@ html(lang="es")
 		section.flexslider
 			ul.slides
 				li
-					img(src='images/promociones.png')
+					img(src='images/Slider_INAPAM.jpg')
 					.meta
-						h2 Este jueves vuelve #[br] a ser niño
+						h2 Presenta tu credencial #[br] del INAPAM
 						span.link Explorar el museo
 					.meta-horario
 						h3 Jueves de noche especial | Niños también son bienvenidos #[br]
@@ -27,9 +27,9 @@ html(lang="es")
 					.meta-boton
 						a.comprar-slider.sombra(href="") Comprar en linea
 				li
-					img(src='images/promociones.png')
+					img(src='images/Slider_Costco.jpg')
 					.meta
-						h2 Este jueves vuelve #[br] a ser niño
+						h2 Conoce PAPALOTE #[br]RENOVADO
 						span.link Explorar el museo
 					.meta-horario
 						h3 Jueves de noche especial | Niños también son bienvenidos
@@ -38,11 +38,37 @@ html(lang="es")
 							| 19:00 hrs - 23:00 hrs
 					.meta-boton
 						a.comprar-slider.sombra(href="") Comprar en linea
-				
-				
+				li
+					img(src='images/Slider_CompraLinea.jpg')
+					.meta
+						h2 Si compras en línea, #[br]¡Ahorras más!
+						span.link Explorar el museo
+					.meta-horario
+						h3 Jueves de noche especial | Niños también son bienvenidos
+						p
+							i.fa.fa-clock-o 
+							| 19:00 hrs - 23:00 hrs
+					.meta-boton
+						a.comprar-slider.sombra(href="") Comprar en linea
+				li
+					img(src='images/Slider_TDU.jpg')
+					.meta
+						h2 Presenta tu tarjeta #[br]TDU
+						span.link Explorar el museo
+					.meta-horario
+						h3 Presenta tu tarjeta #[br]TDU
+						p
+							i.fa.fa-clock-o 
+							| 19:00 hrs - 23:00 hrs
+					.meta-boton
+						a.comprar-slider.sombra(href="") Comprar en linea
 		include block/precio-paquete.pug
+		section.leyenda-precio
+			p Sujeto a disponibilidad. Niños pagan admisión a partir de 2 años. Precios sujetos a cambios sin previo aviso.
 		span.ir-arriba
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(src="js/jquery.flexslider-min.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
 		script(src='js/index.js', type="text/javascript")
