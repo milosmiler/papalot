@@ -2509,6 +2509,7 @@ section.laboratorio .container {
   section.laboratorio .container article.izquiera {
     padding-top: 2.4375rem;
     padding-left: 2.0625rem;
+    padding-right: 9.8125rem;
     display: table-cell;
     width: 40%; }
     section.laboratorio .container article.izquiera h3 {
@@ -3110,7 +3111,12 @@ footer {
     margin-bottom: 40px; }
   section.cover-intro article.leyenda-intro h2 {
     font-size: 28px;
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  section.laboratorio .container article.izquiera {
+    display: block;
+    width: 100%; }
+  section.laboratorio .container article.derecha {
+    padding: 0px; } }
 
 @-webkit-keyframes dothabottomcheck {
   0% {
