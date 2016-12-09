@@ -2788,7 +2788,82 @@ footer {
   section.aviso-terminos h2 {
     text-align: center; }
   section.aviso-terminos .column-derecha {
-    display: none; } }
+    display: none; }
+  section#timeline {
+    padding-left: 15px;
+    padding-right: 15px; }
+  section#timeline:before {
+    display: none; }
+  section#timeline article div.inner span.date {
+    display: none; }
+  section#timeline article div.inner {
+    width: 100%;
+    float: none;
+    text-align: center; }
+  section#timeline article:nth-child(2n+2) div.inner {
+    float: none;
+    text-align: center; }
+  figure.cover-time {
+    margin: auto;
+    display: block; }
+  section.precio-paquete h2 {
+    text-align: center; }
+  section.precio-paquete section.paquetes article.paquete-items {
+    width: 100%; }
+  section.precio-paquete section.paquetes {
+    padding-left: 5px;
+    padding-right: 5px; }
+  section.precio-paquete section.paquetes-individuales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-right: 0.3125rem;
+    padding-left: 0.3125rem; }
+  section.precio-paquete section.paquetes-individuales article.individual {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px; }
+  section.leyenda-precio {
+    padding-left: 5px;
+    padding-right: 5px; }
+  section.precio-paquete section.paquetes article.paquete-doble figure.image-doble {
+    width: 100%;
+    float: none; }
+  section.precio-paquete section.paquetes article.paquete-doble .content {
+    float: none;
+    width: 100%; }
+  section.precio-paquete section.paquetes article.paquete-doble figure.image-doble:after {
+    bottom: 0px;
+    left: 0px;
+    height: 0.625rem;
+    width: 26.25rem; }
+  section.cover-intro figure.imagen-cover {
+    width: 100%; }
+  section.cover-intro {
+    padding-right: 5px;
+    padding-left: 5px; }
+  section.cover-intro article.leyenda-intro {
+    width: 100%; }
+  section.mega-pantalla article.nota-megapantalla {
+    width: 100%;
+    float: right; }
+  section.mega-pantalla figure.video-megapantalla {
+    width: 100%; }
+  section.zona .circulo {
+    width: 100%;
+    float: none;
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #00C0F2; }
+  section.mega-familia figure.image-reino {
+    float: right;
+    width: 100%; }
+  section.mega-familia .content {
+    width: 80%;
+    bottom: 5px; } }
 
 @-webkit-keyframes dothabottomcheck {
   0% {
