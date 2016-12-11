@@ -1018,10 +1018,10 @@ section.nota-contenido {
   position: relative;
   max-width: 1373px;
   float: left;
-  padding-right: 5px;
-  margin-bottom: 93px; }
+  padding-right: 0.3125rem;
+  margin-bottom: 5.8125rem; }
   section.nota-contenido figure.imagen-contenido {
-    max-width: 51.9%;
+    max-width: 60%;
     height: auto; }
     section.nota-contenido figure.imagen-contenido img {
       width: 100%; }
@@ -1029,15 +1029,16 @@ section.nota-contenido {
     background: #fff;
     max-width: 680px;
     position: absolute;
-    left: 41.875rem;
-    top: 2.25rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    left: 57%;
+    top: 50%;
     padding-left: 3.25rem;
-    padding-right: 67px;
-    padding-bottom: 85px; }
+    padding-right: 4.1875rem; }
     section.nota-contenido article.leyenda-contenido h2 {
       color: #08405C;
       font-size: 3.125rem;
-      margin-top: 83px;
+      margin-top: 1.1875rem;
       margin-bottom: 1.6875rem; }
     section.nota-contenido article.leyenda-contenido p {
       font-family: 'montserratlight';
@@ -1050,8 +1051,8 @@ section.nota-contenido-derecho {
   position: relative;
   max-width: 1373px;
   float: right;
-  padding-right: 5px;
-  margin-bottom: 93px; }
+  padding-right: 0.3125rem;
+  margin-bottom: 5.8125rem; }
   section.nota-contenido-derecho figure.imagen-contenido {
     max-width: 58%;
     height: auto;
@@ -1062,8 +1063,10 @@ section.nota-contenido-derecho {
     background: #fff;
     max-width: 676px;
     position: absolute;
-    right: 41.875rem;
-    top: 2.25rem;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    right: 12%;
+    top: 50%;
     padding-right: 3.25rem;
     padding-left: 4.1875rem;
     text-align: right; }
@@ -2342,8 +2345,12 @@ section.programas {
         -ms-flex-align: start;
             align-items: flex-start; }
     section.programas .container article.actividades {
-      width: 380px;
+      width: 31.5%;
       padding-bottom: 30px; }
+      section.programas .container article.actividades figure.image-actividades {
+        width: 100%; }
+        section.programas .container article.actividades figure.image-actividades img {
+          width: 100%; }
       section.programas .container article.actividades h3 {
         margin-top: 1.5625rem;
         margin-bottom: 4.375rem;
@@ -2945,10 +2952,14 @@ footer {
     max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
-  header .container nav {
+  header {
+    position: inherit; }
+    header .container nav {
+      display: none; }
+    header .container nav#menu-mobile {
+      display: block; }
+  section.sedes-contactos {
     display: none; }
-  header .container nav#menu-mobile {
-    display: block; }
   footer aside.social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2977,7 +2988,10 @@ footer {
     float: none;
     width: 100%;
     padding: 0px 10px; }
+  section.aviso-terminos {
+    margin-top: 0.9375rem; }
   section.aviso-terminos h2 {
+    font-size: 28px;
     text-align: center; }
   section.aviso-terminos .column-derecha {
     display: none; }
@@ -3021,7 +3035,9 @@ footer {
   section.precio-paquete h2 {
     text-align: center; }
   section.precio-paquete section.paquetes article.paquete-items {
-    width: 100%; }
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px; }
   section.precio-paquete section.paquetes {
     padding-left: 5px;
     padding-right: 5px; }
@@ -3046,10 +3062,48 @@ footer {
     float: none;
     width: 100%; }
   section.precio-paquete section.paquetes article.paquete-doble figure.image-doble:after {
-    bottom: 0px;
-    left: 0px;
+    bottom: 0px !important;
     height: 0.625rem;
-    width: 26.25rem; }
+    width: 26.25rem;
+    top: inherit;
+    left: 0px; }
+  section.precio-paquete section.paquetes article.paquete-items figure.image-paquete span.circulo {
+    width: 100px;
+    height: 100px;
+    bottom: -37px; }
+  section.precio-paquete section.paquetes article.paquete-doble figure.image-doble span.circulo {
+    width: 100px;
+    height: 100px;
+    bottom: -34px;
+    right: 16px; }
+  section.precio-paquete section.paquetes article.paquete-doble figure.image-doble span.circulo p {
+    font-size: 18px; }
+  section.precio-paquete section.paquetes article.paquete-items figure.image-paquete span.circulo p {
+    font-size: 18px; }
+  section.precio-paquete section.paquetes article.paquete-items h4 {
+    font-size: 28px; }
+  section.precio-paquete section.paquetes article.paquete-items ul li {
+    font-size: 16px; }
+  section.precio-paquete section.paquetes article.paquete-items span.precio-paquete {
+    font-size: 32px; }
+  section.precio-paquete section.paquetes article.paquete-doble .content2 {
+    padding: 0px 5px; }
+  section.precio-paquete section.paquetes article.paquete-doble .content ul li {
+    font-size: 16px; }
+  section.precio-paquete section.paquetes article.paquete-doble .content h4 {
+    font-size: 28px;
+    margin-top: 30px; }
+  section.precio-paquete section.paquetes article.paquete-doble .content span.precio-paquete {
+    font-size: 32px; }
+  section.precio-paquete section.paquetes-individuales article.individual a.comprar-line {
+    margin: auto;
+    float: none;
+    margin-bottom: 15px; }
+  section.precio-paquete section.paquetes-individuales article.individual h2 {
+    font-size: 18px;
+    margin-left: 0px; }
+  section.precio-paquete section.paquetes-individuales article.individual span.precio-paquete {
+    font-size: 30px; }
   section.cover-intro figure.imagen-cover {
     width: 100%; }
   section.cover-intro {
@@ -3069,23 +3123,29 @@ footer {
     margin-top: 0px; }
   section.mega-pantalla article.nota-megapantalla p {
     font-size: 18px; }
-  section.mega-pantalla article.nota-megapantalla:nth-child(1) {
+  section.mega-pantalla:nth-child(1) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
   section.mega-pantalla article.nota-megapantalla {
     padding: 40px 28px 0px; }
+  section.programas .container {
+    padding: 0px 5px; }
   section.programas .container article.actividades {
-    width: 30%; }
-  section.programas .container article.actividades {
-    width: 85%;
+    width: 100%;
     margin: auto;
     margin-bottom: 30px; }
   section.programas .container article.actividades h3 {
+    font-size: 28px; }
+  section.plan-familia h2 {
+    font-size: 28px; }
+  section.zona {
+    padding: 20px 5px; }
+  section.zona h2 {
     font-size: 28px; }
   section.zona .circulo {
     width: 100%;
@@ -3094,17 +3154,79 @@ footer {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid #00C0F2; }
+    border-bottom: 2px solid #00C0F2;
+    height: 8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px; }
+  section.zona .circulo h4 {
+    width: 100%;
+    margin-top: 10px; }
+  section.zona .circulo h3 {
+    margin: 0px; }
   section.mega-familia figure.image-reino {
-    float: right;
+    float: none;
     width: 100%; }
-  section.mega-familia .content {
-    width: 80%;
-    bottom: 5px; }
+  section.mega-familia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 40px 0px;
+    padding: 0px 5px 15px;
+    margin: 40px 0px; }
+  section.mega-familia-izquierdo {
+    padding: 0px 5px 15px;
+    margin: 40px 0px; }
+  section.mega-familia .content, section.mega-familia-izquierdo .content {
+    position: relative;
+    width: 100%;
+    -webkit-transform: inherit;
+            transform: inherit;
+    right: 0px;
+    padding: 0px 5px;
+    overflow: hidden; }
+  section.mega-familia .content h2, section.mega-familia-izquierdo .content h2 {
+    font-size: 28px; }
+  section.mega-familia .content p, section.mega-familia-izquierdo .content p {
+    font-size: 16px; }
+  section.mega-familia .content a.comprar-slider, section.mega-familia-izquierdo .content a.comprar-slider {
+    margin: auto;
+    float: none;
+    margin-bottom: 10px; }
+  section.mega-familia-izquierdo figure.image-reino {
+    float: none;
+    width: 100%; }
+  section.programas h2 {
+    font-size: 28px; }
+  section.programas p {
+    font-size: 16px; }
   section.cover h2 {
-    top: 6%;
-    left: 10%;
-    font-size: 40px; }
+    top: 33%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-align: center; }
   section.cover-intro figure.imagen-cover {
     display: none; }
   section.cover {
@@ -3112,11 +3234,109 @@ footer {
   section.cover-intro article.leyenda-intro h2 {
     font-size: 28px;
     margin-top: 0px; }
-  section.laboratorio .container article.izquiera {
+  section.laboratorio .container article.izquiera, section.mexico-vivo article.izquiera, section.descubrimientos article.izquiera, section.patio-aventura article.izquiera {
     display: block;
-    width: 100%; }
+    width: 100%;
+    padding: 0px 5px;
+    overflow: hidden; }
+  section.laboratorio .container article.izquiera h3 {
+    text-align: center; }
   section.laboratorio .container article.derecha {
-    padding: 0px; } }
+    padding: 0px; }
+  section.cover-intro .container {
+    padding: 0px 5px; }
+  section.servicio-espacios .container article.espacios {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 15px; }
+  section.servicio-espacios .container article.espacios-amarillo {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 15px; }
+  section.servicio-espacios .container h2 {
+    font-size: 28px;
+    text-align: center; }
+  section.nota-contenido-derecho {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  section.nota-contenido article.leyenda-contenido {
+    -webkit-transform: inherit;
+            transform: inherit;
+    left: 0px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0px 5px; }
+  section.nota-contenido figure.imagen-contenido {
+    max-width: 100%;
+    overflow: hidden; }
+  section.nota-contenido-derecho figure.imagen-contenido {
+    max-width: 100%; }
+  section.nota-contenido-derecho article.leyenda-contenido-derecho {
+    position: relative;
+    left: 0px;
+    -webkit-transform: inherit;
+            transform: inherit;
+    max-width: 100%;
+    padding: 0px 5px;
+    text-align: left; }
+  section.nota-contenido article.leyenda-contenido p {
+    font-size: 16px; }
+  section.nota-contenido article.leyenda-contenido h2 {
+    font-size: 28px; }
+  section.nota-contenido-derecho article.leyenda-contenido-derecho p {
+    font-size: 16px; }
+  section.nota-contenido-derecho article.leyenda-contenido-derecho h2 {
+    font-size: 28px;
+    text-align: center; }
+  section.precio-paquete h2 {
+    font-size: 28px;
+    margin-top: 40px; }
+  section.precio-paquete section.paquetes h3 {
+    font-size: 23px; }
+  section.padrinos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  section.padrinos article.marcas {
+    width: 100%; }
+  section.padrinos article.leyenda-content, section.padrinos article.marcas .content-logo-marca {
+    width: 100%; }
+  section.padrinos article.marcas .content-logo-marca figure.marca {
+    margin: 20px 11px; }
+  section.notas .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  section.notas .container article.nota {
+    max-width: 100%;
+    margin-bottom: 25px; }
+  section.notas .container article.nota figure.imagen-nota {
+    max-width: 100%; }
+  section.notas .container article.nota a.boton.nota {
+    margin: auto;
+    margin-bottom: 20px; }
+  section.notas .container article.nota h2 {
+    font-size: 26px; }
+  section.position {
+    position: relative;
+    left: 0px;
+    -webkit-transform: inherit;
+            transform: inherit;
+    bottom: 0px; }
+  section.cover-renovado .content-museo {
+    position: relative;
+    left: 0px;
+    -webkit-transform: inherit;
+            transform: inherit; } }
 
 @-webkit-keyframes dothabottomcheck {
   0% {

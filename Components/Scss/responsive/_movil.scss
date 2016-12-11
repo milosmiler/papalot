@@ -1,11 +1,15 @@
 @media only screen and (max-width: 767px) {
     header{
+        position: inherit;
         .container{
             nav{
                 display: none;}
         }
         .container nav#menu-mobile{
             display: block;}
+    }
+    section.sedes-contactos{
+        display: none;
     }
 
     footer aside.social{
@@ -41,7 +45,13 @@
     width: 100%;
     padding: 0px 10px;}
 
+// terminos y aviso privacidad
+    section.aviso-terminos{
+        margin-top: 0.9375rem;
+    }
+
     section.aviso-terminos h2{
+        font-size: 28px;
         text-align: center;}
 
     section.aviso-terminos .column-derecha{
@@ -111,6 +121,9 @@
     }
     section.precio-paquete section.paquetes article.paquete-items{
         width: 100%;
+        margin: auto;
+         margin-bottom: 30px;
+
     }
     section.precio-paquete section.paquetes{
         padding-left: 5px;
@@ -139,11 +152,71 @@
         width: 100%;}
 
     section.precio-paquete section.paquetes article.paquete-doble figure.image-doble:after{
-        bottom: 0px;
-        left: 0px;
-        height:0.625rem;
+        bottom: 0px!important;
+        height: 0.625rem;
         width: 26.25rem;
+        top: inherit;
+        left: 0px;
     }
+    section.precio-paquete section.paquetes article.paquete-items figure.image-paquete span.circulo{
+        width: 100px;
+        height: 100px;
+        bottom: -37px;}
+
+    section.precio-paquete section.paquetes article.paquete-doble figure.image-doble span.circulo{
+        width: 100px;
+        height: 100px;
+        bottom: -34px;
+        right: 16px;
+    }
+
+    section.precio-paquete section.paquetes article.paquete-doble figure.image-doble span.circulo p{
+        font-size: 18px;
+    }
+
+    section.precio-paquete section.paquetes article.paquete-items figure.image-paquete span.circulo p{
+        font-size: 18px;
+
+    }
+    section.precio-paquete section.paquetes article.paquete-items h4{
+        font-size: 28px;
+    }
+    section.precio-paquete section.paquetes article.paquete-items ul li{
+        font-size: 16px;
+    }
+    section.precio-paquete section.paquetes article.paquete-items span.precio-paquete{
+        font-size: 32px;
+    }
+
+    section.precio-paquete section.paquetes article.paquete-doble .content2{
+        padding: 0px 5px;
+    }
+    section.precio-paquete section.paquetes article.paquete-doble .content ul li{
+        font-size: 16px;
+    }
+    section.precio-paquete section.paquetes article.paquete-doble .content h4{
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
+    section.precio-paquete section.paquetes article.paquete-doble .content span.precio-paquete{
+        font-size: 32px;
+    }
+
+    section.precio-paquete section.paquetes-individuales article.individual a.comprar-line{
+        margin: auto;
+        float: none;
+        margin-bottom: 15px;
+    }
+    section.precio-paquete section.paquetes-individuales article.individual h2{
+        font-size: 18px;
+        margin-left: 0px;
+    }
+    section.precio-paquete section.paquetes-individuales article.individual span.precio-paquete{
+        font-size: 30px;
+    }
+
+    
 
 
 
@@ -180,29 +253,40 @@
         font-size: 18px;
     }
 
-    section.mega-pantalla article.nota-megapantalla:nth-child(1){
+    section.mega-pantalla:nth-child(1){
         display: flex;
-        flex-direction: column;
-
+        flex-direction: column-reverse;
     }
     section.mega-pantalla article.nota-megapantalla{
         padding: 40px 28px 0px;
     }
 
-    section.programas .container article.actividades{
-        width: 30%;
+
+
+  
+    section.programas .container{
+        padding: 0px 5px;
     }
     section.programas .container article.actividades{
-        width: 85%;
-    margin: auto;
-    margin-bottom: 30px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     section.programas .container article.actividades h3{
         font-size: 28px;
     }
+    section.plan-familia h2{
+       font-size:28px;
+    }
 
+    section.zona{
+        padding: 20px 5px;
+    }
 
+    section.zona h2{
+        font-size: 28px;
+    }
 
     section.zona .circulo{
         width: 100%;
@@ -212,22 +296,82 @@
         border-left: none;
         border-right: none;
         border-bottom: 2px solid #00C0F2;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
     }
+    section.zona .circulo h4{
+        width: 100%;
+        margin-top: 10px;
+    }
+    section.zona .circulo h3{
+        margin: 0px
+    }
+
 
     section.mega-familia figure.image-reino {
-    float: right;
+    float: none;
     width: 100%;}
 
-    section.mega-familia .content{
-        width: 80%;
-        bottom: 5px;
+    section.mega-familia, {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 40px 0px;
+        padding: 0px 5px 15px;
+        margin: 40px 0px;
     }
+    section.mega-familia-izquierdo{
+        padding: 0px 5px 15px;
+        margin: 40px 0px;
+
+    }
+
+    section.mega-familia .content, section.mega-familia-izquierdo .content{
+        position: relative;
+        width: 100%;
+        transform: inherit;
+        right: 0px;
+        padding: 0px 5px;
+        overflow: hidden;
+    }
+    section.mega-familia .content h2, section.mega-familia-izquierdo .content h2{
+        font-size:28px;
+    }
+    section.mega-familia .content p, section.mega-familia-izquierdo .content p{
+        font-size: 16px;
+    }
+    section.mega-familia .content a.comprar-slider, section.mega-familia-izquierdo .content a.comprar-slider{
+        margin: auto;
+        float: none;
+        margin-bottom: 10px; 
+    }
+    section.mega-familia-izquierdo figure.image-reino{
+        float: none;
+        width: 100%;
+    }
+
+    section.programas h2{
+        font-size: 28px;
+    }
+
+    section.programas p{
+        font-size: 16px;
+    }
+
+   
 
 
     section.cover h2{
-        top: 6%;
-        left: 10%;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         font-size: 40px;
+        text-align: center;
     }
 
     section.cover-intro figure.imagen-cover{
@@ -243,14 +387,147 @@
     }
 
 
-    section.laboratorio .container article.izquiera{
+    section.laboratorio .container article.izquiera, section.mexico-vivo article.izquiera, section.descubrimientos article.izquiera, section.patio-aventura article.izquiera{
         display: block;
         width: 100%;
+        padding: 0px 5px;
+        overflow: hidden;
+
+    }
+
+    section.laboratorio .container article.izquiera h3{
+        text-align: center;
     }
 
     section.laboratorio .container article.derecha{
         padding:0px;
     }
+
+    section.cover-intro .container{
+        padding: 0px 5px;
+    }
+
+    section.servicio-espacios .container article.espacios{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    section.servicio-espacios .container article.espacios-amarillo{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 15px;
+
+    }
+
+    section.servicio-espacios .container h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    section.nota-contenido-derecho{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section.nota-contenido article.leyenda-contenido{
+        transform: inherit;
+        left: 0px;
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        padding: 0px 5px;
+    }
+    section.nota-contenido figure.imagen-contenido{
+        max-width: 100%;
+        overflow: hidden;
+    }
+    section.nota-contenido-derecho figure.imagen-contenido{
+        max-width: 100%;
+    }
+
+    section.nota-contenido-derecho article.leyenda-contenido-derecho{
+        position: relative;
+        left: 0px;
+        transform: inherit;
+        max-width: 100%;
+        padding: 0px 5px;
+    text-align: left;
+    }
+
+    section.nota-contenido article.leyenda-contenido p{
+        font-size: 16px;
+    }
+
+    section.nota-contenido article.leyenda-contenido h2{
+        font-size: 28px;
+    }
+    section.nota-contenido-derecho article.leyenda-contenido-derecho p{
+        font-size: 16px;
+    }
+    section.nota-contenido-derecho article.leyenda-contenido-derecho h2{
+        font-size: 28px;
+        text-align: center;
+    }
+
+
+    section.precio-paquete h2{
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    section.precio-paquete section.paquetes h3{
+        font-size: 23px
+    }
+
+    section.padrinos{
+        flex-direction: column;
+    }
+    section.padrinos article.marcas{
+        width: 100%;
+    }
+
+    section.padrinos article.leyenda-content, section.padrinos article.marcas .content-logo-marca{
+        width: 100%;
+    }
+    section.padrinos article.marcas .content-logo-marca figure.marca{
+        margin: 20px 11px;
+    }
+
+    section.notas .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    section.notas .container article.nota{
+        max-width: 100%;
+            margin-bottom: 25px;
+    }
+    section.notas .container article.nota figure.imagen-nota{
+        max-width: 100%;
+    }
+
+    section.notas .container article.nota a.boton.nota{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    section.notas .container article.nota h2{
+        font-size: 26px;
+    }
+
+    section.position{
+        position: relative;
+        left: 0px;
+        transform: inherit;
+        bottom: 0px;
+
+    }
+    section.cover-renovado .content-museo{
+        position: relative;
+        left: 0px;
+        transform: inherit;
+    }
+
 
 
 

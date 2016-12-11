@@ -154,8 +154,15 @@ section.programas{
 		justify-content: space-between;
 		align-items: flex-start;
 		article.actividades{
-			width: 380px;
+			width: 31.5%;
 			padding-bottom: 30px;
+			figure.image-actividades{
+				width: 100%;
+				img{
+					width: 100%;
+				}
+
+			}
 			h3{
 				margin-top: 1.5625rem;
 				margin-bottom: 4.375rem;
