@@ -29,7 +29,15 @@
         <figure class="logo"><img src="images/papalote-logo.png"></figure>
         <nav>
           <ul>
-            <li><a href="">Familias</a></li>
+            <li id="image-nav"><a href="">Familias</a>
+              <ul class="image-menu">
+                <li>Papalote renovado</li>
+                <li>ADO Megapantalla IMAX</li>
+                <li>Domodigital Banamex</li>
+                <li>Planea tu visita</li>
+                <li>Programas interpretativos</li>
+              </ul>
+            </li>
             <li><a href="">Niños</a></li>
             <li><a href="">ABC Papalote</a></li>
             <li><a href="">Grupos y eventos</a></li>
@@ -38,6 +46,16 @@
           </ul>
         </nav>
         <div id="menu-mobile"><i class="fa fa-bars"></i></div>
+        <div class="mobile">
+          <ul>
+            <li><a href="">Familias</a></li>
+            <li><a href="">Niños</a></li>
+            <li><a href="">ABC Papalote</a></li>
+            <li><a href="">Grupos y eventos</a></li>
+            <li><a href="">¿Cómo ayudar?</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <section class="cover"><img src="images/Cover_ProgramasInterpretativos.jpg">
@@ -78,11 +96,201 @@
           <p>Michael es un diseñador egresado de la Escuela de Diseño del Instituto Nacional de Bellas Artes y Literatura. Ha experimentado en las ramas de diseño editorial, textil, moda, mobiliario, web, videomapping, ¡y ahora colaborará con <span>PAPALOTE </span>para crear el tradicional nacimiento navideño! ¿Te animas a participar?</p>
         </article>
         <article class="derecha">
-          <p>¿Cómo? . Crearemos un gran mural con telas, inspirados en las muchas y distintas tradiciones alrededor de esta época de renovación, haciendo uso diferentes materiales, textiles y herramientas. ¡Tu imaginación será el ingrediente más importante!</p>
-          <p>¿Para quién? . Niñas y niños de 6 a 12 años.</p>
+          <p> <span>¿Cómo?. </span>Crearemos un gran mural con telas, inspirados en las muchas y distintas tradiciones alrededor de esta época de renovación, haciendo uso diferentes materiales, textiles y herramientas. ¡Tu imaginación será el ingrediente más importante!</p>
+          <p> <span>¿Para quién? . </span>Niñas y niños de 6 a 12 años.</p>
           <p>¿Y los adultos? . También compartirán sus historias participando en la elaboración del mural en compañía de su familia.</p>
-          <p>¿Cuándo? . A partir de diciembre. Consulta fechas y horarios aquí</p>
-          <p>¿Dónde? . En Creador invitado.</p>
+          <p> <span>¿Cuándo? </span>. A partir de diciembre. <span>Consulta fechas y horarios aquí</span></p>
+          <p> <span>¿Dónde? . </span>En Creador invitado.</p>
+        </article>
+        <article class="calendario">
+          <div class="item1">
+            <h2>¿Cuándo?</h2>
+          </div>
+          <div class="item2">
+            <div class="contenedor_aplicacion">
+              <div class="flecha_mes" id="atrasar_mes">
+                <p class="fa fa-sort-desc"></p>
+              </div>
+              <div class="contenedor_calendario">
+                <div class="titulo-calendario">
+                  <h3 id="mes_año"></h3>
+                </div>
+                <div id="dias">
+                  <div>
+                    <div class="dias semana">
+                      <p>L</p>
+                    </div>
+                    <div class="dias semana">
+                      <p>M</p>
+                    </div>
+                    <div class="dias semana">
+                      <p>M</p>
+                    </div>
+                    <div class="dias semana">
+                      <p>J</p>
+                    </div>
+                    <div class="dias semana">
+                      <p>V</p>
+                    </div>
+                    <div class="dias semana">
+                      <p>S</p>
+                    </div>
+                    <div class="dias semana">
+                      <p style="color:red">D</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="dias">
+                      <p id="c00"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c01"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c02"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c03"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c04"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c05"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c06"></p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="dias">
+                      <p id="c10"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c11"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c12"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c13"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c14"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c15"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c16"></p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="dias">
+                      <p id="c20"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c21"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c22"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c23"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c24"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c25"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c26"></p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="dias">
+                      <p id="c30"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c31"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c32"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c33"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c34"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c35"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c36"></p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="dias">
+                      <p id="c40"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c41"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c42"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c43"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c44"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c45"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c46"></p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="dias">
+                      <p id="c50"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c51"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c52"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c53"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c54"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c55"></p>
+                    </div>
+                    <div class="dias">
+                      <p id="c56"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flecha_mes" id="adelantar_mes">
+                <p class="fa fa-sort-desc"></p>
+              </div>
+            </div>
+          </div>
+          <div class="item3">
+            <p class="date">17 y 18 Dic <br><span class="small">11:00 a 16:00 hrs</span></p>
+            <p>19,20, 21, 23,26,27,28 y 30 dic <br><span class="small">11:00 a 13:00 hrs | 15:30 a 18:30 hrs</span></p>
+            <p class="date">22 Dic  <br><span class="small">10:00 a 13:30 hrs  |  15:30 a 16:30 hrs  |  16:00 a 22:00 hrs</span></p>
+            <p>24 y 31 Dic  <br><span class="small">10:00 a 13:00 hrs</span></p>
+            <p>29 Dic <br><span class="small">10:00 a 13:30 hrs  |  15:00 a 22:00 hrs</span></p><span class="close"></span>
+          </div>
         </article>
       </div>
       <div class="container z-depth-4">
@@ -91,9 +299,9 @@
           <p>¡Sigue nuestra receta y prepara una gelatina que te asombrará!</p>
         </article>
         <article class="derecha">
-          <p>¿Para quién? . Niñas y niños de 6 a 12 años.</p>
-          <p>¿Y los adultos? . Ellos también podrán hacer su gelatina y guiar a sus niños por si algo se les dificulta.</p>
-          <p>¿Dónde? . En Experimentos comestibles.</p>
+          <p> <span>¿Para quién? </span>. Niñas y niños de 6 a 12 años.</p>
+          <p> <span>¿Y los adultos? </span>. Ellos también podrán hacer su gelatina y guiar a sus niños por si algo se les dificulta.</p>
+          <p> <span>¿Dónde?</span>. En Experimentos comestibles.</p>
         </article>
       </div>
       <div class="container z-depth-4">
@@ -102,9 +310,9 @@
           <p>¿Si dibujas un cable puede servir para encender un foco? ¡En esta actividad te retamos a lograrlo!</p>
         </article>
         <article class="derecha">
-          <p>¿Para quién? . Niñas y niños de 6 a 12 años.</p>
-          <p>¿Y los adultos? . Acompañarán a sus niños en el proceso de resolver el reto, dándoles información, apoyo y la seguridad de que pueden lograrlo.</p>
-          <p>¿Dónde? . En ¡Dibuja, pinta y pega!</p>
+          <p> <span>¿Para quién? </span>. Niñas y niños de 6 a 12 años.</p>
+          <p> <span>¿Y los adultos? </span>. Acompañarán a sus niños en el proceso de resolver el reto, dándoles información, apoyo y la seguridad de que pueden lograrlo.</p>
+          <p> <span>¿Dónde? </span>. En ¡Dibuja, pinta y pega!</p>
         </article>
       </div>
       <div class="container z-depth-4">
@@ -113,9 +321,9 @@
           <p>Construye un motor con las fuerzas del magnetismo y pon a girar y girar un cable.</p>
         </article>
         <article class="derecha">
-          <p>¿Para quién? . Niñas y niños de 6 a 12 años.</p>
-          <p>¿Y los adultos? . Acompañarán a sus niños en el proceso de resolver el reto, dándoles información, apoyo y la seguridad de que pueden lograrlo.</p>
-          <p>¿Dónde? . En Estudio robot.</p>
+          <p> <span>¿Para quién? </span>. Niñas y niños de 6 a 12 años.</p>
+          <p> <span>¿Y los adultos? </span>. Acompañarán a sus niños en el proceso de resolver el reto, dándoles información, apoyo y la seguridad de que pueden lograrlo.</p>
+          <p> <span>¿Dónde? </span>. En Estudio robot.</p>
         </article>
       </div>
     </section>
@@ -129,9 +337,9 @@
           <p>¡Únete a la guerrilla verde! La jardinera de <span>PAPALOTE RENOVADO </span>te enseñará a hacer unas bombas especiales para que hagas explotar vida vegetal en donde no la hay.</p>
         </article>
         <article class="derecha">
-          <p>¿Para quién? . Niñas y niños de 6 a 12 años.</p>
-          <p>¿Y los adultos? . Ellos también pueden crear sus bombas de vida y ayudar a sus niños a decidir en dónde colocarla en su comunidad.</p>
-          <p>¿Dónde? . En La casa de la jardinera.</p>
+          <p> <span>¿Para quién? </span>. Niñas y niños de 6 a 12 años.</p>
+          <p> <span>¿Y los adultos? </span>. Ellos también pueden crear sus bombas de vida y ayudar a sus niños a decidir en dónde colocarla en su comunidad.</p>
+          <p> <span>¿Dónde? </span>. En La casa de la jardinera.</p>
         </article>
       </div>
     </section>
@@ -153,10 +361,10 @@
           </ul>
         </article>
         <article class="derecha">
-          <p>¿Para quién? . Niñas y niños de 3 a 5 años.</p>
-          <p>¿Y los adultos? . Ellos también podrán disfrutar de los cuentos y fijarse muy bien cómo lo hacen los Cuates para que puedan contarles cuentos a sus niños igual de bien.</p>
-          <p>¿Cuándo? . A partir del 16 de diciembre.</p>
-          <p>¿Dónde? . En el Área de descubrimiento para pequeños Alpura.</p>
+          <p> <span>¿Para quién? </span>. Niñas y niños de 3 a 5 años.</p>
+          <p> <span>¿Y los adultos? </span>. Ellos también podrán disfrutar de los cuentos y fijarse muy bien cómo lo hacen los Cuates para que puedan contarles cuentos a sus niños igual de bien.</p>
+          <p> <span>¿Cuándo? </span>. A partir del 16 de diciembre.</p>
+          <p> <span>¿Dónde? </span>. En el Área de descubrimiento para pequeños Alpura.</p>
         </article>
       </div>
     </section>
@@ -178,10 +386,10 @@
           </ul>
         </article>
         <article class="derecha">
-          <p>¿Para quién? . Niñas y niños de 3 a 5 años.</p>
-          <p>¿Y los adultos? . Ellos también podrán disfrutar de los cuentos y fijarse muy bien cómo lo hacen los Cuates para que puedan contarles cuentos a sus niños igual de bien.</p>
-          <p>¿Y los adultos? . ¡A todos nos encanta jugar! Por lo que los adultos serán importantes participantes en las actividades de los más pequeños. Juntos crearán lazos de seguridad y confianza necesarios en esta etapa de desarrollo.</p>
-          <p>¿Cuándo? . A partir del 15 de diciembre.</p>
+          <p> <span>¿Para quién? </span>. Niñas y niños de 3 a 5 años.</p>
+          <p> <span>¿Y los adultos? </span>. Ellos también podrán disfrutar de los cuentos y fijarse muy bien cómo lo hacen los Cuates para que puedan contarles cuentos a sus niños igual de bien.</p>
+          <p> <span>¿Y los adultos? </span>. ¡A todos nos encanta jugar! Por lo que los adultos serán importantes participantes en las actividades de los más pequeños. Juntos crearán lazos de seguridad y confianza necesarios en esta etapa de desarrollo.</p>
+          <p> <span>¿Cuándo? </span>. A partir del 15 de diciembre.</p>
         </article>
       </div>
     </section><span class="ir-arriba"></span>

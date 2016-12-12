@@ -7,10 +7,10 @@ section.sedes-contactos{
         margin: 0px;
     li{
         float: left;
-        margin-right: 25px;
+        margin-right: 1.5625rem;
 
         a{
-            font-size: 12px;
+            font-size: 0.75rem;
             font-family: 'montserratlight';
             text-decoration: none;
             color:$color-gris;
@@ -28,7 +28,7 @@ section.sedes-contactos{
         li{
             float: left;
             background-color: $color-turqueza;
-            width: 180px;
+            width: 11.25rem;
             height: 39px;
             text-align: center;
             padding-top: 10px;
@@ -39,8 +39,8 @@ section.sedes-contactos{
             a{
                 color: #fff;
                 font-family: 'VAGRounded-bold';
-                font-size: 16px;
-                padding: 5px;
+                font-size: 1rem;
+                padding: 0.3125rem;
                 text-decoration: none;}
         }
     }

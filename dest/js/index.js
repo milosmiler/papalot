@@ -16,6 +16,28 @@ $(function(){
         // easing:'easeOutSine' //with jquery ui
         // etc ...
     });
+
+      $('#menu-mobile').click(function(){
+        // $('nav').toggle(); 
+ 
+        if(contador == 1){
+            $('.mobile').animate({
+                right: '0'
+            });
+            contador = 0;
+        } else {
+            contador = 1;
+            $('.mobile').animate({
+                right: '-100%'
+            });
+        }
+ 
+    });
+      $('#image-nav').click(function(event){
+            event.preventDefault();
+            $('ul.image-menu').show();
+      })
+ 
 })
 
 
@@ -148,7 +170,7 @@ function rellenar_dias(){
                 dia[i][j].innerHTML="";
             }
             else if(contador<=tipo_mes){
-                dia[i][j].style.color="#000";
+                dia[i][j].style.color="#37474F";
                 dia[i][j].style.border="none";
                 dia[i][6].style.color="red";
                 dia[i][j].innerHTML=contador;
@@ -156,7 +178,7 @@ function rellenar_dias(){
             }
             if(contador==dia_fecha+1 && mes==fecha.getMonth() && año==(fecha.getYear())+2000-100){
                 dia[i][j].style.color="white";
-                dia[i][j].style.background="#00B3D0";
+                dia[i][j].style.background="#FF7100";
             }
                 
         }
@@ -246,6 +268,10 @@ $(document).keyup(function(e){
 function close_video() {
   $('.video-overlay.open').removeClass('open').find('iframe').remove();
 };
+
+
+
+
 
 
 

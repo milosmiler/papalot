@@ -102,8 +102,21 @@
 
 .flex-direction-nav {
     position: absolute;
-    top: 424px;
-    left: 94px;
+    top: 26.5rem;
+    left: 5.875rem;
+}
+
+li.flex-nav-next{
+    display: inline-block;
+    a.flex-next{
+        top: 0px;
+        margin-left: 23px
+    }
+}
+
+li.flex-nav-prev{
+    display: inline-block;
+    left: 0px;
 }
 
 @-webkit-keyframes fadeInLeft {

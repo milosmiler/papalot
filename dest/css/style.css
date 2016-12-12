@@ -446,7 +446,7 @@ header {
   top: 39px;
   z-index: 9999;
   width: 100%;
-  padding: 10px 0px; }
+  padding: 0.625rem 0px; }
   header .container {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -476,6 +476,39 @@ header {
       display: none;
       position: absolute;
       right: 10px; }
+  header .mobile {
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    margin: 0;
+    background-color: #08405C;
+    position: fixed;
+    top: 100px;
+    z-index: 999; }
+    header .mobile ul li {
+      display: block;
+      color: #fff;
+      font-family: 'VAGRounded-bold';
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      position: relative; }
+      header .mobile ul li a {
+        color: #fff;
+        text-decoration: none; }
+  header ul.image-menu {
+    display: none;
+    width: 30%;
+    background-color: #fff;
+    padding: 5px;
+    position: absolute;
+    z-index: 99999; }
+    header ul.image-menu li {
+      display: block !important;
+      font-size: 18px;
+      font-family: 'VAGRounded-bold';
+      color: #364659;
+      margin-bottom: 23px; }
 
 /********** SECCIONES ***********/
 section.sedes-contactos {
@@ -491,9 +524,9 @@ section.sedes-contactos {
     margin: 0px; }
     section.sedes-contactos ul.sede li {
       float: left;
-      margin-right: 25px; }
+      margin-right: 1.5625rem; }
       section.sedes-contactos ul.sede li a {
-        font-size: 12px;
+        font-size: 0.75rem;
         font-family: 'montserratlight';
         text-decoration: none;
         color: #7B8990; }
@@ -506,7 +539,7 @@ section.sedes-contactos {
     section.sedes-contactos ul.promociones li {
       float: left;
       background-color: #00B3D0;
-      width: 180px;
+      width: 11.25rem;
       height: 39px;
       text-align: center;
       padding-top: 10px; }
@@ -517,8 +550,8 @@ section.sedes-contactos {
       section.sedes-contactos ul.promociones li a {
         color: #fff;
         font-family: 'VAGRounded-bold';
-        font-size: 16px;
-        padding: 5px;
+        font-size: 1rem;
+        padding: 0.3125rem;
         text-decoration: none; }
 
 section.cover {
@@ -684,8 +717,18 @@ section.cover-intro {
 
 .flex-direction-nav {
   position: absolute;
-  top: 424px;
-  left: 94px; }
+  top: 26.5rem;
+  left: 5.875rem; }
+
+li.flex-nav-next {
+  display: inline-block; }
+  li.flex-nav-next a.flex-next {
+    top: 0px;
+    margin-left: 23px; }
+
+li.flex-nav-prev {
+  display: inline-block;
+  left: 0px; }
 
 @-webkit-keyframes fadeInLeft {
   0% {
@@ -1839,51 +1882,53 @@ section.horarios {
     float: left;
     margin: 0px; }
 
-.container-calendario {
-  background-color: #FAFAFA;
-  max-width: 800px;
-  overflow: hidden;
-  float: right;
-  margin-bottom: 28px; }
-
 .contenedor_aplicacion {
   display: table;
-  float: right;
+  margin: 1em auto;
   position: relative; }
 
 .contenedor_aplicacion > div {
   display: inline-block; }
 
 .flecha_mes {
-  width: 2.5em;
-  height: 2.5em;
+  margin: 1em;
   position: absolute;
-  cursor: pointer; }
+  top: -18px; }
 
-.flecha_mes:hover {
-  opacity: 1;
-  color: #fff;
-  background: pink; }
+.titulo-calendario {
+  background: #FF7100; }
 
 .flecha_mes p {
   position: absolute;
   width: 100%;
   text-align: center;
+  line-height: 1.5;
   font-size: 20px;
-  content: "\f0dd"; }
+  color: #fff; }
+  .flecha_mes p:nth-of-type(2) {
+    color: red; }
 
 #adelantar_mes {
   margin-left: -3em; }
 
 .contenedor_calendario {
   display: table;
-  overflow: hidden; }
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 1em #aaa; }
+
+.decoracion_superior {
+  height: 3em;
+  background: pink; }
 
 .contenedor_calendario h3 {
   text-align: center;
-  font-size: 40px;
-  font-family: 'VAGRounded-bold';
-  color: #08405C; }
+  font-size: 1.125rem;
+  font-family: sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  color: #fff; }
 
 #dias {
   padding: .5em; }
@@ -1898,81 +1943,18 @@ section.horarios {
 .dias p {
   position: absolute;
   width: 100%;
-  height: 100%;
   text-align: center;
-  font-family: 'montserratlight';
+  padding-top: 20%;
+  font-size: 1rem;
   border-radius: 100%;
-  color: #08405C;
-  font-size: 16px;
-  padding: 10px; }
+  height: 100%;
+  color: #BCBCBC; }
 
 .semana {
   text-transform: uppercase;
-  font-size: 18px;
+  font-weight: bold;
   height: 2.5em;
-  font-family: 'montserrat-regular';
-  border: none;
-  color: #08405C; }
-
-.container-leyenda-horario {
-  float: left; }
-  .container-leyenda-horario h3 {
-    font-size: 18px;
-    color: #08405C; }
-  .container-leyenda-horario .bloque {
-    color: #fff;
-    padding: 27px 42px;
-    margin-bottom: 21px; }
-    .container-leyenda-horario .bloque h4 {
-      font-size: 20px;
-      color: #fff;
-      font-family: 'VAGRounded-bold';
-      margin-bottom: 21px; }
-    .container-leyenda-horario .bloque p {
-      font-family: 'montserratlight';
-      font-size: 18px;
-      margin-bottom: 21px; }
-    .container-leyenda-horario .bloque a {
-      text-decoration: underline;
-      color: #fff;
-      font-size: 18px;
-      font-family: 'montserratsemi-bold';
-      margin-bottom: 11px;
-      display: block; }
-
-.container-boton-horario {
-  width: 100%;
-  clear: both; }
-  .container-boton-horario a {
-    background-color: #FF7100;
-    border-radius: 3.125rem;
-    clear: both;
-    cursor: pointer;
-    color: #fff;
-    font-family: 'VAGRounded-bold';
-    display: block;
-    font-size: 1.125rem;
-    height: 3.125rem;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    text-align: left;
-    padding-left: 1.125rem;
-    padding-top: 0.9375rem;
-    text-decoration: none;
-    width: 12.5rem;
-    position: relative;
-    float: right; }
-    .container-boton-horario a:before {
-      content: "\f061";
-      position: absolute;
-      right: 1.4375rem;
-      font-family: 'FontAwesome'; }
-
-.rosa {
-  background-color: #EF096E; }
-
-.verde {
-  background-color: #A4CD40; }
+  border: none; }
 
 section.slider-blog article.leyenda-blog {
   width: 379px;
@@ -2535,6 +2517,47 @@ section.laboratorio .container {
     display: table-cell;
     width: 60%;
     background: #CCF9FF; }
+    section.laboratorio .container article.derecha p {
+      font-size: 14px;
+      font-family: 'montserratlight';
+      color: #000; }
+      section.laboratorio .container article.derecha p span {
+        font-family: 'montserrat-bold'; }
+  section.laboratorio .container article.calendario {
+    display: table; }
+    section.laboratorio .container article.calendario .item1 {
+      display: table-cell;
+      width: 10%;
+      vertical-align: top; }
+      section.laboratorio .container article.calendario .item1 h2 {
+        font-size: 'montserrat-bold';
+        font-size: 1rem;
+        color: #000; }
+    section.laboratorio .container article.calendario .item2 {
+      display: table-cell;
+      width: 50%; }
+    section.laboratorio .container article.calendario .item3 {
+      display: table-cell;
+      width: 40%;
+      vertical-align: top;
+      padding-top: 10px;
+      position: relative; }
+      section.laboratorio .container article.calendario .item3 p {
+        font-family: 'montserrat-regular';
+        font-size: 1.125rem;
+        margin-bottom: 1.875rem; }
+        section.laboratorio .container article.calendario .item3 p span.small {
+          font-family: 'montserratlight';
+          font-size: 0.875rem; }
+      section.laboratorio .container article.calendario .item3 p.date {
+        color: #FF4200; }
+      section.laboratorio .container article.calendario .item3 span.close:before {
+        content: "\f00d";
+        font-family: 'FontAwesome';
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        cursor: pointer; }
 
 section.mexico-vivo {
   margin-bottom: 1.5625rem;
@@ -2567,6 +2590,12 @@ section.mexico-vivo {
     display: table-cell;
     width: 60%;
     background: #E9FFCD; }
+    section.mexico-vivo article.derecha p {
+      font-size: 14px;
+      font-family: 'montserratlight';
+      color: #000; }
+      section.mexico-vivo article.derecha p span {
+        font-family: 'montserrat-bold'; }
 
 section.descubrimientos {
   margin-bottom: 1.5625rem;
@@ -2624,6 +2653,12 @@ section.descubrimientos {
     display: table-cell;
     width: 60%;
     background: #F3E6FE; }
+    section.descubrimientos article.derecha p {
+      font-size: 14px;
+      font-family: 'montserratlight';
+      color: #000; }
+      section.descubrimientos article.derecha p span {
+        font-family: 'montserrat-bold'; }
 
 section.patio-aventura {
   margin-bottom: 1.5625rem;
@@ -2681,6 +2716,12 @@ section.patio-aventura {
     display: table-cell;
     width: 60%;
     background: #FFDFDF; }
+    section.patio-aventura article.derecha p {
+      font-size: 14px;
+      font-family: 'montserratlight';
+      color: #000; }
+      section.patio-aventura article.derecha p span {
+        font-family: 'montserrat-bold'; }
 
 section.text h2 {
   text-align: center;
@@ -2953,10 +2994,11 @@ footer {
 
 @media only screen and (max-width: 767px) {
   header {
-    position: inherit; }
+    position: inherit;
+    background-color: #08405c; }
     header .container nav {
       display: none; }
-    header .container nav#menu-mobile {
+    header .container #menu-mobile {
       display: block; }
   section.sedes-contactos {
     display: none; }
@@ -3336,7 +3378,81 @@ footer {
     position: relative;
     left: 0px;
     -webkit-transform: inherit;
-            transform: inherit; } }
+            transform: inherit;
+    padding: 0px 20px; }
+  section.cover-renovado .content-museo h2 {
+    font-size: 28px; }
+  section.cover-renovado .content-museo p {
+    font-size: 16px; }
+  section.cover-renovado .content-museo a.comprar-museo {
+    float: none;
+    margin: auto; }
+  .flexslider li .meta {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    margin-top: 10px;
+    top: 0px;
+    padding: 0px 20px; }
+  .flexslider li h2 {
+    color: #08405C;
+    font-size: 30px;
+    text-shadow: none; }
+  .flexslider li .meta-horario {
+    position: relative;
+    margin-top: 10px;
+    top: 15px;
+    left: 0px;
+    padding: 0px 15px; }
+  .flexslider li .meta-boton {
+    position: relative;
+    display: block;
+    left: 0px;
+    top: 23px;
+    margin: auto;
+    margin-bottom: 30px; }
+  .flexslider li .meta-boton a.comprar-slider {
+    float: none;
+    margin: auto; }
+  .flex-direction-nav {
+    margin: auto; }
+  .flex-direction-nav {
+    position: relative;
+    border: 1px solid #fff;
+    bottom: 0px;
+    top: 38px;
+    display: block;
+    margin: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .flex-direction-nav a:before {
+    color: #08405C !important; }
+  section.slider-reino ul.bxslider li .content {
+    position: relative;
+    left: 0px;
+    -webkit-transform: inherit;
+            transform: inherit;
+    width: 100%; }
+  section.slider-reino ul.bxslider li figure.image-reino {
+    width: 100%; }
+  ul.bxslider li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  section.slider-reino ul.bxslider li .content a.comprar-slider {
+    margin: auto;
+    float: none;
+    margin-bottom: 20px; }
+  section.slider-reino .bx-controls-direction {
+    left: 50%;
+    bottom: -10px; }
+  section.cover-renovado {
+    margin-bottom: 40px; } }
 
 @-webkit-keyframes dothabottomcheck {
   0% {

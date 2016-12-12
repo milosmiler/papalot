@@ -5,57 +5,59 @@ section.horarios{
     font-size: 70px;
     color: $color-azul100;
     float: left;
-    margin: 0px;
-
-  }
-}
-
-.container-calendario{
-  background-color: $color-grisCL100;
-  max-width: 800px;
-  overflow: hidden;
-  float: right;
-   margin-bottom: 28px;
+    margin: 0px;}
 }
 
 .contenedor_aplicacion{
   display: table;
-  float: right;
+  margin: 1em auto;
   position: relative;
 }
 .contenedor_aplicacion >div{
   display: inline-block;
 }
 .flecha_mes{
-  width: 2.5em;
-  height: 2.5em;
-  position: absolute;
-  cursor: pointer;
+    margin: 1em;
+    position: absolute;
+    top: -18px;
 }
-.flecha_mes:hover{
-  opacity: 1;
-  color: #fff;
-  background: pink;
+
+.titulo-calendario{
+  background: #FF7100;
 }
+
 .flecha_mes p{
   position: absolute;
   width: 100%;
   text-align: center;
+  line-height:1.5;
   font-size: 20px;
-  content: "\f0dd";
+  color: #fff;
+  &:nth-of-type(2){
+    color: red;
+  }
 }
 #adelantar_mes{
   margin-left:-3em;
 }
 .contenedor_calendario{
   display: table;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 0 1em #aaa;
+}
+.decoracion_superior {
+  height: 3em;
+  background: pink; 
 }
 .contenedor_calendario h3{
   text-align: center;
-  font-size: 40px;
-  font-family: 'VAGRounded-bold';
-  color: $color-azul100;
+  font-size: 1.125rem;
+  font-family: sans-serif;
+  padding-top:10px; 
+  padding-bottom: 10px;
+  margin: 0px;
+  color: #fff;
 }
 #dias{
   padding: .5em;
@@ -70,68 +72,18 @@ section.horarios{
 .dias p{
   position: absolute;
   width: 100%;
-  height: 100%;
   text-align: center;
-  font-family: 'montserratlight';
+  padding-top: 20%;
+  font-size: 1rem;
   border-radius: 100%;
-  color: $color-azul100;
-  font-size: 16px;
-  padding: 10px;
+  height: 100%;
+  color: #BCBCBC;
 }
 .semana{
   text-transform: uppercase;
-  font-size: 18px;
+  font-weight: bold;
   height: 2.5em;
-  font-family: 'montserrat-regular';
   border:none;
-  color: $color-azul100;
 }
 
-.container-leyenda-horario{
-  float: left;
-  h3{
-    font-size: 18px;
-    color: $color-azul100;
-  }
-  .bloque{
-    color: #fff;
-    padding: 27px 42px;
-    margin-bottom: 21px;
-    h4{
-      font-size: 20px;
-      color:#fff; 
-      font-family: 'VAGRounded-bold';
-      margin-bottom: 21px;
-    }
-    p{
-      font-family: 'montserratlight';
-      font-size: 18px;
-      margin-bottom: 21px;
-    }
-    a{
-      text-decoration: underline;
-      color: #fff;
-      font-size: 18px;
-      font-family: 'montserratsemi-bold';
-      margin-bottom: 11px;
-      display: block;
-    }
-  }
-}
-.container-boton-horario{
-  width: 100%;
-  clear: both;
-  a{
-    @include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
-    position: relative;
-    float: right;
-  }
-}
-
-.rosa{
-  background-color: $color-rosa;
-}
-.verde{
-  background-color: $color-verde;
-}
 

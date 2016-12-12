@@ -99,13 +99,11 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav {
   *height: 0;
-  width: 300px;
+  width: 200px;
+  
 }
 .flex-direction-nav a {
   text-decoration: none;
-  display: block;
-  margin: -20px 0 0;
-  position: absolute;
   top: 50%;
   z-index: 10;
   overflow: hidden;
@@ -119,38 +117,29 @@ html[xmlns] .flexslider .slides {
   height: 3.75rem;
   position: relative;
 }
-.flex-direction-nav a:before {
-  font-family: 'icomoon';
-  font-size: 4.0625rem;
-  display: inline-block;
-  content: "\e90c";
-  color: #fff;
-  position: absolute;
-  top: 50%;  
-  left: 50%; 
-  transform: translate(-50%, -50%);}
-}
+
 .flex-direction-nav a.flex-next:before {
   font-family: 'icomoon';
   content: "\e90d";
+  font-size: 85px;
 }
-.flex-direction-nav .flex-prev {
-  right: -5.8125rem;
-  top: -0.6875rem;
+.flex-direction-nav a.flex-prev:before {
   content: "\e90c";
-  -moz-transform: scaleX(-1); /* Firefox */
+  font-family: 'icomoon';
+  font-size: 85px;
+}
+
+.flex-direction-nav .flex-next {
+  text-align: right;
+  font-family: 'icomoon';
+  content: "\e90d";
+   -moz-transform: scaleX(-1); /* Firefox */
   -o-transform: scaleX(-1); /* Opera */
   -webkit-transform: scaleX(-1); /* Chrome y Safari */
   transform: scaleX(-1); /* w3org */
   filter: FlipH; /* Internet Explorer */
 }
-.flex-direction-nav .flex-next {
-  left: 0.125rem;
-  top: -3.25rem;
-  text-align: right;
-  font-family: 'icomoon';
-  content: "\e90d";
-}
+
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
 }
@@ -197,6 +186,7 @@ html[xmlns] .flexslider .slides {
 .flex-control-nav {
   width: 100%;
   position: absolute;
+  display: none;
   bottom: 10px;
   text-align: center;
 }

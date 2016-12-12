@@ -66,6 +66,60 @@ section.laboratorio{
 			display: table-cell;
 			width: 60%;
 			background: #CCF9FF;
+			p{
+				font-size: 14px;
+				font-family: 'montserratlight';
+				color: #000;
+				span{
+					font-family: 'montserrat-bold';
+				}
+			}
+		}
+		article.calendario{
+			display: table;
+			.item1{
+				display: table-cell;
+				width: 10%;
+				vertical-align: top;
+				h2{
+					font-size: 'montserrat-bold';
+					font-size: 1rem;
+					color: #000;
+				}
+			}
+			.item2{
+				display: table-cell;
+				width: 50%;
+			}
+			.item3{
+				display: table-cell;
+				width: 40%;
+				vertical-align: top;
+				padding-top: 10px;
+				position: relative;
+				p{
+					font-family: 'montserrat-regular';
+					font-size: 1.125rem;
+					margin-bottom: 1.875rem;
+					span.small{
+						font-family: 'montserratlight';
+						font-size: 0.875rem;
+					}
+
+				}
+				p.date{
+					color: $color-Naranja100;
+				}
+				span.close:before{
+					content: "\f00d";
+					 font-family:'FontAwesome';
+					 position: absolute;
+					 right: 15px;
+					 top: 15px;
+					 cursor: pointer;
+
+				}
+			}
 		}
 	}
 }
@@ -103,6 +157,14 @@ section.mexico-vivo{
 			display: table-cell;
 			width: 60%;
 			background: #E9FFCD;
+			p{
+				font-size: 14px;
+				font-family: 'montserratlight';
+				color: #000;
+				span{
+					font-family: 'montserrat-bold';}
+				}
+
 		}
 }
 
@@ -169,6 +231,13 @@ section.descubrimientos{
 			display: table-cell;
 			width: 60%;
 			background: #F3E6FE;
+			p{
+				font-size: 14px;
+				font-family: 'montserratlight';
+				color: #000;
+				span{
+					font-family: 'montserrat-bold';}
+				}
 		}
 }
 
@@ -233,6 +302,13 @@ section.patio-aventura{
 			display: table-cell;
 			width: 60%;
 			background: #FFDFDF;
+			p{
+				font-size: 14px;
+				font-family: 'montserratlight';
+				color: #000;
+				span{
+					font-family: 'montserrat-bold';}
+				}
 		}
 
 }

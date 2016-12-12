@@ -1,11 +1,12 @@
 @media only screen and (max-width: 767px) {
     header{
         position: inherit;
+        background-color: rgba(8, 64, 92, 1);
         .container{
             nav{
                 display: none;}
         }
-        .container nav#menu-mobile{
+        .container #menu-mobile{
             display: block;}
     }
     section.sedes-contactos{
@@ -526,7 +527,107 @@
         position: relative;
         left: 0px;
         transform: inherit;
+        padding: 0px 20px;
     }
+    section.cover-renovado .content-museo h2{
+        font-size: 28px;
+    }
+
+    section.cover-renovado .content-museo p{
+        font-size: 16px;
+    }
+    section.cover-renovado .content-museo a.comprar-museo{
+        float: none;
+        margin: auto;
+    }
+
+    .flexslider li .meta{
+        position: relative;
+        left: 0px;
+        width: 100%;
+        margin-top: 10px;
+        top: 0px;
+        padding: 0px 20px;
+
+    }
+
+    .flexslider li h2{
+        color: $color-azul100;
+        font-size: 30px;
+        text-shadow: none;
+    }
+    .flexslider li .meta-horario{
+        position: relative;
+        margin-top: 10px;
+        top: 15px;
+        left: 0px;
+        padding: 0px 15px;
+    }
+
+    .flexslider li .meta-boton{
+        position: relative;
+        display: block;
+        left: 0px;
+        top: 23px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .flexslider li .meta-boton a.comprar-slider{
+        float: none;
+        margin: auto;
+    }
+    .flex-direction-nav{
+        margin: auto;
+    }
+
+    .flex-direction-nav{
+        position: relative;
+        border: 1px solid #fff;
+        bottom: 0px;
+        top: 38px;
+        display: block;
+        margin: auto;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .flex-direction-nav a:before{
+        color: $color-azul100!important;
+    }
+
+    section.slider-reino ul.bxslider li .content{
+        position: relative;
+        left: 0px;
+        transform: inherit;
+        width: 100%;
+    }
+    section.slider-reino ul.bxslider li figure.image-reino{
+        width: 100%;
+    }
+
+    ul.bxslider li{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section.slider-reino ul.bxslider li .content a.comprar-slider{
+        margin: auto;
+        float: none;
+        margin-bottom: 20px;
+    }
+    section.slider-reino .bx-controls-direction{
+        left: 50%;
+        bottom: -10px;
+    }
+
+    section.cover-renovado{
+        margin-bottom: 40px;
+    }
+
+
+
+    
 
 
 
