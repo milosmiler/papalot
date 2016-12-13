@@ -10,18 +10,19 @@ html(lang="es")
 		link(rel="stylesheet" href="css/jquery.bxslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
-		include block/sedes.pug
-		include block/header.pug
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
 		include block/slider.pug
 		section.plan-familia
-			h2 Planea tu visita
+			h2 
+				a(href="planea-visita.htm") Planea tu visita
 		include block/cover-renovado.pug
 		include block/slider-reino.pug
 		//- include block/slider-blog.pug
 		//- include block/horarios.pug
 		//- include block/cover.pug
 		//- include block/renovado.pug
-		include block/plan.pug
 		include block/notas.pug
 		include block/slider-patrocinador.pug
 		//- include block/experiencia-contenido.pug

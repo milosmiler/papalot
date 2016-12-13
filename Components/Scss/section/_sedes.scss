@@ -3,17 +3,23 @@ section.sedes-contactos{
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.2);
     ul.sede{
         margin: 0px;
     li{
         float: left;
         margin-right: 1.5625rem;
 
+
         a{
             font-size: 0.75rem;
             font-family: 'montserratlight';
             text-decoration: none;
             color:$color-gris;
+            cursor: pointer;
+
             &:hover{
                 color: $color-azul100;
                 font-family: 'montserrat-bold';
@@ -43,5 +49,23 @@ section.sedes-contactos{
                 padding: 0.3125rem;
                 text-decoration: none;}
         }
+    }
+
+
+    .bold{
+        font-family: 'montserrat-bold'!important;
+    }
+}
+
+
+section.iframe{
+    width: 100%;
+    padding-top: 6.75rem;
+    overflow: visible;
+    clear: both;
+    iframe{
+        width: 100%;
+        height: 135vh;
+        overflow-y: hidden;
     }
 }

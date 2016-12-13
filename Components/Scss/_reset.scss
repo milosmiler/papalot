@@ -28,6 +28,8 @@ h3 {font-family: 'VAGRounded-bold'; text-rendering: auto; -webkit-font-smoothing
 p {font-size:1.125rem; font-family: 'montserrat-regular'; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 a {text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 section{ width: 100%; height: auto; overflow:hidden;}
+body{overflow-y: scroll;
+     overflow-x: hidden;}
 
 /*** clases de ayuda ***/
 

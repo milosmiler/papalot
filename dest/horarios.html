@@ -12,30 +12,33 @@
   <body>
     <section class="sedes-contactos flex">
       <ul class="sede">
-        <li><a href="#">Chapultepec</a></li>
+        <li><a class="bold" href="index.html">Chapultepec</a></li>
+        <li><a href="http://www.papalotecuernavaca.org.mx/">Cuernavaca</a></li>
+        <li><a href="http://www.papalotemonterrey.org.mx/">Monterrey</a></li>
         <li><a href="#">Iztapalapa</a></li>
-        <li><a href="#">Monterrey</a></li>
-        <li><a href="#">Cuernavaca</a></li>
       </ul>
       <ul class="promociones">
         <li><a href="#">Horarios</a></li>
-        <li><a href="#">Precios y promociones</a></li>
-        <li><a href="#">Compra en linea</a></li>
+        <li><a href="precios-promociones.html">Precios y promociones</a></li>
+        <li><a href="compra-linea.html">Compra en línea</a></li>
       </ul>
     </section>
     <header>
       <div class="container flex">
-        <figure class="logo"><img src="images/papalote-logo.png"></figure>
+        <figure class="logo"><a href="index.html"><img src="images/papalote-logo.png"></a></figure>
         <nav>
           <ul>
-            <li id="image-nav"><a href="">Familias</a>
-              <ul class="image-menu">
-                <li>Papalote renovado</li>
-                <li>ADO Megapantalla IMAX</li>
-                <li>Domodigital Banamex</li>
-                <li>Planea tu visita</li>
-                <li>Programas interpretativos</li>
-              </ul>
+            <li id="image-nav"><a href="#">Familias</a>
+              <div class="container-menu">
+                <ul class="image-menu">
+                  <li> <a href="papalote-renovado.html">Papalote renovado</a></li>
+                  <li> <a href="mega-pantalla.html">ADO Megapantalla IMAX</a></li>
+                  <li><a href="domodigital.html"> Domodigital Citibanamex</a></li>
+                  <li><a href="planea-visita.html">Planea tu visita</a></li>
+                  <li><a href="programas-interpretativos.html">actividades especiales</a></li>
+                </ul>
+                <figure class="nav-images"><img src="images/img1.png"></figure>
+              </div>
             </li>
             <li><a href="">Niños</a></li>
             <li><a href="">ABC Papalote</a></li>
@@ -44,10 +47,25 @@
             <li><a href="">Blog</a></li>
           </ul>
         </nav>
-        <div id="menu-mobile"><i class="fa fa-bars"></i></div>
+        <div class="efect" id="menu-mobile">
+          <div class="burger"></div>
+        </div>
         <div class="mobile">
+          <div class="container-box">
+            <div class="box-line">Comprar en línea</div>
+            <div class="box">Precios y promociones</div>
+            <div class="box">Horarios</div>
+          </div>
           <ul>
-            <li><a href="">Familias</a></li>
+            <li><a id="sub-menu" href="#">Familias</a><i class="fa fa-plus-circle"></i>
+              <ul class="container-movile">
+                <li><a href="papalote-renovado.html">Papalote renovado</a></li>
+                <li><a href="mega-pantalla.html">ADO Megapantalla IMAX</a></li>
+                <li><a href="domodigital.html">Domodigital Banamex</a></li>
+                <li><a href="planea-visita.html">Planea tu visita</a></li>
+                <li><a href="programas-interpretativos.html">actividades especiales</a></li>
+              </ul>
+            </li>
             <li><a href="">Niños</a></li>
             <li><a href="">ABC Papalote</a></li>
             <li><a href="">Grupos y eventos</a></li>
@@ -268,7 +286,7 @@
         </aside>
         <section class="contactanos">
           <div class="column">
-            <h2>Papalote museo del niño</h2>
+            <h2>PAPALOTE MUSEO DEL NIÑO</h2>
             <ul>
               <li>Dirección<i class="fa icon-mariposa"></i>
                 <p>2da sección de Chapultepec</p>
@@ -279,7 +297,7 @@
                 <p>5237 1781</p>
               </li>
               <li>Venta de boletos<i class="fa fa-phone"></i>
-                <p>5237 1778 /5237 1779</p>
+                <p>5237 1778 / 5237 1779</p>
               </li>
             </ul>
           </div>
@@ -287,7 +305,7 @@
             <h2>Contáctanos</h2>
             <form class="enviar">
               <input class="nombre" type="text" placeholder="Nombre(s)*">
-              <input class="email" type="text" placeholder="Correo electronico*">
+              <input class="email" type="text" placeholder="Correo electrónico*">
               <select class="comentario">
                 <option value=" ">¿A qué departamento va dirigido tu comentario?*</option>
                 <option value=" ">México</option>
@@ -300,7 +318,7 @@
         </section>
         <div class="nav-footer">
           <ul>
-            <li><a href="#">Aviso de privacidad</a><a href="#">Términos y condiciones</a><a href="#">© Papalote Museo del Niño 2017</a></li>
+            <li><a href="aviso-privacidad.html">Aviso de privacidad</a><a href="terminos-condiciones.html">Términos y condiciones</a><a href="#">© Papalote Museo del Niño 2017</a></li>
           </ul>
           <figure class="aprendo"><img src="images/aprendo.png"></figure>
         </div>

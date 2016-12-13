@@ -11,8 +11,9 @@ section.slider-reino{
 				background: #fff;
 				position: absolute;
 				transform: translate(-50%,-50%);
-			    left: 40%;
+			    left: 30%;
 			    top: 50%;
+			    z-index: 999;
 			    h2{
 			    	font-size: 3.125rem;
 			    	color: $color-azul100;
@@ -38,6 +39,7 @@ section.slider-reino{
 			figure.image-reino{
 				float: right;
 				width: 64%;
+				position: relative;
 				img{
 					width: 100%;
 				}

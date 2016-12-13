@@ -1,7 +1,5 @@
 section.notas{
     padding: 110px 0px;
-    background-image: url('../images/fondo-nota.jpg');
-    background-size: cover;
     .container{
         justify-content: space-between;
         article.nota{
@@ -32,6 +30,13 @@ section.notas{
                 color: $color-azul100;
                 margin-bottom: 1.5rem;
                 margin-left: 2.1875rem;
+                span{
+                    font-family: 'montserrat-bold';
+                }
+                span.email{
+                    font-family: 'montserrat-regular';
+                    text-decoration: underline;
+                }
             }
             a.boton.nota{
                 @include boton($ancho: 12.5rem, $fondo: $color-verde , $color: #fff);

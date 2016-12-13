@@ -16,6 +16,7 @@ footer{
             input.newsletter{
                 border: 1px solid rgba(255, 255, 255, 0.5);
                 background-color: #35485D;
+                 color: rgba(255, 255, 255, 0.8);
                 input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 14px; font-family:'montserratlight';}
                 input::-webkit-input-placeholder {color: rgba(255, 255, 255, 0.5); font-size: 14px; font-family:'montserratlight';}
                 input:-moz-placeholder {color: rgba(255, 255, 255, 0.5);font-size: 14px; font-family:'montserratlight';}
@@ -123,6 +124,7 @@ footer{
                     color: rgba(255, 255, 255, 0.5);
                     font-size: 0.75rem;}
                 input.email {
+                    color: rgba(255, 255, 255, 0.8);
                     border-top: 1px solid rgba(255, 255, 255, 0.5);
                     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
                     border-left: none;
@@ -133,6 +135,7 @@ footer{
                     float: left;}
                 input.nombre{
                     float: right;
+                     color: rgba(255, 255, 255, 0.8);
                      padding-left:23px;
                     width: 50%;
                     border-top: 1px solid rgba(255, 255, 255, 0.5);
@@ -144,6 +147,8 @@ footer{
                     width: 100%;}
                 textarea{
                     margin-bottom: 0.875rem;
+                    color: rgba(255, 255, 255, 0.8);
+                    input:-moz-placeholder {color: rgba(255, 255, 255, 0.5);font-size: 14px; font-family:'montserratlight';}
                     width: 100%;
                     background: transparent;
                     border-top: 1px solid rgba(255, 255, 255, 0.5);

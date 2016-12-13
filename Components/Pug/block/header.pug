@@ -1,17 +1,26 @@
 header
 	.container.flex
 		figure.logo
-			img(src="images/papalote-logo.png")
+			a(href="index.html")
+				img(src="images/papalote-logo.png")
 		nav
 			ul
 				li#image-nav
-					a(href="") Familias
-					ul.image-menu
-						li Papalote renovado
-						li ADO Megapantalla IMAX
-						li Domodigital Banamex
-						li Planea tu visita
-						li Programas interpretativos
+					a(href="#") Familias
+					.container-menu
+						ul.image-menu
+							li 
+								a(href="papalote-renovado.html") Papalote renovado
+							li 
+								a(href="mega-pantalla.html") ADO Megapantalla IMAX
+							li
+								a(href="domodigital.html")  Domodigital Citibanamex
+							li
+								a(href="planea-visita.html") Planea tu visita
+							li
+								a(href="programas-interpretativos.html") actividades especiales
+						figure.nav-images
+							img(src="images/img1.png")
 				li
 					a(href="") Niños
 				li
@@ -23,13 +32,29 @@ header
 				li
 					a(href="") Blog
 
-		#menu-mobile
-			i.fa.fa-bars
+		#menu-mobile.efect
+			.burger
 
 		.mobile
+			.container-box
+				.box-line Comprar en línea
+				.box Precios y promociones
+				.box Horarios
 			ul
 				li
-					a(href="") Familias
+					a#sub-menu(href="#") Familias
+					i.fa.fa-plus-circle
+					ul.container-movile
+						li
+							a(href="papalote-renovado.html") Papalote renovado
+						li
+							a(href="mega-pantalla.html") ADO Megapantalla IMAX
+						li
+							a(href="domodigital.html") Domodigital Banamex
+						li
+							a(href="planea-visita.html") Planea tu visita
+						li
+							a(href="programas-interpretativos.html") actividades especiales
 				li
 					a(href="") Niños
 				li

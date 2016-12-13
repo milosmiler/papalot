@@ -73,6 +73,11 @@ section.laboratorio{
 				span{
 					font-family: 'montserrat-bold';
 				}
+				span.click{
+					color: $color-rosa;
+					text-decoration: underline;
+					cursor: pointer;
+				}
 			}
 		}
 		article.calendario{

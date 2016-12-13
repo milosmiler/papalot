@@ -9,7 +9,15 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-start;}
+        align-items: flex-start;
+        span.adquiere{
+            font-family: 'VAGRounded-bold';
+            font-family: 1.125rem;
+            color: #1D5BFF;
+            margin-top:1.875rem;
+            margin-bottom: 1.875rem;
+        }
+    }
     .meta-horario{
         position: absolute;
         bottom: 3.125rem;
@@ -19,6 +27,11 @@
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
+        .leyenda-promociones{
+            font-family: 'montserratlight';
+            font-size: 14px;
+            color: #001242;
+        }
         h3{
             font-family: 'VAGRounded-bold';
             font-size: 1.125rem;
@@ -42,6 +55,7 @@
             @include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff);
             position: relative;}
     }
+    
     h2{
         margin:0;
         font-size: 4.375rem;
@@ -49,7 +63,78 @@
         letter-spacing: 0.0625rem;
     }
   }
+
 }
+
+
+.meta-incluye{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.3);
+        right: 6.25rem;
+        bottom: 11.25rem;
+        padding: 2.125rem 2.9375rem;
+        text-align: center;
+        span.inclu{
+            text-align: left;
+            font-size: 1.25rem;
+            display: block;
+            font-family: 'VAGRounded-bold';
+            color: #001B64;
+            text-align: left;}
+        span.titulo{
+            text-align: center;
+            font-size: 1.5rem;
+            color: #1D5BFF;
+            display: block;
+            margin-bottom: 0.875rem;
+            margin-top: 0.625rem;
+             font-family: 'VAGRounded-bold';
+        }
+        i{
+            font-size: 1.875rem;
+            color: #FF6B00;
+        }
+}
+
+.meta-incluye-rojo{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 255, 255, 0.3);
+        right: 6.25rem;
+        bottom: 11.25rem;
+        padding: 2.125rem 2.9375rem;
+        text-align: center;
+        span.titulo-gen{
+            font-size: 30px;
+            color: #FF0826;
+            font-family: 'VAGRounded-bold';
+            margin-bottom: 10px;
+        }
+        span.inclu{
+            text-align: left;
+            font-size: 1.25rem;
+            display: block;
+            font-family: 'VAGRounded-bold';
+            color: #001B64;
+            text-align: left;}
+        span.titulo{
+            text-align: center;
+            font-size: 1.5rem;
+            color: #1D5BFF;
+            display: block;
+            margin-bottom: 0.875rem;
+            margin-top: 0.625rem;
+             font-family: 'VAGRounded-bold';
+        }
+        i{
+            font-size: 1.875rem;
+            color: #FF0826;
+        }
+}
+
 
 
 .flexslider li h2,
@@ -64,6 +149,8 @@
     -webkit-animation-name: fadeOutLeft;
     animation-name: fadeOutLeft;
 }
+
+
 
 .flexslider li.flex-active-slide .meta h2,
 .flexslider li.flex-active-slide .meta span.link,

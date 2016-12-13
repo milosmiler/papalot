@@ -1,7 +1,8 @@
 section.renovado{
   position: relative;
   img{
-      width: 100%;}
+      width: 100%;
+      margin-top: 6.25rem;}
   .column{
     max-width: 383px;
     height: auto;
@@ -15,5 +16,15 @@ section.renovado{
       @include boton;
       position: relative;}
       
+  }
+}
+
+section.desplegado{
+  img.desk{
+    width: 100%;
+  }
+  img.movile{
+    width: 100%;
+    display: none;
   }
 }

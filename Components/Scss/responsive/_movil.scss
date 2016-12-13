@@ -401,8 +401,53 @@
     }
 
     section.laboratorio .container article.derecha{
-        padding:0px;
+        padding:5px 15px;
     }
+
+    section.laboratorio .container article.calendario .item1, section.laboratorio .container article.calendario .item2, section.laboratorio .container article.calendario .item3{
+        display: block;
+        width: 100%;
+    }
+
+    section.laboratorio .container article.calendario .item3{
+        padding: 5px 15px;
+    }
+
+    section.laboratorio .container article.calendario .item1 h2{
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 15px;
+    }
+
+    section.laboratorio .container article.calendario{
+        width: 100%;
+    }
+
+    section.mexico-vivo article.derecha, section.descubrimientos article.derecha, section.patio-aventura article.derecha{
+        padding: 5px 15px;
+    }
+
+    section.hologramas .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        padding: 0px 20px;
+    }
+
+    section.hologramas .container .holograma{
+        padding-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     section.cover-intro .container{
         padding: 0px 5px;
@@ -626,9 +671,45 @@
     }
 
 
+    .meta-incluye{
+        position: relative;
+        left: 0px;
+        display: block;
+        top: 0px;
+    }
+    .meta-incluye span.titulo{
+        font-size: 22px;
+    }
+
+     .meta-incluye-rojo{
+        position: relative;
+        left: 0px;
+        display: block;
+        top: 0px;
+    }
+    .meta-incluye-rojo span.titulo{
+        font-size: 22px;
+    }
+
+
+    .container-box{
+        display: blok;
+    }
+
+    section.desplegado{
+      img.desk{
+        display: none;}
+      img.movile{
+        width: 100%;
+        display: block;
+      }
+}
+
 
     
-
+section.iframe{
+    padding-top: 0px;
+}
 
 
 

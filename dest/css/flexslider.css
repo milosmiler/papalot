@@ -121,12 +121,14 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a.flex-next:before {
   font-family: 'icomoon';
   content: "\e90d";
-  font-size: 85px;
+  font-size: 5.3125rem;
+  color: #08405C;
 }
 .flex-direction-nav a.flex-prev:before {
   content: "\e90c";
   font-family: 'icomoon';
-  font-size: 85px;
+  font-size: 5.3125rem;
+  color: #08405C;
 }
 
 .flex-direction-nav .flex-next {

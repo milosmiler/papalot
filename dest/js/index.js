@@ -33,10 +33,28 @@ $(function(){
         }
  
     });
-      $('#image-nav').click(function(event){
-            event.preventDefault();
-            $('ul.image-menu').show();
+      $('#image-nav').click(function(){
+            $('.container-menu').toggle(); 
       })
+
+      $('#sub-menu').click(function(event){
+            event.preventDefault();
+            $('.container-movile').toggle(); 
+      })
+
+      $(".efect").click(function () {
+            $(this).toggleClass("menu-on");
+    });
+
+
+      var altura = $('.contenedor-fixed').offset().top;
+        $(window).on('scroll', function(){
+            if ( $(window).scrollTop() > altura ){
+                $('.contenedor-fixed').addClass('menu-fixed');
+            } else {
+                $('.contenedor-fixed').removeClass('menu-fixed');
+            }
+        });
  
 })
 
@@ -268,6 +286,7 @@ $(document).keyup(function(e){
 function close_video() {
   $('.video-overlay.open').removeClass('open').find('iframe').remove();
 };
+
 
 
 
