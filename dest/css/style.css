@@ -603,7 +603,8 @@ header {
     top: 100px;
     z-index: 9999; }
     header .mobile ul {
-      margin: 0px; }
+      margin: 0px;
+      background-color: #364659; }
       header .mobile ul li {
         display: block;
         font-family: 'VAGRounded-bold';
@@ -638,7 +639,7 @@ header {
     position: absolute;
     z-index: 99999;
     padding: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
-    top: 4.25rem;
+    top: 3.9375rem;
     left: -7rem; }
     header .container-menu:before {
       content: '';
@@ -3436,7 +3437,8 @@ footer {
 @media only screen and (max-width: 767px) {
   header {
     position: inherit;
-    background-color: #08405c; }
+    background-color: #08405c;
+    top: 0px; }
     header .container nav {
       display: none; }
     header .container #menu-mobile {
@@ -3817,7 +3819,8 @@ footer {
   section.padrinos article.marcas {
     width: 100%; }
   section.padrinos article.leyenda-content, section.padrinos article.marcas .content-logo-marca {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 50px; }
   section.padrinos article.marcas .content-logo-marca figure.marca {
     margin: 20px 11px; }
   section.notas .container {
@@ -3943,7 +3946,18 @@ footer {
     width: 100%;
     display: block; }
   section.iframe {
-    padding-top: 0px; } }
+    padding-top: 0px; }
+  .slide h2 {
+    font-size: 28px; }
+  section.padrinos article.marcas .content-logo-marca h3 {
+    font-size: 18px; }
+  .slider-nav {
+    bottom: 0px; }
+  .slide {
+    padding-bottom: 1.75rem; }
+  section.padrinos article.leyenda-content {
+    padding: 0px 15px;
+    text-align: left; } }
 
 @-webkit-keyframes dothabottomcheck {
   0% {

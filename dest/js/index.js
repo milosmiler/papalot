@@ -7,7 +7,7 @@ $(function(){
     });
 
       $('#slider-1').flexboxslider({
-        max_height: 500,
+        max_height: 550,
         items: 1,
         interval: 6000,
         timer: true,
@@ -71,9 +71,7 @@ $(function(){
       $('.video-overlay.open').removeClass('open').find('iframe').remove();
     };
 
-    setTimeout(function() {
-        $(".container-menu").fadeOut(1500);
-    },3000);
+    
  
 })
 

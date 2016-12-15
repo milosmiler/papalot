@@ -2,6 +2,7 @@
     header{
         position: inherit;
         background-color: rgba(8, 64, 92, 1);
+        top: 0px;
         .container{
             nav{
                 display: none;}
@@ -535,6 +536,7 @@
 
     section.padrinos article.leyenda-content, section.padrinos article.marcas .content-logo-marca{
         width: 100%;
+        padding-bottom: 50px;
     }
     section.padrinos article.marcas .content-logo-marca figure.marca{
         margin: 20px 11px;
@@ -708,12 +710,23 @@
 
     
 section.iframe{
-    padding-top: 0px;
-}
+    padding-top: 0px;}
+
+.slide h2{
+    font-size: 28px;}
+section.padrinos article.marcas .content-logo-marca h3{
+    font-size:18px;}
+
+.slider-nav{
+    bottom: 0px;}
 
 
+.slide{
+    padding-bottom: 1.75rem;}
 
-
+section.padrinos article.leyenda-content{
+    padding: 0px 15px;
+    text-align: left;}
 
    
 }
