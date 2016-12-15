@@ -8,6 +8,7 @@ section.mega-pantalla{
 		span.cat{
 			font-size: 14px;
 			color: #729F02;
+      font-family: 'montserratlight';
 		}
 		h2{
 			font-size: 3.125rem;
@@ -25,7 +26,7 @@ section.mega-pantalla{
 				h3{
 					color: $color-turqueza;
 					margin-top: 0px;
-					margin-bottom: 16px;
+					margin-bottom: 1rem;
 					font-size: 1.125rem;
 					font-family: 'VAGRounded-bold';}
 				p{
@@ -43,7 +44,7 @@ section.mega-pantalla{
 				a.mega-compra{
 					@include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
 					position: relative;
-					margin-bottom: 20px;}
+					margin-bottom: 1.25rem;}
 			}
 		}
 	}
@@ -186,7 +187,36 @@ section.mega-pantalla{
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  /* width: 90%; */
-  /* height: auto; */
+  // width: 60%;
+  // height: 500px;
   box-shadow: 0 0 15px rgba(0,0,0,0.75);
+}
+.titulo-video{
+  font-size: 50px;
+  font-family: 'VAGRounded-bold';
+  color: #fff;
+  text-align: center;
+  position: absolute;
+   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  top: 21%;
+  left: 20%;}
+
+.cat-video-over{
+  font-size: 14px;
+  font-family: 'montserratlight';
+  color: #729F02;
+  position: absolute;
+   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  top: 19%;
+  left: 20%;
+}
+
+.funciones-video{
+  font-family: 'montserratlight';
+  font-size: 18px;
+  color: #fff;
+   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+   span{
+    font-family: 'montserratsemi-bold';
+   }
 }

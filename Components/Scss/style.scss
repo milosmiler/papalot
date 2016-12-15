@@ -69,54 +69,114 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'Glyphter';
+    src: url('../fonts/Glyphter.eot');
+    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Glyphter.woff') format('woff'),
+         url('../fonts/Glyphter.ttf') format('truetype'),
+         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-car:before{
+  content:'\0041'; 
+  font-family: 'Glyphter';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
+}
+.icon-elviajeinicia:before{content:'\0042'; font-family: 'Glyphter';}
+.icon-LabIdeas:before{content:'\0044'; font-family: 'Glyphter';}
+.icon-MexicoVivo:before{content:'\0046'; font-family: 'Glyphter';}
+.icon-MiCiudad:before{content:'\0047'; font-family: 'Glyphter';}
+.icon-micuerpo:before{content:'\0048'; font-family: 'Glyphter';}
+.icon-MiHogar:before{content:'\0049'; font-family: 'Glyphter';}
+.icon-tienda:before{
+  content:'\004a'; 
+  font-family: 'Glyphter';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
+}
+.icon-informacion:before{
+  content:'\0043'; 
+  font-family: 'Glyphter';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
+}
+
+.icon-lactancia:before{
+  content:'\0045'; 
+  font-family: 'Glyphter';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem;
+}
 
 
-.tienda:before { content: '\e800'; } /* '' */
-.icon-lactancia:before { content: '\e801'; } /* '' */
-.icon-informacion:before { content: '\e802'; } /* '' */
-.icon-elviajeinicia:before { content: '\e803'; } /* '' */
-.icon-labideas:before { content: '\e804'; } /* '' */
-.icon-mexicovivo:before { content: '\e805'; } /* '' */
-.icon-miciudad:before { content: '\e806'; } /* '' */
-.icon-micuerpo:before { content: '\e807'; } /* '' */
-.icon-mihogar:before { content: '\e808'; } /* '' */
+
+
 
 
 i.elviajeinicia:before{
-  content: '\e803';
-  color: $color-azul;
-  font-size: 4.375rem;
-  font-family: 'fontello';}
+  content:'\0042'; 
+  font-family: 'Glyphter';
+  color: #3d36b1;
+  font-style: normal;
+  font-size: 3.125rem;}
 
 i.micuerpo:before{
    content: '\e807';
-   color: $color-azul;
+   color: #0074c8;
   font-size: 4.375rem;
   font-family: 'fontello';
+  font-style: normal;
 }
 
 i.MexicoVivo:before{
   content: '\e805';
-  color: $color-azul;
+  color: #62a60a;
   font-size: 4.375rem;
   font-family: 'fontello';
+  font-style: normal;
 }
 
 i.MiHogar:before{
   content: '\e808';
-  color: $color-azul;
+  color: #ff7100;
   font-size: 4.375rem;
   font-family: 'fontello';
   margin-top: -15px;
   display: block;
+  font-style: normal;
 
 }
 
 i.MiCiudad:before{
   content: '\e806';
-  color: $color-azul;
+  color: #ffe01e;
  font-size: 4.375rem;
   font-family: 'fontello';
+  font-style: normal;
 }
 
 i.LabIdeas:before{
@@ -126,6 +186,7 @@ i.LabIdeas:before{
   font-family: 'fontello';
   margin-top: -15px;
     display: block;
+    font-style: normal;
 }
 
 
@@ -147,6 +208,7 @@ i.LabIdeas:before{
   transform: translate(-50%, -50%);
   color: #404042;
   font-size: 2.5rem;
+  display: inline-block;
 }
 .icon-taquilla:before {
   content: "\e903";
@@ -165,6 +227,7 @@ i.LabIdeas:before{
   transform: translate(-50%, -50%);
   color: #404042;
   font-size: 2.5rem;
+  display: inline-block;
 }
 .icon-nino:before {
   content: "\e905";
@@ -283,6 +346,7 @@ i.LabIdeas:before{
 @import "section/_familias.scss";
 @import "section/_cover-renovado.scss";
 @import "section/_programas-interpretativos.scss";
+@import "section/_horario-check.scss";
 
 /********** FOOTER *************/
 @import "_footer.scss";
@@ -460,6 +524,8 @@ input[type=checkbox]:checked + .check-box,
   background-color: #fff;
   color: #5F5177;
   padding: 0px 15px;
+  height: 300px;
+  overflow-y: scroll;
     li{
         margin: 0;
        padding: 5px 0;
@@ -468,6 +534,10 @@ input[type=checkbox]:checked + .check-box,
        -o-transition: all 0.15s ease-in;
        -webkit-transition: all 0.15s ease-in;
        transition: all 0.15s ease-in;
+       &:hover{
+        background-color: $color-footer;
+        color: #fff;
+       }
         &:last-child{
             border-top: 2px solid #D6D6D6;}
    }

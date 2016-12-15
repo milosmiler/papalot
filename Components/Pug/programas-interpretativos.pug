@@ -10,8 +10,9 @@ html(lang="es")
 		link(rel="stylesheet" href="css/jquery.bxslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
-		include block/sedes.pug
-		include block/header.pug
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
 		section.cover
 			img(src="images/cover_programasinterpretativos.jpg")
 			h2 Actividades #[br]especiales
@@ -23,7 +24,7 @@ html(lang="es")
 					span 2016
 				.holograma
 					.cuadro.azul 
-					p laboratorio de ideas
+					p Laboratorio de ideas
 				.holograma
 					.cuadro.verde-n 
 					p Mexico vivo
@@ -32,7 +33,7 @@ html(lang="es")
 					p Area de descubrimiento Alpura
 				.holograma
 					.cuadro.naranja 
-					p patio de aventuras
+					p Patio de aventuras
 
 		section.laboratorio
 			.container

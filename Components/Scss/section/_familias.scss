@@ -20,6 +20,18 @@ section.zona{
 		-moz-box-shadow: 0px 2px 34px -6px rgba(0,0,0,0.48);
 		box-shadow: 0px 2px 34px -6px rgba(0,0,0,0.48);
 		background: #fff;
+		&:nth-child(1){
+			border: 6px solid #3d36b1;}
+		&:nth-child(2){
+			border: 6px solid #0074c8;}
+		&:nth-child(3){
+			border: 6px solid #62a60a;}
+		&:nth-child(4){
+			border: 6px solid #ff7100;}
+		&:nth-child(5){
+			border: 6px solid #ffe01e;}
+		&:nth-child(6){
+			border: 6px solid #00c0f2;}
 		&:last-child{
 			margin-right: 0px;
 		}
@@ -35,6 +47,7 @@ section.zona{
 			font-size: 0.875rem;
 			margin-top: 1.6875rem;
 			margin-bottom: 0px;
+			font-family: 'montserratlight';
 		}
 	}
 }

@@ -63,6 +63,17 @@ section#timeline article div.inner a.comprar-linea{
   float: right;
   @include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
 }
+
+section#timeline article div.inner a.maps{
+  position: relative;
+  float: right;
+  @include boton($ancho: 12.5rem, $fondo: $color-rosa , $color: #fff );
+  &:before{
+    content: "\f041";
+    right: 2.5rem;
+  }
+}
+
 section#timeline article div.inner h2:after {
   content: '';
   position: absolute;

@@ -9,8 +9,9 @@ html(lang="es")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
-		include block/sedes.pug
-		include block/header.pug
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
 		section.cover
 			img(src="images/ado-megapantalla.png")
 			h2 ADO Megapantalla #[br]IMAX
@@ -20,7 +21,7 @@ html(lang="es")
 			article.leyenda-intro
 				h2 ¡La ADO Megapantalla IMAX de PAPALOTE es una de las salas IMAX más grandes del mundo! 
 
-				p A lo largo de 23 años, los visitantes han realizado increíbles viajes a los confines de nuestro planeta, como el Polo Norte, la sabana africana o las Islas Galápagos; han conocido otras culturas como la Maya, Árabe, Egipcia, Griega, entre otras; e incluso han recorrido el interior del cuerpo humano, y aprendido sobre la tecnología de los helicópteros y la estación espacial en más de 70 películas.
+				p A lo largo de 23 años, los visitantes han realizado increíbles viajes a los confines de nuestro planeta, como el Polo Norte, la Sabana Africana o las Islas Galápagos; han conocido otras culturas como la Maya, Árabe, Egipcia, Griega, entre otras; e incluso han recorrido el interior del cuerpo humano, y aprendido sobre la tecnología de los helicópteros y la estación espacial en más de 70 películas.
 
 				p Gracias a su tecnología, que utiliza una pantalla curva de 17x24 metros, butacas colocadas estratégicamente frente a la pantalla, sonido envolvente y gran nitidez, la ADO Megapantalla IMAX es un espacio único “donde vives las imágenes”.
 
@@ -40,7 +41,7 @@ html(lang="es")
 							p Sábado, domingo y días festivos: #[br] 
 								span 10:30, 12:30, 14:30, 16:30 y 18:30 hrs.
 						.horarios-boton
-							a.mega-compra.sombra(href="") Comprar en linea
+							a.mega-compra.sombra(href="compra-linea.html") Comprar en línea
 
 				figure.video-megapantalla
 					img(src="images/ballenas.png")
@@ -52,11 +53,11 @@ html(lang="es")
 
 			section.mega-pantalla.z-depth-4
 				figure.video-megapantalla
-
 					img(src="images/america.png")
-						
 					a#play-video.video-play-button(href='#')
 						span
+					#video-overlay.video-overlay
+						a.video-overlay-close ×
 
 				article.nota-megapantalla
 					span.cat ADO MEGAPANTALLA IMAX
@@ -73,7 +74,7 @@ html(lang="es")
 							p Sábado, domingo y días festivos: #[br] 
 								span 11:30, 13:30, 15:30 y 17:30 hrs
 						.horarios-boton
-							a.mega-compra(href="") Comprar en linea
+							a.mega-compra(href="compra-linea.html") Comprar en línea
 		span.ir-arriba
 		#video-overlay.video-overlay
 						a.video-overlay-close ×

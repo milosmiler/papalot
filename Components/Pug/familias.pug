@@ -9,8 +9,9 @@ html(lang="es")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
-		include block/sedes.pug
-		include block/header.pug
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
 		section.flexslider
 			ul.slides
 				li
@@ -19,24 +20,24 @@ html(lang="es")
 						h2 Conoce PAPALOTE #[br]RENOVADO
 						span.link Explorar el museo
 					.meta-horario
-						h3 Jueves de noche especial | Niños también son bienvenidos #[br]
+						h3 
 						p
 							i.fa.fa-clock-o 
 							| 19:00 hrs - 23:00 hrs
 					.meta-boton
-						a.comprar-slider.sombra(href="") Comprar en linea
+						a.comprar-slider.sombra(href="compra-linea.html") Comprar en línea
 				li
 					img(src='images/familia.png')
 					.meta
 						h2 Conoce PAPALOTE #[br] RENOVADO
 						span.link Explorar el museo
 					.meta-horario
-						h3 Jueves de noche especial | Niños también son bienvenidos #[br]
+						h3 
 						p
 							i.fa.fa-clock-o 
 							| 19:00 hrs - 23:00 hrs
 					.meta-boton
-						a.comprar-slider.sombra(href="") Comprar en linea
+						a.comprar-slider.sombra(href="compra-linea.html") Comprar en línea
 		section.zona
 			h2 Conoce las zonas del Papalote
 			.container
@@ -45,23 +46,23 @@ html(lang="es")
 					h3 El viaje inicia
 					i.elviajeinicia
 				.circulo
-					h4 ZONA 1
+					h4 ZONA 2
 					h3 Mi cuerpo
 					i.micuerpo
 				.circulo
-					h4 ZONA 1
+					h4 ZONA 3
 					h3 México vivo
 					i.MexicoVivo 
 				.circulo
-					h4 ZONA 1
+					h4 ZONA 4
 					h3 Mi hogar y mi #[br]familiar
 					i.MiHogar
 				.circulo
-					h4 ZONA 1
+					h4 ZONA 5
 					h3 Mi ciudad
 					i.MiCiudad
 				.circulo
-					h4 ZONA 1
+					h4 ZONA 6
 					h3 Laboratorio #[br]de ideas
 					i.LabIdeas
 		section.mega-familia
@@ -69,7 +70,7 @@ html(lang="es")
 				span.cat DOMODIGITAL CITIBANAMEX
 				h2 Ballenas 3D
 				p Vive una nueva aventura marina y descubre cómo es que hace 50 años las ballenas jorobadas estuvieron a punto de desaparecer; pero hoy en día, lentamente, han sobrevivido a la extinción.
-				a.comprar-slider(href="#") Comprar en linea
+				a.comprar-slider(href="#") Comprar en línea
 			figure.image-reino
 				img(src="images/ballena-video.png")
 				a#play-video.video-play-button(href='#')
@@ -88,7 +89,7 @@ html(lang="es")
 				span.cat DOMODIGITAL CITIBANAMEX
 				h2 Pasaporte al Universo
 				p ¿Sabes qué hay más allá de las estrellas que ves en el cielo nocturno? ¿Puedes imaginar cuántas constelaciones existen? Te invitamos a viajar por el maravilloso espacio a través de Pasaporte al Universo.
-				a.comprar-slider(href="#") Comprar en linea
+				a.comprar-slider(href="compra-linea.html") Comprar en línea
 
 		section.programas
 			h2 Conoce nuestros programas especiales
@@ -98,19 +99,19 @@ html(lang="es")
 					figure.image-actividades
 						img(src="images/lab1.png")
 					h3 Laboratorio de ideas
-					a.conoce-actividad.sombra(href="#") Conoce más
+					a.conoce-actividad.sombra(href="programas-interpretativos.html") Conoce más
 
 				article.actividades.z-depth-4 
 					figure.image-actividades
 						img(src="images/lab2.png")
 					h3 Área de descubrimiento para pequeños Alpura
-					a.conoce-actividad.sombra(href="#") Conoce más
+					a.conoce-actividad.sombra(href="programas-interpretativos.html") Conoce más
 
 				article.actividades.z-depth-4 
 					figure.image-actividades
 						img(src="images/lab3.png")
 					h3 Patio de aventuras
-					a.conoce-actividad.sombra(href="#") Conoce más
+					a.conoce-actividad.sombra(href="programas-interpretativos.html") Conoce más
 		section.plan-familia
 			h2 Planea tu visita
 			

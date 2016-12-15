@@ -238,73 +238,117 @@ span.link {
   font-weight: normal;
   font-style: normal; }
 
-.tienda:before {
-  content: '\e800'; }
+@font-face {
+  font-family: 'Glyphter';
+  src: url("../fonts/Glyphter.eot");
+  src: url("../fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("../fonts/Glyphter.woff") format("woff"), url("../fonts/Glyphter.ttf") format("truetype"), url("../fonts/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-/* '' */
-.icon-lactancia:before {
-  content: '\e801'; }
+.icon-car:before {
+  content: '\0041';
+  font-family: 'Glyphter';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
 
-/* '' */
-.icon-informacion:before {
-  content: '\e802'; }
-
-/* '' */
 .icon-elviajeinicia:before {
-  content: '\e803'; }
+  content: '\0042';
+  font-family: 'Glyphter'; }
 
-/* '' */
-.icon-labideas:before {
-  content: '\e804'; }
+.icon-LabIdeas:before {
+  content: '\0044';
+  font-family: 'Glyphter'; }
 
-/* '' */
-.icon-mexicovivo:before {
-  content: '\e805'; }
+.icon-MexicoVivo:before {
+  content: '\0046';
+  font-family: 'Glyphter'; }
 
-/* '' */
-.icon-miciudad:before {
-  content: '\e806'; }
+.icon-MiCiudad:before {
+  content: '\0047';
+  font-family: 'Glyphter'; }
 
-/* '' */
 .icon-micuerpo:before {
-  content: '\e807'; }
+  content: '\0048';
+  font-family: 'Glyphter'; }
 
-/* '' */
-.icon-mihogar:before {
-  content: '\e808'; }
+.icon-MiHogar:before {
+  content: '\0049';
+  font-family: 'Glyphter'; }
 
-/* '' */
+.icon-tienda:before {
+  content: '\004a';
+  font-family: 'Glyphter';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
+
+.icon-informacion:before {
+  content: '\0043';
+  font-family: 'Glyphter';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
+
+.icon-lactancia:before {
+  content: '\0045';
+  font-family: 'Glyphter';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 2.5rem; }
+
 i.elviajeinicia:before {
-  content: '\e803';
-  color: #00C0F2;
-  font-size: 4.375rem;
-  font-family: 'fontello'; }
+  content: '\0042';
+  font-family: 'Glyphter';
+  color: #3d36b1;
+  font-style: normal;
+  font-size: 3.125rem; }
 
 i.micuerpo:before {
   content: '\e807';
-  color: #00C0F2;
+  color: #0074c8;
   font-size: 4.375rem;
-  font-family: 'fontello'; }
+  font-family: 'fontello';
+  font-style: normal; }
 
 i.MexicoVivo:before {
   content: '\e805';
-  color: #00C0F2;
+  color: #62a60a;
   font-size: 4.375rem;
-  font-family: 'fontello'; }
+  font-family: 'fontello';
+  font-style: normal; }
 
 i.MiHogar:before {
   content: '\e808';
-  color: #00C0F2;
+  color: #ff7100;
   font-size: 4.375rem;
   font-family: 'fontello';
   margin-top: -15px;
-  display: block; }
+  display: block;
+  font-style: normal; }
 
 i.MiCiudad:before {
   content: '\e806';
-  color: #00C0F2;
+  color: #ffe01e;
   font-size: 4.375rem;
-  font-family: 'fontello'; }
+  font-family: 'fontello';
+  font-style: normal; }
 
 i.LabIdeas:before {
   content: '\e804';
@@ -312,7 +356,8 @@ i.LabIdeas:before {
   font-size: 4.375rem;
   font-family: 'fontello';
   margin-top: -15px;
-  display: block; }
+  display: block;
+  font-style: normal; }
 
 .icon-salud:before {
   content: "\e900"; }
@@ -328,7 +373,8 @@ i.LabIdeas:before {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #404042;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  display: inline-block; }
 
 .icon-taquilla:before {
   content: "\e903";
@@ -348,7 +394,8 @@ i.LabIdeas:before {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #404042;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  display: inline-block; }
 
 .icon-nino:before {
   content: "\e905";
@@ -463,7 +510,8 @@ header {
       header .container figure.logo img {
         width: 100%; }
     header .container nav {
-      position: relative; }
+      position: relative;
+      width: 100%; }
       header .container nav ul {
         list-style: none; }
         header .container nav ul li {
@@ -491,15 +539,21 @@ header {
               top: 1.875rem;
               -webkit-transition: all .5s ease;
               transition: all .5s ease; }
-            header .container nav ul li a:hover:after {
-              width: 100%;
-              left: 0; }
+            header .container nav ul li a:hover {
+              color: #00C0F2; }
+              header .container nav ul li a:hover:after {
+                width: 100%;
+                left: 0; }
+        header .container nav ul li#image-nav:hover .container-menu {
+          display: table; }
     header .container #menu-mobile {
       display: none;
       position: absolute;
       width: 40px;
       height: 50px;
       cursor: pointer;
+      -webkit-transition-duration: 3s;
+              transition-duration: 3s;
       right: 8px; }
   header .burger {
     position: absolute;
@@ -647,13 +701,11 @@ header {
 
 .menu-fixed {
   position: fixed !important;
-  z-index: 1000;
+  z-index: 10000;
   top: 0;
   width: 100%;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
-  background-color: rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.2); }
+  background-color: #fff; }
 
 /********** SECCIONES ***********/
 section.sedes-contactos {
@@ -731,7 +783,8 @@ section.cover {
     color: #fff; }
 
 section.cover-intro {
-  max-width: 1310px;
+  max-width: 1200px;
+  margin: auto;
   margin-bottom: 5.625rem; }
   section.cover-intro figure.imagen-cover {
     width: 54.2%;
@@ -1417,7 +1470,8 @@ section.servicio-espacios .container {
       border: 5px solid #404042;
       display: block;
       position: relative;
-      background: #C4E86B; }
+      background: #C4E86B;
+      display: inline-block; }
   section.servicio-espacios .container article.espacios-amarillo {
     width: 31.6%;
     height: 340px;
@@ -1449,7 +1503,8 @@ section.servicio-espacios .container {
       border: 5px solid #404042;
       display: block;
       position: relative;
-      background: #FFDE00; }
+      background: #FFDE00;
+      display: inline-block; }
 
 section.mega-pantalla {
   margin-bottom: 88px; }
@@ -1460,7 +1515,8 @@ section.mega-pantalla {
     padding: 54px 28px 0px; }
     section.mega-pantalla article.nota-megapantalla span.cat {
       font-size: 14px;
-      color: #729F02; }
+      color: #729F02;
+      font-family: 'montserratlight'; }
     section.mega-pantalla article.nota-megapantalla h2 {
       font-size: 3.125rem;
       margin-top: 1.125rem;
@@ -1476,7 +1532,7 @@ section.mega-pantalla {
       section.mega-pantalla article.nota-megapantalla .container-horarios .horarios h3 {
         color: #00B3D0;
         margin-top: 0px;
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
         font-size: 1.125rem;
         font-family: 'VAGRounded-bold'; }
       section.mega-pantalla article.nota-megapantalla .container-horarios .horarios p {
@@ -1508,7 +1564,7 @@ section.mega-pantalla {
           text-decoration: none;
           width: 12.5rem;
           position: relative;
-          margin-bottom: 20px; }
+          margin-bottom: 1.25rem; }
           section.mega-pantalla article.nota-megapantalla .container-horarios .horarios-boton a.mega-compra:before {
             content: "\f061";
             position: absolute;
@@ -1653,9 +1709,37 @@ section.mega-pantalla {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  /* width: 90%; */
-  /* height: auto; */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.75); }
+
+.titulo-video {
+  font-size: 50px;
+  font-family: 'VAGRounded-bold';
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top: 21%;
+  left: 20%; }
+
+.cat-video-over {
+  font-size: 14px;
+  font-family: 'montserratlight';
+  color: #729F02;
+  position: absolute;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  top: 19%;
+  left: 20%; }
+
+.funciones-video {
+  font-family: 'montserratlight';
+  font-size: 18px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .funciones-video span {
+    font-family: 'montserratsemi-bold'; }
 
 section.precio-paquete h2 {
   font-size: 4.375rem;
@@ -1985,6 +2069,34 @@ section#timeline article div.inner a.comprar-linea {
     position: absolute;
     right: 1.4375rem;
     font-family: 'FontAwesome'; }
+
+section#timeline article div.inner a.maps {
+  position: relative;
+  float: right;
+  background-color: #EF096E;
+  border-radius: 3.125rem;
+  clear: both;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'VAGRounded-bold';
+  display: block;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: left;
+  padding-left: 1.125rem;
+  padding-top: 0.9375rem;
+  text-decoration: none;
+  width: 12.5rem; }
+  section#timeline article div.inner a.maps:before {
+    content: "\f061";
+    position: absolute;
+    right: 1.4375rem;
+    font-family: 'FontAwesome'; }
+  section#timeline article div.inner a.maps:before {
+    content: "\f041";
+    right: 2.5rem; }
 
 section#timeline article div.inner h2:after {
   content: '';
@@ -2411,6 +2523,18 @@ section.zona {
     border-radius: 6.25rem;
     box-shadow: 0px 2px 34px -6px rgba(0, 0, 0, 0.48);
     background: #fff; }
+    section.zona .circulo:nth-child(1) {
+      border: 6px solid #3d36b1; }
+    section.zona .circulo:nth-child(2) {
+      border: 6px solid #0074c8; }
+    section.zona .circulo:nth-child(3) {
+      border: 6px solid #62a60a; }
+    section.zona .circulo:nth-child(4) {
+      border: 6px solid #ff7100; }
+    section.zona .circulo:nth-child(5) {
+      border: 6px solid #ffe01e; }
+    section.zona .circulo:nth-child(6) {
+      border: 6px solid #00c0f2; }
     section.zona .circulo:last-child {
       margin-right: 0px; }
     section.zona .circulo h3 {
@@ -2423,7 +2547,8 @@ section.zona {
       color: #7B8990;
       font-size: 0.875rem;
       margin-top: 1.6875rem;
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      font-family: 'montserratlight'; }
 
 section.mega-familia {
   position: relative;
@@ -2997,6 +3122,56 @@ section.text h2 {
 
 .naranja {
   background: #FFDFDF; }
+
+section.horarios {
+  width: 100%; }
+  section.horarios h2 {
+    font-size: 32px;
+    color: #EF096E;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; }
+  section.horarios h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #FF7100; }
+  section.horarios a.btn-horario {
+    position: relative;
+    background-color: #FF7100;
+    border-radius: 3.125rem;
+    clear: both;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'VAGRounded-bold';
+    display: block;
+    font-size: 1.125rem;
+    height: 3.125rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: left;
+    padding-left: 1.125rem;
+    padding-top: 0.9375rem;
+    text-decoration: none;
+    width: 12.5rem;
+    float: right; }
+    section.horarios a.btn-horario:before {
+      content: "\f061";
+      position: absolute;
+      right: 1.4375rem;
+      font-family: 'FontAwesome'; }
+  section.horarios article.card-horario {
+    width: 100%;
+    text-align: left;
+    border-left: 5px solid #A4CD40;
+    margin-left: 5px;
+    padding-left: 5px; }
+    section.horarios article.card-horario h2 {
+      font-family: 'montserratligh';
+      color: #A4CD40;
+      text-align: left;
+      font-size: 16px; }
+    section.horarios article.card-horario h3 {
+      text-align: left; }
 
 /********** FOOTER *************/
 footer {
@@ -3902,13 +4077,18 @@ input[type=checkbox]:checked + .check-box,
   list-style: none;
   background-color: #fff;
   color: #5F5177;
-  padding: 0px 15px; }
+  padding: 0px 15px;
+  height: 300px;
+  overflow-y: scroll; }
   .select-options li {
     margin: 0;
     padding: 5px 0;
     text-indent: 15px;
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in; }
+    .select-options li:hover {
+      background-color: #364659;
+      color: #fff; }
     .select-options li:last-child {
       border-top: 2px solid #D6D6D6; }
 

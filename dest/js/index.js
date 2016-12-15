@@ -11,15 +11,9 @@ $(function(){
         items: 1,
         interval: 6000,
         timer: true,
-        // show_nav:false,
-        // animation_duration: 600,
-        // easing:'easeOutSine' //with jquery ui
-        // etc ...
     });
 
       $('#menu-mobile').click(function(){
-        // $('nav').toggle(); 
- 
         if(contador == 1){
             $('.mobile').animate({
                 right: '0'
@@ -33,14 +27,13 @@ $(function(){
         }
  
     });
-      $('#image-nav').click(function(){
-            $('.container-menu').toggle(); 
-      })
+      
 
       $('#sub-menu').click(function(event){
             event.preventDefault();
             $('.container-movile').toggle(); 
       })
+
 
       $(".efect").click(function () {
             $(this).toggleClass("menu-on");
@@ -55,6 +48,32 @@ $(function(){
                 $('.contenedor-fixed').removeClass('menu-fixed');
             }
         });
+
+
+    $('#play-video').click(function(e){
+         e.preventDefault();
+      $('#video-overlay').addClass('open');
+       $("#video-overlay").append('<div class="cat-video-over">ADO MEGAPANTALLA IMAX </div>')
+      $("#video-overlay").append('<div class="titulo-video"> Ballenas 3d </div>')
+      $("#video-overlay").append('<iframe width="760" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
+    });
+
+    $('.video-overlay, .video-overlay-close').on('click', function(e){
+      e.preventDefault();
+      close_video();
+    });
+
+        $(document).keyup(function(e){
+          if(e.keyCode === 27) { close_video(); }
+        });
+
+    function close_video() {
+      $('.video-overlay.open').removeClass('open').find('iframe').remove();
+    };
+
+    setTimeout(function() {
+        $(".container-menu").fadeOut(1500);
+    },3000);
  
 })
 
@@ -267,25 +286,7 @@ function inicio_rellenar(){
 inicio_rellenar();
 
 
-$('#play-video').click(function(e){
-    e.preventDefault();
 
-      $('#video-overlay').addClass('open');
-      $("#video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
-});
-
-$('.video-overlay, .video-overlay-close').on('click', function(e){
-  e.preventDefault();
-  close_video();
-});
-
-$(document).keyup(function(e){
-  if(e.keyCode === 27) { close_video(); }
-});
-
-function close_video() {
-  $('.video-overlay.open').removeClass('open').find('iframe').remove();
-};
 
 
 

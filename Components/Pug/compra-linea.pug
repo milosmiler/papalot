@@ -10,8 +10,9 @@ html(lang="es")
 		link(rel="stylesheet" href="css/jquery.bxslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
-		include block/sedes.pug
-		include block/header.pug
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
 		section.iframe
 			iframe(src='http://papalote-beta.cloudapp.net/CompraEnLinea#/paso1', frameborder='0')
 		span.ir-arriba

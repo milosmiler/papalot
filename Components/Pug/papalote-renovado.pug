@@ -10,14 +10,15 @@ html(lang="es")
 		link(rel="stylesheet" href="css/jquery.bxslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
 	body
-		include block/sedes.pug
-		include block/header.pug
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
 		section.cover
 			img(src="images/papalote-renovado1.png")
 			h2 Conoce PAPALOTE #[br] RENOVADO
 		section.desplegado
 			img.desk(src="images/renovado-anima.png")
-			img.movile(src="images/pisos.jpg")
+			img.movile(src="images/planea_tu_visita.jpg")
 			//- article.column
 			//- 	h2 Te presentamos #[br] PAPALOTE RENOVADO
 			//- 	.row
