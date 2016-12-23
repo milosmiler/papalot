@@ -36,6 +36,8 @@ section.notas{
                 span.email{
                     font-family: 'montserrat-regular';
                     text-decoration: underline;
+                    a{
+                        color: $color-azul100;}
                 }
             }
             a.boton.nota{

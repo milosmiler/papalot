@@ -2,7 +2,7 @@ header
 	.container.flex
 		figure.logo
 			a(href="index.html")
-				img(src="images/papalote-logo.png")
+				img(src="images/papalote-logo.png" alt="papalote")
 		nav
 			ul
 				li#image-nav
@@ -20,11 +20,11 @@ header
 							li
 								a(href="programas-interpretativos.html") actividades especiales
 						figure.nav-images
-							img(src="images/img1.jpg")
+							img(src="images/img1.jpg" alt="familias")
 				li
 					a(href="ninos.html") Niños
-				//- li
-				//- 	a(href="") ABC Papalote
+				li
+					a(href="abc-papalote.html") ABC Papalote
 				//- li
 				//- 	a(href="") Grupos y eventos
 				//- li
@@ -36,14 +36,11 @@ header
 			.burger
 
 		.mobile
-			.container-box
-				.box-line Comprar en línea
-				.box Precios y promociones
-				.box Horarios
+			
 			ul
 				li
-					a#sub-menu(href="#") Familias
-					i.fa.fa-plus-circle
+					a(href="familias.html") Familias
+					i#sub-menu.fa.fa-plus-circle
 					ul.container-movile
 						li
 							a(href="papalote-renovado.html") Papalote renovado
@@ -59,10 +56,17 @@ header
 					a(href="") Niños
 				li
 					a(href="") ABC Papalote
-				li
-					a(href="") Grupos y eventos
-				li
-					a(href="") ¿Cómo ayudar?
-				li
-					a(href="") Blog
+				//- li
+				//- 	a(href="") Grupos y eventos
+				//- li
+				//- 	a(href="") ¿Cómo ayudar?
+				//- li
+				//- 	a(href="") Blog
+			.container-box
+				.box-line 
+					a(href="") Comprar en línea
+				.box 
+					a(href="") Precios y promociones
+				.box 
+					a(href="") Horarios
 		

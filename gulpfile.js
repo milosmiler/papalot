@@ -31,9 +31,9 @@ gulp.task('pug', () =>
 
 // optimizar imagenes
 gulp.task('imagemin', () =>
-    gulp.src('./Components/images/*')
+    gulp.src('./dest/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
+        .pipe(gulp.dest('dest/imageopt'))
 );
 
 
@@ -45,6 +45,7 @@ gulp.task('default',() => {
 
     gulp.watch('Components/Scss/**/*.scss',['sass']);
     gulp.watch('Components/Pug/**/*.pug',['pug']);
+    gulp.watch('dest/images/**/*',['imagemin']);
 
 })
 

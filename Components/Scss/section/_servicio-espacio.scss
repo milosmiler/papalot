@@ -38,7 +38,10 @@ section.servicio-espacios{
 				margin-bottom: 17px;}
 			p{
 				color: $color-azul100;
-				font-family: 'montserratlight';}
+				font-family: 'montserratlight';
+			span{
+					font-family: 'montserrat-bold';}
+			}
 			i{
 				width: 75px;
 				height: 75px;
@@ -75,7 +78,10 @@ section.servicio-espacios{
 				margin-bottom: 17px;}
 			p{
 				color: $color-azul100;
-				font-family: 'montserratlight';}
+				font-family: 'montserratlight';
+				span{
+					font-family: 'montserrat-bold';}
+			}
 			i{
 				width: 75px;
 				height: 75px;

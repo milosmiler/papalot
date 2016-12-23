@@ -2,7 +2,7 @@ section.notas
 	.container.flex
 		article.nota.z-depth-4
 			figure.imagen-nota
-				img(src="images/imagen-nota.png")
+				img(src="images/imagen-nota.png" alt="abc papalote")
 			h2 ABC PAPALOTE
 			p ABC PAPALOTE es un programa educativo dirigido a profesores de preescolar y primaria 
 				| en el que encontrarán herramientas y recursos educativos que enriquecerán su experiencia y la de sus alumnos antes, 
@@ -11,7 +11,7 @@ section.notas
 			a.boton.nota.sombra(href="") Conoce más
 		article.nota.z-depth-4
 				figure.imagen-nota
-					img(src="images/imagen-nota2.png")
+					img(src="images/imagen-nota2.png" alt="eventos")
 				h2 Grupos y eventos
 				p En 
 					span PAPALOTE 
@@ -22,6 +22,7 @@ section.notas
 					span PAPALOTE!
 
 				p Para más información escríbenos #[br] a 
-					span.email grupos@papalote.org.mx   
+					span.email 
+						a(href='mailto:grupos@papalote.org.mx') grupos@papalote.org.mx 
 					| o comunícate al 5237 1783
 				

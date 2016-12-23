@@ -314,6 +314,13 @@
         margin: 0px
     }
 
+    section.zona .circulo:nth-child(1), section.zona .circulo:nth-child(2), section.zona .circulo:nth-child(3), section.zona .circulo:nth-child(4),
+    section.zona .circulo:nth-child(5), section.zona .circulo:nth-child(6){
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+    }
+
 
     section.mega-familia figure.image-reino {
     float: none;
@@ -508,6 +515,7 @@
 
     section.nota-contenido article.leyenda-contenido h2{
         font-size: 28px;
+        text-align: center;
     }
     section.nota-contenido-derecho article.leyenda-contenido-derecho p{
         font-size: 16px;
@@ -630,9 +638,8 @@
 
     .flex-direction-nav{
         position: relative;
-        border: 1px solid #fff;
         bottom: 0px;
-        top: 38px;
+        top: 20px;
         display: block;
         margin: auto;
         left: 50%;
@@ -643,11 +650,28 @@
         color: $color-azul100!important;
     }
 
+    .flex-direction-nav a.flex-prev:before, .flex-direction-nav a.flex-next:before{
+    font-size: 2.375rem!important;
+    }
+
+    .flex-direction-nav {
+    width: 100%;
+    text-align: center;}
+
+    section.plan-familia h2 a{
+        font-size: 16px;}
+
+    section.plan-familia:before, section.plan-familia:after{
+        width: 0.625rem;
+        height: 3.75rem;
+    }
+
     section.slider-reino ul.bxslider li .content{
         position: relative;
         left: 0px;
         transform: inherit;
         width: 100%;
+        padding: 5px 15px;
     }
     section.slider-reino ul.bxslider li figure.image-reino{
         width: 100%;
@@ -664,12 +688,26 @@
         margin-bottom: 20px;
     }
     section.slider-reino .bx-controls-direction{
-        left: 50%;
-        bottom: -10px;
+        bottom: 0px;
+        transform: inherit;
+        text-align: center;
+        display: block;
+        bottom: 0px;
+        position: relative;
     }
 
     section.cover-renovado{
         margin-bottom: 40px;
+    }
+
+    section.notas .container article.nota p{
+        text-align: left;
+        padding: 0px 15px;
+        margin-left: 0px;
+    }
+
+    section.slider-reino ul.bxslider li .content h2{
+        font-size: 28px;
     }
 
 
@@ -727,6 +765,28 @@ section.padrinos article.marcas .content-logo-marca h3{
 section.padrinos article.leyenda-content{
     padding: 0px 15px;
     text-align: left;}
+
+
+section.comer .row{
+    width: 100%;
+}
+
+section.comer .row figure.restaurant{
+    display: block;
+    width: 100%;
+    border:none;
+}
+
+section.descubrimientos h2, section.patio-aventura h2, section.mexico-vivo h2, section.laboratorio .container h2{
+    width: 100%;
+    padding: 5px 15px;
+    margin: 0px;
+    border: none;
+}
+
+
+
+
 
    
 }

@@ -115,6 +115,9 @@ section.comer{
       font-size: 1.375rem;
       font-family: 'montserrat-regular';
       color: $color-azul100;
+      span{
+        font-family: 'montserrat-bold';
+      }
     }
     figure.comer-time{
       max-width: 920px;
@@ -126,4 +129,33 @@ section.comer{
       }
     }
   }
+}
+
+
+
+section.comer{
+
+    .row{
+      display: table;
+      margin: auto;
+      border-bottom: 1px solid #E1E1E1;
+      &:last-child{
+        border-bottom: transparent;}
+      &:first-child{
+        border-top: transparent;
+      }
+      figure.restaurant{
+        width: 196px;
+        height: 153px;
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+         border-right: 1px solid #E1E1E1;
+         &:last-child{
+        border-right: transparent;
+      }
+        
+      }
+    }
+
 }

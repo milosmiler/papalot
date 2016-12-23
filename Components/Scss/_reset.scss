@@ -77,6 +77,7 @@ body{overflow-y: scroll;
     background-image: url('../images/subir.png');
     width: 65px;
     height: 82px;
+    z-index: 9999;
 }
 
 .bg{
@@ -87,4 +88,7 @@ body{overflow-y: scroll;
     transform: translateX(-50%);
     left: 50%;
     top: 0px;
+}
+.desaparecer{
+    visibility: hidden;
 }

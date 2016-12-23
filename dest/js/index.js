@@ -1,7 +1,11 @@
 $(function(){
-
-    $('.bxslider').bxSlider();
     
+    $('.bxslider').bxSlider({
+        adaptiveHeight: "TRUE"
+    });
+
+
+
     $('.flexslider').flexslider({
         animation: "slide"
     });
@@ -14,6 +18,7 @@ $(function(){
     });
 
       $('#menu-mobile').click(function(){
+ 
         if(contador == 1){
             $('.mobile').animate({
                 right: '0'
@@ -27,20 +32,53 @@ $(function(){
         }
  
     });
-      
 
       $('#sub-menu').click(function(event){
             event.preventDefault();
             $('.container-movile').toggle(); 
       })
 
-
       $(".efect").click(function () {
             $(this).toggleClass("menu-on");
     });
 
 
-      var altura = $('.contenedor-fixed').offset().top;
+    $("li#image-nav").hover(function () { 
+        $(this).children(".container-menu").stop().slideDown('fast').show();
+            }, function () {
+        $(this).children(".container-menu").stop().slideUp('150');
+    });
+
+
+      
+
+    videoOverlay();
+    subir();
+    header();
+ 
+})
+
+
+function subir(){
+    $('.ir-arriba').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 300);
+        });
+     
+        $(window).scroll(function(){
+            if( $(this).scrollTop() > 0 ){
+                $('.ir-arriba').slideDown(300);
+            } else {
+                $('.ir-arriba').slideUp(300);
+            }
+        });
+}
+
+
+
+function header(){
+    var altura = $('.contenedor-fixed').offset().top;
         $(window).on('scroll', function(){
             if ( $(window).scrollTop() > altura ){
                 $('.contenedor-fixed').addClass('menu-fixed');
@@ -48,95 +86,7 @@ $(function(){
                 $('.contenedor-fixed').removeClass('menu-fixed');
             }
         });
-
-
-    $('#play-video').click(function(e){
-         e.preventDefault();
-      $('#video-overlay').addClass('open');
-       $("#video-overlay").append('<div class="cat-video-over">ADO MEGAPANTALLA IMAX </div>')
-      $("#video-overlay").append('<div class="titulo-video"> Ballenas 3d </div>')
-      $("#video-overlay").append('<iframe width="760" height="315" src="https://www.youtube.com/embed/ngElkyQ6Rhs" frameborder="0" allowfullscreen></iframe>');
-    });
-
-    $('.video-overlay, .video-overlay-close').on('click', function(e){
-      e.preventDefault();
-      close_video();
-    });
-
-        $(document).keyup(function(e){
-          if(e.keyCode === 27) { close_video(); }
-        });
-
-    function close_video() {
-      $('.video-overlay.open').removeClass('open').find('iframe').remove();
-    };
-
-    
- 
-})
-
-
-$('select').each(function(){
-    var $this = $(this), numberOfOptions = $(this).children('option').length;
-  
-    $this.addClass('select-hidden'); 
-    $this.wrap('<div class="select select-url"></div>');
-    $this.after('<div class="select-styled"></div>');
-
-    var $styledSelect = $this.next('div.select-styled');
-    $styledSelect.text($this.children('option').eq(0).text());
-  
-    var $list = $('<ul />', {
-        'class': 'select-options'
-    }).insertAfter($styledSelect);
-  
-    for (var i = 0; i < numberOfOptions; i++) {
-        $('<li />', {
-            text: $this.children('option').eq(i).text(),
-            rel: $this.children('option').eq(i).val()
-        }).appendTo($list);
-    }
-  
-    var $listItems = $list.children('li');
-  
-    $styledSelect.click(function(e) {
-        e.stopPropagation();
-        $('div.select-styled.active').not(this).each(function(){
-            $(this).removeClass('active').next('ul.select-options').hide();
-        });
-        $(this).toggleClass('active').next('ul.select-options').toggle();
-    });
-  
-    $listItems.click(function(e) {
-        e.stopPropagation();
-        $styledSelect.text($(this).text()).removeClass('active');
-        $this.val($(this).attr('rel'));
-        $list.hide();
-        var val = $this.val();
-         $('#catcher').attr('href', val);
-    });
-  
-    $(document).click(function() {
-        $styledSelect.removeClass('active');
-        $list.hide();
-    });
-
-});
-
-$('.ir-arriba').click(function(){
-        $('body, html').animate({
-            scrollTop: '0px'
-        }, 300);
-    });
- 
-    $(window).scroll(function(){
-        if( $(this).scrollTop() > 0 ){
-            $('.ir-arriba').slideDown(300);
-        } else {
-            $('.ir-arriba').slideUp(300);
-        }
-    });
-
+}
 
 var dia = new Array(6);
 var meses= ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
@@ -181,7 +131,7 @@ for(i=0; i<6; i++){
 
 
 function limpiar_valores(){
-    document.getElementById('mes_año').innerHTML="";
+    document.getElementById('mes_año').innerHTML="hi";
     for(i=0; i<6; i++){
         for(j=0; j<7; j++){
             dia[i][j].innerHTML="";
@@ -286,7 +236,33 @@ inicio_rellenar();
 
 
 
+function videoOverlay(){
 
+     $( "figure a.video-play-button" ).click(function() {
+               var url=$(this).attr('href');
+               var titulo=$(this).attr('data-nombre');
+               var sala=$(this).attr('data-sala');
+               $("#video-overlay").append('<div class="cat-video-over">'+sala+'</div>');
+                $("#video-overlay").append('<div class="titulo-video"> '+titulo+' </div>');
+               $('#video-overlay').addClass('open');
+                $("#video-overlay").append('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>');
+               return false; 
+          });
+     
+    $('.video-overlay, .video-overlay-close').on('click', function(e){
+        e.preventDefault();
+        close_video();
+    });
+
+    $(document).keyup(function(e){
+        if(e.keyCode === 27) { close_video(); }
+    });
+
+    function close_video() {
+        $('.video-overlay.open').removeClass('open').find('iframe').remove();
+    };
+
+}
 
 
 

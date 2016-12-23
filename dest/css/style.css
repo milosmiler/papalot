@@ -162,7 +162,8 @@ body {
   right: 50px;
   background-image: url("../images/subir.png");
   width: 65px;
-  height: 82px; }
+  height: 82px;
+  z-index: 9999; }
 
 .bg {
   position: absolute;
@@ -170,6 +171,9 @@ body {
   transform: translateX(-50%);
   left: 50%;
   top: 0px; }
+
+.desaparecer {
+  visibility: hidden; }
 
 /** colores primarios **/
 /** colores  top menu **/
@@ -181,11 +185,6 @@ span.link {
   color: #EF096E;
   font-size: 1.125rem;
   font-family: 'VAGRounded-bold'; }
-  span.link:before {
-    content: "\f061";
-    position: absolute;
-    right: -30px;
-    font-family: 'FontAwesome'; }
 
 /*** FONT FACE ***/
 @font-face {
@@ -485,6 +484,17 @@ i.LabIdeas:before {
   font-size: 2.5rem;
   left: -3.0625rem; }
 
+.info:before {
+  content: '\E802';
+  font-family: 'fontello';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 3.75rem; }
+
 /********** GENERAL ***********/
 .container {
   max-width: 1200px;
@@ -506,7 +516,8 @@ header {
       max-width: 70px;
       height: auto;
       margin-right: 80px;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-left: 10px; }
       header .container figure.logo img {
         width: 100%; }
     header .container nav {
@@ -544,8 +555,6 @@ header {
               header .container nav ul li a:hover:after {
                 width: 100%;
                 left: 0; }
-        header .container nav ul li#image-nav:hover .container-menu {
-          display: table; }
     header .container #menu-mobile {
       display: none;
       position: absolute;
@@ -595,13 +604,14 @@ header {
     background: rgba(111, 111, 111, 0); }
   header .mobile {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 80px);
     right: -100%;
     margin: 0;
     background-color: #364659;
-    position: absolute;
+    position: fixed;
     top: 100px;
-    z-index: 9999; }
+    z-index: 9999;
+    overflow-y: scroll; }
     header .mobile ul {
       margin: 0px;
       background-color: #364659; }
@@ -653,7 +663,7 @@ header {
       top: -29px;
       left: 150px; }
     header .container-menu ul.image-menu {
-      display: table-cell;
+      float: left;
       margin: 0px;
       vertical-align: top; }
       header .container-menu ul.image-menu li {
@@ -669,7 +679,7 @@ header {
         header .container-menu ul.image-menu li:first-child {
           margin-top: 25px; }
     header .container-menu figure.nav-images {
-      display: table-cell;
+      float: left;
       max-width: 242px; }
       header .container-menu figure.nav-images img {
         width: 100%; }
@@ -687,6 +697,9 @@ header {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
+      header .container-box .box-line a {
+        text-decoration: none;
+        color: #fff; }
     header .container-box .box {
       padding-top: 20px;
       padding-bottom: 20px;
@@ -699,6 +712,9 @@ header {
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale; }
+      header .container-box .box a {
+        text-decoration: none;
+        color: #fff; }
 
 .menu-fixed {
   position: fixed !important;
@@ -707,6 +723,10 @@ header {
   width: 100%;
   box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
   background-color: #fff; }
+
+#wrapperMaestros {
+  margin: auto !important;
+  display: block; }
 
 /********** SECCIONES ***********/
 section.sedes-contactos {
@@ -760,7 +780,7 @@ section.sedes-contactos {
 
 section.iframe {
   width: 100%;
-  padding-top: 6.75rem;
+  padding-top: 6.0625rem;
   overflow: visible;
   clear: both; }
   section.iframe iframe {
@@ -1139,6 +1159,8 @@ section.notas {
         section.notas .container article.nota p span.email {
           font-family: 'montserrat-regular';
           text-decoration: underline; }
+          section.notas .container article.nota p span.email a {
+            color: #08405C; }
       section.notas .container article.nota a.boton.nota {
         background-color: #A4CD40;
         border-radius: 3.125rem;
@@ -1201,7 +1223,12 @@ section.padrinos article.leyenda-content {
     font-family: 'montserrat-regular';
     margin-bottom: 1.8125rem; }
     section.padrinos article.leyenda-content p span.email {
-      text-decoration: underline; }
+      text-decoration: underline;
+      font-family: 'montserrat-regular'; }
+      section.padrinos article.leyenda-content p span.email a {
+        color: #fff; }
+    section.padrinos article.leyenda-content p span {
+      font-family: 'montserrat-bold'; }
   section.padrinos article.leyenda-content a.boton-patrocinador {
     background-color: #fff;
     border-radius: 3.125rem;
@@ -1464,6 +1491,8 @@ section.servicio-espacios .container {
     section.servicio-espacios .container article.espacios p {
       color: #08405C;
       font-family: 'montserratlight'; }
+      section.servicio-espacios .container article.espacios p span {
+        font-family: 'montserrat-bold'; }
     section.servicio-espacios .container article.espacios i {
       width: 75px;
       height: 75px;
@@ -1497,6 +1526,8 @@ section.servicio-espacios .container {
     section.servicio-espacios .container article.espacios-amarillo p {
       color: #08405C;
       font-family: 'montserratlight'; }
+      section.servicio-espacios .container article.espacios-amarillo p span {
+        font-family: 'montserrat-bold'; }
     section.servicio-espacios .container article.espacios-amarillo i {
       width: 75px;
       height: 75px;
@@ -2136,6 +2167,8 @@ section.comer .container {
     font-size: 1.375rem;
     font-family: 'montserrat-regular';
     color: #08405C; }
+    section.comer .container p span {
+      font-family: 'montserrat-bold'; }
   section.comer .container figure.comer-time {
     max-width: 920px;
     height: auto;
@@ -2143,6 +2176,24 @@ section.comer .container {
     margin: auto; }
     section.comer .container figure.comer-time img {
       width: 100%; }
+
+section.comer .row {
+  display: table;
+  margin: auto;
+  border-bottom: 1px solid #E1E1E1; }
+  section.comer .row:last-child {
+    border-bottom: transparent; }
+  section.comer .row:first-child {
+    border-top: transparent; }
+  section.comer .row figure.restaurant {
+    width: 196px;
+    height: 153px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-right: 1px solid #E1E1E1; }
+    section.comer .row figure.restaurant:last-child {
+      border-right: transparent; }
 
 section.aviso-terminos {
   padding-top: 9.0625rem; }
@@ -2892,7 +2943,7 @@ section.laboratorio .container {
       section.laboratorio .container article.izquiera p span {
         font-family: 'montserrat-bold'; }
   section.laboratorio .container article.derecha {
-    padding-top: 2.4375rem;
+    vertical-align: middle;
     padding-left: 7.9375rem;
     display: table-cell;
     width: 60%;
@@ -2969,7 +3020,7 @@ section.mexico-vivo {
       section.mexico-vivo article.izquiera p span {
         font-family: 'montserrat-bold'; }
   section.mexico-vivo article.derecha {
-    padding-top: 2.4375rem;
+    vertical-align: middle;
     padding-left: 7.9375rem;
     display: table-cell;
     width: 60%;
@@ -3032,7 +3083,7 @@ section.descubrimientos {
           left: -12px;
           top: 30%; }
   section.descubrimientos article.derecha {
-    padding-top: 2.4375rem;
+    vertical-align: middle;
     padding-left: 7.9375rem;
     display: table-cell;
     width: 60%;
@@ -3095,7 +3146,7 @@ section.patio-aventura {
           left: -12px;
           top: 30%; }
   section.patio-aventura article.derecha {
-    padding-top: 2.4375rem;
+    vertical-align: middle;
     padding-left: 7.9375rem;
     display: table-cell;
     width: 60%;
@@ -3174,6 +3225,18 @@ section.horarios {
     section.horarios article.card-horario h3 {
       text-align: left; }
 
+section.nofunciona {
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  section.nofunciona h2 {
+    font-size: 4.6875rem;
+    color: #00B3D0; }
+
 /********** FOOTER *************/
 footer {
   width: 100%;
@@ -3222,6 +3285,8 @@ footer {
         position: absolute;
         top: 0.875rem;
         right: 0.625rem; }
+      footer aside.social .container-newsletter #newsletter-respuesta {
+        font-family: 'montserrat-regular'; }
     footer aside.social .social {
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -3281,6 +3346,9 @@ footer {
           position: relative;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale; }
+          footer section.contactanos .column ul li p a {
+            color: #fff;
+            text-decoration: none; }
           footer section.contactanos .column ul li .fa-phone:before {
             position: absolute;
             font-size: 2.5rem;
@@ -3662,6 +3730,11 @@ footer {
     margin-top: 10px; }
   section.zona .circulo h3 {
     margin: 0px; }
+  section.zona .circulo:nth-child(1), section.zona .circulo:nth-child(2), section.zona .circulo:nth-child(3), section.zona .circulo:nth-child(4),
+  section.zona .circulo:nth-child(5), section.zona .circulo:nth-child(6) {
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent; }
   section.mega-familia figure.image-reino {
     float: none;
     width: 100%; }
@@ -3800,7 +3873,8 @@ footer {
   section.nota-contenido article.leyenda-contenido p {
     font-size: 16px; }
   section.nota-contenido article.leyenda-contenido h2 {
-    font-size: 28px; }
+    font-size: 28px;
+    text-align: center; }
   section.nota-contenido-derecho article.leyenda-contenido-derecho p {
     font-size: 16px; }
   section.nota-contenido-derecho article.leyenda-contenido-derecho h2 {
@@ -3889,9 +3963,8 @@ footer {
     margin: auto; }
   .flex-direction-nav {
     position: relative;
-    border: 1px solid #fff;
     bottom: 0px;
-    top: 38px;
+    top: 20px;
     display: block;
     margin: auto;
     left: 50%;
@@ -3899,12 +3972,23 @@ footer {
             transform: translate(-50%, -50%); }
   .flex-direction-nav a:before {
     color: #08405C !important; }
+  .flex-direction-nav a.flex-prev:before, .flex-direction-nav a.flex-next:before {
+    font-size: 2.375rem !important; }
+  .flex-direction-nav {
+    width: 100%;
+    text-align: center; }
+  section.plan-familia h2 a {
+    font-size: 16px; }
+  section.plan-familia:before, section.plan-familia:after {
+    width: 0.625rem;
+    height: 3.75rem; }
   section.slider-reino ul.bxslider li .content {
     position: relative;
     left: 0px;
     -webkit-transform: inherit;
             transform: inherit;
-    width: 100%; }
+    width: 100%;
+    padding: 5px 15px; }
   section.slider-reino ul.bxslider li figure.image-reino {
     width: 100%; }
   ul.bxslider li {
@@ -3920,10 +4004,21 @@ footer {
     float: none;
     margin-bottom: 20px; }
   section.slider-reino .bx-controls-direction {
-    left: 50%;
-    bottom: -10px; }
+    bottom: 0px;
+    -webkit-transform: inherit;
+            transform: inherit;
+    text-align: center;
+    display: block;
+    bottom: 0px;
+    position: relative; }
   section.cover-renovado {
     margin-bottom: 40px; }
+  section.notas .container article.nota p {
+    text-align: left;
+    padding: 0px 15px;
+    margin-left: 0px; }
+  section.slider-reino ul.bxslider li .content h2 {
+    font-size: 28px; }
   .meta-incluye {
     position: relative;
     left: 0px;
@@ -3957,7 +4052,18 @@ footer {
     padding-bottom: 1.75rem; }
   section.padrinos article.leyenda-content {
     padding: 0px 15px;
-    text-align: left; } }
+    text-align: left; }
+  section.comer .row {
+    width: 100%; }
+  section.comer .row figure.restaurant {
+    display: block;
+    width: 100%;
+    border: none; }
+  section.descubrimientos h2, section.patio-aventura h2, section.mexico-vivo h2, section.laboratorio .container h2 {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 0px;
+    border: none; } }
 
 @-webkit-keyframes dothabottomcheck {
   0% {
@@ -4099,7 +4205,8 @@ input[type=checkbox]:checked + .check-box,
     padding: 5px 0;
     text-indent: 15px;
     -webkit-transition: all 0.15s ease-in;
-    transition: all 0.15s ease-in; }
+    transition: all 0.15s ease-in;
+    font-family: 'montserrat-regular'; }
     .select-options li:hover {
       background-color: #364659;
       color: #fff; }

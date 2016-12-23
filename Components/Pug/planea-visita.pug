@@ -3,21 +3,30 @@ html(lang="es")
 	head
 		meta(charset="utf-8")
 		title Papalote
-		meta(name='description', content='descripcion del sitio web')
+		meta(name='description', content='planea tu visita')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
 		link(href="css/style.css", rel="stylesheet", type="text/css")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
+
+		meta(property='og:title', content='Planea visita')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content='planea tu visita ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
 	body
 		.contenedor-fixed
 			include block/sedes.pug
 			include block/header.pug
 		include block/timeline.pug
 		include block/carrucel-mega.pug
+		include block/comer.pug
 		span.ir-arriba
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(src="js/jquery.flexslider-min.js")
 		script(src="js/slider.js")
+		script(src="js/select.js")
 		script(src="js/jquery.bxslider.js")
 		script(src='js/index.js', type="text/javascript")

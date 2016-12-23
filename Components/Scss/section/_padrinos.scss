@@ -41,6 +41,12 @@ section.padrinos{
             margin-bottom: 1.8125rem;
             span.email{
               text-decoration: underline;
+              font-family: 'montserrat-regular';
+              a{
+                color: #fff;}
+            }
+            span{
+              font-family: 'montserrat-bold';
             }
          }
          a.boton-patrocinador{

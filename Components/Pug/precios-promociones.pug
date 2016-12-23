@@ -3,11 +3,18 @@ html(lang="es")
 	head
 		meta(charset="utf-8")
 		title Papalote
-		meta(name='description', content='descripcion del sitio web')
+		meta(name='description', content='precio y promociones')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
 		link(href="css/style.css", rel="stylesheet", type="text/css")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
+
+		meta(property='og:title', content='Precio y promciones')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content='precio y promociones ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
 	body
 		.contenedor-fixed
 			include block/sedes.pug
@@ -15,7 +22,7 @@ html(lang="es")
 		section.flexslider
 			ul.slides
 				li
-					img(src='images/slider_inapam.jpg')
+					img(src='images/slider_inapam.jpg' alt="personas adultas")
 					.meta
 						h2 Presenta tu credencial #[br] del INAPAM
 						span.adquiere ¡y obtén 25% en cualquier admisión!
@@ -25,7 +32,7 @@ html(lang="es")
 
 
 				li
-					img(src='images/slider_costco.jpg')
+					img(src='images/slider_costco.jpg' alt="costco")
 					.meta
 						h2 Conoce PAPALOTE #[br]RENOVADO
 						span.adquiere y ahorra 35% al comprar tus entradas en 
@@ -42,14 +49,14 @@ html(lang="es")
 
 
 				li
-					img(src='images/slider_compralinea.jpg')
+					img(src='images/slider_compralinea.jpg' alt="comprar en linea")
 					.meta
 						h2 Si compras en línea, #[br]¡Ahorras más!
 						span.adquiere Da clic y adquiere tus boletos a un mejor precio.
 					.meta-horario
 						.leyenda-promociones Promocón válida sólo en compra en línea. No aplica con otras promociones ni descuentos. Sujeto a disponibilidad de horarios y espacios.
 				li
-					img(src='images/slider_tdu.jpg')
+					img(src='images/slider_tdu.jpg' alt="tarjeta")
 					.meta
 						h2 Presenta tu tarjeta #[br]TDU
 						span.adquiere ¡y obtén 20% de descuento en el Superpaquete!
@@ -75,5 +82,6 @@ html(lang="es")
 		script(src="js/jquery-1.11.3.min.js")
 		script(src="js/jquery.flexslider-min.js")
 		script(src="js/slider.js")
+		script(src="js/select.js")
 		script(src="js/jquery.bxslider.js")
 		script(src='js/index.js', type="text/javascript")

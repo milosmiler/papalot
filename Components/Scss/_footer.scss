@@ -29,6 +29,8 @@ footer{
                 position: absolute;
                 top: 0.875rem;
                 right: 0.625rem;}
+             #newsletter-respuesta{
+                font-family: 'montserrat-regular';}
             }
         .social{
             align-items: center;
@@ -87,6 +89,12 @@ footer{
                     position: relative;
                     -webkit-font-smoothing: antialiased; 
                     -moz-osx-font-smoothing: grayscale;
+                    p{
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
 
                     .fa-phone:before {
                         position: absolute;
@@ -132,7 +140,8 @@ footer{
                     padding-left:23px;
                     width: 50%;
                     height: 45px;
-                    float: left;}
+                    float: left;
+                    }
                 input.nombre{
                     float: right;
                      color: rgba(255, 255, 255, 0.8);

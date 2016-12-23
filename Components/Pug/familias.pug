@@ -3,11 +3,18 @@ html(lang="es")
 	head
 		meta(charset="utf-8")
 		title Papalote
-		meta(name='description', content='descripcion del sitio web')
+		meta(name='description', content='Bajo el emblemático lema “Toco, Juego y Aprendo”, PAPALOTE MUSEO DEL NIÑO TOTALMENTE RENOVADO brinda a los visitantes un mejor servicio, instalaciones más cómodas y experiencias de aprendizaje más significativas y memorables. ¡En PAPALOTE nos tomamos el juego muy en serio!')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
 		link(href="css/style.css", rel="stylesheet", type="text/css")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
+
+		meta(property='og:title', content='Familias')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content='Bajo el emblemático lema “Toco, Juego y Aprendo”, PAPALOTE MUSEO DEL NIÑO TOTALMENTE RENOVADO brinda a los visitantes un mejor servicio, instalaciones más cómodas y experiencias de aprendizaje más significativas y memorables. ¡En PAPALOTE nos tomamos el juego muy en serio!')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
 	body
 		.contenedor-fixed
 			include block/sedes.pug
@@ -15,7 +22,7 @@ html(lang="es")
 		section.flexslider
 			ul.slides
 				li
-					img(src='images/familia.png')
+					img(src='images/familia.png' alt="familia")
 					.meta
 						h2 Conoce PAPALOTE #[br]RENOVADO
 						span.link Explorar el museo
@@ -27,7 +34,7 @@ html(lang="es")
 					.meta-boton
 						a.comprar-slider.sombra(href="compra-linea.html") Comprar en línea
 				li
-					img(src='images/familia.png')
+					img(src='images/familia.png' alt="familia")
 					.meta
 						h2 Conoce PAPALOTE #[br] RENOVADO
 						span.link Explorar el museo
@@ -72,7 +79,7 @@ html(lang="es")
 				p Vive una nueva aventura marina y descubre cómo es que hace 50 años las ballenas jorobadas estuvieron a punto de desaparecer; pero hoy en día, lentamente, han sobrevivido a la extinción.
 				a.comprar-slider(href="#") Comprar en línea
 			figure.image-reino
-				img(src="images/ballena-video.png")
+				img(src="images/ballena-video.png" alt="ballena")
 				a#play-video.video-play-button(href='#')
 					span
 				#video-overlay.video-overlay
@@ -80,7 +87,7 @@ html(lang="es")
 
 		section.mega-familia-izquierdo
 			figure.image-reino
-				img(src="images/universo.png")
+				img(src="images/universo.png"  alt="universo")
 				a#play-video.video-play-button(href='#')
 					span
 				#video-overlay.video-overlay
@@ -97,19 +104,19 @@ html(lang="es")
 			.container.flex
 				article.actividades.z-depth-4 
 					figure.image-actividades
-						img(src="images/lab1.png")
+						img(src="images/lab1.png" alt="laboratorio ideas")
 					h3 Laboratorio de ideas
 					a.conoce-actividad.sombra(href="programas-interpretativos.html") Conoce más
 
 				article.actividades.z-depth-4 
 					figure.image-actividades
-						img(src="images/lab2.jpg")
+						img(src="images/lab2.jpg" alt="pequeños alpura")
 					h3 Área de descubrimiento para pequeños Alpura
 					a.conoce-actividad.sombra(href="programas-interpretativos.html") Conoce más
 
 				article.actividades.z-depth-4 
 					figure.image-actividades
-						img(src="images/lab3.jpg")
+						img(src="images/lab3.jpg" alt="patio aventura")
 					h3 Patio de aventuras
 					a.conoce-actividad.sombra(href="programas-interpretativos.html") Conoce más
 		section.plan-familia
@@ -119,6 +126,7 @@ html(lang="es")
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
 		script(src="js/slider.js")
 		script(src="js/jquery.bxslider.js")
 		script(src='js/index.js', type="text/javascript")

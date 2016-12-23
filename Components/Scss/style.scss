@@ -314,6 +314,19 @@ i.LabIdeas:before{
 }
 
 
+.info:before{
+  content:'\E802'; 
+  font-family: 'fontello';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #404042;
+  font-size: 3.75rem;
+}
+
+
 
 /********** GENERAL ***********/
 .container{
@@ -347,6 +360,7 @@ i.LabIdeas:before{
 @import "section/_cover-renovado.scss";
 @import "section/_programas-interpretativos.scss";
 @import "section/_horario-check.scss";
+@import "section/_404.scss";
 
 /********** FOOTER *************/
 @import "_footer.scss";
@@ -534,6 +548,7 @@ input[type=checkbox]:checked + .check-box,
        -o-transition: all 0.15s ease-in;
        -webkit-transition: all 0.15s ease-in;
        transition: all 0.15s ease-in;
+       font-family: 'montserrat-regular';
        &:hover{
         background-color: $color-footer;
         color: #fff;

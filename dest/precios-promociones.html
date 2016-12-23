@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Papalote</title>
-    <meta name="description" content="descripcion del sitio web">
+    <meta name="description" content="precio y promociones">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <meta property="og:title" content="Precio y promciones">
+    <meta property="og:site_name" content="Papalote">
+    <meta property="og:url" content="http://papalote.org.mx/">
+    <meta property="og:description" content="precio y promociones ">
+    <meta property="og:image" content="http://papalote.org.mx/assets/images/papalote-logo.png">
   </head>
   <body>
     <div class="contenedor-fixed">
@@ -19,13 +25,14 @@
           <li><a href="#">Iztapalapa</a></li>
         </ul>
         <ul class="promociones">
+          <li><a href="Horarios.html">Horarios</a></li>
           <li><a href="precios-promociones.html">Precios y promociones</a></li>
           <li><a href="compra-linea.html">Compra en línea</a></li>
         </ul>
       </section>
       <header>
         <div class="container flex">
-          <figure class="logo"><a href="index.html"><img src="images/papalote-logo.png"></a></figure>
+          <figure class="logo"><a href="index.html"><img src="images/papalote-logo.png" alt="papalote"></a></figure>
           <nav>
             <ul>
               <li id="image-nav"><a href="familias.html">Familias</a>
@@ -37,23 +44,19 @@
                     <li><a href="planea-visita.html">Planea tu visita</a></li>
                     <li><a href="programas-interpretativos.html">actividades especiales</a></li>
                   </ul>
-                  <figure class="nav-images"><img src="images/img1.jpg"></figure>
+                  <figure class="nav-images"><img src="images/img1.jpg" alt="familias"></figure>
                 </div>
               </li>
               <li><a href="ninos.html">Niños</a></li>
+              <li><a href="abc-papalote.html">ABC Papalote</a></li>
             </ul>
           </nav>
           <div class="efect" id="menu-mobile">
             <div class="burger"></div>
           </div>
           <div class="mobile">
-            <div class="container-box">
-              <div class="box-line">Comprar en línea</div>
-              <div class="box">Precios y promociones</div>
-              <div class="box">Horarios</div>
-            </div>
             <ul>
-              <li><a id="sub-menu" href="#">Familias</a><i class="fa fa-plus-circle"></i>
+              <li><a href="familias.html">Familias</a><i class="fa fa-plus-circle" id="sub-menu"></i>
                 <ul class="container-movile">
                   <li><a href="papalote-renovado.html">Papalote renovado</a></li>
                   <li><a href="mega-pantalla.html">ADO Megapantalla IMAX</a></li>
@@ -64,17 +67,19 @@
               </li>
               <li><a href="">Niños</a></li>
               <li><a href="">ABC Papalote</a></li>
-              <li><a href="">Grupos y eventos</a></li>
-              <li><a href="">¿Cómo ayudar?</a></li>
-              <li><a href="">Blog</a></li>
             </ul>
+            <div class="container-box">
+              <div class="box-line"> <a href="">Comprar en línea</a></div>
+              <div class="box"> <a href="">Precios y promociones</a></div>
+              <div class="box"> <a href="">Horarios</a></div>
+            </div>
           </div>
         </div>
       </header>
     </div>
     <section class="flexslider">
       <ul class="slides">
-        <li><img src="images/slider_inapam.jpg">
+        <li><img src="images/slider_inapam.jpg" alt="personas adultas">
           <div class="meta">
             <h2>Presenta tu credencial <br> del INAPAM</h2><span class="adquiere">¡y obtén 25% en cualquier admisión!</span>
           </div>
@@ -82,7 +87,7 @@
             <div class="leyenda-promociones">Indispensable presentar credencial de INAPAM en taquillas PAPALOTE. Promoción válida en cualquier admisión, excepto Paquete Familiar. No aplica con otras promociones ni descuentos. Sujeto a disponibilidad de horarios y espacios.</div>
           </div>
         </li>
-        <li><img src="images/slider_costco.jpg">
+        <li><img src="images/slider_costco.jpg" alt="costco">
           <div class="meta">
             <h2>Conoce PAPALOTE <br>RENOVADO</h2><span class="adquiere">y ahorra 35% al comprar tus entradas en </span>
           </div>
@@ -91,7 +96,7 @@
           </div>
           <div class="meta-incluye-rojo"><span class="titulo-gen">2 Superpaquetes</span><span class="inclu">Incluye:</span><span class="titulo">Museo</span><i class="fa fa-plus-circle"></i><span class="titulo">ADO Megapantalla IMAX</span><i class="fa fa-plus-circle"></i><span class="titulo">domodigital Citibanamex</span></div>
         </li>
-        <li><img src="images/slider_compralinea.jpg">
+        <li><img src="images/slider_compralinea.jpg" alt="comprar en linea">
           <div class="meta">
             <h2>Si compras en línea, <br>¡Ahorras más!</h2><span class="adquiere">Da clic y adquiere tus boletos a un mejor precio.</span>
           </div>
@@ -99,7 +104,7 @@
             <div class="leyenda-promociones">Promocón válida sólo en compra en línea. No aplica con otras promociones ni descuentos. Sujeto a disponibilidad de horarios y espacios.</div>
           </div>
         </li>
-        <li><img src="images/slider_tdu.jpg">
+        <li><img src="images/slider_tdu.jpg" alt="tarjeta">
           <div class="meta">
             <h2>Presenta tu tarjeta <br>TDU</h2><span class="adquiere">¡y obtén 20% de descuento en el Superpaquete!</span>
           </div>
@@ -116,7 +121,7 @@
         <section class="paquetes">
           <h3>Paquetes</h3>
           <article class="paquete-items z-depth-4">
-            <figure class="image-paquete"><img src="images/paquete.png"><span class="circulo">
+            <figure class="image-paquete"><img src="images/paquete.png" alt="paquetes"><span class="circulo">
                 <h2>Ahorras</h2>
                 <p>37%</p></span></figure>
             <h4>Superpaquete</h4>
@@ -124,12 +129,12 @@
             <ul>
               <li>Museo</li>
               <li>ADO Megapantalla IMAX</li>
-              <li>Domodigital Citibanamex</li><span class="precio-paquete">$249 MXN
+              <li>domodigital Citibanamex</li><span class="precio-paquete">$249 MXN
                 <p>Paquetes válidos únicamente en taquilla.</p></span>
             </ul>
           </article>
           <article class="paquete-items z-depth-4">
-            <figure class="image-paquete"><img src="images/paquete2.png"><span class="circulo">
+            <figure class="image-paquete"><img src="images/paquete2.png" alt="paquete familiar"><span class="circulo">
                 <h2>Ahorras</h2>
                 <p>46%</p></span></figure>
             <h4>Paquete Familiar</h4>
@@ -137,12 +142,12 @@
             <ul>
               <li>Museo</li>
               <li>ADO Megapantalla IMAX</li>
-              <li>Domodigital Citibanamex</li><span class="precio-paquete">$849 MXN
+              <li>domodigital Citibanamex</li><span class="precio-paquete">$849 MXN
                 <p>Paquetes válidos únicamente en taquilla.</p></span>
             </ul>
           </article>
           <article class="paquete-doble z-depth-4">
-            <figure class="image-doble"><img src="images/general-doble.png"><span class="circulo">
+            <figure class="image-doble"><img src="images/general-doble.png" alt="paquete doble"><span class="circulo">
                 <h2>Ahorras</h2>
                 <p>26%</p></span></figure>
             <div class="content">
@@ -152,7 +157,7 @@
                 <ul>
                   <li>Museo y <br> ADO Megapantalla IMAX</li>
                   <li>o</li>
-                  <li>Museo y <br> Domodigital Citibanamex</li>
+                  <li>Museo y <br> domodigital Citibanamex</li>
                 </ul><span class="precio-paquete">$219 MXN
                   <p>Paquetes válidos únicamente en taquilla.</p></span>
               </div>
@@ -164,18 +169,17 @@
         </section>
         <section class="paquetes-individuales flex">
           <h2>Precios individuales</h2>
-          <p>Precios vigentes para visitas a partir del 8 de agosto de 2016. Sujeto a disponibilidad. No aplica con otras promociones. </p>
           <article class="individual z-depth-4">
-            <figure class="image-individual"><img src="images/museo1.png"></figure>
-            <h2>Museo</h2><span class="precio-paquete">$199 MXN</span><a class="comprar-line sombra" href="">Comprar en línea</a>
+            <figure class="image-individual"><img src="images/museo1.png" alt="museo"></figure>
+            <h2>Museo</h2><span class="precio-paquete">$199 MXN</span><a class="comprar-line sombra" href="compra-linea.html">Comprar en línea</a>
           </article>
           <article class="individual z-depth-4">
-            <figure class="image-individual"><img src="images/museo2.png"></figure>
-            <h2>ADO Megapantalla IMAX</h2><span class="precio-paquete">$99 MXN</span><a class="comprar-line sombra" href="">Comprar en línea</a>
+            <figure class="image-individual"><img src="images/museo2.png" alt="mega pantalla"></figure>
+            <h2>ADO Megapantalla IMAX</h2><span class="precio-paquete">$99 MXN</span><a class="comprar-line sombra" href="compra-linea.html">Comprar en línea</a>
           </article>
           <article class="individual z-depth-4">
-            <figure class="image-individual"><img src="images/museo3.png"></figure>
-            <h2>domodigital Citibanamex</h2><span class="precio-paquete">$99 MXN</span><a class="comprar-line sombra" href="">Comprar en línea</a>
+            <figure class="image-individual"><img src="images/museo3.png" alt="citibanamex"></figure>
+            <h2>domodigital Citibanamex</h2><span class="precio-paquete">$99 MXN</span><a class="comprar-line sombra" href="compra-linea.html">Comprar en línea</a>
           </article>
         </section>
       </section>
@@ -203,10 +207,10 @@
                 <p>Col. Daniel Garza, CDMX.</p>
               </li>
               <li>Información<i class="fa fa-phone"></i>
-                <p>5237 1781</p>
+                <p> <a href="tel:+5237 1781">5237 1781</a></p>
               </li>
               <li>Venta de boletos<i class="fa fa-phone"></i>
-                <p>5237 1778 / 5237 1779</p>
+                <p> <a href="tel:+5237 1778">5237 1778 / 5237 1779</a></p>
               </li>
             </ul>
           </div>
@@ -229,13 +233,14 @@
           <ul>
             <li><a href="aviso-privacidad.html">Aviso de privacidad</a><a href="terminos-condiciones.html">Términos y condiciones</a><a href="#">© Papalote Museo del Niño 2017</a></li>
           </ul>
-          <figure class="aprendo"><img src="images/aprendo.png"></figure>
+          <figure class="aprendo"><img src="images/aprendo.png" alt="logo aprendo"></figure>
         </div>
       </div>
     </footer>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/select.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/index.js" type="text/javascript"></script>
   </body>

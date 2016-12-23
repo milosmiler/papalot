@@ -71,11 +71,6 @@ $duration: .4s;
     color: $color;
     font-size: $tamano;
     font-family: 'VAGRounded-bold';
-    &:before{
-        content: "\f061";
-        position: absolute;
-        right: -30px;
-        font-family: 'FontAwesome';}
 }
 
 
