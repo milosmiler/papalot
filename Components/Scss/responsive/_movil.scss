@@ -10,6 +10,24 @@
         .container #menu-mobile{
             display: block;}
     }
+
+    figure.logo-movile{
+        display: block;}
+    h1{
+        display: block;
+    }
+     figure.logo{
+        display: none;}
+
+
+    header .container{
+        justify-content: flex-start;
+    }
+
+    header .container p{
+        display: block;
+    }
+
     section.sedes-contactos{
         display: none;
     }

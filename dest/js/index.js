@@ -55,6 +55,7 @@ $(function(){
     videoOverlay();
     subir();
     header();
+    CambioImage();
  
 })
 
@@ -263,6 +264,8 @@ function videoOverlay(){
     };
 
 }
+
+
 
 
 
