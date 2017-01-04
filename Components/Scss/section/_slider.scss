@@ -50,7 +50,7 @@
     .meta-boton{
         position: absolute;
         right: 11rem;
-        bottom: 3.125rem;
+        bottom: 5.125rem;
         a.comprar-slider{
             @include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff);
             position: relative;}

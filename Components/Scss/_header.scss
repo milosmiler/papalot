@@ -148,17 +148,7 @@ header{
         &:last-child{
           margin-bottom: 3px;
         }
-        ul.container-movile{
-          width: 100%;
-          margin: 0px;
-          background-color: #4a5d74;
-          display: none;
-          margin-top: 20px;
-          li{
-            color: #fff;
-            &:last-child{ border-bottom: none;}
-          }
-        }
+        
         a{
            color: #fff;
           text-decoration: none;}
@@ -169,6 +159,16 @@ header{
           font-size: 28px;}
       }
     }
+    ul.container-movile{
+          width: 100%;
+          margin: 0px;
+          background-color: #4a5d74;
+          display: none;
+          li{
+            color: #fff;
+            &:last-child{ border-bottom: none;}
+          }
+        }
   }
 
 .container-menu{

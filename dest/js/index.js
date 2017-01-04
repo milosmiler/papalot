@@ -35,7 +35,8 @@ $(function(){
 
       $('#sub-menu').click(function(event){
             event.preventDefault();
-            $('.container-movile').toggle(); 
+            $('.container-movile').slideToggle('500');
+            $('#sub-menu').toggleClass('fa-plus-circle fa-minus-circle');
       })
 
       $(".efect").click(function () {
@@ -49,14 +50,14 @@ $(function(){
         $(this).children(".container-menu").stop().slideUp('150');
     });
 
+    Waves.init();
+    Waves.attach('.btn-efect', ['waves-button', 'waves-float']);
+    Waves.attach('ul.promociones li', ['waves-light']);
 
-      
 
     videoOverlay();
     subir();
     header();
-    CambioImage();
- 
 })
 
 
@@ -243,9 +244,9 @@ function videoOverlay(){
                var url=$(this).attr('href');
                var titulo=$(this).attr('data-nombre');
                var sala=$(this).attr('data-sala');
-               $("#video-overlay").append('<div class="cat-video-over">'+sala+'</div>');
+                $("#video-overlay").append('<div class="cat-video-over">'+sala+'</div>');
                 $("#video-overlay").append('<div class="titulo-video"> '+titulo+' </div>');
-               $('#video-overlay').addClass('open');
+                $('#video-overlay').addClass('open');
                 $("#video-overlay").append('<iframe width="560" height="315" src="'+url+'" frameborder="0" allowfullscreen></iframe>');
                return false; 
           });

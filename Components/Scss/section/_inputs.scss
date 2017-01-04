@@ -1,0 +1,162 @@
+
+input[type=checkbox]{
+    display:none;
+}
+
+.check-box {
+    height: $checkbox-height;
+    width: $checkbox-height;
+    background-color: transparent;
+    border: $checkbox-height * .1 solid $unchecked-color;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: border-color ease $duration/2;
+    -o-transition: border-color ease $duration/2;
+    -webkit-transition: border-color ease $duration/2;
+    transition: border-color ease $duration/2;
+    cursor:pointer;
+
+    &::before, &::after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        position: absolute;
+        height: 0;
+        width: $checkbox-height * .2;
+        background-color: $checked-color;
+        display: inline-block;
+        -moz-transform-origin: left top;
+        -ms-transform-origin: left top;
+        -o-transform-origin: left top;
+        -webkit-transform-origin: left top;
+        transform-origin: left top;
+        border-radius: 5px;
+        content: ' ';
+        -webkit-transition: opacity ease .5;
+        -moz-transition: opacity ease .5;
+        transition: opacity ease .5;
+    }
+
+    &::before {
+        top:$checkbox-height * .72;
+        left: $checkbox-height * .41;
+        -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+
+    &::after {
+        top: $checkbox-height * .37;
+        left: $checkbox-height * .05;
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+input[type=checkbox]:checked + .check-box,
+.check-box.checked{
+    border-color:$checked-color;
+    
+    &::after{
+        height: $checkbox-height * .5;
+        -moz-animation: dothabottomcheck $duration/2 ease 0s forwards;
+        -o-animation: dothabottomcheck $duration/2 ease 0s forwards;
+        -webkit-animation: dothabottomcheck $duration/2 ease 0s forwards;
+        animation: dothabottomcheck $duration/2 ease 0s forwards;
+    }
+     
+    &::before{
+        height: $checkbox-height * 1.2;
+        -moz-animation: dothatopcheck $duration ease 0s forwards;
+        -o-animation: dothatopcheck $duration ease 0s forwards;
+        -webkit-animation: dothatopcheck $duration ease 0s forwards;
+        animation: dothatopcheck $duration ease 0s forwards;
+    }
+}
+
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px; }
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  background: transparent;}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  padding: 18px 23px 0px;
+  transition: all 0.2s ease-in;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'montserrat-regular';
+  font-size: 0.75rem;
+      &:after {
+        content: "\f107";
+        font-family:'FontAwesome';
+        color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 16px;
+        right: 15px; } 
+  }
+
+.select-styled:active:after, .select-styled.active:after {
+  top: 9px; }
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  color: #5F5177;
+  padding: 0px 15px;
+  height: 300px;
+  overflow-y: scroll;
+    li{
+        margin: 0;
+       padding: 5px 0;
+       text-indent: 15px;
+       -moz-transition: all 0.15s ease-in;
+       -o-transition: all 0.15s ease-in;
+       -webkit-transition: all 0.15s ease-in;
+       transition: all 0.15s ease-in;
+       font-family: 'montserrat-regular';
+       &:hover{
+        background-color: $color-footer;
+        color: #fff;
+       }
+        &:last-child{
+            border-top: 2px solid #D6D6D6;}
+   }
+}
+.select-options li:last-child:before {
+  margin-right: 11px; }
+
+.select-options li[rel="hide"] {
+  display: none; }
