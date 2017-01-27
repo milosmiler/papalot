@@ -1,0 +1,160 @@
+section.horarios-items{
+	margin-top: 6.25rem;
+	padding-top: 6.125rem;
+	.container{
+
+		justify-content: space-between;
+		article.titulo-horario{
+			width: 300px;
+			text-align: center;
+			h2{
+				font-size: 4.375rem;
+				color: $color-azul100;
+				margin-top: 0px;
+				font-family: 'VAGRounded-bold';}
+		}
+		article.eventos{
+			max-width: 800px;
+			background: $color-grisCL100;
+			position: relative;
+			justify-content: space-between;
+			.contendor-items{
+				width: 330px;
+				height: auto;
+				margin-left:-1.25rem;
+				p{
+					font-size: 1.125rem;
+					font-family: 'VAGRounded-bold';
+					color: #fff;
+					margin-left: 1.5625rem;
+					margin-top: 0.9375rem;
+					margin-bottom: 0.875rem;
+				}
+				.card{
+					width: 100%;
+					background: $color-verde;
+					color: #fff;
+					padding: 1.875rem 0.625rem 1.375rem 2.5rem;
+					margin-bottom: 1.25rem;
+					position: relative;
+					&:first-of-type{
+						color: #fff;
+						background: $color-rosa;
+						p{
+							color: #fff;
+							}}
+					&:before{
+						content: " ";
+						position: absolute;
+						left: 0px;
+						bottom: -0.875rem;
+						width: 0;
+					    height: 0;
+					    border-top: 0.9375rem solid $color-footer; 
+    					border-left: 1.8125rem solid transparent;}
+					h3{
+						font-size: 1.25rem;
+						margin-top: 0px}
+					p{
+						font-size: 1.125rem;
+						font-family: 'montserratlight';}
+					a{
+						font-size: 1.125rem;
+						font-family: 'montserratsemi-bold';
+						color: #fff;}
+					
+				}
+			}
+			.calendario-item{
+				max-width:450px;
+			}
+		}
+
+	}
+
+.ui-datepicker-header{
+  text-align:center;
+  font-family: 'VAGRounded-bold';
+  color: $color-footer;
+  font-size: 2.5rem;
+}
+
+.ui-datepicker-prev span, 
+.ui-datepicker-next span{
+  display:none;
+}
+
+.ui-datepicker-prev:after{
+  content: "\f0dd";
+  font-size:1.25rem;
+  float:left;
+  margin-left:0.625rem;
+  cursor:pointer;
+  font-family: 'FontAwesome';
+  transform: rotate(90deg);
+}
+
+
+.ui-datepicker-next:after{
+  content: "\f0dd";
+  float:right;
+  font-size:1.25rem;
+  margin-right:0.625rem;
+  cursor:pointer;
+  font-family: 'FontAwesome';
+  transform: rotate(-90deg);
+}
+.ui-datepicker-calendar th{
+  padding:0.625rem 0.9375rem;
+  color: $color-footer;
+  border: none;
+  font-family: 'montserrat-regular';
+  font-size: 1.125rem;
+  padding-bottom: 2.5rem;
+}
+
+.ui-datepicker-calendar {
+    text-align:center;
+    margin:0 auto;
+}
+
+.ui-datepicker-title{
+  padding:0.625rem;
+}
+
+.ui-datepicker-calendar td {
+  padding: 0.125rem 0.125rem;
+   line-height: 4.5rem;
+  font-size: 1rem;
+  font-family: 'montserratlight';
+  border: none;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+  text-decoration:none;
+  color:black;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    color: #fff;
+    background-color: #00B3D0;
+    transition: border .2s linear;
+}
+
+.ui-datepicker-calendar a {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    line-height:2.1875rem;
+    margin-bottom:1.5625rem;
+}
+
+
+	
+
+}

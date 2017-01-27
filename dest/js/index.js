@@ -6,8 +6,11 @@ $(function(){
 
 
 
+
+
     $('.flexslider').flexslider({
-        animation: "slide"
+        animation: "slide",
+        smoothHeight: true
     });
 
       $('#slider-1').flexboxslider({
@@ -54,10 +57,19 @@ $(function(){
     Waves.attach('.btn-efect', ['waves-button', 'waves-float']);
     Waves.attach('ul.promociones li', ['waves-light']);
 
+    $("ul.image-menu li a").hover(function(e){
+        e.stopPropagation()
+        var ruta = $(this).data('url');
+        $('figure.nav-images img').css( 'display', 'none');
+        $('figure.nav-images img[src="'+ruta+'"]').css('display', 'block');
+        return false; 
+});
+
 
     videoOverlay();
     subir();
     header();
+    calendario();
 })
 
 
@@ -264,6 +276,23 @@ function videoOverlay(){
         $('.video-overlay.open').removeClass('open').find('iframe').remove();
     };
 
+}
+
+function calendario(){
+
+   $('#calendar').datepicker({
+      inline:true,
+      firstDay: 1,
+      showOtherMonths:false,
+      showMonthAfterYear: true,
+      onSelect: function(date) {
+            console.log(date);
+        },
+      dayNamesMin:['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+      monthNames: [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Juli0", "Augosto", "Septimbre", "Octubre", "Noviembre", "Diciembre" ]
+    });
+
+    
 }
 
 

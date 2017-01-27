@@ -1,0 +1,69 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+
+		meta(property='og:title', content='Horarios')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content='Horarios del museo')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.horarios-items
+			.container.flex
+				article.titulo-horario
+					h2 Horarios
+				article.eventos.flex
+					.contendor-items
+						p Horarios y funciones 17 Oct 2016
+						.card
+							h3 Museo
+							p 9:00 - 18:00 hrs
+							#mensaje
+						.card
+							h3 ADO Megantalla IMAX
+							a(href="") Kenia 3D
+							p 11:30, 13:30 y 15:30 hrs.
+
+							a(href="") Parques nacionales 3D
+							p 10:30, 12:30, 14:30 y 16:30 hrs
+
+						.card
+							h3 Domodigital Banamex
+							a(href="") Pasaporte al universo
+							p 9:50, 11:30, 13:10, 14:50 y 16:30 hrs.
+
+							a(href="") Exoplanetas
+							p 10:40, 12:20, 14:00 y 15:40 hrs.
+
+					.calendario-item
+						#calendar
+
+
+
+
+
+
+
+
+			span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery-ui.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")

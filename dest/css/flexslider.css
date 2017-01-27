@@ -103,28 +103,24 @@ html[xmlns] .flexslider .slides {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  width: 3.75rem;
-  height: 3.75rem;
-  position: relative;
 }
 
 .flex-direction-nav a.flex-next:before {
-  font-family: 'icomoon';
-  content: "\e90d";
-  font-size: 5.3125rem;
+  font-family:'FontAwesome';
+  content: "\f054";
+  font-size: 1.625rem;
   color: #08405C;
+
 }
 .flex-direction-nav a.flex-prev:before {
-  content: "\e90c";
-  font-family: 'icomoon';
-  font-size: 5.3125rem;
+   content: "\f053";
+  font-family:'FontAwesome';
+  font-size: 1.625rem;
   color: #08405C;
 }
 
 .flex-direction-nav .flex-next {
   text-align: right;
-  font-family: 'icomoon';
-  content: "\e90d";
    -moz-transform: scaleX(-1); /* Firefox */
   -o-transform: scaleX(-1); /* Opera */
   -webkit-transform: scaleX(-1); /* Chrome y Safari */
@@ -133,13 +129,13 @@ html[xmlns] .flexslider .slides {
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
-  opacity: 0.7;
+  opacity: 1;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
 }
 .flexslider:hover .flex-direction-nav .flex-next {
-  opacity: 0.7;
+  opacity: 1;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
   opacity: 1;

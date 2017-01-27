@@ -657,19 +657,16 @@
     .flex-direction-nav{
         position: relative;
         bottom: 0px;
-        top: 20px;
+        top: 27px;
         display: block;
         margin: auto;
         left: 50%;
         transform: translate(-50%,-50%);
     }
 
-    .flex-direction-nav a:before{
-        color: $color-azul100!important;
-    }
 
-    .flex-direction-nav a.flex-prev:before, .flex-direction-nav a.flex-next:before{
-    font-size: 2.375rem!important;
+    li.flex-nav-next, li.flex-nav-prev{
+        padding: 0.625rem 0.9375rem;
     }
 
     .flex-direction-nav {
@@ -802,7 +799,45 @@ section.descubrimientos h2, section.patio-aventura h2, section.mexico-vivo h2, s
     border: none;
 }
 
+section.horarios-items .container{
+    flex-direction: column;
+}
+section.horarios-items .container article.titulo-horario{
+    width: 100%;
+}
 
+section.horarios-items .container article.eventos{
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+
+section.horarios-items .container article.eventos .calendario-item{
+    margin: 0 auto;
+    width: 100%;
+}
+
+section.horarios-items{
+    padding-top: 0px;
+}
+
+section.horarios-items .container article.eventos .contendor-items{
+    margin: auto;
+}
+
+section.horarios-items .ui-datepicker-calendar th{
+    padding: 0px;
+}
+
+section.horarios-items .container article.eventos .contendor-items .card:before{
+    border: none;
+}
+
+section.horarios-items .container article.titulo-horario h2{
+    font-size: 28px;
+}
+section.horarios-items .ui-datepicker-header{
+    font-size: 22px;
+}
 
 
 

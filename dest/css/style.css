@@ -175,6 +175,10 @@ body {
 .desaparecer {
   visibility: hidden; }
 
+table {
+  width: 100%;
+  border-collapse: collapse; }
+
 /** colores primarios **/
 /** colores  top menu **/
 /** identificadores de secciones  **/
@@ -749,6 +753,9 @@ h1 {
   margin-bottom: 6px;
   display: none; }
 
+figure.nav-images img.secciones {
+  display: none; }
+
 /********** SECCIONES ***********/
 section.sedes-contactos {
   -webkit-box-align: center;
@@ -1048,14 +1055,26 @@ section.cover-intro {
   left: 5.875rem; }
 
 li.flex-nav-next {
-  display: inline-block; }
+  display: inline-block;
+  padding: 1.125rem 1.3125rem;
+  border: 0.3125rem solid #08405C;
+  border-radius: 100px;
+  text-align: center;
+  position: relative;
+  margin-left: 1.625rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5); }
   li.flex-nav-next a.flex-next {
-    top: 0px;
-    margin-left: 23px; }
+    top: 0px; }
 
 li.flex-nav-prev {
   display: inline-block;
-  left: 0px; }
+  padding: 1.125rem 1.3125rem;
+  border: 0.3125rem solid #08405C;
+  border-radius: 100px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5); }
 
 @-webkit-keyframes fadeInLeft {
   0% {
@@ -3259,6 +3278,136 @@ section.nofunciona {
   section.nofunciona h2 {
     font-size: 4.6875rem;
     color: #00B3D0; }
+
+section.horarios-items {
+  margin-top: 6.25rem;
+  padding-top: 6.125rem; }
+  section.horarios-items .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    section.horarios-items .container article.titulo-horario {
+      width: 300px;
+      text-align: center; }
+      section.horarios-items .container article.titulo-horario h2 {
+        font-size: 4.375rem;
+        color: #08405C;
+        margin-top: 0px;
+        font-family: 'VAGRounded-bold'; }
+    section.horarios-items .container article.eventos {
+      max-width: 800px;
+      background: #FAFAFA;
+      position: relative;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      section.horarios-items .container article.eventos .contendor-items {
+        width: 330px;
+        height: auto;
+        margin-left: -1.25rem; }
+        section.horarios-items .container article.eventos .contendor-items p {
+          font-size: 1.125rem;
+          font-family: 'VAGRounded-bold';
+          color: #fff;
+          margin-left: 1.5625rem;
+          margin-top: 0.9375rem;
+          margin-bottom: 0.875rem; }
+        section.horarios-items .container article.eventos .contendor-items .card {
+          width: 100%;
+          background: #A4CD40;
+          color: #fff;
+          padding: 1.875rem 0.625rem 1.375rem 2.5rem;
+          margin-bottom: 1.25rem;
+          position: relative; }
+          section.horarios-items .container article.eventos .contendor-items .card:first-of-type {
+            color: #fff;
+            background: #EF096E; }
+            section.horarios-items .container article.eventos .contendor-items .card:first-of-type p {
+              color: #fff; }
+          section.horarios-items .container article.eventos .contendor-items .card:before {
+            content: " ";
+            position: absolute;
+            left: 0px;
+            bottom: -0.875rem;
+            width: 0;
+            height: 0;
+            border-top: 0.9375rem solid #364659;
+            border-left: 1.8125rem solid transparent; }
+          section.horarios-items .container article.eventos .contendor-items .card h3 {
+            font-size: 1.25rem;
+            margin-top: 0px; }
+          section.horarios-items .container article.eventos .contendor-items .card p {
+            font-size: 1.125rem;
+            font-family: 'montserratlight'; }
+          section.horarios-items .container article.eventos .contendor-items .card a {
+            font-size: 1.125rem;
+            font-family: 'montserratsemi-bold';
+            color: #fff; }
+      section.horarios-items .container article.eventos .calendario-item {
+        max-width: 450px; }
+  section.horarios-items .ui-datepicker-header {
+    text-align: center;
+    font-family: 'VAGRounded-bold';
+    color: #364659;
+    font-size: 2.5rem; }
+  section.horarios-items .ui-datepicker-prev span,
+  section.horarios-items .ui-datepicker-next span {
+    display: none; }
+  section.horarios-items .ui-datepicker-prev:after {
+    content: "\f0dd";
+    font-size: 1.25rem;
+    float: left;
+    margin-left: 0.625rem;
+    cursor: pointer;
+    font-family: 'FontAwesome';
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  section.horarios-items .ui-datepicker-next:after {
+    content: "\f0dd";
+    float: right;
+    font-size: 1.25rem;
+    margin-right: 0.625rem;
+    cursor: pointer;
+    font-family: 'FontAwesome';
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  section.horarios-items .ui-datepicker-calendar th {
+    padding: 0.625rem 0.9375rem;
+    color: #364659;
+    border: none;
+    font-family: 'montserrat-regular';
+    font-size: 1.125rem;
+    padding-bottom: 2.5rem; }
+  section.horarios-items .ui-datepicker-calendar {
+    text-align: center;
+    margin: 0 auto; }
+  section.horarios-items .ui-datepicker-title {
+    padding: 0.625rem; }
+  section.horarios-items .ui-datepicker-calendar td {
+    padding: 0.125rem 0.125rem;
+    line-height: 4.5rem;
+    font-size: 1rem;
+    font-family: 'montserratlight';
+    border: none; }
+  section.horarios-items .ui-datepicker-calendar .ui-state-default {
+    text-decoration: none;
+    color: black; }
+  section.horarios-items .ui-datepicker-calendar .ui-state-active {
+    color: #fff;
+    background-color: #00B3D0;
+    -webkit-transition: border .2s linear;
+    transition: border .2s linear; }
+  section.horarios-items .ui-datepicker-calendar a {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    line-height: 2.1875rem;
+    margin-bottom: 1.5625rem; }
 
 .waves-effect {
   position: relative;
@@ -6616,16 +6765,14 @@ footer {
   .flex-direction-nav {
     position: relative;
     bottom: 0px;
-    top: 20px;
+    top: 27px;
     display: block;
     margin: auto;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
-  .flex-direction-nav a:before {
-    color: #08405C !important; }
-  .flex-direction-nav a.flex-prev:before, .flex-direction-nav a.flex-next:before {
-    font-size: 2.375rem !important; }
+  li.flex-nav-next, li.flex-nav-prev {
+    padding: 0.625rem 0.9375rem; }
   .flex-direction-nav {
     width: 100%;
     text-align: center; }
@@ -6715,4 +6862,34 @@ footer {
     width: 100%;
     padding: 5px 15px;
     margin: 0px;
-    border: none; } }
+    border: none; }
+  section.horarios-items .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  section.horarios-items .container article.titulo-horario {
+    width: 100%; }
+  section.horarios-items .container article.eventos {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  section.horarios-items .container article.eventos .calendario-item {
+    margin: 0 auto;
+    width: 100%; }
+  section.horarios-items {
+    padding-top: 0px; }
+  section.horarios-items .container article.eventos .contendor-items {
+    margin: auto; }
+  section.horarios-items .ui-datepicker-calendar th {
+    padding: 0px; }
+  section.horarios-items .container article.eventos .contendor-items .card:before {
+    border: none; }
+  section.horarios-items .container article.titulo-horario h2 {
+    font-size: 28px; }
+  section.horarios-items .ui-datepicker-header {
+    font-size: 22px; } }

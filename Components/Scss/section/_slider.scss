@@ -195,15 +195,28 @@
 
 li.flex-nav-next{
     display: inline-block;
+    padding: 1.125rem 1.3125rem;
+    border: 0.3125rem solid #08405C;
+    border-radius: 100px;
+    text-align: center;
+    position: relative;
+    margin-left: 1.625rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     a.flex-next{
-        top: 0px;
-        margin-left: 23px
+       top: 0px;
+
     }
 }
 
 li.flex-nav-prev{
     display: inline-block;
-    left: 0px;
+    padding: 1.125rem 1.3125rem;
+    border: 0.3125rem solid #08405C;
+    border-radius: 100px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 @-webkit-keyframes fadeInLeft {

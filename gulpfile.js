@@ -31,9 +31,9 @@ gulp.task('pug', () =>
 
 // optimizar imagenes
 gulp.task('imagemin', () =>
-    gulp.src('./dest/images/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dest/imageopt'))
+    gulp.src('./Components/images/*')
+        .pipe(imagemin([ imagemin.jpegtran(),imagemin.optipng()]))
+        .pipe(gulp.dest('dest/images'))
 );
 
 
@@ -45,7 +45,7 @@ gulp.task('default',() => {
 
     gulp.watch('Components/Scss/**/*.scss',['sass']);
     gulp.watch('Components/Pug/**/*.pug',['pug']);
-    gulp.watch('dest/images/**/*',['imagemin']);
+    gulp.watch('Components/images/**/*',['imagemin']);
 
 })
 
