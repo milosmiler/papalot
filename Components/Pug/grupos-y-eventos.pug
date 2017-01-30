@@ -1,0 +1,94 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.cover
+			img(src="images/cover_grupo_evento.png" alt="cover mega pantalla")
+			h2 ADO Megapantalla #[br]IMAX
+
+
+		section.notas
+			.container.flex
+				article.nota.z-depth-4
+					figure.imagen-nota
+						img(src="images/grupo-escolar.png" alt="grupos escolares")
+					h2 Grupos escolares
+					p ¡Visita 
+						span PAPALOTE 
+						| con tus alumnos y vivan nuevas experiencias de aprendizaje!
+					a.boton.nota.sombra.btn-efect(href="") Conoce más
+
+				article.nota.z-depth-4
+						figure.imagen-nota
+							img(src="images/grupo-empresa.png" alt="grupos empresas ")
+						h2 Grupos para empresas
+						p Si lo que buscas es recompensar el esfuerzo, dedicación y alentar la convivencia entre los colaboradores de una empresa y sus familias, 
+							span ¡PAPALOTE 
+							| es la mejor opción!
+						a.boton.nota.sombra.btn-efect(href="") Conoce más
+		section.eventos
+			h2 Eventos
+			p Es tiempo de festejar en PAPALOTE
+			.container
+				figure.evento
+					img(src="images/evento1.png")
+				h3 Salón de Usos Múltiples
+
+				figure.evento
+					img(src="images/evento1.png")
+				h3 ADO Megapantalla IMAX
+
+				figure.evento
+					img(src="images/evento1.png")
+				h3 domodigital Citibanamex
+
+				figure.evento
+					img(src="images/evento1.png")
+				h3 Jardín Vivir es increíble
+
+		section.informacion
+			item
+				h2 Información para grupos
+				h3  Comunícate al:
+				p 
+					a(href='tel:+5237 1778') 5237 1778 / 5237 1779
+				p 
+					span.email 
+						a(href='mailto:grupos@papalote.org.mx') grupos@papalote.org.mx
+			item
+				h2 Información para empresas
+				h3  Comunícate al:
+				p 
+					a(href='tel:+5237 1778') 5237 1778 / 5237 1779
+				p 
+					span.email 
+						a(href='mailto:grupos@papalote.org.mx') ventaempresas@papalote.org.mx
+
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")
