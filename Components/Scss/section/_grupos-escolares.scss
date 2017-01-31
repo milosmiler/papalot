@@ -1,0 +1,114 @@
+section.group-content{
+	article.item-right{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		margin-bottom: 5.625rem;
+		.item-content{
+			width: 45%;
+			float: left;
+			span{
+				font-family: 'montserrat-bold';}
+			p{
+				font-family: 'montserratlight';
+				color: $color-azul100;
+				margin-bottom: 1.5625rem;
+				font-size: 1.125rem;}
+			h2{
+				font-size: 2.5rem;
+				color: $color-azul100;
+				margin-top: 3rem;
+				margin-bottom: 1.6875rem;}
+			a.comprar-slider{
+				@include boton($ancho: 12.5rem, $fondo: $color-verde , $color: #fff );}
+		}
+		figure.image-group{
+			width: 50%;
+			float: right;
+			img{
+				width: 100%;}
+		}
+	}
+	article.item-left{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		margin-bottom: 5.625rem;
+		.item-content{
+			width: 45%;
+			float: right;
+			span{
+				font-family: 'montserrat-bold';
+			}
+			p{
+				font-family: 'montserratlight';
+				color: $color-azul100;
+				margin-bottom: 1.5625rem;
+				font-size: 1.125rem;}
+		}
+		figure.image-group{
+			width: 50%;
+			float: left;
+			img{
+				width: 100%;}
+		}
+	}
+}
+
+section.contact-group{
+	text-align: center;
+	width: 100%;
+	padding-bottom: 5rem;
+	h2{
+		font-size: 2.5rem;
+		color: #0098CC;
+		margin-bottom: 29px;}
+	a.form-contact{
+		@include boton($ancho: 12.5rem, $fondo: $color-morado , $color: #fff );
+		margin: auto;
+		font-size: 1.875rem;
+		padding-top: 0.625rem;
+		text-align: center;
+		&:before{
+			display: none;
+		}
+	}
+}
+
+section.informacion{
+	width: 100%;
+	display: table;
+	.item{
+		width: 50%;
+		display: table-cell;
+		background: $color-amarillo;
+		vertical-align: middle;
+		padding-top: 4.9375rem;
+		padding-bottom: 4.9375rem;
+		h2{
+			color: #D41672;
+			font-size: 2.5rem;
+			text-align: center;}
+		h3{
+			font-size: 1.375rem;
+			font-family: 'montserratsemi-bold';
+			color: #D41672;}
+		.container-item{
+			width: 100%;
+			float: left;
+			a.tel{
+				font-size: 1.125rem;
+				color: #D41672;
+				font-family: 'montserrat-regular';
+				margin-right: 20px;
+				text-decoration: none;
+			}
+		}
+		a.mail-info{
+			color: #D41672;
+			font-size: 1.125rem;
+			font-family: 'montserratlight';
+		}
+	}
+
+}
