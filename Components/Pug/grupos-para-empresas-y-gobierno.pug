@@ -1,0 +1,156 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.cover
+			img(src="images/grupos-empresas.png"  alt="megapantalla")
+			h2 Grupos para empresas #[br] y Gobierno
+		section.item-intro
+			.container
+				.item-content
+					h2 Recompensa el esfuerzo
+					p 
+						span PAPALOTE 
+						| es el mejor lugar para recompensar el esfuerzo entre los colaboradores de una empresa y sus familias. Buscamos fortalecer la convivencia y la comunicación de una manera divertidísima.
+
+					p Aquí disfrutarán experiencias de aprendizaje dentro de las nuevas zonas del Museo, viajarán en 3D por la 
+						span ADO Megapantalla IMAX 
+						| y conocerán los secretos del Universo en el 
+						span domodigital Citibanamex. 
+
+				figure.image-intro
+					img(src="images/intro-image.png")
+		section.download-material
+			.container
+				h2 ¡Descarga nuestros materiales especiales! 
+				p Tenemos información ideal que servirá de apoyo para reforzar la colaboración y motivación dentro de una empresa.
+				.item-container.flex
+					article
+						i.fa.fa-file-text
+						h3 Descargable 1
+						a.descarga.sombra.btn-efect(href="") Conoce más 
+						a.conoce-descarga.sombra.btn-efect(href="") Descargar 
+						
+					article
+						i.fa.fa-file-text
+						h3 Descargable 2
+						a.descarga.sombra.btn-efect(href="") Conoce más 
+						a.conoce-descarga.sombra.btn-efect(href="") Descargar 
+						  
+					article
+						i.fa.fa-file-text
+						h3 Descargable 3
+						a.descarga.sombra.btn-efect(href="") Conoce más 
+						a.conoce-descarga.sombra.btn-efect(href="") Descargar 
+						 
+
+		section.experiencia-group
+			h2 ¿Qué esperas para vivir esta divertida experiencia?
+			p Las opciones para visitarnos son:
+			.container.flex
+				article.z-depth-4
+					i.fa.icon
+					h3 Reservaciones
+					h4 ¡Aparta tu lugar!
+					p Si nos visitas con un grupo mayor a 15 personas, haz una reservación y adquiere tus entradas a un precio especial.
+
+				article.z-depth-4
+					i.fa.icon
+					h3 Cupones
+					h4 Precio preferente
+					ul
+						li Venta directa en las instalaciones de la empresa.
+
+						li Venta en consigna.
+
+						li Venta en firme (mínimo de entrega en tus instalaciones de 50 cupones)
+		section.dia-papalote
+			.container
+				h2 ¿Te imaginas qué podrías hacer si tuvieras PAPALOTE para ti y tus amigos nada más? ¡Día PAPALOTE lo hace posible!En esta opcionesón te ofrecemos:
+				.item-container
+					.item-card
+						p Interacción libre en las 6 nuevas zonas del Museo
+					.item-card
+						figure.image-card
+							img(src="images/image-card.png")
+					.item-card
+						p Montaje previo, si se requiere, un día antes del evento a partir de las 18:00 hrs
+
+					.item-card
+						p 9 Funciones de la ADO Megapantalla IMAX disponibles a libre elección
+					.item-card
+						p 11 funciones del domodigital Citibanamex disponibles a libre elección
+
+					.item-card
+						p Proyección de videos institucionales
+
+					.item-card
+						p Uso de instalaciones completas en un horario de 9:00 a 18:00 hrs.
+
+					.item-card
+						p Servicio médico de primera instancia
+
+					.item-card
+						p Paquetería sin costo
+
+					.item-card
+						p Posibilidad de tener activaciones y presencia de marca en el Jardín Vivir es increíble
+					.item-card
+						p Boletos básicos personalizados
+
+					.item-card
+						p 9,300m de espacio 100% privado.
+
+					.item-card
+						p Arte digital básico para comunicación
+
+					.item-card
+						p Uso de salas para conferencias, pláticas o entrega de resultados
+
+					.item-card
+						p Operación y logística durante todo el día
+
+					.item-card
+						figure.image-card
+							img(src="images/image-card2.png")
+
+		section.contact-group
+			h2 ¿Deseas que nosotros te contactemos?  
+			a.form-contact.sombra.btn-efect(href="") click aquí
+		section.informacion
+			.item
+				h2 ¿Necesitas más información?
+			.item
+				h3 Comunícate al:
+				.container-item
+					a.tel(href='tel:+5237 1783') 5237 1783
+					a.tel(href='tel:+4990 45 73') 4990 45 73
+				a.mail-info(href='mailto:grupos@papalote.org.mx') grupos@papalote.org.mx
+
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")

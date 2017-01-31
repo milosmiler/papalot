@@ -1,0 +1,83 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.cover
+			img(src="images/tiburon.png"  alt="megapantalla")
+			h2 Grupos escolares
+		section.group-content
+			.container
+				article.item-right
+					.item-content
+						h2 ¡Visita PAPALOTE con tus alumnos!
+						p Y vivan nuevas experiencias de aprendizaje. Como maestro eres la figura principal y modelo para los niños. Por ello, 
+							span PAPALOTE 
+							| te asiste para que tu visita al Museo se ajuste a los objetivos de aprendizaje de tus alumnos. 
+						p Juntos disfrutarán nuestra oferta educativa renovada y vivirán la experiencia de la 
+							span ADO Megapantalla IMAX 
+							| y el 
+							span domodigital Citibanamex
+							| , en donde reforzarán los contenidos aprendidos en el aula, teniendo como herramientas principales el juego y la diversión. Además, convivirán en un ambiente diferente al que comparten cotidianamente.
+					figure.image-group
+						img(src="images/escolar1.png")
+
+				article.item-left
+					figure.image-group
+						img(src="images/escolar2.png")
+					.item-content
+						p Para 
+							span PAPALOTE 
+							| el juego es un factor esencial en el desarrollo de habilidades como el pensamiento crítico, la comunicación, la resolución de problemas y la colaboración.
+						p En las nuevas zonas del Museo reforzarán el descubrimiento, la imaginación y la convivencia.
+
+						p Los contenidos de 
+							span PAPALOTE 
+							| están relacionados con el programa de la SEP y la oferta temática abarca los niveles de Preescolar, Primaria y Secundaria.
+
+				article.item-right
+					.item-content
+						h2 ABC PAPALOTE
+						p Es un programa educativo dirigido a profesores de preescolar y primaria en el que encontrarán herramientas y recursos educativos que enriquecerán su experiencia y la de sus alumnos antes, durante y después de su visita a 
+							span PAPALOTE.
+						a.comprar-slider.sombra.btn-efect(href="") Conoce más 
+					figure.image-group
+						img(src="images/escolar3.png")
+		section.contact-group
+			h2 ¿Deseas que nosotros te contactemos?  
+			a.form-contact.sombra.btn-efect(href="") click aquí
+		section.informacion
+			.item
+				h2 ¿Necesitas más información?
+			.item
+				h3 Comunícate al:
+				.container-item
+					a.tel(href='tel:+5237 1783') 5237 1783
+					a.tel(href='tel:+4990 45 73') 4990 45 73
+				a.mail-info(href='mailto:grupos@papalote.org.mx') grupos@papalote.org.mx
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")
