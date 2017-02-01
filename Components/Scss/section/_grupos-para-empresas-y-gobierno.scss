@@ -101,3 +101,30 @@ section.experiencia-group{
     			color: #0098CC;
     			}}
 }
+
+section.dia-papalote{
+	background: $color-grisCL100;
+	h2{
+		text-align: center;
+		color: $color-azul100;
+		font-size: 70px;}
+	h3{
+		font-size: 18px;
+		text-align: center;
+		font-family: 'montserratlight';
+		color: $color-azul100;}
+	.item-container{
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		.item-card{
+			width: 280px;
+			height: 207px;
+			&:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7), &:nth-child(10), &:nth-child(12){
+				background: #fff;}
+			p{
+				text-align: center;
+			}
+		}
+	}
+}

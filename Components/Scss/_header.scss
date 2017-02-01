@@ -32,6 +32,7 @@ header{
               li{
                    display: inline-block;
                    margin-right: 2.5rem; 
+                   position: relative;
                    &:last-child{
                       margin-right: 0px;}
                   a{
@@ -179,6 +180,7 @@ header{
   padding:0.3125rem 0.3125rem 0.3125rem 1.25rem;
   top: 3.9375rem;
   left: -7rem;
+  width: 523px;
   &:before{
     content: '';
     width: 0;
@@ -195,6 +197,7 @@ header{
     float: left;
     margin: 0px;
     vertical-align: top;
+    width: 53.81%;
 
       li{
         display: block!important;

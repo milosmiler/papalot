@@ -1,0 +1,132 @@
+section.intro-group-event{
+	position: relative;
+	.item-content{
+		max-width: 617px;
+		height: auto;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		right:37%;
+		top: 50%;
+		background: #fff;
+		z-index: 999;
+		padding: 140px 128px;
+		p{
+			font-size: 22px;
+			color: #E21010;
+			font-family: 'montserratlight';
+			span{
+				font-family: 'montserrat-bold';}
+		}
+	}
+	figure{
+		float: right;
+		position: relative;
+		max-width: 700px;
+		img{
+			width: 100%;}
+	}
+}
+
+section.eventos{
+	.container{
+		justify-content: center;
+		margin-bottom: 90px;}
+
+	h2{
+		text-align: center;
+		color: $color-azul100;
+		margin-top: 0px;
+		margin-bottom: 29px;
+		font-size: 70px;}
+	p{
+		font-size: 22px;
+		color: $color-azul100;
+		margin-bottom: 90px;
+		text-align: center;
+		font-family: 'montserratsemi-bold';}
+	.item-evento{
+    	    padding: 0px 20px;}
+	figure{
+		width: 161px;
+		height: 161px;
+		border-radius: 100px;
+		border: 5px solid #C3D56C;
+		overflow: hidden;
+		margin: auto;
+		img{
+			width: 100%;}
+
+	}
+	h3{
+		font-family: 'VAGRounded-bold';
+		font-size: 22px;
+		text-align: center;
+		color: $color-azul100;}
+
+	a.evento-btn{
+		margin: auto;
+		display: block;
+		@include boton($ancho: 12.5rem, $fondo: $color-rosa , $color: #fff );
+		margin-bottom: 90px;}
+}
+
+
+section.informacion-eventos{
+	width: 100%;
+	display: table;
+	.item{
+		width: 50%;
+		display: table-cell;
+		background: $color-amarillo;
+		vertical-align: middle;
+		padding-top: 4.9375rem;
+		padding-bottom: 4.9375rem;
+		&:last-child{
+			background: #C1D42E;
+			h2{
+				color: #0098CC;}
+			h3{
+				color: #0098CC;}
+			a.mail-info{
+				color: #0098CC;}
+			.container-item{
+			a.tel{
+				color: #0098CC;}
+			}
+
+
+		}
+		h2{
+			color: #D41672;
+			font-size: 40px;
+			text-align: center;}
+		h3{
+			font-size: 1.375rem;
+			font-family: 'montserratsemi-bold';
+			margin-left: 16.25rem;
+			color: #D41672;}
+		.container-item{
+			width: 100%;
+			float: left;
+			margin-left: 16.25rem;
+			a.tel{
+				font-size: 1.125rem;
+				color: #D41672;
+				font-family: 'montserrat-regular';
+				margin-right: 20px;
+				text-decoration: none;
+			}
+		}
+		a.mail-info{
+			color: #D41672;
+			font-size: 1.125rem;
+			font-family: 'montserratlight';
+			margin-left: 16.25rem;
+		}
+	}
+
+}
+
+
+
+

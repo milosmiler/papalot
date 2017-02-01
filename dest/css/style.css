@@ -538,7 +538,8 @@ header {
         list-style: none; }
         header .container nav ul li {
           display: inline-block;
-          margin-right: 2.5rem; }
+          margin-right: 2.5rem;
+          position: relative; }
           header .container nav ul li:last-child {
             margin-right: 0px; }
           header .container nav ul li a {
@@ -660,7 +661,8 @@ header {
     z-index: 99999;
     padding: 0.3125rem 0.3125rem 0.3125rem 1.25rem;
     top: 3.9375rem;
-    left: -7rem; }
+    left: -7rem;
+    width: 523px; }
     header .container-menu:before {
       content: '';
       width: 0;
@@ -675,7 +677,8 @@ header {
     header .container-menu ul.image-menu {
       float: left;
       margin: 0px;
-      vertical-align: top; }
+      vertical-align: top;
+      width: 53.81%; }
       header .container-menu ul.image-menu li {
         display: block !important;
         margin-bottom: 23px; }
@@ -1222,6 +1225,54 @@ section.notas {
         margin-bottom: 1.625rem;
         margin-left: 2.1875rem; }
         section.notas .container article.nota a.boton.nota:before {
+          content: "\f061";
+          position: absolute;
+          right: 1.4375rem;
+          font-family: 'FontAwesome'; }
+      section.notas .container article.nota a.evento-nota {
+        background-color: #1CDCC4;
+        border-radius: 3.125rem;
+        clear: both;
+        cursor: pointer;
+        color: #fff;
+        font-family: 'VAGRounded-bold';
+        display: block;
+        font-size: 1.125rem;
+        height: 3.125rem;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        text-align: left;
+        padding-left: 1.125rem;
+        padding-top: 0.9375rem;
+        text-decoration: none;
+        width: 12.5rem;
+        margin-bottom: 1.625rem;
+        margin-left: 2.1875rem; }
+        section.notas .container article.nota a.evento-nota:before {
+          content: "\f061";
+          position: absolute;
+          right: 1.4375rem;
+          font-family: 'FontAwesome'; }
+      section.notas .container article.nota a.evento-empresa {
+        background-color: #A4CD40;
+        border-radius: 3.125rem;
+        clear: both;
+        cursor: pointer;
+        color: #fff;
+        font-family: 'VAGRounded-bold';
+        display: block;
+        font-size: 1.125rem;
+        height: 3.125rem;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        text-align: left;
+        padding-left: 1.125rem;
+        padding-top: 0.9375rem;
+        text-decoration: none;
+        width: 12.5rem;
+        margin-bottom: 1.625rem;
+        margin-left: 2.1875rem; }
+        section.notas .container article.nota a.evento-empresa:before {
           content: "\f061";
           position: absolute;
           right: 1.4375rem;
@@ -3282,69 +3333,67 @@ section.nofunciona {
 section.horarios-items {
   margin-top: 6.25rem;
   padding-top: 6.125rem; }
-  section.horarios-items .container {
+  section.horarios-items .centrar {
+    margin: auto;
+    max-width: 800px; }
+  section.horarios-items h2 {
+    font-size: 4.375rem;
+    color: #08405C;
+    margin-top: 0px;
+    text-align: center;
+    font-family: 'VAGRounded-bold'; }
+  section.horarios-items .container article.eventos {
+    max-width: 800px;
+    background: #FAFAFA;
+    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    section.horarios-items .container article.titulo-horario {
-      width: 300px;
-      text-align: center; }
-      section.horarios-items .container article.titulo-horario h2 {
-        font-size: 4.375rem;
+    section.horarios-items .container article.eventos .contendor-items {
+      width: 330px;
+      height: auto;
+      margin-left: -1.25rem; }
+      section.horarios-items .container article.eventos .contendor-items p {
+        font-size: 1.125rem;
+        font-family: 'VAGRounded-bold';
         color: #08405C;
-        margin-top: 0px;
-        font-family: 'VAGRounded-bold'; }
-    section.horarios-items .container article.eventos {
-      max-width: 800px;
-      background: #FAFAFA;
-      position: relative;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      section.horarios-items .container article.eventos .contendor-items {
-        width: 330px;
-        height: auto;
-        margin-left: -1.25rem; }
-        section.horarios-items .container article.eventos .contendor-items p {
-          font-size: 1.125rem;
-          font-family: 'VAGRounded-bold';
+        margin-left: 1.5625rem;
+        margin-top: 0.9375rem;
+        margin-bottom: 0.875rem; }
+      section.horarios-items .container article.eventos .contendor-items .card {
+        width: 100%;
+        background: #A4CD40;
+        color: #fff;
+        padding: 1.875rem 0.625rem 1.375rem 2.5rem;
+        margin-bottom: 1.25rem;
+        position: relative; }
+        section.horarios-items .container article.eventos .contendor-items .card:first-of-type {
           color: #fff;
-          margin-left: 1.5625rem;
-          margin-top: 0.9375rem;
-          margin-bottom: 0.875rem; }
-        section.horarios-items .container article.eventos .contendor-items .card {
-          width: 100%;
-          background: #A4CD40;
-          color: #fff;
-          padding: 1.875rem 0.625rem 1.375rem 2.5rem;
-          margin-bottom: 1.25rem;
-          position: relative; }
-          section.horarios-items .container article.eventos .contendor-items .card:first-of-type {
-            color: #fff;
-            background: #EF096E; }
-            section.horarios-items .container article.eventos .contendor-items .card:first-of-type p {
-              color: #fff; }
-          section.horarios-items .container article.eventos .contendor-items .card:before {
-            content: " ";
-            position: absolute;
-            left: 0px;
-            bottom: -0.875rem;
-            width: 0;
-            height: 0;
-            border-top: 0.9375rem solid #364659;
-            border-left: 1.8125rem solid transparent; }
-          section.horarios-items .container article.eventos .contendor-items .card h3 {
-            font-size: 1.25rem;
-            margin-top: 0px; }
-          section.horarios-items .container article.eventos .contendor-items .card p {
-            font-size: 1.125rem;
-            font-family: 'montserratlight'; }
-          section.horarios-items .container article.eventos .contendor-items .card a {
-            font-size: 1.125rem;
-            font-family: 'montserratsemi-bold';
+          background: #EF096E; }
+          section.horarios-items .container article.eventos .contendor-items .card:first-of-type p {
             color: #fff; }
-      section.horarios-items .container article.eventos .calendario-item {
-        max-width: 450px; }
+        section.horarios-items .container article.eventos .contendor-items .card:before {
+          content: " ";
+          position: absolute;
+          left: 0px;
+          bottom: -0.875rem;
+          width: 0;
+          height: 0;
+          border-top: 0.9375rem solid #364659;
+          border-left: 1.8125rem solid transparent; }
+        section.horarios-items .container article.eventos .contendor-items .card h3 {
+          font-size: 1.25rem;
+          margin-top: 0px; }
+        section.horarios-items .container article.eventos .contendor-items .card p {
+          font-size: 1.125rem;
+          color: #fff;
+          font-family: 'montserratlight'; }
+        section.horarios-items .container article.eventos .contendor-items .card a {
+          font-size: 1.125rem;
+          font-family: 'montserratsemi-bold';
+          color: #fff; }
+    section.horarios-items .container article.eventos .calendario-item {
+      max-width: 450px; }
   section.horarios-items .ui-datepicker-header {
     text-align: center;
     font-family: 'VAGRounded-bold';
@@ -3361,7 +3410,8 @@ section.horarios-items {
     cursor: pointer;
     font-family: 'FontAwesome';
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+            transform: rotate(90deg);
+    margin-top: 1.4375rem; }
   section.horarios-items .ui-datepicker-next:after {
     content: "\f0dd";
     float: right;
@@ -3370,7 +3420,8 @@ section.horarios-items {
     cursor: pointer;
     font-family: 'FontAwesome';
     -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
+            transform: rotate(-90deg);
+    margin-top: 1.4375rem; }
   section.horarios-items .ui-datepicker-calendar th {
     padding: 0.625rem 0.9375rem;
     color: #364659;
@@ -6286,6 +6337,169 @@ section.experiencia-group article {
     font-size: 22px;
     text-align: center;
     color: #0098CC; }
+
+section.dia-papalote {
+  background: #FAFAFA; }
+  section.dia-papalote h2 {
+    text-align: center;
+    color: #08405C;
+    font-size: 70px; }
+  section.dia-papalote h3 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'montserratlight';
+    color: #08405C; }
+  section.dia-papalote .item-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    section.dia-papalote .item-container .item-card {
+      width: 280px;
+      height: 207px; }
+      section.dia-papalote .item-container .item-card:nth-child(2), section.dia-papalote .item-container .item-card:nth-child(4), section.dia-papalote .item-container .item-card:nth-child(5), section.dia-papalote .item-container .item-card:nth-child(7), section.dia-papalote .item-container .item-card:nth-child(10), section.dia-papalote .item-container .item-card:nth-child(12) {
+        background: #fff; }
+      section.dia-papalote .item-container .item-card p {
+        text-align: center; }
+
+section.intro-group-event {
+  position: relative; }
+  section.intro-group-event .item-content {
+    max-width: 617px;
+    height: auto;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    right: 37%;
+    top: 50%;
+    background: #fff;
+    z-index: 999;
+    padding: 140px 128px; }
+    section.intro-group-event .item-content p {
+      font-size: 22px;
+      color: #E21010;
+      font-family: 'montserratlight'; }
+      section.intro-group-event .item-content p span {
+        font-family: 'montserrat-bold'; }
+  section.intro-group-event figure {
+    float: right;
+    position: relative;
+    max-width: 700px; }
+    section.intro-group-event figure img {
+      width: 100%; }
+
+section.eventos .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 90px; }
+
+section.eventos h2 {
+  text-align: center;
+  color: #08405C;
+  margin-top: 0px;
+  margin-bottom: 29px;
+  font-size: 70px; }
+
+section.eventos p {
+  font-size: 22px;
+  color: #08405C;
+  margin-bottom: 90px;
+  text-align: center;
+  font-family: 'montserratsemi-bold'; }
+
+section.eventos .item-evento {
+  padding: 0px 20px; }
+
+section.eventos figure {
+  width: 161px;
+  height: 161px;
+  border-radius: 100px;
+  border: 5px solid #C3D56C;
+  overflow: hidden;
+  margin: auto; }
+  section.eventos figure img {
+    width: 100%; }
+
+section.eventos h3 {
+  font-family: 'VAGRounded-bold';
+  font-size: 22px;
+  text-align: center;
+  color: #08405C; }
+
+section.eventos a.evento-btn {
+  margin: auto;
+  display: block;
+  background-color: #EF096E;
+  border-radius: 3.125rem;
+  clear: both;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'VAGRounded-bold';
+  display: block;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: left;
+  padding-left: 1.125rem;
+  padding-top: 0.9375rem;
+  text-decoration: none;
+  width: 12.5rem;
+  margin-bottom: 90px; }
+  section.eventos a.evento-btn:before {
+    content: "\f061";
+    position: absolute;
+    right: 1.4375rem;
+    font-family: 'FontAwesome'; }
+
+section.informacion-eventos {
+  width: 100%;
+  display: table; }
+  section.informacion-eventos .item {
+    width: 50%;
+    display: table-cell;
+    background: #EDCF00;
+    vertical-align: middle;
+    padding-top: 4.9375rem;
+    padding-bottom: 4.9375rem; }
+    section.informacion-eventos .item:last-child {
+      background: #C1D42E; }
+      section.informacion-eventos .item:last-child h2 {
+        color: #0098CC; }
+      section.informacion-eventos .item:last-child h3 {
+        color: #0098CC; }
+      section.informacion-eventos .item:last-child a.mail-info {
+        color: #0098CC; }
+      section.informacion-eventos .item:last-child .container-item a.tel {
+        color: #0098CC; }
+    section.informacion-eventos .item h2 {
+      color: #D41672;
+      font-size: 40px;
+      text-align: center; }
+    section.informacion-eventos .item h3 {
+      font-size: 1.375rem;
+      font-family: 'montserratsemi-bold';
+      margin-left: 16.25rem;
+      color: #D41672; }
+    section.informacion-eventos .item .container-item {
+      width: 100%;
+      float: left;
+      margin-left: 16.25rem; }
+      section.informacion-eventos .item .container-item a.tel {
+        font-size: 1.125rem;
+        color: #D41672;
+        font-family: 'montserrat-regular';
+        margin-right: 20px;
+        text-decoration: none; }
+    section.informacion-eventos .item a.mail-info {
+      color: #D41672;
+      font-size: 1.125rem;
+      font-family: 'montserratlight';
+      margin-left: 16.25rem; }
 
 /********** FOOTER *************/
 footer {
