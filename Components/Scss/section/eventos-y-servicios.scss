@@ -1,0 +1,93 @@
+section.event-service{
+	margin-top: 8.125rem;
+	padding-bottom: 7.5rem;
+	.container{
+		justify-content: space-between;
+	}
+	h2{
+		text-align: center;
+		color: $color-azul100;
+		margin-top: 0px;
+		margin-bottom: 69px;
+
+		font-size:2.5rem;}
+	article{
+		max-width: 36.1875rem;
+    	height: auto;
+    	background: #fff;
+    	margin: 0px 0.3125rem;
+    	position: relative;
+    	figure{
+    		width: 100%;
+    		height: auto;
+    		img{
+    			width: 100%;}
+    	}
+    	&:before{
+    		content: '';
+    		position: absolute;
+    		left: 0px;
+    		bottom: 0px;
+    		background: #D41672;
+    		width: 0.625rem;
+    		height: 16.125rem;}
+		h3{
+			font-size: 50px;
+			margin-top: 45px;
+			margin-bottom: 45px;
+			text-align: center;
+			color: $color-azul100;
+			margin-bottom: 3rem;}
+    	ul{
+    		padding-left: 37px;
+    		
+    		li{
+    			font-size: 22px;
+    			margin-bottom: 12px; 
+    			font-family: 'montserrat-regular';
+    			color: $color-azul100;}
+    		}
+    	}
+}
+
+
+
+
+
+section.informacion-evento-servicio{
+	width: 100%;
+	display: table;
+	.item{
+		width: 50%;
+		display: table-cell;
+		background: #E11D84;
+		vertical-align: middle;
+		padding-top: 4.9375rem;
+		padding-bottom: 4.9375rem;
+		h2{
+			color: #fff;
+			font-size: 2.5rem;
+			text-align: center;}
+		h3{
+			font-size: 1.375rem;
+			font-family: 'montserratsemi-bold';
+			color: #fff;}
+		.container-item{
+			width: 100%;
+			float: left;
+			a.tel{
+				font-size: 1.125rem;
+				color: #fff;
+				font-family: 'montserrat-regular';
+				margin-right: 20px;
+				text-decoration: none;
+			}
+		}
+		a.mail-info{
+			color: #fff;
+			font-size: 1.125rem;
+			font-family: 'montserratlight';
+		}
+	}
+
+}
