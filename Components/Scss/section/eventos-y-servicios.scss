@@ -1,15 +1,80 @@
+section.conoce-areas{
+	justify-content: space-around;
+	margin-top:126px;
+	flex-wrap: wrap;
+	padding-bottom: 20px;
+	.container{
+		justify-content: space-around;
+		flex-wrap: wrap;}
+	h2{
+		width: 100%;
+		color: $color-azul100;
+		font-size: 50px;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 50px;}
+	article{
+		width: 280px;
+		background: $color-grisCL100;
+		padding-top: 26px;
+		padding-bottom: 18px;
+		position: relative;
+		&:before{
+			content: '';
+			width: 10px;
+			height: 240px;
+			background: #C4E86B;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
+		figure{
+			width: 116px;
+			height: 116px;
+			border: 4px solid #C4E86B;
+			border-radius: 100px;
+			overflow: hidden;
+			margin: auto;
+			img{
+				width: 100%;}
+		}
+		h3{
+			text-align: center;
+			font-size: 22px;
+			color: #718F26;
+			margin-top: 40px;
+			margin-bottom: 30px;}
+		p{
+			font-size: 16px;
+			font-family: 'montserratlight';
+			color: $color-azul100;
+			padding-left: 18px;
+			padding-right: 18px;
+			margin-bottom: 48px;}
+		span.capacidad{
+			color: #718F26;
+			font-size: 14px;
+			font-family: 'montserrat-regular';
+			display: block;
+			text-align: center;
+		}
+	}
+
+}
+
+
+
+
 section.event-service{
 	margin-top: 8.125rem;
 	padding-bottom: 7.5rem;
 	.container{
-		justify-content: space-between;
-	}
+		justify-content: space-between;}
 	h2{
 		text-align: center;
 		color: $color-azul100;
 		margin-top: 0px;
 		margin-bottom: 69px;
-
 		font-size:2.5rem;}
 	article{
 		max-width: 36.1875rem;

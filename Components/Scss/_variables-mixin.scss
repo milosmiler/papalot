@@ -57,6 +57,7 @@ $duration: .4s;
 @mixin boton-borde($color-borde, $ancho, $color: #fff){
     border-radius: 50px;
     background: transparent;
+    font-family: 'VAGRounded-bold';
     border: 4px solid $color-borde;
     clear: both;
     cursor: pointer;

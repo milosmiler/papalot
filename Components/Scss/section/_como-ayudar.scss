@@ -1,0 +1,70 @@
+section.intro-texto{
+	margin-bottom: 97px;
+	p{
+		font-size: 22px;
+		font-family: 'montserratlight';
+		color: $color-azul100;
+		span{
+			font-family: 'montserrat-bold';
+		}
+	}
+}
+section.intro-cover-rigth{
+	overflow: hidden;
+	figure{
+		float: left;
+		max-width: 700px;
+		height: auto;
+		img{
+			width: 100%;}
+		}
+	.item-content{
+		float: right;
+		max-width: 450px;
+		h2{
+			font-size: 40px;
+			color: $color-azul100;}
+		p{
+			font-size: 18px;
+			color: $color-azul100;
+			font-family: 'montserratlight';}
+		a.btn-ayudar{
+			@include boton($ancho: 12.5rem, $fondo: #9C52CB , $color: #fff );
+			position: relative;
+		}
+		}
+}
+section.transpariencias{
+	margin-bottom: 129px;
+	margin-top: 87px;
+	.circulo{
+		border-radius: 100px;
+		width: 101px;
+		height: 101px;
+		border: 3px solid $color-azul100;
+		margin: auto;
+		margin-bottom: 45px;
+	}
+	h2{
+		text-align: center;
+		color: $color-azul100;
+		font-size: 40px;
+		margin-top: 0px;
+		margin-bottom: 35px;}
+	p{
+		font-size: 18px;
+		color: $color-azul100;
+		font-family: 'montserratlight';
+		text-align: center;
+		margin-bottom: 39px;
+		span{
+			font-family: 'montserrat-bold';
+		}
+	}
+	a.btn-transpariencia{
+		margin: auto;
+		@include boton($ancho: 12.5rem, $fondo: #50778A , $color: #fff );
+		position: relative;
+
+	}
+}
