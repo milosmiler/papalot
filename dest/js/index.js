@@ -73,6 +73,7 @@ $(function(){
     subir();
     header();
     calendario();
+    itemAcordeon();
 
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
@@ -317,11 +318,46 @@ function calendario(){
     
 }
 
-(function($) {
-    
-})(jQuery);
+
+function itemAcordeon(){
 
 
+    $("section.acordeon .container ul.accordion").hide();
+    $("section.acordeon .container ul.accordion:first").show();
+
+
+    // DAR CLICK A LOS ITEMS
+    $('nav.preguntas-frecuentes ul li a').click(function(e){
+        e.preventDefault()
+        var arrayItems = ['Compra', 'Información general', 'ADO Megapantalla / domodigital Citibanamex', 'Instalaciones'];
+        var arrayBloques = ['0', '1', '2', '3'];
+        var texto = $(this).text().trim();
+
+        $('section.acordeon .container ul.accordion').removeClass('activa');     
+        // $('.menu-categoria dl dd a').css('color','#CFD8DC');
+        // $(this).css('color','#263238')  
+
+        for (var i = 0; i <= arrayItems.length - 1; i++) {
+            if (texto == arrayItems[i]) {
+                $('section.acordeon .container ul.accordion').each(function(indice){
+                    if (indice == i) {
+                        $(this).addClass('activa');
+                        $(this).show();
+                    }
+                })
+            }
+        }
+
+
+        // OCULTANDO LOS ELEMENTOS QUE NO TENGAN LA CLASE ACTIVA
+        $('section.acordeon .container ul.accordion').each(function(indice){
+            if (!$(this).hasClass('activa')) {
+                $(this).hide();
+            }
+        })
+    })
+
+}
 
 
 

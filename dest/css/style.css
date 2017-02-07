@@ -6965,24 +6965,37 @@ section.acordeon .container {
             margin-bottom: 34px; }
   section.acordeon .container ul.accordion {
     width: 48.5%;
-    border-top: 1px solid #d9e5e8;
+    border-top: 1px solid #9B9B9B;
     list-style: none;
     float: right;
     margin: 0px; }
     section.acordeon .container ul.accordion li {
-      border-bottom: 1px solid #d9e5e8;
-      position: relative; }
+      border-bottom: 1px solid #9B9B9B;
+      position: relative;
+      padding: 38px 15px 38px 0px; }
       section.acordeon .container ul.accordion li p {
         display: none;
-        padding: 10px 25px 30px;
-        color: #6b97a4; }
+        font-size: 14px;
+        font-family: 'montserratlight';
+        color: #364659;
+        padding: 10px 5px 0px 5px;
+        margin-bottom: 5px;
+        color: #364659; }
+        section.acordeon .container ul.accordion li p span.enlace {
+          text-decoration: none;
+          font-family: 'montserratsemi-bold';
+          color: #0098CC;
+          display: inline-block; }
+        section.acordeon .container ul.accordion li p span.rojo {
+          text-decoration: none;
+          font-family: 'montserratsemi-bold';
+          color: #A80C0F;
+          display: inline-block; }
     section.acordeon .container ul.accordion a {
       width: 100%;
       display: block;
       cursor: pointer;
-      line-height: 3;
       font-size: 14px;
-      text-indent: 15px;
       color: #A80C0F;
       -webkit-user-select: none;
          -moz-user-select: none;
@@ -6991,10 +7004,10 @@ section.acordeon .container {
       font-family: 'montserratsemi-bold'; }
       section.acordeon .container ul.accordion a:after {
         position: absolute;
-        right: 10px;
+        right: 5px;
         font-family: 'FontAwesome';
         content: "\f055";
-        top: 5px;
+        top: 39px;
         font-size: 18px;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out; }
@@ -7003,12 +7016,6 @@ section.acordeon .container {
         transition: all 0.2s ease-in-out;
         font-family: 'FontAwesome';
         content: "\f056"; }
-    section.acordeon .container ul.accordion p {
-      font-size: 14px;
-      font-family: 'montserratlight';
-      color: #364659;
-      line-height: 2;
-      padding: 10px; }
 
 section.contactar {
   width: 100%;
@@ -7044,6 +7051,49 @@ section.contactar {
       position: absolute;
       right: 1.4375rem;
       font-family: 'FontAwesome'; }
+
+section.transparencia {
+  padding-top: 85px; }
+  section.transparencia h2 {
+    font-size: 70px;
+    color: #08405C;
+    text-align: left; }
+  section.transparencia p {
+    color: 18px;
+    font-family: 'montserratlight';
+    color: #08405C; }
+    section.transparencia p span {
+      font-family: 'montserrat-bold'; }
+
+section.certificaciones h2 {
+  text-align: center;
+  color: #08405C;
+  font-size: 50px; }
+
+section.certificaciones .container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  section.certificaciones .container article {
+    width: 280px;
+    height: 437px;
+    background: #FAFAFA;
+    padding-top: 95px; }
+    section.certificaciones .container article h3 {
+      text-align: center;
+      margin-top: 55px;
+      font-size: 22px;
+      color: #08405C; }
+    section.certificaciones .container article .circulo {
+      width: 98px;
+      height: 98px;
+      border-radius: 100%;
+      position: relative;
+      border: 4px solid #08405C;
+      margin: auto; }
+
+.padding-extra {
+  padding-bottom: 128px; }
 
 /********** FOOTER *************/
 footer {
