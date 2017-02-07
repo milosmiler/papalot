@@ -56,6 +56,14 @@ section.padrinos{
             margin-bottom: 6.875rem;
 
          }
+         a.descubre{
+          @include boton-borde(#fff, 12.5rem, $color: #fff);
+          font-size: 18px;
+          height: auto;
+          margin: auto;
+
+
+         }
     }
 }
 

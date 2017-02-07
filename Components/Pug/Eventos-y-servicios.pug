@@ -1,0 +1,120 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.cover
+			img(src="images/cover-evento-servicio.png"  alt="eventos y servicios")
+			h2 Eventos y Servicios
+		section.item-intro
+			.container
+				.item-content
+					h2 ¡Es tiempo de celebrar en PAPALOTE!
+					p Realiza todos tus eventos en el mejor Museo con diversión hecha a tu medida. Descubrirás una experiencia única a través de nuestros innovadores espacios y nuestra oferta gastronómica.
+				figure.image-intro
+					img(src="images/cover-intro-evento.png")
+		section.conoce-areas
+			h2 Conoce nuestras áreas
+			.container.flex
+				article.z-depth-4
+					figure
+						img(src="images/area1.png")
+					h3 Salón de Usos Múltiples
+					p Un espacio con un diseño arquitectónico y ventanales que permiten el paso de luz y vista al jardín.
+					span.capacidad Capacidad para 400 personas.
+				article.z-depth-4
+					figure
+						img(src="images/area2.png")
+					h3 ADO Megapantalla IMAX
+					p Dale a tus invitados una experiencia sensorial en 3D y una deliciosa propuesta gastronómica.
+					span.capacidad Capacidad para 323 personas.
+				article.z-depth-4
+					figure
+						img(src="images/area3.png")
+					h3 domodigital Citibanamex
+					p Viaja en el mejor planetario y consiente a tus invitados con nuestro servicio de cóctel.
+					span.capacidad Capacidad para 269 personas.
+				article.z-depth-4
+					figure
+						img(src="images/area4.png")
+					h3 Jardín Vivir es increíble
+					p Celebra en este increíble jardín con uno de los mejores servicios de banquetería.
+					span.capacidad Capacidad para 150 personas.
+		section.event-service
+			h2 en ellas puedes realizar….
+			.container.flex
+				article.z-depth-4
+					figure
+						img(src="images/evento-social.png")
+					h3 Eventos Sociales
+					ul
+						li Baby Showers
+
+						li Bautizos
+
+						li Primeras Comuniones
+
+						li XV Años
+
+						li Despedidas de Solteras
+
+						li Bodas
+
+						li Graduaciones
+
+						li Cumpleaños
+
+						li Aniversarios.
+
+
+				article.z-depth-4
+					figure
+						img(src="images/event-empresa.png")
+					h3 Eventos Empresariales
+					ul
+						li Coffee Breaks
+
+						li Sesiones de Trabajo
+
+						li Cócteles Empresariales
+
+						li Lanzamientos de Productos
+
+						li Fiestas de Fin de Año
+
+		section.contact-group
+			h2 ¿Deseas que nosotros te contactemos?  
+			a.form-contact.sombra.btn-efect(href="") click aquí
+		section.informacion-evento-servicio
+			.item
+				h2 ¿Necesitas más información?
+			.item
+				h3 Comunícate al:
+				.container-item
+					a.tel(href='tel:+5292 6370') 5292 6370     
+				a.mail-info(href='mailto:pbonnet@ambrosia.mx') pbonnet@ambrosia.mx
+
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")

@@ -1,0 +1,102 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote para todos
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.cover
+			img(src="images/cover-evento-servicio.png"  alt="eventos y servicios")
+			h2 PAPALOTE para TODOS
+		section.item-intro
+			.container
+				.item-content
+					h2 ¿Qué es?
+					p Es nuestro programa de compromiso social el cual brinda visitas gratuitas al Museo a niñas, niños, maestros de escuelas públicas o personas en condiciones de alta vulnerabilidad. 
+				figure.image-intro
+					img(src="images/intro-para-todos.png")
+
+
+		section.experiencia-group
+			.container.flex
+				article.z-depth-4
+					.circule
+						i.fa-icon
+					h3 Retorno social sobre inversión (RSOI)
+					h4 ¡Aparta tu lugar!
+					p Si nos visitas con un grupo mayor a 15 personas, haz una #[br] reservación y adquiere tus entradas a un precio especial.
+
+				article.z-depth-4
+					.circule
+						i.fa-icon
+					h3 Eficacia
+					h4 Precio preferente
+					ul
+						li Venta directa en las instalaciones de la empresa.
+
+						li Venta en consigna.
+
+						li Venta en firme (mínimo de entrega en tus instalaciones de 50 cupones)
+
+		section.padrinos.flex
+			article.marcas
+				#slider-1.slider
+					.slider-wrapper
+						.slide
+							h2 Gracias a nuestros Padrinos
+							.content-logo-marca
+								h3 PAPALOTE vuela más alto
+								figure.marca
+									img(src="images/padrinos/logo_ado.png" alt="ado")
+								figure.marca
+									img(src="images/padrinos/logo_cdmx.png" alt="cdmx")
+								figure.marca
+									img(src="images/padrinos/logo_cocacola.png" alt="cocacola")
+								figure.marca
+									img(src="images/padrinos/logo_herdez.png" alt="herdez")
+								figure.marca
+									img(src="images/padrinos/logo_angeles.png" alt="hospital angeles")
+								figure.marca
+									img(src="images/padrinos/logo_rotoplas.png" alt=" rotoplas")
+								figure.marca
+									img(src="images/padrinos/logo_scribe.png" alt=" scribe")
+								figure.marca
+									img(src="images/padrinos/logo_televisa.png" alt=" televisa")
+								figure.marca
+									img(src="images/padrinos/logo_vinci.png" alt="vinci")
+
+			article.leyenda-content
+				h2 ¿Deseas ayudar?
+				p Gracias a tu contribución miles de niños, niñas y familias mexicanas vivirán una increíble experiencia de aprendizaje y diversión.
+				p Si deseas apoyar a 
+					span PAPALOTE
+					|, comunícate al 5237 1715 o envía un correo a 
+					span.email 
+						a(href='mailto:desarrollo@papalote.org.mx') desarrollo@papalote.org.mx
+
+
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")

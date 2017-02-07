@@ -44,7 +44,19 @@ section.notas{
                 @include boton($ancho: 12.5rem, $fondo: $color-verde , $color: #fff);
                 position: relative;
                 margin-bottom: 1.625rem;
-                margin-left: 2.1875rem;
+                margin-left: 2.1875rem;}
+             a.evento-nota{
+            @include boton($ancho: 12.5rem, $fondo: #1CDCC4 , $color: #fff );
+                    margin-bottom: 1.625rem;
+                   margin-left: 2.1875rem;}
+            a.evento-empresa{
+                 @include boton($ancho: 12.5rem, $fondo: $color-verde , $color: #fff );
+                  margin-bottom: 1.625rem;
+                margin-left: 2.1875rem;}
+            a.btn-social{
+                 @include boton($ancho: 12.5rem, $fondo: #A40084 , $color: #fff );
+                    margin-bottom: 1.625rem;
+                    margin-left: 2.1875rem;
             }
         }
     }

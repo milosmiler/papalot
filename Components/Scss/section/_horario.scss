@@ -1,18 +1,17 @@
 section.horarios-items{
 	margin-top: 6.25rem;
 	padding-top: 6.125rem;
+	.centrar{
+		margin: auto;
+		max-width: 800px;
+	}
+	h2{
+		font-size: 4.375rem;
+		color: $color-azul100;
+		margin-top: 0px;
+		text-align: center;
+		font-family: 'VAGRounded-bold';}
 	.container{
-
-		justify-content: space-between;
-		article.titulo-horario{
-			width: 300px;
-			text-align: center;
-			h2{
-				font-size: 4.375rem;
-				color: $color-azul100;
-				margin-top: 0px;
-				font-family: 'VAGRounded-bold';}
-		}
 		article.eventos{
 			max-width: 800px;
 			background: $color-grisCL100;
@@ -25,7 +24,7 @@ section.horarios-items{
 				p{
 					font-size: 1.125rem;
 					font-family: 'VAGRounded-bold';
-					color: #fff;
+					color: #08405C;
 					margin-left: 1.5625rem;
 					margin-top: 0.9375rem;
 					margin-bottom: 0.875rem;
@@ -57,6 +56,7 @@ section.horarios-items{
 						margin-top: 0px}
 					p{
 						font-size: 1.125rem;
+						color: #fff;
 						font-family: 'montserratlight';}
 					a{
 						font-size: 1.125rem;
@@ -92,6 +92,7 @@ section.horarios-items{
   cursor:pointer;
   font-family: 'FontAwesome';
   transform: rotate(90deg);
+  margin-top:1.4375rem;
 }
 
 
@@ -103,6 +104,7 @@ section.horarios-items{
   cursor:pointer;
   font-family: 'FontAwesome';
   transform: rotate(-90deg);
+  margin-top: 1.4375rem;
 }
 .ui-datepicker-calendar th{
   padding:0.625rem 0.9375rem;
@@ -141,6 +143,12 @@ section.horarios-items{
     transition: border .2s linear;
 }
 
+ .ui-datepicker-calendar .ui-state-active-cerrado {
+    color: #fff;
+    background-color: #EF096E;
+    transition: border .2s linear;
+}
+
 .ui-datepicker-calendar a {
     text-decoration: none;
     display: block;
@@ -152,6 +160,12 @@ section.horarios-items{
     cursor: pointer;
     line-height:2.1875rem;
     margin-bottom:1.5625rem;
+}
+
+.event a {
+    background-color: #42B373 !important;
+    background-image :none !important;
+    color: #ffffff !important;
 }
 
 

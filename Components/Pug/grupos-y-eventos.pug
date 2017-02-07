@@ -24,8 +24,14 @@ html(lang="es")
 		section.cover
 			img(src="images/cover_grupo_evento.png" alt="cover mega pantalla")
 			h2 ADO Megapantalla #[br]IMAX
-
-
+		section.intro-group-event
+			.container
+				.item-content.z-depth-4
+					p En 
+						span PAPALOTE 
+						| queremos que todos se diviertan y aprendan en grande.
+				figure
+					img(src="images/image-intro-eventos.png")
 		section.notas
 			.container.flex
 				article.nota.z-depth-4
@@ -35,54 +41,54 @@ html(lang="es")
 					p ¡Visita 
 						span PAPALOTE 
 						| con tus alumnos y vivan nuevas experiencias de aprendizaje!
-					a.boton.nota.sombra.btn-efect(href="") Conoce más
+					a.evento-nota.sombra.btn-efect(href="") Conoce más
 
 				article.nota.z-depth-4
-						figure.imagen-nota
-							img(src="images/grupo-empresa.png" alt="grupos empresas ")
-						h2 Grupos para empresas
-						p Si lo que buscas es recompensar el esfuerzo, dedicación y alentar la convivencia entre los colaboradores de una empresa y sus familias, 
-							span ¡PAPALOTE 
-							| es la mejor opción!
-						a.boton.nota.sombra.btn-efect(href="") Conoce más
+					figure.imagen-nota
+						img(src="images/grupo-empresa.png" alt="grupos empresas ")
+					h2 Grupos para empresas
+					p Si lo que buscas es recompensar el esfuerzo, dedicación y alentar la convivencia entre los colaboradores de una empresa y sus familias, 
+						span ¡PAPALOTE 
+						| es la mejor opción!
+					a.evento-empresa.sombra.btn-efect(href="") Conoce más
 		section.eventos
 			h2 Eventos
 			p Es tiempo de festejar en PAPALOTE
-			.container
-				figure.evento
-					img(src="images/evento1.png")
-				h3 Salón de Usos Múltiples
+			.container.flex
+				.item-evento
+					figure
+						img(src="images/evento1.png")
+					h3 Salón de Usos #[br]Múltiples
+				.item-evento
+					figure
+						img(src="images/evento2.png")
+					h3 ADO Megapantalla #[br] IMAX
+				.item-evento
+					figure
+						img(src="images/evento3.png")
+					h3 domodigital #[br] Citibanamex
+				.item-evento
+					figure
+						img(src="images/evento4.png")
+					h3 Jardín Vivir es #[br] increíble
+			a.evento-btn.sombra.btn-efect(href="") Conoce más
 
-				figure.evento
-					img(src="images/evento1.png")
-				h3 ADO Megapantalla IMAX
 
-				figure.evento
-					img(src="images/evento1.png")
-				h3 domodigital Citibanamex
-
-				figure.evento
-					img(src="images/evento1.png")
-				h3 Jardín Vivir es increíble
-
-		section.informacion
-			item
-				h2 Información para grupos
-				h3  Comunícate al:
-				p 
-					a(href='tel:+5237 1778') 5237 1778 / 5237 1779
-				p 
-					span.email 
-						a(href='mailto:grupos@papalote.org.mx') grupos@papalote.org.mx
-			item
-				h2 Información para empresas
-				h3  Comunícate al:
-				p 
-					a(href='tel:+5237 1778') 5237 1778 / 5237 1779
-				p 
-					span.email 
-						a(href='mailto:grupos@papalote.org.mx') ventaempresas@papalote.org.mx
-
+		section.informacion-eventos
+			.item
+				h2 ¿Necesitas más información?
+				h3 Comunícate al:
+				.container-item
+					a.tel(href='tel:+5237 1783') 5237 1783
+					a.tel(href='tel:+4990 45 73') 4990 45 73
+				a.mail-info(href='mailto:grupos@papalote.org.mx') grupos@papalote.org.mx
+			.item
+				h2 ¿Necesitas más información?
+				h3 Comunícate al:
+				.container-item
+					a.tel(href='tel:+5237 1783') 5237 1783
+					a.tel(href='tel:+4990 45 73') 4990 45 73
+				a.mail-info(href='mailto:grupos@papalote.org.mx') grupos@papalote.org.mx
 		span.ir-arriba
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
