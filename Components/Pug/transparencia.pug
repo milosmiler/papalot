@@ -1,0 +1,94 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Transparencia
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.transparencia
+			.container 
+				h2 Transparencia
+				p Desde 1993 
+					span PAPALOTE MUSEO DEL NIÑO 
+					| abrió sus puertas como una asociación civil sin fines de lucro. Al día de hoy es uno de los mejores espacios de juego y aprendizaje para los niños, y uno de los museos más visitados en el mundo.
+
+				p PAPALOTE opera bajo el respaldo y dirección de un 
+					span Consejo Directivo 
+					| encabezado en la actualidad por el 
+					span Ingeniero Mauricio Amodío Herrera,
+					|  en coordinación con la experiencia de 
+					span Dolores Beistegui, 
+					|  Directora General.
+
+				p 
+					span PAPALOTE MUSEO DEL NIÑO 
+					| no recibe subsidio gubernamental. Genera sus ingresos a través de sus admisiones, renta de espacios y concesiones. Asimismo, recibe donativos y patrocinios del sector privado.
+
+				p Desde su fundación, 
+					span PAPALOTE 
+					| ha recibido cerca de 18 millones de personas. Cada año lo visitan 750 mil personas en promedio, de las cuales el 70% son público en general, el 23% grupos escolares y el 7% de patrocinio escolar. 
+
+				p Día a día 
+					span PAPALOTE 
+					| refuerza su compromiso con las familias mexicanas, al ofrecer experiencias de libre aprendizaje a través del juego, en un entorno amigable, seguro, atractivo y libre de prejuicios.
+
+		section.certificaciones
+			h2 Certificaciones
+			.container.flex
+				article
+					.circulo
+					h3 Nombre #[br] de certificación
+				article 
+					.circulo
+					h3 Nombre #[br] de certificación
+				article
+					.circulo
+					h3 Nombre #[br] de certificación
+		section.download-material.padding-extra
+			.container
+				h2 Informes anuales
+				.item-container.flex
+					article
+						i.fa.fa-file-text
+						h3 Informe 2013
+						a.descarga.sombra.btn-efect(href="") Conoce más 
+						a.conoce-descarga.sombra.btn-efect(href="") Descargar 
+						
+					article
+						i.fa.fa-file-text
+						h3 Informe 2014
+						a.descarga.sombra.btn-efect(href="") Conoce más 
+						a.conoce-descarga.sombra.btn-efect(href="") Descargar 
+						  
+					article
+						i.fa.fa-file-text
+						h3 Informe 2015
+						a.descarga.sombra.btn-efect(href="") Conoce más 
+						a.conoce-descarga.sombra.btn-efect(href="") Descargar 
+
+
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")
