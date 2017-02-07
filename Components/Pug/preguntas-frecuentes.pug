@@ -1,0 +1,105 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.cover
+			img(src="images/covers_faqs.png"  alt="megapantalla")
+			h2 Preguntas frecuentes
+		section.acordeon
+			h2 Resolvemos tus dudas
+			.container
+				nav.preguntas-frecuentes
+					ul
+						li
+							a(href="#") Compra
+						li
+							a(href="#") Información general
+						li
+							a(href="#") ADO Megapantalla / domodigital Citibanamex
+						li
+							a(href="#") Instalaciones
+				ul.accordion
+					li
+						a ¿Puedo comprar mis boletos en línea?
+						p Sí, a un mejor precio. La Compra en Línea puedes realizarla únicamente con tarjeta de crédito. Es importante que revises todos los datos de tu visita (funciones y horarios) antes de dar clic en pagar. También puedes adquirirlos directamente en taquillas o por teléfono al 5237- 17-78
+					li
+						a ¿Aceptan tarjeta de crédito o débito para comprar mis boletos en taquillas?
+						p Sí. Puedes pagar con cualquier tarjeta de débito o crédito presentando una identificación oficial en cualquiera de nuestras taquillas.
+					li
+						a ¿Puedo adquirir factura de mi compra?
+						p Cuando adquieras tus boletos en taquilla te proporcionaremos los datos que nos tiene que enviar y el
+						p correo electrónico a quien puedes dirigirte para la facturación.
+
+						p Cuando compras en línea tus boletos, al final de proceso podrás seleccionar la opción de facturación.
+
+					li
+						a ¿Tienen algún descuento o promoción?
+						p Sí. Te invitamos a visitar nuestra sección de Promociones.
+
+					li
+						a ¿Los niños y los adultos pagan lo mismo?
+						p Los niños menores de 2 años no pagan admisión. Todos los demás pagan el mismo precio. Consulta los Precios y Paquetes con los que contamos.
+					li
+						a ¿Cuáles son los horarios de PAPALOTE y de las películas?
+						p Puedes consultar nuestros horarios en la Cartelera para poder tener una mejor experiencia en tu recorrido.
+
+				//- ul.accordion
+
+				//- 	li
+				//- 		a ¿Puedo comprar mis boletos en línea? 
+				//- 		p Sí, a un mejor precio. La Compra en Línea puedes realizarla únicamente con tarjeta de crédito. Es importante que revises todos los datos de tu visita (funciones y horarios) antes de dar clic en pagar. También puedes adquirirlos directamente en taquillas o por teléfono al 5237- 17-78
+				//- 	li
+				//- 		a ¿Aceptan tarjeta de crédito o débito para comprar mis boletos en taquillas?
+				//- 		p Sí. Puedes pagar con cualquier tarjeta de débito o crédito presentando una identificación oficial en cualquiera de nuestras taquillas.
+				//- 	li
+				//- 		a ¿Puedo adquirir factura de mi compra?
+				//- 		p Cuando adquieras tus boletos en taquilla te proporcionaremos los datos que nos tiene que enviar y el
+				//- 		p correo electrónico a quien puedes dirigirte para la facturación.
+
+				//- 		p Cuando compras en línea tus boletos, al final de proceso podrás seleccionar la opción de facturación.
+
+				//- 	li
+				//- 		a ¿Tienen algún descuento o promoción?
+				//- 		p Sí. Te invitamos a visitar nuestra sección de Promociones.
+
+				//- 	li
+				//- 		a ¿Los niños y los adultos pagan lo mismo?
+				//- 		p Los niños menores de 2 años no pagan admisión. Todos los demás pagan el mismo precio. Consulta los Precios y Paquetes con los que contamos.
+				//- 	li
+				//- 		a ¿Cuáles son los horarios de PAPALOTE y de las películas?
+				//- 		p Puedes consultar nuestros horarios en la Cartelera para poder tener una mejor experiencia en tu recorrido.
+		section.contactar
+			figure
+				img(src="images/moustro.png")
+			h2 ¿No encontraste lo que buscabas? 
+			a.btn-contacto.sombra.btn-efect(href="#") Contáctanos
+
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery-ui.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")

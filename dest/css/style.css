@@ -6937,6 +6937,114 @@ section.transpariencias {
       right: 1.4375rem;
       font-family: 'FontAwesome'; }
 
+section.acordeon h2 {
+  text-align: center;
+  color: #08405C;
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 109px; }
+
+section.acordeon .container {
+  overflow: hidden; }
+  section.acordeon .container nav.preguntas-frecuentes {
+    width: 25%;
+    float: left;
+    margin: 0px;
+    height: auto; }
+    section.acordeon .container nav.preguntas-frecuentes ul {
+      list-style: none; }
+      section.acordeon .container nav.preguntas-frecuentes ul li {
+        margin-bottom: 34px; }
+        section.acordeon .container nav.preguntas-frecuentes ul li a {
+          color: #D2D1D1;
+          font-size: 18px;
+          font-family: 'VAGRounded-bold';
+          text-decoration: none; }
+          section.acordeon .container nav.preguntas-frecuentes ul li a:hover {
+            color: #08405C;
+            margin-bottom: 34px; }
+  section.acordeon .container ul.accordion {
+    width: 48.5%;
+    border-top: 1px solid #d9e5e8;
+    list-style: none;
+    float: right;
+    margin: 0px; }
+    section.acordeon .container ul.accordion li {
+      border-bottom: 1px solid #d9e5e8;
+      position: relative; }
+      section.acordeon .container ul.accordion li p {
+        display: none;
+        padding: 10px 25px 30px;
+        color: #6b97a4; }
+    section.acordeon .container ul.accordion a {
+      width: 100%;
+      display: block;
+      cursor: pointer;
+      line-height: 3;
+      font-size: 14px;
+      text-indent: 15px;
+      color: #A80C0F;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      font-family: 'montserratsemi-bold'; }
+      section.acordeon .container ul.accordion a:after {
+        position: absolute;
+        right: 10px;
+        font-family: 'FontAwesome';
+        content: "\f055";
+        top: 5px;
+        font-size: 18px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+      section.acordeon .container ul.accordion a.active:after {
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        font-family: 'FontAwesome';
+        content: "\f056"; }
+    section.acordeon .container ul.accordion p {
+      font-size: 14px;
+      font-family: 'montserratlight';
+      color: #364659;
+      line-height: 2;
+      padding: 10px; }
+
+section.contactar {
+  width: 100%;
+  padding-top: 98px;
+  text-align: center; }
+  section.contactar h2 {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 41px;
+    color: #0098CC; }
+  section.contactar a.btn-contacto {
+    background-color: #A80C0F;
+    border-radius: 3.125rem;
+    clear: both;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'VAGRounded-bold';
+    display: block;
+    font-size: 1.125rem;
+    height: 3.125rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: left;
+    padding-left: 1.125rem;
+    padding-top: 0.9375rem;
+    text-decoration: none;
+    width: 12.5rem;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 94px; }
+    section.contactar a.btn-contacto:before {
+      content: "\f061";
+      position: absolute;
+      right: 1.4375rem;
+      font-family: 'FontAwesome'; }
+
 /********** FOOTER *************/
 footer {
   width: 100%;
@@ -7017,10 +7125,10 @@ footer {
           -webkit-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%); }
   footer section.contactanos {
-    overflow: hidden; }
+    display: table; }
     footer section.contactanos .column {
-      float: left;
-      width: 50%;
+      display: table-cell;
+      width: 30%;
       color: #fff;
       position: relative;
       -webkit-transition: all 0.3s;
@@ -7055,44 +7163,42 @@ footer {
             left: -3.0625rem;
             top: 0.125rem;
             content: "\f095"; }
-    footer section.contactanos .column2 {
-      float: right;
+    footer section.contactanos .column {
       color: #fff;
-      width: 39%;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
-      footer section.contactanos .column2 h2 {
+      footer section.contactanos .column h2 {
         color: #4CD1FF;
         margin-top: 2.0625rem;
         margin-bottom: 3rem;
         font-size: 1.375rem; }
-      footer section.contactanos .column2 p {
+      footer section.contactanos .column p {
         font-family: 'montserratlight';
         margin: 0px; }
-      footer section.contactanos .column2 form.enviar input::-webkit-input-placeholder {
+      footer section.contactanos .column form.enviar input::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column2 form.enviar input::-webkit-input-placeholder {
+      footer section.contactanos .column form.enviar input::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column2 form.enviar input:-moz-placeholder {
+      footer section.contactanos .column form.enviar input:-moz-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column2 form.enviar input:-ms-input-placeholder {
+      footer section.contactanos .column form.enviar input:-ms-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column2 form.enviar input {
+      footer section.contactanos .column form.enviar input {
         background: transparent; }
-      footer section.contactanos .column2 form.enviar span.leyenda-privacidad {
+      footer section.contactanos .column form.enviar span.leyenda-privacidad {
         margin-left: 0.625rem;
         font-family: 'montserratlight';
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem; }
-      footer section.contactanos .column2 form.enviar input.email {
+      footer section.contactanos .column form.enviar input.email {
         color: rgba(255, 255, 255, 0.8);
         border-top: 1px solid rgba(255, 255, 255, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -7102,7 +7208,7 @@ footer {
         width: 50%;
         height: 45px;
         float: left; }
-      footer section.contactanos .column2 form.enviar input.nombre {
+      footer section.contactanos .column form.enviar input.nombre {
         float: right;
         color: rgba(255, 255, 255, 0.8);
         padding-left: 23px;
@@ -7112,9 +7218,9 @@ footer {
         border-left: none;
         border-right: none;
         height: 45px; }
-      footer section.contactanos .column2 form.enviar select.comentario {
+      footer section.contactanos .column form.enviar select.comentario {
         width: 100%; }
-      footer section.contactanos .column2 form.enviar textarea {
+      footer section.contactanos .column form.enviar textarea {
         margin-bottom: 0.875rem;
         color: rgba(255, 255, 255, 0.8);
         width: 100%;
@@ -7126,11 +7232,11 @@ footer {
         padding-left: 1.4375rem;
         padding-top: 1.0625rem;
         height: 7.625rem; }
-        footer section.contactanos .column2 form.enviar textarea input:-moz-placeholder {
+        footer section.contactanos .column form.enviar textarea input:-moz-placeholder {
           color: rgba(255, 255, 255, 0.5);
           font-size: 14px;
           font-family: 'montserratlight'; }
-      footer section.contactanos .column2 form.enviar a.enviar {
+      footer section.contactanos .column form.enviar a.enviar {
         border-radius: 50px;
         background: transparent;
         font-family: 'VAGRounded-bold';
@@ -7148,7 +7254,7 @@ footer {
         text-align: center;
         position: relative;
         float: right; }
-        footer section.contactanos .column2 form.enviar a.enviar:before {
+        footer section.contactanos .column form.enviar a.enviar:before {
           content: "\f061";
           position: absolute;
           right: 1.25rem;

@@ -1,0 +1,95 @@
+section.acordeon{
+	h2{
+		text-align: center;
+		color: $color-azul100;
+		font-size: 70px;
+		margin-top: 0px;
+		margin-bottom: 109px;}
+		.container{
+			overflow: hidden;
+			nav.preguntas-frecuentes{
+				width: 25%;
+				float: left;
+				margin: 0px;
+				height: auto;
+				ul{
+					list-style: none;
+					li{
+						margin-bottom: 34px;
+						a{
+							color: #D2D1D1;
+							font-size: 18px;
+							font-family: 'VAGRounded-bold';
+							text-decoration: none;
+						&:hover{
+						  color: $color-azul100;
+						  margin-bottom: 34px;}
+						}
+					}
+				}
+			}
+			ul.accordion {
+			  width: 48.5%;
+			  border-top: 1px solid #d9e5e8;
+			  list-style: none;
+			  float: right;
+			  margin: 0px;
+			  li {
+			      border-bottom: 1px solid #d9e5e8;
+			      position: relative;
+			      p {
+			          display: none;
+			          padding: 10px 25px 30px;
+			          color: #6b97a4;}
+			    } 
+			    a{
+					width: 100%;
+					display: block;
+					cursor: pointer;
+					line-height: 3;
+					font-size: 14px;
+					text-indent: 15px;
+					color: #A80C0F;
+					user-select: none;
+					font-family: 'montserratsemi-bold';
+					&:after{
+						position: absolute;
+						right: 10px;
+						font-family:'FontAwesome';
+						content: "\f055";
+						top: 5px;
+						font-size: 18px;
+						transition: all 0.2s ease-in-out;}
+					&.active:after {
+					  transition: all 0.2s ease-in-out;
+					  font-family:'FontAwesome';
+					  content: "\f056";}
+				}
+
+				p {
+					font-size: 14px;
+					font-family: 'montserratlight';
+					color: #364659;
+					line-height: 2;
+					padding: 10px;}
+			}
+
+		}
+}
+
+section.contactar{
+  width: 100%;
+  padding-top: 98px;
+  text-align: center;
+  h2{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 41px;
+    color:#0098CC;}
+  a.btn-contacto{
+    @include boton($ancho: 12.5rem, $fondo: #A80C0F , $color: #fff )
+    text-align: center;
+    margin: auto;
+    margin-bottom: 94px;
+  }
+}
