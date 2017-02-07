@@ -61,10 +61,10 @@ footer{
         }
     }
     section.contactanos{
-        overflow: hidden;
+       display: table;
         .column{
-            float: left;
-            width: 50%;
+            display: table-cell;
+            width: 30%;
             color: #fff;
             position: relative;
             transition: all 0.3s;
@@ -106,10 +106,8 @@ footer{
             }
             
         }
-        .column2{
-            float: right;
+        .column{
             color: #fff;
-            width: 39%;
             transition: all 0.3s;
             h2{
                 color: $color-azul-footer;

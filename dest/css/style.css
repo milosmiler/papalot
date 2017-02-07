@@ -7125,10 +7125,10 @@ footer {
           -webkit-transform: translate(-50%, -50%);
                   transform: translate(-50%, -50%); }
   footer section.contactanos {
-    overflow: hidden; }
+    display: table; }
     footer section.contactanos .column {
-      float: left;
-      width: 50%;
+      display: table-cell;
+      width: 30%;
       color: #fff;
       position: relative;
       -webkit-transition: all 0.3s;
@@ -7163,44 +7163,42 @@ footer {
             left: -3.0625rem;
             top: 0.125rem;
             content: "\f095"; }
-    footer section.contactanos .column2 {
-      float: right;
+    footer section.contactanos .column {
       color: #fff;
-      width: 39%;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
-      footer section.contactanos .column2 h2 {
+      footer section.contactanos .column h2 {
         color: #4CD1FF;
         margin-top: 2.0625rem;
         margin-bottom: 3rem;
         font-size: 1.375rem; }
-      footer section.contactanos .column2 p {
+      footer section.contactanos .column p {
         font-family: 'montserratlight';
         margin: 0px; }
-      footer section.contactanos .column2 form.enviar input::-webkit-input-placeholder {
+      footer section.contactanos .column form.enviar input::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column2 form.enviar input::-webkit-input-placeholder {
+      footer section.contactanos .column form.enviar input::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column2 form.enviar input:-moz-placeholder {
+      footer section.contactanos .column form.enviar input:-moz-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column2 form.enviar input:-ms-input-placeholder {
+      footer section.contactanos .column form.enviar input:-ms-input-placeholder {
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem;
         font-family: 'montserrat-regular'; }
-      footer section.contactanos .column2 form.enviar input {
+      footer section.contactanos .column form.enviar input {
         background: transparent; }
-      footer section.contactanos .column2 form.enviar span.leyenda-privacidad {
+      footer section.contactanos .column form.enviar span.leyenda-privacidad {
         margin-left: 0.625rem;
         font-family: 'montserratlight';
         color: rgba(255, 255, 255, 0.5);
         font-size: 0.75rem; }
-      footer section.contactanos .column2 form.enviar input.email {
+      footer section.contactanos .column form.enviar input.email {
         color: rgba(255, 255, 255, 0.8);
         border-top: 1px solid rgba(255, 255, 255, 0.5);
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -7210,7 +7208,7 @@ footer {
         width: 50%;
         height: 45px;
         float: left; }
-      footer section.contactanos .column2 form.enviar input.nombre {
+      footer section.contactanos .column form.enviar input.nombre {
         float: right;
         color: rgba(255, 255, 255, 0.8);
         padding-left: 23px;
@@ -7220,9 +7218,9 @@ footer {
         border-left: none;
         border-right: none;
         height: 45px; }
-      footer section.contactanos .column2 form.enviar select.comentario {
+      footer section.contactanos .column form.enviar select.comentario {
         width: 100%; }
-      footer section.contactanos .column2 form.enviar textarea {
+      footer section.contactanos .column form.enviar textarea {
         margin-bottom: 0.875rem;
         color: rgba(255, 255, 255, 0.8);
         width: 100%;
@@ -7234,11 +7232,11 @@ footer {
         padding-left: 1.4375rem;
         padding-top: 1.0625rem;
         height: 7.625rem; }
-        footer section.contactanos .column2 form.enviar textarea input:-moz-placeholder {
+        footer section.contactanos .column form.enviar textarea input:-moz-placeholder {
           color: rgba(255, 255, 255, 0.5);
           font-size: 14px;
           font-family: 'montserratlight'; }
-      footer section.contactanos .column2 form.enviar a.enviar {
+      footer section.contactanos .column form.enviar a.enviar {
         border-radius: 50px;
         background: transparent;
         font-family: 'VAGRounded-bold';
@@ -7256,7 +7254,7 @@ footer {
         text-align: center;
         position: relative;
         float: right; }
-        footer section.contactanos .column2 form.enviar a.enviar:before {
+        footer section.contactanos .column form.enviar a.enviar:before {
           content: "\f061";
           position: absolute;
           right: 1.25rem;
