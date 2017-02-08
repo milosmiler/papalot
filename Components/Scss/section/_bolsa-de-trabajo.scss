@@ -1,0 +1,210 @@
+section.consulta-area{
+	margin-bottom: 100px;
+	h2{
+		font-size: 50px;
+		text-align: center;
+		color: $color-azul100;
+		margin-top: 0px;
+		margin-bottom: 40px;}
+	p{
+		text-align: center;
+		color: $color-azul100;
+		font-size: 18px;
+	}
+}
+
+section.intro-exito{
+	margin-top: 91px;
+	margin-bottom: 130px;
+	figure{
+		float: left;
+		max-width: 700px;
+		img{
+			width: 100%;}
+	}
+	.item-content{
+		max-width: 450px;
+		height: auto;
+		float: right;
+		padding-top: 55px;
+		h2{
+			font-size: 40px;
+			color: $color-azul100;}
+		p{
+			font-family: 'montserratlight';
+			font-size: 18px;
+			color: $color-azul100;
+		}
+	}
+}
+
+
+figure.moutros-papalote{
+	max-width: 710px;
+	margin: auto;
+	img{
+		width: 100%;}
+}
+
+section.integrar-equipo{
+	padding-bottom: 129px;
+
+	h2{
+		font-size: 40px;
+		color: #0098CC;
+		text-align: center;}
+	a.btn-curriculum{
+		@include boton($ancho: 12.5rem, $fondo: #5D2B86 , $color: #fff );
+		text-align: center;
+		margin: auto;
+	}
+}
+
+section.informacion-equipo{
+	width: 100%;
+	display: table;
+	.item{
+		width: 50%;
+		display: table-cell;
+		background: #BD95DB;
+		vertical-align: middle;
+		padding-top: 4.9375rem;
+		padding-bottom: 4.9375rem;
+		h2{
+			color: #fff;
+			font-size: 2.5rem;
+			text-align: center;}
+		h3{
+			font-size: 1.375rem;
+			font-family: 'montserratsemi-bold';
+			color: #fff;}
+		p{
+			color: #fff;
+		}
+		.container-item{
+			width: 100%;
+			float: left;
+			a.tel{
+				font-size: 1.125rem;
+				color: #fff;
+				font-family: 'montserrat-regular';
+				margin-right: 20px;
+				text-decoration: none;
+			}
+		}
+		a.mail-info{
+			color: #fff;
+			font-size: 1.125rem;
+			font-family: 'montserratlight';
+		}
+	}
+
+}
+
+
+
+
+section#timeline-trabajo {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+}
+section#timeline-trabajo:before {
+    content: '';
+    display: block;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -1px;
+    width: 0.125rem;
+    height: 100%;
+    background: #78909C;
+    z-index: 9998;
+}
+section#timeline-trabajo article {
+  width: 100%;
+  position: relative;
+}
+section#timeline-trabajo article:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+section#timeline-trabajo article div.inner {
+  width: 45%;
+  float: left;
+  text-align: right;
+}
+section#timeline-trabajo article div.inner span.date {
+  display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 100%;
+    background: #0282A1;
+    z-index: 9999;
+}
+
+
+section#timeline-trabajo article div.inner h2 {
+  margin: 0;
+  font-size: 40px;
+  position: relative;
+  color: $color-azul100;
+  margin-bottom: 1.375rem;
+}
+
+section#timeline-trabajo article div.inner a.comprar-linea{
+  position: relative;
+  float: right;
+  @include boton($ancho: 12.5rem, $fondo: $color-naranja , $color: #fff );
+}
+
+section#timeline-trabajo article div.inner a.maps{
+  position: relative;
+  float: right;
+  @include boton($ancho: 12.5rem, $fondo: $color-rosa , $color: #fff );
+  &:before{
+    content: "\f041";
+    right: 2.5rem;
+  }
+}
+
+section#timeline-trabajo article div.inner h2:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  	width: 10px; 
+	  height: 10px;
+  -webkit-transform: rotate(-45deg);
+}
+section#timeline-trabajo article div.inner p {
+  font-family: 'montserrat-regular';
+  font-size: 1.375rem;
+  color: $color-azul100;
+}
+figure.cover-time{
+  max-width: 450px;
+  img{
+    width: 80%;
+  }
+}
+section#timeline-trabajo article:nth-child(2n+2) div.inner {
+  float: right;
+  text-align: left;
+}
+section#timeline-trabajo article:nth-child(2n+2) div.inner h2:after {
+  left: -0.3125rem;
+}
+

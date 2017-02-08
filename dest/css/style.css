@@ -6250,6 +6250,10 @@ section.informacion {
       font-size: 1.375rem;
       font-family: 'montserratsemi-bold';
       color: #D41672; }
+    section.informacion .item p {
+      color: #fff;
+      font-family: 'montserrat-regular';
+      font-size: 18px; }
     section.informacion .item .container-item {
       width: 100%;
       float: left; }
@@ -7065,35 +7069,273 @@ section.transparencia {
     section.transparencia p span {
       font-family: 'montserrat-bold'; }
 
-section.certificaciones h2 {
-  text-align: center;
-  color: #08405C;
-  font-size: 50px; }
-
-section.certificaciones .container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  section.certificaciones .container article {
-    width: 280px;
-    height: 437px;
-    background: #FAFAFA;
-    padding-top: 95px; }
-    section.certificaciones .container article h3 {
-      text-align: center;
-      margin-top: 55px;
-      font-size: 22px;
-      color: #08405C; }
-    section.certificaciones .container article .circulo {
-      width: 98px;
-      height: 98px;
-      border-radius: 100%;
-      position: relative;
-      border: 4px solid #08405C;
-      margin: auto; }
+section.certificaciones {
+  padding-bottom: 15px; }
+  section.certificaciones h2 {
+    text-align: center;
+    color: #08405C;
+    font-size: 50px; }
+  section.certificaciones .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    section.certificaciones .container article {
+      width: 280px;
+      height: 437px;
+      background: #FAFAFA;
+      padding-top: 95px; }
+      section.certificaciones .container article h3 {
+        text-align: center;
+        margin-top: 55px;
+        font-size: 22px;
+        color: #08405C; }
+      section.certificaciones .container article .circulo {
+        width: 98px;
+        height: 98px;
+        border-radius: 100%;
+        position: relative;
+        border: 4px solid #08405C;
+        margin: auto; }
 
 .padding-extra {
   padding-bottom: 128px; }
+
+section.consulta-area {
+  margin-bottom: 100px; }
+  section.consulta-area h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #08405C;
+    margin-top: 0px;
+    margin-bottom: 40px; }
+  section.consulta-area p {
+    text-align: center;
+    color: #08405C;
+    font-size: 18px; }
+
+section.intro-exito {
+  margin-top: 91px;
+  margin-bottom: 130px; }
+  section.intro-exito figure {
+    float: left;
+    max-width: 700px; }
+    section.intro-exito figure img {
+      width: 100%; }
+  section.intro-exito .item-content {
+    max-width: 450px;
+    height: auto;
+    float: right;
+    padding-top: 55px; }
+    section.intro-exito .item-content h2 {
+      font-size: 40px;
+      color: #08405C; }
+    section.intro-exito .item-content p {
+      font-family: 'montserratlight';
+      font-size: 18px;
+      color: #08405C; }
+
+figure.moutros-papalote {
+  max-width: 710px;
+  margin: auto; }
+  figure.moutros-papalote img {
+    width: 100%; }
+
+section.integrar-equipo {
+  padding-bottom: 129px; }
+  section.integrar-equipo h2 {
+    font-size: 40px;
+    color: #0098CC;
+    text-align: center; }
+  section.integrar-equipo a.btn-curriculum {
+    background-color: #5D2B86;
+    border-radius: 3.125rem;
+    clear: both;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'VAGRounded-bold';
+    display: block;
+    font-size: 1.125rem;
+    height: 3.125rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: left;
+    padding-left: 1.125rem;
+    padding-top: 0.9375rem;
+    text-decoration: none;
+    width: 12.5rem;
+    text-align: center;
+    margin: auto; }
+    section.integrar-equipo a.btn-curriculum:before {
+      content: "\f061";
+      position: absolute;
+      right: 1.4375rem;
+      font-family: 'FontAwesome'; }
+
+section.informacion-equipo {
+  width: 100%;
+  display: table; }
+  section.informacion-equipo .item {
+    width: 50%;
+    display: table-cell;
+    background: #BD95DB;
+    vertical-align: middle;
+    padding-top: 4.9375rem;
+    padding-bottom: 4.9375rem; }
+    section.informacion-equipo .item h2 {
+      color: #fff;
+      font-size: 2.5rem;
+      text-align: center; }
+    section.informacion-equipo .item h3 {
+      font-size: 1.375rem;
+      font-family: 'montserratsemi-bold';
+      color: #fff; }
+    section.informacion-equipo .item p {
+      color: #fff; }
+    section.informacion-equipo .item .container-item {
+      width: 100%;
+      float: left; }
+      section.informacion-equipo .item .container-item a.tel {
+        font-size: 1.125rem;
+        color: #fff;
+        font-family: 'montserrat-regular';
+        margin-right: 20px;
+        text-decoration: none; }
+    section.informacion-equipo .item a.mail-info {
+      color: #fff;
+      font-size: 1.125rem;
+      font-family: 'montserratlight'; }
+
+section#timeline-trabajo {
+  width: 100%;
+  margin: 20px auto;
+  position: relative; }
+
+section#timeline-trabajo:before {
+  content: '';
+  display: block;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -1px;
+  width: 0.125rem;
+  height: 100%;
+  background: #78909C;
+  z-index: 9998; }
+
+section#timeline-trabajo article {
+  width: 100%;
+  position: relative; }
+
+section#timeline-trabajo article:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+section#timeline-trabajo article div.inner {
+  width: 45%;
+  float: left;
+  text-align: right; }
+
+section#timeline-trabajo article div.inner span.date {
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  border-radius: 100%;
+  background: #0282A1;
+  z-index: 9999; }
+
+section#timeline-trabajo article div.inner h2 {
+  margin: 0;
+  font-size: 40px;
+  position: relative;
+  color: #08405C;
+  margin-bottom: 1.375rem; }
+
+section#timeline-trabajo article div.inner a.comprar-linea {
+  position: relative;
+  float: right;
+  background-color: #FF7100;
+  border-radius: 3.125rem;
+  clear: both;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'VAGRounded-bold';
+  display: block;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: left;
+  padding-left: 1.125rem;
+  padding-top: 0.9375rem;
+  text-decoration: none;
+  width: 12.5rem; }
+  section#timeline-trabajo article div.inner a.comprar-linea:before {
+    content: "\f061";
+    position: absolute;
+    right: 1.4375rem;
+    font-family: 'FontAwesome'; }
+
+section#timeline-trabajo article div.inner a.maps {
+  position: relative;
+  float: right;
+  background-color: #EF096E;
+  border-radius: 3.125rem;
+  clear: both;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'VAGRounded-bold';
+  display: block;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: left;
+  padding-left: 1.125rem;
+  padding-top: 0.9375rem;
+  text-decoration: none;
+  width: 12.5rem; }
+  section#timeline-trabajo article div.inner a.maps:before {
+    content: "\f061";
+    position: absolute;
+    right: 1.4375rem;
+    font-family: 'FontAwesome'; }
+  section#timeline-trabajo article div.inner a.maps:before {
+    content: "\f041";
+    right: 2.5rem; }
+
+section#timeline-trabajo article div.inner h2:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(-45deg); }
+
+section#timeline-trabajo article div.inner p {
+  font-family: 'montserrat-regular';
+  font-size: 1.375rem;
+  color: #08405C; }
+
+figure.cover-time {
+  max-width: 450px; }
+  figure.cover-time img {
+    width: 80%; }
+
+section#timeline-trabajo article:nth-child(2n+2) div.inner {
+  float: right;
+  text-align: left; }
+
+section#timeline-trabajo article:nth-child(2n+2) div.inner h2:after {
+  left: -0.3125rem; }
 
 /********** FOOTER *************/
 footer {

@@ -1,0 +1,112 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Bolsa de trabajo
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.cover
+			img(src="images/cover-bolsa.png" alt="cover mega pantalla")
+			h2 Bolsa de trabajo
+		section.intro-group-event
+			.container
+				.item-content.z-depth-4
+					p Somos un gran equipo de trabajo que ofrece las mejores experiencias de aprendizaje, utilizando el juego como principal herramienta.
+				figure
+					img(src="images/intro-bolsa.png")
+		section.intro-exito
+			.container
+				figure
+					img(src="images/exito.png")
+				.item-content
+					h2 ¿De qué depende nuestro éxito?
+					p Del talento de nuestros colaboradores, por lo que buscamos  gente que esté dispuesta a desarrollar competencias e innovar para el beneficio de la educación y la sociedad.
+		section.consulta-area
+			h2 Consulta  las áreas en las que puedes #[br] colaborar con nosotros
+			p También contamos con vacantes de temporada para trabajar durante los periodos vacacionales. 
+		section#timeline-trabajo
+				.container
+					article
+						.inner
+							span.date
+							h2 Ventas y Mkt
+							p Te recomendamos adquirir tus boletos #[br] en línea.
+						.inner
+							figure.cover-time
+								img(src="images/time-colabora/image1.png" alt="evita filas")
+
+					article
+						.inner
+							span.date
+							h2 Servicio al Cliente
+							p Conoce las vías de acceso al Bosque de #[br]Chapultepec. 
+						.inner
+							span.date
+							figure.cover-time
+								img(src="images/time-colabora/image2.png" alt=" planea ruta")
+
+					article
+						.inner
+							span.date
+							h2 Administración
+							p ¡Ya contamos con estacionamiento!#[br] También puedes utilizar alguno de los #[br] que se encuentran en el Bosque de #[br] Chapultepec.
+						.inner
+							figure.cover-time
+								img(src="images/time-colabora/image3.png" alt=" llevas carro")
+					article
+						.inner
+							span.date
+							h2 Soporte y Mantenimiento
+							p Trae ropa y calzado cómodos que te #[br] permitan hacer el recorrido en nuestros #[br] jardines y disfrutar el Museo.
+						.inner
+							figure.cover-time
+								img(src="images/time-colabora/image4.png" alt="comdo")
+
+
+					article
+						.inner
+							span.date
+							h2 Diseño de Experiencias
+							p Acércate a los Anfitriones, ellos facilitarán tu visita y podrán brindarte información acerca de las actividades y de las  funciones de la ADO Megapantalla IMAX y Domodigital citibanamex.
+						.inner
+							figure.cover-time
+								img(src="images/time-colabora/image5.png" alt="ya estas aqui")
+		figure.moutros-papalote
+			img(src="images/mascotas.png")
+		section.integrar-equipo
+			h2 ¡Compártenos tu currículum! #[br] Si te interesa integrarte al equipo
+			a.btn-curriculum clic aquí
+		section.informacion-equipo
+			.item
+				h2 ¿Necesitas más información?
+			.item
+				h3 Comunícate con:
+				p Claudia Yaneth Lecona Hurtado
+				.container-item
+					a.tel(href='tel:+5237 1719') 5237 1719
+				a.mail-info(href='mailto:claudia.lecona@papalote.org.mx') claudia.lecona@papalote.org.mx
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")
