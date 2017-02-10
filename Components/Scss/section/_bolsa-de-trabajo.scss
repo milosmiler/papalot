@@ -18,7 +18,7 @@ section.intro-exito{
 	margin-bottom: 130px;
 	figure{
 		float: left;
-		max-width: 700px;
+		width: 58%;
 		img{
 			width: 100%;}
 	}
@@ -109,13 +109,11 @@ section#timeline-trabajo {
   margin: 20px auto;
   position: relative;
 }
+
 section#timeline-trabajo:before {
     content: '';
     display: block;
     position: absolute;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     left: 50%;
     top: 0;
@@ -128,6 +126,7 @@ section#timeline-trabajo:before {
 section#timeline-trabajo article {
   width: 100%;
   position: relative;
+  margin-bottom: 80px;
 }
 section#timeline-trabajo article:after {
   content: '';
@@ -138,6 +137,17 @@ section#timeline-trabajo article div.inner {
   width: 45%;
   float: left;
   text-align: right;
+}
+section#timeline-trabajo article div.inner ul{
+	margin: 0px;
+}
+section#timeline-trabajo article div.inner ul li{
+	font-size: 22px;
+	font-family: 'montserrat-regular';
+	list-style: none;
+	color: $color-azul100;
+	
+
 }
 section#timeline-trabajo article div.inner span.date {
   display: block;

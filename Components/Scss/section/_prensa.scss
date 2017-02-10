@@ -1,0 +1,303 @@
+section.bienvenidos{
+	padding-bottom: 75px;
+	h2{
+		color: $color-azul100;
+		margin-top: 0px;
+		margin-bottom: 29px;
+		font-size: 50px;
+		text-align: center;}
+	p{
+		text-align: center;
+		font-size: 22px;
+		color: $color-azul100;
+		font-family: 'montserratlight';}
+}
+
+section.ado-mega{
+
+        h2{
+        font-size: 3.125rem;
+        text-align: center;
+        color: $color-azul100;}
+        p{
+            text-align: center;
+            color: $color-azul100;
+            font-size: 22px;}
+	
+}
+
+.item-social{
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 250px;
+	margin: auto;
+	h4{
+		text-align: center;
+		width: 100%;
+		color: #729F02;
+		margin-bottom: 21px;
+		font-family: 'montserrat-regular';}
+	.circulo{
+		width: 50px;
+		height: 50px;
+		background: $color-azul100;
+		border-radius: 100px;
+	}
+}
+
+section.notas-prensa{
+    padding: 110px 0px;
+    .container{
+        justify-content: space-between;
+        article{
+            max-width: 579px;
+            height: auto;
+            background: #fff;
+            margin: 0px 5px;
+            figure{
+                max-width: 579px;
+                height: auto;
+                img{
+                    width: 100%;
+                }
+            }
+            h2{
+                font-size: 1.875rem;
+                color: $color-azul100;
+                margin: 0px 2.1875rem 1.9375rem;
+
+            }
+            h3{
+                color: $color-verde;
+                font-size: 0.875rem;
+                margin: 2.5rem 0.9375rem 1rem;
+            }
+            p{
+                font-family: 'montserratlight';
+                color: $color-azul100;
+                margin-bottom: 1.5rem;
+                margin-left: 2.1875rem;
+                span{
+                    font-family: 'montserrat-bold';
+                }
+                span.email{
+                    font-family: 'montserrat-regular';
+                    text-decoration: underline;
+                    a{
+                        color: $color-azul100;}
+                }
+            }
+            a.boton.nota{
+                @include boton($ancho: 12.5rem, $fondo: $color-verde , $color: #fff);
+                position: relative;
+                margin-bottom: 1.625rem;
+                margin-left: 2.1875rem;}
+             a.evento-nota{
+            @include boton($ancho: 12.5rem, $fondo: #1CDCC4 , $color: #fff );
+                    margin-bottom: 1.625rem;
+                   margin-left: 2.1875rem;}
+            a.evento-empresa{
+                 @include boton($ancho: 12.5rem, $fondo: $color-verde , $color: #fff );
+                  margin-bottom: 1.625rem;
+                margin-left: 2.1875rem;}
+            a.btn-social{
+                 @include boton($ancho: 12.5rem, $fondo: #A40084 , $color: #fff );
+                    margin-bottom: 1.625rem;
+                    margin-left: 2.1875rem;
+            }
+        }
+    }
+}
+
+section.prensa{
+    .container{
+         justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 5px;
+    }
+   
+    article{
+        width: 380px;
+        position: relative;
+        padding: 30px 23px;
+        margin-bottom: 21px;
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 6px;
+            background: #E21010;}
+        h3{
+            font-size: 30px;
+            color: $color-azul100;
+            margin-bottom: 28px;
+            height: 120px;
+            margin-top: 10px;}
+        p{
+            font-size: 18px;
+            font-family: 'montserratlight';
+            line-height: 24px;
+            height: 150px;
+            color: $color-azul100;}
+        .item-aside{
+            width: 100%;
+            position: relative;
+            margin-bottom: 38px;
+            overflow: hidden;
+            a.btn-leer-mas{
+            @include boton($ancho: 11.25rem, $fondo: #E21010 , $color: #fff );
+            float: right;
+            position: relative;}
+        }
+        .cat{
+            text-align: center;
+            font-size: 18px;
+             color: $color-azul100;
+            font-family: 'montserratlight';
+            clear: both;}
+    }
+}
+
+
+
+section.nosotros-nota{
+    article{
+        width: 100%;
+        display: table;
+        margin-bottom: 20px;
+        figure{
+            max-width: 474px;
+            display: table-cell;
+            height: auto;}
+        .item-content{
+            display: table-cell;
+            vertical-align: top;
+            padding: 48px 95px  0px 31px;
+            h3{
+                font-size: 30px;
+                color: $color-azul100;
+                margin-top: 0px;
+                margin-bottom: 22px;
+                text-align: left;}
+            p{
+                font-size: 18px;
+                color: $color-azul100;
+                margin-bottom: 28px;
+                font-family: 'montserratlight';}
+            .item-aside{
+                width: 100%;
+                position: relative;
+                margin-bottom: 38px;
+                overflow: hidden;
+                a.btn-leer-mas{
+                @include boton($ancho: 11.25rem, $fondo: #00C0F2 , $color: #fff );
+                float: right;
+                position: relative;}
+            }
+            
+        }
+
+    }
+}
+
+section.publi-notas{
+    display: table;
+    margin-bottom: 85px;
+    .item-content{
+         display: table-cell;
+          width: 40%;
+          span.marc-prens{
+            font-size: 14px;
+            font-family: 'montserrat-regular';
+            color: #E21010;}
+            h2{
+                font-size: 40px;
+                margin-top: 17px;
+                margin-bottom: 30px;
+                color: $color-azul100;}
+            p{
+                font-size: 18px;
+                font-family: 'montserratlight';
+                color: $color-azul100;}
+
+    }
+    
+    .material-tabs{
+        display: table-cell;
+        width: 60%;
+        vertical-align: bottom;
+        text-align: right;
+        a{
+            font-size: 18px;
+            font-family: 'VAGRounded-bold';
+            margin-left: 15px;
+            text-decoration: none;
+            color: #D2D1D1;}
+    }
+}
+
+section.informado{
+    background: #00C0F2;
+    padding-top: 83px;
+    padding-bottom: 51px;
+    form.informado{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    h2{
+        color: #fff;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 67px;
+        font-size: 40px;}
+    p{
+        font-size: 30px;
+        display: inline-block;
+        color: #fff;}
+
+    input[type="text"]{
+        border-bottom: 1px solid #fff;
+        height: 29px;
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        background: transparent;
+        &:focus{
+        outline:0px;}
+    }
+    ::-webkit-input-placeholder {
+        font-size: 20px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);}
+
+    :-moz-placeholder { /* Firefox 18- */
+       color: rgba(255, 255, 255, 0.5); 
+       font-size: 20px; 
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: rgba(255, 255, 255, 0.5); 
+       font-size: 20px; 
+    }
+
+    :-ms-input-placeholder {  
+       color: rgba(255, 255, 255, 0.5);  
+       font-size: 20px;
+    }
+    input.name{
+        width: 489px;}
+    input.medio{
+        width: 415px;}
+    input.email{
+        width: 365px;}
+    input.tel{
+        width: 179px;}
+    a.btn-enviar{
+        @include boton-borde(#fff, 140px, $color: #fff)
+        position: relative;
+    }
+
+}

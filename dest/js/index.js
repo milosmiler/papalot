@@ -1,7 +1,7 @@
 $(function(){
     
     $('.bxslider').bxSlider({
-        adaptiveHeight: "TRUE"
+        adaptiveHeight: "true"
     });
 
 
@@ -74,6 +74,7 @@ $(function(){
     header();
     calendario();
     itemAcordeon();
+    prensa();
 
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
@@ -321,10 +322,8 @@ function calendario(){
 
 function itemAcordeon(){
 
-
     $("section.acordeon .container ul.accordion").hide();
     $("section.acordeon .container ul.accordion:first").show();
-
 
     // DAR CLICK A LOS ITEMS
     $('nav.preguntas-frecuentes ul li a').click(function(e){
@@ -348,7 +347,6 @@ function itemAcordeon(){
             }
         }
 
-
         // OCULTANDO LOS ELEMENTOS QUE NO TENGAN LA CLASE ACTIVA
         $('section.acordeon .container ul.accordion').each(function(indice){
             if (!$(this).hasClass('activa')) {
@@ -358,9 +356,3 @@ function itemAcordeon(){
     })
 
 }
-
-
-
-
-
-

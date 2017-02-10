@@ -1,0 +1,239 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.cover
+			img(src="images/cover_prensa.png"  alt="megapantalla")
+			h2 Prensa
+
+		section.bienvenidos
+			.container
+				h2 ¡Bienvenidos periodist@s!
+				p En esta sección encontrarás todo lo necesario para complementar tus notas y reportajes con información oficial de PAPALOTE. Además encontrarás fotografías y materiales audiovisuales diseñados especialmente para ti. 
+
+		section.intro-cover-rigth
+			.container
+				figure
+					img(src="images/intro_museo.png")
+				.item-content
+					h2 Museo
+					p Después de una larga remodelación, 
+						span PAPALOTE totalmente renovado 
+						|  abre nuevamente sus puertas para ofrecerte una visita más cómoda y nuevos contenidos para que vivas una experiencia inolvidable.
+					.item-social.flex
+						h4 DESCARGAR
+						.circulo
+							i.icon
+						.circulo
+							i.icon
+						.circulo
+							i.icon
+		section.ado-mega
+			.container
+				h2 ADO Megapantalla IMAX
+				p Aquí encontrarás la información sobre las sorprendentes películas que proyectamos en la ADO Megapantalla IMAX
+		section.notas-prensa
+			.container.flex
+				article.z-depth-4
+					figure
+						img(src="images/ballena-nota.png" alt="abc papalote")
+					h3 ADO MEGAPANTALLA IMAX
+					h2 Ballenas 3D
+					p Vive una nueva aventura marina y descubre cómo es que hace 50 años las ballenas 
+						| jorobadas estuvieron a punto de desaparecer; pero hoy en día, lentamente, han sobrevivido a la extinción.
+					.item-social.flex
+						h4 DESCARGAR
+						.circulo
+							i.icon
+						.circulo
+							i.icon
+						.circulo
+							i.icon
+
+				article.z-depth-4
+						figure
+							img(src="images/america-nota.png" alt="eventos")
+						h3 ADO MEGAPANTALLA IMAX
+						h2 Parques Nacionales: La Aventura en América Salvaje 3D
+						p Descubre la emocionante travesía de del alpinista Conrad Anker, el fotógrafo Max Lowe y la artista Rachel Pohl, quienes recorrieron todo Estados Unidos y dejaron al descubierto las maravillas naturales que inspiran al aventurero que todos llevamos dentro.
+						.item-social.flex
+							h4 DESCARGAR
+							.circulo
+								i.icon
+							.circulo
+								i.icon
+							.circulo
+								i.icon
+
+		section.ado-mega
+			.container
+				h2 domodigital Citibanamex
+				p El domodigital Citibanamex te llevará hasta los límites del universo conocido en una increíble experiencia de 180°.
+
+
+
+		section.notas-prensa
+			.container.flex
+				article.z-depth-4
+					figure
+						img(src="images/pasaporte-nota.png" alt="eventos")
+					h3 DOMODIGITAL CITIBANAMEX
+					h2 Exoplanetas
+					p Despega desde tu asiento y atrévete a conocer los misteriosos planetas que habitan a millones de años luz de nosotros. Acompaña a EXO 1 y Sonda B y descubre los exoplanetas parecidos a la Tierra.
+					.item-social.flex
+						h4 DESCARGAR
+						.circulo
+							i.icon
+						.circulo
+							i.icon
+						.circulo
+							i.icon
+
+				article.z-depth-4
+						figure
+							img(src="images/exo-nota.png" alt="abc papalote")
+						h3 DOMODIGITAL CITIBANAMEX
+						h2 Pasaporte al Universo
+						p Las estrellas sólo serán el inicio de éste viaje. Prepara tus maletas porque te llevaremos a conocer tu domicilio cósmico.
+						.item-social.flex
+							h4 DESCARGAR
+							.circulo
+								i.icon
+							.circulo
+								i.icon
+							.circulo
+								i.icon
+		section.publi-notas
+			.container
+				.item-content
+					span.marc-prens Prensa
+					h2 Publicaciones y notas
+					p Conoce aquí las noticias más relevantes sobre PAPALOTE publicadas en los medios de comunicación.
+				.material-tabs
+					a.selector-tab-1.activar(href='#') Prensa
+					a.selector-tab-2(href='#') Nosotros
+
+		section.prensa.desaparece
+			.container.flex
+				article.z-depth-4
+					h3 Niños indígenas visitan sitios de diversiones en la CdMx.
+					p Niñas y niños indígenas visitaron sitios turísticos y de diversiones en la Ciudad de México, como parte del programa intercultural...
+					.item-aside
+						.item-aside
+						a.btn-leer-mas(href="") Leer mas
+					.cat - MILENIO -
+				article.z-depth-4
+					h3 Mauris non tempor der quam, et lacinia sapien. Mauris accumsan eros eget libero posuere. 
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+					.item-aside
+						.item-aside
+						a.btn-leer-mas(href="") Leer mas
+					.cat - MILENIO -
+				article.z-depth-4
+					h3 Mauris non tempor der quam, et lacinia sapien. Mauris accumsan eros eget libero posuere. 
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+					.item-aside
+						.item-aside
+						a.btn-leer-mas(href="") Leer mas
+					.cat - MILENIO -
+				article.z-depth-4
+					h3 Mauris non tempor der quam, et lacinia sapien. Mauris accumsan eros eget libero posuere. 
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+					.item-aside
+						.item-aside
+						a.btn-leer-mas(href="") Leer mas
+					.cat - MILENIO -
+				article.z-depth-4
+					h3 Mauris non tempor der quam, et lacinia sapien. Mauris accumsan eros eget libero posuere. 
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+					.item-aside
+						.item-aside
+						a.btn-leer-mas(href="") Leer mas
+					.cat - MILENIO -
+				article.z-depth-4
+					h3 Mauris non tempor der quam, et lacinia sapien. Mauris accumsan eros eget libero posuere. 
+					p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+					.item-aside
+						.item-aside
+						a.btn-leer-mas(href="") Leer mas
+					.cat - MILENIO -
+		section.nosotros-nota.desaparece
+			.container
+				article.z-depth-4
+					figure
+						img(src="images/im-nota.png")
+					.item-content
+						h3 Mauris non tempor quam, et lacinia sapien Mauris accumsan eros eget accumsan eros eget libero posuere.
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+						.item-aside
+							a.btn-leer-mas(href="") Leer mas
+				article.z-depth-4
+					figure
+						img(src="images/im-nota.png")
+					.item-content
+						h3 Mauris non tempor quam, et lacinia sapien Mauris accumsan eros eget accumsan eros eget libero posuere.
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+						.item-aside
+							a.btn-leer-mas(href="") Leer mas
+				article.z-depth-4
+					figure
+						img(src="images/im-nota.png")
+					.item-content
+						h3 Mauris non tempor quam, et lacinia sapien Mauris accumsan eros eget accumsan eros eget libero posuere.
+						p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma
+						.item-aside
+							a.btn-leer-mas(href="") Leer mas
+		section.informado
+			h2 ¡Quiero mantenerme informado! 
+			.container
+				form.informado.flex
+					.item
+						p Mi nombre es
+						input.name(type="text" placeholder="ingresa tu nombre completo")
+					.item
+						p trabajo en 
+						input.medio(type="text" placeholder="medio")
+						p , me gustaría recibir noticias, invitaciones
+					.item
+						p y boletines de prensa sobre PAPALOTE a
+						input.email(type="text" placeholder="ingresa tu mail")
+						p ;
+						input.tel(type="text" placeholder="ingresa tu telefono")
+					.item
+						a.btn-enviar(href="") Enviar
+
+
+
+
+
+
+
+
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")
