@@ -1,0 +1,324 @@
+
+.container-form{
+	max-width: 586px;
+	margin: auto;
+	margin-top: 100px;
+}
+
+section.grupos-escolares{
+	h2{
+		color: #5D2B86;
+		font-size: 40px;}
+	h3{
+		color: #5D2B86;
+		font-size: 14px;
+		text-align: left;
+		margin-top: 43px;
+		margin-bottom: 28px;
+	}
+	text-align: center;
+	::-webkit-input-placeholder {
+		font-family: 'montserrat-regular';
+		font-size: 12px;
+		color: #364659}
+	::-moz-placeholder {
+		ont-family: 'montserrat-regular';
+		font-size: 12px; 
+		color: #364659}
+	:-ms-input-placeholder { 
+		font-family: 'montserrat-regular';
+		font-size: 12px;
+		color: #364659}
+	:-moz-placeholder { 
+		font-family: 'montserrat-regular';
+		font-size: 12px;
+		color: #364659}
+	.item{
+		width: 100%;
+		display: table;
+	}
+	form{
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		input[type="text"], input[type="email"]{
+			border-top:1px solid #9B9B9B; 
+			border-bottom:1px solid #9B9B9B; 
+			padding-left: 18px;
+			border-left: transparent;
+			border-right: transparent;
+			height: 67px;}
+		input.name{
+			width: 100%;
+			display: table-cell;
+		}
+		input.tel{
+			width: 50%;
+			display: table-cell;
+			border-right: 1px solid #9B9B9B; 
+			border-top: transparent;}
+		input.email{
+			width: 50%;
+			border-top: transparent;}
+		input.cp{
+			border-right: 1px solid #9B9B9B; 
+			border-top: transparent;
+			width: 50%;
+			display: table-cell;}
+		input.estado{
+			border-top: transparent;
+			width: 50%;
+			display: table-cell;
+		}
+		input.name-contac{
+			width:33%;
+			display: table-cell;
+			border-right: 1px solid #9B9B9B; 
+		}
+		input.ap{
+			width:33%;
+			display: table-cell;
+			border-right: 1px solid #9B9B9B; 
+
+		}
+		input.am{
+			width:33%;
+			display: table-cell;
+
+
+		}
+		input.tel-local{
+			width:50%;
+			display: table-cell;
+			border-right: 1px solid #9B9B9B; 
+			border-top: transparent;
+		}
+		input.email-perso{
+			width:50%;
+			display: table-cell;
+			border-top: transparent;
+		}
+		input.total-per{
+			width: 100%;
+			border-top: transparent;
+		}
+		.select {
+		    cursor: pointer;
+		    display: inline-block;
+		    position: relative;
+		    width: 100%;
+		    height: 67px;
+		    background: transparent;
+		}
+		.select-styled{
+			font-size: 12px;
+			height: 67px;
+			color: #364659;
+			font-family: 'montserrat-regular';
+			text-align: left;
+			border-top: transparent; 
+			border-bottom:1px solid #9B9B9B; 
+			&:after {
+			    content: "\f107";
+			    font-family: FontAwesome;
+			    color: #5D2B86;
+			    font-size: 18px;
+			    position: absolute;
+			    top: 16px;
+			    right: 15px;}
+		}
+		select.nivel-educativo{
+		width: 33%;
+
+		}
+		textarea.comentario{
+			border-top: transparent; 
+			border-left: transparent; 
+			border-right: transparent; 
+			height: 130px;
+			margin-bottom: 52px;
+			width: 100%;}
+
+		a.enviar{
+			@include boton($ancho: 8.75rem, $fondo: #5D2B86, $color: #fff );
+			float: right;
+			text-align: center;
+			padding-left: 0px;
+		}
+		span.leyenda-privacidad{
+			color: #5D2B86;
+			font-size: 'montserratlight';
+			font-size: 12px;
+		}
+		
+	}
+}
+
+section.planea-visita{
+	h2{
+		color: #5D2B86;
+		font-size: 40px;}
+	h3{
+		color: #5D2B86;
+		font-size: 14px;
+		margin-top: 0px;
+		margin-bottom: 32px;
+		text-align: left;}
+	h4{
+		font-size: 30px;
+		font-family: 'VAGRounded-bold';
+		color: #08405C;
+		margin-bottom: 30px;
+	}
+	text-align: center;
+	::-webkit-input-placeholder {
+		font-family: 'montserrat-regular';
+		font-size: 12px;
+		color: #364659}
+	::-moz-placeholder {
+		ont-family: 'montserrat-regular';
+		font-size: 12px; 
+		color: #364659}
+	:-ms-input-placeholder { 
+		font-family: 'montserrat-regular';
+		font-size: 12px;
+		color: #364659}
+	:-moz-placeholder { 
+		font-family: 'montserrat-regular';
+		font-size: 12px;
+		color: #364659}
+	.item{
+		width: 100%;
+		display: table;
+	}
+	form{
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		input[type="text"], input[type="email"]{
+			border-top:1px solid #9B9B9B; 
+			border-bottom:1px solid #9B9B9B; 
+			padding-left: 18px;
+			border-left: transparent;
+			border-right: transparent;
+			height: 67px;}
+		input.name{
+			width: 100%;
+			display: table-cell;
+		}
+		input.tel{
+			width: 50%;
+			display: table-cell;
+			border-right: 1px solid #9B9B9B; 
+			border-top: transparent;}
+		input.email{
+			width: 50%;
+			border-top: transparent;}
+		input.cp{
+			border-right: 1px solid #9B9B9B; 
+			border-top: transparent;
+			width: 50%;
+			display: table-cell;}
+		input.estado{
+			border-top: transparent;
+			width: 50%;
+			display: table-cell;
+		}
+		input.name-contac{
+			width:33%;
+			display: table-cell;
+			border-right: 1px solid #9B9B9B; 
+		}
+		input.ap{
+			width:33%;
+			display: table-cell;
+			border-right: 1px solid #9B9B9B; 
+
+		}
+		input.am{
+			width:33%;
+			display: table-cell;
+
+
+		}
+		input.tel-local{
+			width:50%;
+			display: table-cell;
+			border-right: 1px solid #9B9B9B; 
+			border-top: transparent;
+		}
+		input.email-perso{
+			width:50%;
+			display: table-cell;
+			border-top: transparent;
+		}
+		input.total-per{
+			width: 100%;
+			border-top: transparent;
+		}
+		.select {
+		    cursor: pointer;
+		    display: inline-block;
+		    position: relative;
+		    width: 100%;
+		    height: 67px;
+		    background: transparent;
+		}
+		.select-styled{
+			font-size: 12px;
+			height: 67px;
+			color: #364659;
+			font-family: 'montserrat-regular';
+			text-align: left;
+			border-top: transparent; 
+			border-bottom:1px solid #9B9B9B; 
+			&:after {
+			    content: "\f107";
+			    font-family: FontAwesome;
+			    color: #5D2B86;
+			    font-size: 18px;
+			    position: absolute;
+			    top: 16px;
+			    right: 15px;}
+		}
+		textarea.comentario{
+			border-top: transparent; 
+			border-left: transparent; 
+			border-right: transparent; 
+			height: 130px;
+			width: 100%;
+		}
+		a.enviar{
+			@include boton($ancho: 12.5rem, $fondo: #5D2B86, $color: #fff )
+		}
+		
+	}
+}
+
+#signInButton{
+  height: 93px;
+  width: 278px;
+  background: #A40084;
+  font-size: 22px;
+  font-family: 'VAGRounded-bold';
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  margin-bottom: 75px;
+}
+#signUpButton {
+	height: 93px;
+  width: 278px;
+  background: #E8BFE0;
+  font-size: 22px;
+  font-family: 'VAGRounded-bold';
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  margin-bottom: 75px;
+}
+
