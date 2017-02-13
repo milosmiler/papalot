@@ -74,7 +74,6 @@ $(function(){
     header();
     calendario();
     itemAcordeon();
-    prensa();
 
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
@@ -94,6 +93,22 @@ $(function(){
 
         j.preventDefault();
     });
+
+    $("#signUpButton").click(function() {
+        $(this).css('background-color', '#A40084').css('color', '#fff');
+        $("#signInButton").css('background-color', '#E8BFE0').css('color', 'white');
+
+        $("#signInForm").css("display", "none");  
+        $("#signUpForm").show("fast");
+    })
+
+    $("#signInButton").click(function() {
+        $(this).css('background-color', '#A40084').css('color', '#fff');
+        $("#signUpButton").css('background-color', '#E8BFE0').css('color', 'white');
+
+        $("#signInForm").show("fast");
+        $("#signUpForm").css("display", "none");
+    })
 })
 
 

@@ -7749,6 +7749,340 @@ section.informado {
     width: 140px;
     position: relative; }
 
+.container-form {
+  max-width: 586px;
+  margin: auto;
+  margin-top: 100px; }
+
+section.grupos-escolares {
+  text-align: center; }
+  section.grupos-escolares h2 {
+    color: #5D2B86;
+    font-size: 40px; }
+  section.grupos-escolares h3 {
+    color: #5D2B86;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 43px;
+    margin-bottom: 28px; }
+  section.grupos-escolares ::-webkit-input-placeholder {
+    font-family: 'montserrat-regular';
+    font-size: 12px;
+    color: #364659; }
+  section.grupos-escolares ::-moz-placeholder {
+    ont-family: 'montserrat-regular';
+    font-size: 12px;
+    color: #364659; }
+  section.grupos-escolares :-ms-input-placeholder {
+    font-family: 'montserrat-regular';
+    font-size: 12px;
+    color: #364659; }
+  section.grupos-escolares :-moz-placeholder {
+    font-family: 'montserrat-regular';
+    font-size: 12px;
+    color: #364659; }
+  section.grupos-escolares .item {
+    width: 100%;
+    display: table; }
+  section.grupos-escolares form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.grupos-escolares form input[type="text"], section.grupos-escolares form input[type="email"] {
+      border-top: 1px solid #9B9B9B;
+      border-bottom: 1px solid #9B9B9B;
+      padding-left: 18px;
+      border-left: transparent;
+      border-right: transparent;
+      height: 67px; }
+    section.grupos-escolares form input.name {
+      width: 100%;
+      display: table-cell; }
+    section.grupos-escolares form input.tel {
+      width: 50%;
+      display: table-cell;
+      border-right: 1px solid #9B9B9B;
+      border-top: transparent; }
+    section.grupos-escolares form input.email {
+      width: 50%;
+      border-top: transparent; }
+    section.grupos-escolares form input.cp {
+      border-right: 1px solid #9B9B9B;
+      border-top: transparent;
+      width: 50%;
+      display: table-cell; }
+    section.grupos-escolares form input.estado {
+      border-top: transparent;
+      width: 50%;
+      display: table-cell; }
+    section.grupos-escolares form input.name-contac {
+      width: 33%;
+      display: table-cell;
+      border-right: 1px solid #9B9B9B; }
+    section.grupos-escolares form input.ap {
+      width: 33%;
+      display: table-cell;
+      border-right: 1px solid #9B9B9B; }
+    section.grupos-escolares form input.am {
+      width: 33%;
+      display: table-cell; }
+    section.grupos-escolares form input.tel-local {
+      width: 50%;
+      display: table-cell;
+      border-right: 1px solid #9B9B9B;
+      border-top: transparent; }
+    section.grupos-escolares form input.email-perso {
+      width: 50%;
+      display: table-cell;
+      border-top: transparent; }
+    section.grupos-escolares form input.total-per {
+      width: 100%;
+      border-top: transparent; }
+    section.grupos-escolares form .select {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      height: 67px;
+      background: transparent; }
+    section.grupos-escolares form .select-styled {
+      font-size: 12px;
+      height: 67px;
+      color: #364659;
+      font-family: 'montserrat-regular';
+      text-align: left;
+      border-top: transparent;
+      border-bottom: 1px solid #9B9B9B; }
+      section.grupos-escolares form .select-styled:after {
+        content: "\f107";
+        font-family: FontAwesome;
+        color: #5D2B86;
+        font-size: 18px;
+        position: absolute;
+        top: 16px;
+        right: 15px; }
+    section.grupos-escolares form select.nivel-educativo {
+      width: 33%; }
+    section.grupos-escolares form textarea.comentario {
+      border-top: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      height: 130px;
+      margin-bottom: 52px;
+      width: 100%; }
+    section.grupos-escolares form a.enviar {
+      background-color: #5D2B86;
+      border-radius: 3.125rem;
+      clear: both;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'VAGRounded-bold';
+      display: block;
+      font-size: 1.125rem;
+      height: 3.125rem;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      text-align: left;
+      padding-left: 1.125rem;
+      padding-top: 0.9375rem;
+      text-decoration: none;
+      width: 8.75rem;
+      float: right;
+      text-align: center;
+      padding-left: 0px; }
+      section.grupos-escolares form a.enviar:before {
+        content: "\f061";
+        position: absolute;
+        right: 1.4375rem;
+        font-family: 'FontAwesome'; }
+    section.grupos-escolares form span.leyenda-privacidad {
+      color: #5D2B86;
+      font-size: 'montserratlight';
+      font-size: 12px; }
+
+section.planea-visita {
+  text-align: center; }
+  section.planea-visita h2 {
+    color: #5D2B86;
+    font-size: 40px; }
+  section.planea-visita h3 {
+    color: #5D2B86;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    text-align: left; }
+  section.planea-visita h4 {
+    font-size: 30px;
+    font-family: 'VAGRounded-bold';
+    color: #08405C;
+    margin-bottom: 30px; }
+  section.planea-visita ::-webkit-input-placeholder {
+    font-family: 'montserrat-regular';
+    font-size: 12px;
+    color: #364659; }
+  section.planea-visita ::-moz-placeholder {
+    ont-family: 'montserrat-regular';
+    font-size: 12px;
+    color: #364659; }
+  section.planea-visita :-ms-input-placeholder {
+    font-family: 'montserrat-regular';
+    font-size: 12px;
+    color: #364659; }
+  section.planea-visita :-moz-placeholder {
+    font-family: 'montserrat-regular';
+    font-size: 12px;
+    color: #364659; }
+  section.planea-visita .item {
+    width: 100%;
+    display: table; }
+  section.planea-visita form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.planea-visita form input[type="text"], section.planea-visita form input[type="email"] {
+      border-top: 1px solid #9B9B9B;
+      border-bottom: 1px solid #9B9B9B;
+      padding-left: 18px;
+      border-left: transparent;
+      border-right: transparent;
+      height: 67px; }
+    section.planea-visita form input.name {
+      width: 100%;
+      display: table-cell; }
+    section.planea-visita form input.tel {
+      width: 50%;
+      display: table-cell;
+      border-right: 1px solid #9B9B9B;
+      border-top: transparent; }
+    section.planea-visita form input.email {
+      width: 50%;
+      border-top: transparent; }
+    section.planea-visita form input.cp {
+      border-right: 1px solid #9B9B9B;
+      border-top: transparent;
+      width: 50%;
+      display: table-cell; }
+    section.planea-visita form input.estado {
+      border-top: transparent;
+      width: 50%;
+      display: table-cell; }
+    section.planea-visita form input.name-contac {
+      width: 33%;
+      display: table-cell;
+      border-right: 1px solid #9B9B9B; }
+    section.planea-visita form input.ap {
+      width: 33%;
+      display: table-cell;
+      border-right: 1px solid #9B9B9B; }
+    section.planea-visita form input.am {
+      width: 33%;
+      display: table-cell; }
+    section.planea-visita form input.tel-local {
+      width: 50%;
+      display: table-cell;
+      border-right: 1px solid #9B9B9B;
+      border-top: transparent; }
+    section.planea-visita form input.email-perso {
+      width: 50%;
+      display: table-cell;
+      border-top: transparent; }
+    section.planea-visita form input.total-per {
+      width: 100%;
+      border-top: transparent; }
+    section.planea-visita form .select {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      height: 67px;
+      background: transparent; }
+    section.planea-visita form .select-styled {
+      font-size: 12px;
+      height: 67px;
+      color: #364659;
+      font-family: 'montserrat-regular';
+      text-align: left;
+      border-top: transparent;
+      border-bottom: 1px solid #9B9B9B; }
+      section.planea-visita form .select-styled:after {
+        content: "\f107";
+        font-family: FontAwesome;
+        color: #5D2B86;
+        font-size: 18px;
+        position: absolute;
+        top: 16px;
+        right: 15px; }
+    section.planea-visita form textarea.comentario {
+      border-top: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      height: 130px;
+      width: 100%; }
+    section.planea-visita form a.enviar {
+      background-color: #5D2B86;
+      border-radius: 3.125rem;
+      clear: both;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'VAGRounded-bold';
+      display: block;
+      font-size: 1.125rem;
+      height: 3.125rem;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      text-align: left;
+      padding-left: 1.125rem;
+      padding-top: 0.9375rem;
+      text-decoration: none;
+      width: 12.5rem; }
+      section.planea-visita form a.enviar:before {
+        content: "\f061";
+        position: absolute;
+        right: 1.4375rem;
+        font-family: 'FontAwesome'; }
+
+#signInButton {
+  height: 93px;
+  width: 278px;
+  background: #A40084;
+  font-size: 22px;
+  font-family: 'VAGRounded-bold';
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  margin-bottom: 75px; }
+
+#signUpButton {
+  height: 93px;
+  width: 278px;
+  background: #E8BFE0;
+  font-size: 22px;
+  font-family: 'VAGRounded-bold';
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+  margin-bottom: 75px; }
+
 /********** FOOTER *************/
 footer {
   width: 100%;

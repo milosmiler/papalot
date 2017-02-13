@@ -1,0 +1,124 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		title Papalote
+		meta(name='description', content='descripcion del sitio web')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
+		link(href="css/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet" href="css/flexslider.css")
+		link(rel="stylesheet" href="css/jquery.bxslider.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+			
+		meta(property='og:title', content='Papalote museo del niño')
+		meta(property='og:site_name', content='Papalote')
+		meta(property='og:url', content='http://papalote.org.mx/')
+		meta(property='og:description', content=' ')
+		meta(property='og:image', content='http://papalote.org.mx/assets/images/papalote-logo.png')
+
+	body
+		.contenedor-fixed
+			include block/sedes.pug
+			include block/header.pug
+		section.grupos-escolares
+			.container-form
+				h2 Grupos escolares
+				h3 DATOS DE LA ESCUELA
+				form.flex
+					.item
+						input.name(type="text" placeholder="Nombre")
+					.item
+						select.nivel-educativo
+							option(value=" ") Nivel educativo*
+							option(value=" ") 
+					.item
+						input.tel(type="text" placeholder="Teléfono de la escuela*")
+						input.email(type="text" placeholder="Correo electrónico institucional*")
+					.item
+						input.cp(type="text" placeholder="Código postal")
+						input.estado(type="text" placeholder="¿En qué estado está?")
+					.item
+						select.nivel-educativo
+							option(value=" ") ¿En qué delegación o municipio?
+					.item
+						h3 DATOS DE CONTACTO
+					.item
+						input.name-contac(type="text" placeholder="Nombre")
+						input.ap(type="text" placeholder="Apellido paterno")
+						input.am(type="text" placeholder="Apellido materno")
+					.item
+						input.tel-local(type="text" placeholder="Télefono local*")
+						input.email-perso(type="text" placeholder="Correo electrónico*")
+					.item
+						select.nivel-educativo
+							option(value=" ") Dia
+							option(value=" ")
+						select.nivel-educativo
+							option(value=" ") Mes
+							option(value=" ")
+						select.nivel-educativo
+							option(value=" ") Año
+							option(value=" ") 
+					.item
+						input.total-per(type="text" placeholder="(de 15 a 7000 personas)") 
+					.item
+						textarea.comentario(placeholder="Comentarios:") 
+					.item
+						input#cbtest(type='checkbox')
+						label.check-box(for='cbtest')
+						span.leyenda-privacidad He leído el aviso de privacidad
+						a.enviar(href="#") Enviar
+
+		section.planea-visita
+			.container-form
+				h2 Planea tu visita #[br] a PAPALOTE
+				h4 Tu visita sería para:
+				.item
+					button#signInButton Grupos para empresas y Gobierno
+					button#signUpButton Día PAPALOTE
+				h3 DATOS DE CONTACTO
+				form#signInForm.flex
+					.item
+						input.name-contac(type="text" placeholder="Nombre")
+						input.ap(type="text" placeholder="Apellido paterno")
+						input.am(type="text" placeholder="Apellido materno")
+					.item
+						input.tel-local(type="text" placeholder="Télefono local*")
+						input.email-perso(type="text" placeholder="Correo electrónico*")
+					.item
+						input.name(type="text" placeholder="nombre de la Empresa")
+					.item
+						input.name(type="text" placeholder="Giro de la empresa")
+					.item
+						input.total-per(type="text" placeholder="(de 15 a 7000 personas)") 
+					.item
+						textarea.comentario(placeholder="Comentarios:") 
+
+				form#signUpForm.flex
+					.item
+						input.name-contac(type="text" placeholder="Nombre")
+						input.ap(type="text" placeholder="Apellido paterno")
+						input.am(type="text" placeholder="Apellido materno")
+					.item
+						input.tel-local(type="text" placeholder="Télefono local*")
+						input.email-perso(type="text" placeholder="Correo electrónico*")
+					.item
+						input.name(type="text" placeholder="nombre de la Empresa")
+					.item
+						input.name(type="text" placeholder="Giro de la empresa")
+					.item
+						input.total-per(type="text" placeholder="(de 15 a 7000 personas)") 
+					.item
+						textarea.comentario(placeholder="Comentarios:") 
+
+		span.ir-arriba
+		include block/footer.pug
+		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery-ui.min.js")
+		script(src="js/jquery.flexslider-min.js")
+		script(src="js/select.js")
+		script(src="js/waves.js")
+		script(src="js/slider.js")
+		script(src="js/jquery.bxslider.js")
+		script(src='js/index.js', type="text/javascript")
