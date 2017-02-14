@@ -1,4 +1,5 @@
 section.intro-texto{
+	padding: 0px 15px;
 	margin-bottom: 97px;
 	p{
 		font-size: 22px;
@@ -13,19 +14,19 @@ section.intro-cover-rigth{
 	overflow: hidden;
 	figure{
 		float: left;
-		max-width: 700px;
+		max-width: 58.5%;
 		height: auto;
 		img{
 			width: 100%;}
 		}
 	.item-content{
 		float: right;
-		max-width: 450px;
+		max-width: 40%;
 		h2{
-			font-size: 40px;
+			font-size: 2.5rem;
 			color: $color-azul100;}
 		p{
-			font-size: 18px;
+			font-size: 1.125rem;
 			color: $color-azul100;
 			font-family: 'montserratlight';
 			span{
@@ -38,28 +39,28 @@ section.intro-cover-rigth{
 		}
 }
 section.transpariencias{
-	margin-bottom: 129px;
-	margin-top: 87px;
+	margin-bottom: 8.0625rem;
+	margin-top: 5.4375rem;
 	.circulo{
 		border-radius: 100px;
 		width: 101px;
 		height: 101px;
-		border: 3px solid $color-azul100;
+		border: 0.1875rem solid $color-azul100;
 		margin: auto;
-		margin-bottom: 45px;
+		margin-bottom: 2.8125rem;
 	}
 	h2{
 		text-align: center;
 		color: $color-azul100;
-		font-size: 40px;
+		font-size: 2.5rem;
 		margin-top: 0px;
-		margin-bottom: 35px;}
+		margin-bottom: 2.1875rem;}
 	p{
-		font-size: 18px;
+		font-size: 1.125rem;
 		color: $color-azul100;
 		font-family: 'montserratlight';
 		text-align: center;
-		margin-bottom: 39px;
+		margin-bottom: 2.4375rem;
 		span{
 			font-family: 'montserrat-bold';
 		}

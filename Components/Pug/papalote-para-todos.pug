@@ -22,7 +22,7 @@ html(lang="es")
 			include block/sedes.pug
 			include block/header.pug
 		section.cover
-			img(src="images/cover-evento-servicio.png"  alt="eventos y servicios")
+			img(src="images/cover-papalote-todos.png"  alt="papalote para todos")
 			h2 PAPALOTE para TODOS
 		section.item-intro
 			.container
@@ -31,65 +31,74 @@ html(lang="es")
 					p Es nuestro programa de compromiso social el cual brinda visitas gratuitas al Museo a niñas, niños, maestros de escuelas públicas o personas en condiciones de alta vulnerabilidad. 
 				figure.image-intro
 					img(src="images/intro-para-todos.png")
+		section.donar-paypal
+			.item-content
+				.container
+					h2 ¿Deseas donar?
+					p Tú puedes apoyar a PAPALOTE para TODOS para que más niñas, #[br] niños y personas en situación de alta vulnerabilidad conozcan #[br] nuestra experiencia de aprendizaje a través del juego,
+					span.envia envía un correo a:
+					span.email
+						a(href="mailto:gabriela.alvarez@papalote.org.mx") gabriela.alvarez@papalote.org.mx
+					figure
+						img(src="images/paypal.png")
+					a.btn-donar(href="#") Donar
+			.item-content
+				.container
+					h2 Ser beneficiario
+					p Envía tu solicitud de participación al correo de 
+					span.email 
+						a(href='mailto:desarrollo@papalote.org.mx') desarrollo@papalote.org.mx
+
+					p con la información general de tu organización o institución y ¿cómo ayudaría la visita a Papalote Museo del Niño a tu organización?.
 
 
-		section.experiencia-group
+
+		section.experiencia-group-todos
 			.container.flex
 				article.z-depth-4
 					.circule
 						i.fa-icon
 					h3 Retorno social sobre inversión (RSOI)
-					h4 ¡Aparta tu lugar!
-					p Si nos visitas con un grupo mayor a 15 personas, haz una #[br] reservación y adquiere tus entradas a un precio especial.
+					p Por cada peso donado a la institución 
+						span $2.44 
+						| pesos son generados como beneficio a la sociedad mexicana en el transcurso de 
+						span 1 año.
 
 				article.z-depth-4
 					.circule
 						i.fa-icon
 					h3 Eficacia
-					h4 Precio preferente
-					ul
-						li Venta directa en las instalaciones de la empresa.
-
-						li Venta en consigna.
-
-						li Venta en firme (mínimo de entrega en tus instalaciones de 50 cupones)
+					p Derivado de los resultados obtenidos de las encuestas aplicadas por Filantrofilia, calificadora social, se concluyó que 
+						span 74.5% 
+						| de los beneficiarios del Programa 
+						span PAPALOTE para TODOS
+						|  no cuentan con otra opción de educación y esparcimiento extra escolar que contribuya a la mejora de su calidad de vida.
 
 		section.padrinos.flex
 			article.marcas
 				#slider-1.slider
 					.slider-wrapper
 						.slide
-							h2 Gracias a nuestros Padrinos
+							h2 Patrocinadores del programa 
 							.content-logo-marca
 								h3 PAPALOTE vuela más alto
 								figure.marca
-									img(src="images/padrinos/logo_ado.png" alt="ado")
+										img(src="images/padrinos/logo_bimbo.png" alt="bimbo")
 								figure.marca
-									img(src="images/padrinos/logo_cdmx.png" alt="cdmx")
+										img(src="images/padrinos/logo_alpura.png" alt="alpura")
 								figure.marca
-									img(src="images/padrinos/logo_cocacola.png" alt="cocacola")
+										img(src="images/padrinos/logo_citibanamex.png" alt=" citibanamex")
 								figure.marca
-									img(src="images/padrinos/logo_herdez.png" alt="herdez")
-								figure.marca
-									img(src="images/padrinos/logo_angeles.png" alt="hospital angeles")
-								figure.marca
-									img(src="images/padrinos/logo_rotoplas.png" alt=" rotoplas")
-								figure.marca
-									img(src="images/padrinos/logo_scribe.png" alt=" scribe")
-								figure.marca
-									img(src="images/padrinos/logo_televisa.png" alt=" televisa")
-								figure.marca
-									img(src="images/padrinos/logo_vinci.png" alt="vinci")
+										img(src="images/padrinos/logo_johnson.png" alt="johnson")
 
 			article.leyenda-content
-				h2 ¿Deseas ayudar?
+				h2 ¿Deseas donar?
 				p Gracias a tu contribución miles de niños, niñas y familias mexicanas vivirán una increíble experiencia de aprendizaje y diversión.
 				p Si deseas apoyar a 
 					span PAPALOTE
 					|, comunícate al 5237 1715 o envía un correo a 
 					span.email 
 						a(href='mailto:desarrollo@papalote.org.mx') desarrollo@papalote.org.mx
-
 
 		span.ir-arriba
 		include block/footer.pug

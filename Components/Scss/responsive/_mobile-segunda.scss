@@ -1,0 +1,206 @@
+section.intro-group-event .item-content{
+	width: 99%;
+    position: relative;
+    bottom: 0px;
+    transform: inherit;
+    margin: auto;
+    left: 0px;
+}
+section.intro-group-event figure{
+	width: 100%;
+}
+
+section.intro-group-event .container {
+	    max-width: 1200px;
+	    margin: auto;
+	    display: flex;
+	    flex-direction: column-reverse;
+	    padding-bottom: 15px;}
+section.eventos .container{
+	flex-direction: column;
+}
+
+section.informacion-eventos{
+	width: 100%;
+  	display: block;}
+
+section.informacion-eventos .item{
+	width: 100%;
+	padding: 10px;
+    display: block;}
+section.informacion-eventos .item h2, section.informacion-eventos .item h3{
+	text-align: left;
+	margin-left: 0px;
+}
+
+section.informacion-eventos .item .container-item, section.informacion-eventos .item a.mail-info{
+	margin-left: 0px;
+}
+
+
+section.group-content article.item-right figure.image-group{
+	width: 100%;
+}
+section.group-content article.item-right .item-content{
+	width: 100%;	
+}
+section.group-content article.item-right{
+	display: flex;
+    flex-direction: column-reverse;
+    padding: 0px 15px;
+}
+
+section.group-content article.item-left figure.image-group{
+	width: 100%;
+	float: none;
+	padding: 0px 15px;
+}
+section.group-content article.item-left .item-content{
+	width: 100%;
+	padding: 0px 15px;
+}
+section.informacion, section.informacion .item{
+	width: 100%;
+	display: block;
+
+}
+section.informacion .item:last-child{
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+section.item-intro figure.image-intro{
+	width: 100%;
+}
+section.item-intro .item-content{
+	width: 100%;
+}
+section.item-intro .container{
+	display: flex;
+	flex-direction: column-reverse;
+}
+section.download-material .item-container{
+	flex-direction: column;
+    align-items: center;
+}
+section.download-material .item-container article{
+	margin-bottom: 20px;
+	width: 80%;
+}
+
+section.experiencia-group .container{
+	flex-direction: column;
+    align-items: center;
+}
+section.experiencia-group article{
+	margin-bottom: 0.9375rem;
+}
+
+section.informacion-gobierno{
+	display: block;
+	width: 100%;
+}
+section.informacion-gobierno .item{
+	width: 100%;
+	display: block;
+	padding: 0.625rem;
+}
+
+section.event-service .container{
+	flex-direction: column;
+    align-items: center;
+}
+section.event-service article{
+	margin-bottom: 0.9375rem;
+}
+
+section.informacion-evento-servicio{
+	display: block;
+}
+section.informacion-evento-servicio .item{
+	display: block;
+	width: 100%;
+	padding: 10px;
+}
+
+section.intro-cover-rigth figure{
+	max-width: 100%;
+	float: none;}
+
+section.intro-cover-rigth .item-content{
+	max-width: 100%;
+	padding: 0px 15px;
+
+}
+
+section.experiencia-group-todos .container{
+	align-items: center;
+	flex-direction: column;
+}
+section.experiencia-group-todos article{
+	margin-bottom: 15px;
+}
+section.donar-paypal{
+	display: block;
+}
+section.donar-paypal .item-content{
+	display: block;
+	width: 100%;
+}
+
+section.certificaciones .container{
+	flex-direction: column;
+	align-items: center;
+}
+section.certificaciones .container article{
+	margin-bottom: 15px;
+}
+section.transparencia{
+	padding-left: 15px;
+    padding-right: 15px;
+}
+section.transparencia h2{
+	font-size: 28px;
+	text-align: center;
+}
+
+section.intro-exito figure{
+	width: 100%;
+}
+section.intro-exito .item-content{
+	max-width: 100%;
+	padding: 0px 15px;
+}
+
+section#timeline-trabajo article div.inner{
+	width: 100%;
+    float: none;
+    text-align: center;
+}
+section#timeline-trabajo article:nth-child(2n+2) div.inner{
+	float: none;
+    text-align: center;
+}
+section#timeline-trabajo article div.inner span.date{
+	display: none;
+}
+section#timeline-trabajo:before{
+	display:none;
+}
+section#timeline-trabajo article{
+	display: flex;
+    flex-direction: column-reverse;
+}
+
+figure.cover-time{
+	max-width: 100%;
+}
+
+section.informacion-equipo{
+	display:block;
+}
+section.informacion-equipo .item{
+	width: 100%;
+	display: block;
+	padding: 10px;
+}

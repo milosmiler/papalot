@@ -1,21 +1,21 @@
 section.consulta-area{
 	margin-bottom: 100px;
 	h2{
-		font-size: 50px;
+		font-size: 3.125rem;
 		text-align: center;
 		color: $color-azul100;
 		margin-top: 0px;
-		margin-bottom: 40px;}
+		margin-bottom: 2.5rem;}
 	p{
 		text-align: center;
 		color: $color-azul100;
-		font-size: 18px;
+		font-size: 1.125rem;
 	}
 }
 
 section.intro-exito{
-	margin-top: 91px;
-	margin-bottom: 130px;
+	margin-top: 5.6875rem;
+	margin-bottom: 8.125rem;
 	figure{
 		float: left;
 		width: 58%;
@@ -23,16 +23,16 @@ section.intro-exito{
 			width: 100%;}
 	}
 	.item-content{
-		max-width: 450px;
+		max-width: 37.5%;
 		height: auto;
 		float: right;
-		padding-top: 55px;
+		padding-top: 3.4375rem;
 		h2{
-			font-size: 40px;
+			font-size: 2.5rem;
 			color: $color-azul100;}
 		p{
 			font-family: 'montserratlight';
-			font-size: 18px;
+			font-size: 1.125rem;
 			color: $color-azul100;
 		}
 	}
@@ -47,10 +47,10 @@ figure.moutros-papalote{
 }
 
 section.integrar-equipo{
-	padding-bottom: 129px;
+	padding-bottom: 8.0625rem;
 
 	h2{
-		font-size: 40px;
+		font-size: 2.5rem;
 		color: #0098CC;
 		text-align: center;}
 	a.btn-curriculum{
@@ -106,7 +106,7 @@ section.informacion-equipo{
 
 section#timeline-trabajo {
   width: 100%;
-  margin: 20px auto;
+  margin: 1.25rem auto;
   position: relative;
 }
 
@@ -126,7 +126,7 @@ section#timeline-trabajo:before {
 section#timeline-trabajo article {
   width: 100%;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 section#timeline-trabajo article:after {
   content: '';
@@ -142,7 +142,7 @@ section#timeline-trabajo article div.inner ul{
 	margin: 0px;
 }
 section#timeline-trabajo article div.inner ul li{
-	font-size: 22px;
+	font-size: 1.375rem;
 	font-family: 'montserrat-regular';
 	list-style: none;
 	color: $color-azul100;
@@ -168,7 +168,7 @@ section#timeline-trabajo article div.inner span.date {
 
 section#timeline-trabajo article div.inner h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: 2.5rem;
   position: relative;
   color: $color-azul100;
   margin-bottom: 1.375rem;
@@ -195,8 +195,8 @@ section#timeline-trabajo article div.inner h2:after {
   position: absolute;
   top: 20px;
   right: -5px;
-  	width: 10px; 
-	  height: 10px;
+  	width: 0.625rem; 
+	  height: 0.625rem;
   -webkit-transform: rotate(-45deg);
 }
 section#timeline-trabajo article div.inner p {
