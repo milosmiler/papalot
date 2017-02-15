@@ -3,14 +3,14 @@
 ===================================*/
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?2219ij');
-  src:  url('../fonts/icomoon.eot?2219ij#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?2219ij') format('truetype'),
-    url('../fonts/icomoon.woff?2219ij') format('woff'),
-    url('../fonts/icomoon.svg?2219ij#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Glyphter';
+    src: url('../fonts/Glyphter.eot');
+    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Glyphter.woff') format('woff'),
+         url('../fonts/Glyphter.ttf') format('truetype'),
+         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .bx-wrapper {
@@ -99,16 +99,16 @@
 
 .bx-wrapper .bx-prev:before {
 	left: 10px;
-	content: "\e90c";
-	font-family: 'icomoon';
+	content:'\0048';
+	font-family: 'Glyphter';
 	color: #08405C;
 	font-size: 2.5rem;
 }
 
 .bx-wrapper .bx-next:before {
 	right: 10px;
-	content: "\e90d";
-	font-family: 'icomoon';
+	content:'\0049';
+	font-family: 'Glyphter';
 	color: #08405C;
 	font-size:2.5rem;
 	margin-right: 1.8125rem;

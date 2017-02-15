@@ -49,6 +49,9 @@ footer{
                 position: relative;
                 height: 2.375rem;
                 width: 2.375rem;
+                &:last-child{
+                    background: transparent;
+                }
                 a{
                     color: $color-footer;
                     text-decoration: none;

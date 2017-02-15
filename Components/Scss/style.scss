@@ -47,16 +47,16 @@
 
 @font-face {
     font-family: 'Glyphter';
-    src: url('../fonts/Glyphter.eot');
-    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Glyphter.woff') format('woff'),
-         url('../fonts/Glyphter.ttf') format('truetype'),
-         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    src: url('../fonts/d958a12bd0bdb940a371494ee90e8ed5fec1c395.eot');
+    src: url('../fonts/d958a12bd0bdb940a371494ee90e8ed5fec1c395.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/d958a12bd0bdb940a371494ee90e8ed5fec1c395.woff') format('woff'),
+         url('../fonts/d958a12bd0bdb940a371494ee90e8ed5fec1c395.ttf') format('truetype'),
+         url('../fonts/d958a12bd0bdb940a371494ee90e8ed5fec1c395.svg#d958a12bd0bdb940a371494ee90e8ed5fec1c395') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 [class*='icon-']:before{
-  display: inline-block;
+    display: inline-block;
    font-family: 'Glyphter';
    font-style: normal;
    font-weight: normal;
@@ -64,83 +64,98 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale
 }
+
+
+
+
+
 .icon-icon-mariposa:before{content:'\0041'; position: absolute; font-size: 2.5rem; left: -3.0625rem;}
-.icon-elviajeinicia:before{content:'\0042';color: #3d36b1; font-style: normal; font-size: 2.5rem;}
-.icon-micuerpo:before{content:'\0043';color: #0074c8; font-size: 2.5rem; font-style: normal;}
-.icon-mexicovivo:before{content:'\0044'; color: #62a60a; font-size: 2.5rem; font-style: normal;}
-.icon-mihogarfamilia:before{content:'\0045'; color: #ff7100; font-size: 2.5rem;}
-.icon-miciudad:before{content:'\0046';color: #ffe01e; font-size: 2.5rem;}
-.icon-laboratorioideas:before{content:'\0047'; color: #00C0F2; font-size: 2.5rem;}
-.icon-controlador_izq:before{content:'\0048';}
-.icon-controlador_der:before{content:'\0049';}
-.icon-estacionamiento:before{content:'\004a';}
-.icon-taquillas:before{content:'\004b';}
-.icon-area de registro:before{content:'\004c';}
-.icon-mesa de informes:before{content:'\004d';}
-.icon-paqueteria:before{content:'\004e';}
-.icon-zona de alimentos:before{content:'\004f';}
-.icon-carriolas sillas:before{content:'\0050';}
-.icon-sillas de ruedas:before{content:'\0051';}
-.icon-dulceria:before{content:'\0052';}
-.icon-icn_tienda:before{content:'\0053';}
-.icon-icn_zona de lactancia:before{content:'\0054';}
-.icon-bahia de autobuses:before{content:'\0055';}
-.icon-left-arrow:before{content:'\0056';}
-.icon-right-arrow:before{content:'\0057';}
-.icon-A:before{content:'\0058';}
-.icon-B:before{content:'\0059';}
-.icon-C:before{content:'\005a';}
-.icon-areas1_SSA:before{content:'\0061';}
-.icon-areas2_SSA:before{content:'\0062';}
-.icon-areas3_SSA:before{content:'\0063';}
-.icon-areas4_SSA:before{content:'\0064';}
-.icon-areas5_SSA:before{content:'\0065';}
-.icon-areas6_SSA:before{content:'\0066';}
-.icon-areas7_SSA:before{content:'\0067';}
-.icon-areas8_SSA:before{content:'\0068';}
-.icon-beneficios1_cuates:before{content:'\0069';}
-.icon-beneficios1_SSA:before{content:'\006a';}
-.icon-beneficios2_cuates:before{content:'\006b';}
-.icon-beneficios2_SSA:before{content:'\006c';}
-.icon-beneficios3_cuates:before{content:'\006d';}
-.icon-beneficios3_SSA:before{content:'\006e';}
-.icon-beneficios4_cuates:before{content:'\006f';}
-.icon-beneficios5_cuates:before{content:'\0070';}
-.icon-bien_form:before{content:'\0071';}
-.icon-cerrar_form:before{content:'\0072';}
-.icon-check:before{content:'\0073';}
-.icon-cupones:before{content:'\0074';}
-.icon-descarga_documento:before{content:'\0075';}
-.icon-descarga_imagen:before{content:'\0076';}
-.icon-descarga_video:before{content:'\0077';}
-.icon-eficacia:before{content:'\0078';}
-.icon-exito:before{content:'\0079';}
-.icon-fac:before{content:'\007a';}
-.icon-certificaciones:before{content:'\0030';}
-.icon-facebook_footer:before{content:'\0031';}
-.icon-icn_adjuntar:before{content:'\0032';}
-.icon-informes:before{content:'\0033';}
-.icon-instagram_footer:before{content:'\0034';}
-.icon-mal_form:before{content:'\0035';}
-.icon-requisitos1_cuates:before{content:'\0036';}
-.icon-requisitos1_SSA:before{content:'\0037';}
-.icon-requisitos2_cuates:before{content:'\0038';}
-.icon-requisitos2_SSA:before{content:'\0039';}
-.icon-requisitos3_cuates:before{content:'\0021';}
-.icon-requisitos3_SSA:before{content:'\0022';}
-.icon-requisitos4_cuates:before{content:'\0023';}
-.icon-requisitos5_cuates:before{content:'\0024';}
-.icon-requisitos6_cuates:before{content:'\0025';}
-.icon-requisitos7_cuates:before{content:'\0026';}
-.icon-requisitos8_cuates:before{content:'\0027';}
-.icon-requisitos9_cuates:before{content:'\0028';}
-.icon-reservaciones:before{content:'\0029';}
-.icon-retorno social:before{content:'\002a';}
-.icon-telefono:before{content:'\002b';}
-.icon-transparencia:before{content:'\002c';}
-.icon-tw:before{content:'\002d';}
-.icon-twitter_footer:before{content:'\002e';}
-.icon-youtube_footer:before{content:'\002f';}
+.icon-elviajeinicia:before{content:'\0042'; color: #3d36b1; font-style: normal; font-size: 2.5rem;margin-top: 0.625rem;}
+.icon-micuerpo:before{content:'\0043'; color: #0074c8; font-size: 2.5rem; font-style: normal;margin-top: 0.625rem;}
+.icon-mexicovivo:before{content:'\0044'; color: #62a60a; font-size: 2.5rem; font-style: normal;margin-top: 0.625rem;}
+.icon-mihogarfamilia:before{content:'\0045'; color: #ff7100; font-size: 2.5rem;margin-top: 0.625rem;}
+.icon-miciudad:before{content:'\0046'; color: #ffe01e; font-size: 2.5rem;margin-top: 0.625rem;}
+.icon-laboratorioideas:before{content:'\0047'; color: #00C0F2; font-size: 2.5rem;margin-top: 0.625rem;}
+.icon-left-arrow:before{content:'\0048';}
+.icon-right-arrow:before{content:'\0049';}
+.icon-estacionamiento:before{content:'\004a'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-taquillas:before{content:'\004b'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-areaderegistro:before{content:'\004c'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-mesadeinformes:before{content:'\004d'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-paqueteria:before{content:'\004e'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-zonadealimentos:before{content:'\004f'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-carriolassillas:before{content:'\0050'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-sillasderuedas:before{content:'\0051'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-dulceria:before{content:'\0052'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-icn_tienda:before{content:'\0053'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-zonadelactancia:before{content:'\0054'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+.icon-bahiadeautobuses:before{content:'\0055'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
+
+.icon-reservaciones:before{content:'\002e'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
+.icon-cupones:before{content:'\0030'; position: absolute;top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
+.icon-transparencia:before{content:'\0021';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
+.icon-retornosocial:before{content:'\002f';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
+.icon-eficacia:before{content:'\007a';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
+.icon-certificaciones:before{content:'\0079';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
+.icon-informes:before{content:'\0038'; color: #08405C; font-size:3.75rem;}
+.icon-descarga_imagen:before{content:'\0076'; color: #fff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.icon-descarga_video:before{content:'\0077';color: #fff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.icon-descargable:before{content:'\0078';color: #fff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.icon-fac:before{content:'\0032'; color: #295396;font-size: 40px; margin-right: 15px;}
+.icon-tw:before{content:'\0033'; color: #29A9E2; font-size: 40px;}
+
+
+
+
+
+.icon-controlador_izq:before{content:'\0056';}
+.icon-controlador_der:before{content:'\0057';}
+.icon-icn_expandir:before{content:'\0058';}
+.icon-icn_controlador_subir:before{content:'\0059';}
+.icon-A:before{content:'\005a';}
+.icon-B:before{content:'\0061';}
+.icon-C:before{content:'\0062';}
+.icon-areas1_SSA:before{content:'\0063';}
+.icon-areas2_SSA:before{content:'\0064';}
+.icon-areas3_SSA:before{content:'\0065';}
+.icon-areas4_SSA:before{content:'\0066';}
+.icon-areas5_SSA:before{content:'\0067';}
+.icon-areas6_SSA:before{content:'\0068';}
+.icon-areas7_SSA:before{content:'\0069';}
+.icon-areas8_SSA:before{content:'\006a';}
+.icon-beneficios1_cuates:before{content:'\006b';}
+.icon-beneficios1_SSA:before{content:'\006c';}
+.icon-beneficios2_cuates:before{content:'\006d';}
+.icon-beneficios2_SSA:before{content:'\006e';}
+.icon-beneficios3_cuates:before{content:'\006f';}
+.icon-beneficios3_SSA:before{content:'\0070';}
+.icon-beneficios4_cuates:before{content:'\0071';}
+.icon-beneficios5_cuates:before{content:'\0072';}
+.icon-bien_form:before{content:'\0073';}
+.icon-cerrar_form:before{content:'\0074';}
+.icon-check:before{content:'\0075';}
+.icon-cupones:before{content:'\0030';}
+.icon-exito:before{content:'\0031';}
+.icon-facebook_footer:before{content:'\0034';}
+.icon-icn_adjuntar:before{content:'\0035';}
+.icon-instagram_footer:before{content:'\0036'; font-size: 2.4375rem; margin-top: 0.1875rem; color: rgba(255, 255, 255, 0.5);}
+.icon-twitter_footer:before{content:'\0037';}
+.icon-mal_form:before{content:'\0039';}
+.icon-requisitos1_cuates:before{content:'\0022';}
+.icon-requisitos1_SSA:before{content:'\0023';}
+.icon-requisitos2_cuates:before{content:'\0024';}
+.icon-requisitos2_SSA:before{content:'\0025';}
+.icon-requisitos3_cuates:before{content:'\0026';}
+.icon-requisitos3_SSA:before{content:'\0027';}
+.icon-requisitos4_cuates:before{content:'\0028';}
+.icon-requisitos5_cuates:before{content:'\0029';}
+.icon-requisitos6_cuates:before{content:'\002a';}
+.icon-requisitos7_cuates:before{content:'\002b';}
+.icon-requisitos8_cuates:before{content:'\002c';}
+.icon-requisitos9_cuates:before{content:'\002d';}
+.icon-transparencia:before{content:'\005b';}
+.icon-youtube_footer:before{content:'\005c';}
+
 
 /********** GENERAL ***********/
 .container{

@@ -118,6 +118,7 @@ section.experiencia-group{
     		height: 97px;
     		border-radius: 100px;
     		margin:auto;
+    		position: relative;
     		border: 0.3125rem solid $color-footer;}
     	h3{
     		text-align: center;
@@ -285,14 +286,38 @@ section.informacion-gobierno{
 				font-size: 1.125rem;
 				color: #364659;
 				font-family: 'montserrat-regular';
-				margin-right: 20px;
+				margin-right: 1.25rem;
 				text-decoration: none;
+				position: relative;
+				margin-right: 2.5rem;
+				&:before{
+					font-family:'FontAwesome';
+					content: "\f095";
+					font-size: 13px;
+					color: #C1D42E;
+					background: #364659;
+					border-radius: 2px;
+					padding: 1px 2px;
+					left: -19px;
+    				bottom: 3px;
+					position: absolute;}
 			}
 		}
 		a.mail-info{
 			color: #364659;
 			font-size: 1.125rem;
 			font-family: 'montserratlight';
+			position: relative;
+			&:before{
+					font-family:'FontAwesome';
+					content: "\f0e0";
+					font-size: 16px;
+					color: #364659;
+					border-radius: 2px;
+					padding: 1px 2px;
+					left: -23px;
+					bottom: 0px;
+					position: absolute;}
 		}
 	}
 

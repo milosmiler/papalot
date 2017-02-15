@@ -110,12 +110,36 @@ section.informacion{
 				font-family: 'montserrat-regular';
 				margin-right: 20px;
 				text-decoration: none;
+				position: relative;
+				margin-right: 2.5rem;
+				&:before{
+					font-family:'FontAwesome';
+					content: "\f095";
+					font-size: 13px;
+					color: $color-amarillo;
+					background: #D41672;
+					border-radius: 2px;
+					padding: 1px 2px;
+					left: -19px;
+    				bottom: 3px;
+					position: absolute;}
 			}
 		}
 		a.mail-info{
 			color: #D41672;
 			font-size: 1.125rem;
 			font-family: 'montserratlight';
+			position: relative;
+			&:before{
+					font-family:'FontAwesome';
+					content: "\f0e0";
+					font-size: 16px;
+					color: #D41672;
+					border-radius: 2px;
+					padding: 1px 2px;
+					left: -23px;
+					bottom: 0px;
+					position: absolute;}
 		}
 	}
 

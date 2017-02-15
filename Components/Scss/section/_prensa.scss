@@ -42,6 +42,7 @@ section.ado-mega{
 		height: 50px;
 		background: $color-azul100;
 		border-radius: 100px;
+        position: relative;
 	}
 }
 
@@ -196,6 +197,15 @@ section.nosotros-nota{
                 position: relative;
                 margin-bottom: 2.375rem;
                 overflow: hidden;
+            .item-social{
+                width: 150px;
+                margin: 0px;
+                display: inline-block;
+                overflow: hidden;
+                i{
+                    float: left;
+                }
+            }
                 a.btn-leer-mas{
                 @include boton($ancho: 11.25rem, $fondo: #00C0F2 , $color: #fff );
                 float: right;
