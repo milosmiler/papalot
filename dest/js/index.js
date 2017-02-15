@@ -4,10 +4,6 @@ $(function(){
         adaptiveHeight: "true"
     });
 
-
-
-
-
     $('.flexslider').flexslider({
         animation: "slide",
         smoothHeight: true
@@ -74,6 +70,8 @@ $(function(){
     header();
     calendario();
     itemAcordeon();
+    NavToDropwn();
+    prensaDesaparecer();
 
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
@@ -371,3 +369,100 @@ function itemAcordeon(){
     })
 
 }
+
+function NavToDropwn(){
+    // Create the dropdown base
+      $("<select />").appendTo("nav.preguntas-frecuentes");
+      
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Compra"
+      }).appendTo("nav.preguntas-frecuentes select");
+      
+      // Populate dropdown with menu items
+      $("nav.preguntas-frecuentes a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo("nav.preguntas-frecuentes select");
+      });
+      
+       // To make dropdown actually work
+       // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+      $("nav.preguntas-frecuentes select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      });
+
+      $('nav.preguntas-frecuentes select').each(function(){
+        var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+        $this.addClass('select-hidden'); 
+        $this.wrap('<div class="select select-url"></div>');
+        $this.after('<div class="select-styled"></div>');
+
+        var $styledSelect = $this.next('div.select-styled');
+        $styledSelect.text($this.children('option').eq(0).text());
+
+        var $list = $('<ul />', {
+            'class': 'select-options'
+        }).insertAfter($styledSelect);
+
+    for (var i = 0; i < numberOfOptions; i++) {
+        $('<li />', {
+        text: $this.children('option').eq(i).text(),
+        rel: $this.children('option').eq(i).val()
+        }).appendTo($list);
+    }
+
+    var $listItems = $list.children('li');
+
+    $styledSelect.click(function(e) {
+        e.stopPropagation();
+        $('div.select-styled.active').not(this).each(function(){
+        $(this).removeClass('active').next('ul.select-options').hide();
+        });
+        $(this).toggleClass('active').next('ul.select-options').toggle();
+    });
+
+    $listItems.click(function(e) {
+        e.stopPropagation();
+        $styledSelect.text($(this).text()).removeClass('active');
+        $this.val($(this).attr('rel'));
+        $list.hide();
+        var val = $this.val();
+        $('#catcher').attr('href', val);
+    });
+
+    $(document).click(function() {
+        $styledSelect.removeClass('active');
+        $list.hide();
+    });
+
+    });
+}
+
+function prensaDesaparecer(){
+
+    $("#btn-tab-1").click(function(event) {
+        event.preventDefault();
+        $(this).addClass( "active-red" );
+        $("#btn-tab-2").removeClass( "active-blue" );
+
+        $("#selector-tab-2").css("display", "none");  
+        $("#selector-tab-1").slideDown("slow");
+    })
+
+    $("#btn-tab-2").click(function(event) {
+        event.preventDefault();
+        $(this).addClass( "active-blue" );
+        $("#btn-tab-1").removeClass( "active-red" );
+
+        $("#selector-tab-2").slideDown("slow");
+        $("#selector-tab-1").css("display", "none");
+    })
+}
+
+

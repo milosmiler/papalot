@@ -129,10 +129,10 @@ html(lang="es")
 					h2 Publicaciones y notas
 					p Conoce aquí las noticias más relevantes sobre PAPALOTE publicadas en los medios de comunicación.
 				.material-tabs
-					a.selector-tab-1.activar(href='#') Prensa
-					a.selector-tab-2(href='#') Nosotros
+					a#btn-tab-1.active-red(href='#') Prensa
+					a#btn-tab-2(href='#') Nosotros
 
-		section.prensa.desaparece
+		section#selector-tab-1.prensa
 			.container.flex
 				article.z-depth-4
 					h3 Niños indígenas visitan sitios de diversiones en la CdMx.
@@ -176,7 +176,7 @@ html(lang="es")
 						.item-aside
 						a.btn-leer-mas(href="") Leer mas
 					.cat - MILENIO -
-		section.nosotros-nota.desaparece
+		section#selector-tab-2.nosotros-nota
 			.container
 				article.z-depth-4
 					figure
@@ -209,6 +209,7 @@ html(lang="es")
 					.item
 						p Mi nombre es
 						input.name(type="text" placeholder="ingresa tu nombre completo")
+						p ,
 					.item
 						p trabajo en 
 						input.medio(type="text" placeholder="medio")
@@ -231,6 +232,7 @@ html(lang="es")
 		span.ir-arriba
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery-ui.min.js")
 		script(src="js/jquery.flexslider-min.js")
 		script(src="js/select.js")
 		script(src="js/waves.js")

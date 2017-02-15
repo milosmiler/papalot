@@ -203,10 +203,10 @@
           <h2>Publicaciones y notas</h2>
           <p>Conoce aquí las noticias más relevantes sobre PAPALOTE publicadas en los medios de comunicación.</p>
         </div>
-        <div class="material-tabs"><a class="selector-tab-1 activar" href="#">Prensa</a><a class="selector-tab-2" href="#">Nosotros</a></div>
+        <div class="material-tabs"><a class="active-red" id="btn-tab-1" href="#">Prensa</a><a id="btn-tab-2" href="#">Nosotros</a></div>
       </div>
     </section>
-    <section class="prensa desaparece">
+    <section class="prensa" id="selector-tab-1">
       <div class="container flex">
         <article class="z-depth-4">
           <h3>Niños indígenas visitan sitios de diversiones en la CdMx.</h3>
@@ -258,7 +258,7 @@
         </article>
       </div>
     </section>
-    <section class="nosotros-nota desaparece">
+    <section class="nosotros-nota" id="selector-tab-2">
       <div class="container">
         <article class="z-depth-4">
           <figure><img src="images/im-nota.png"></figure>
@@ -293,6 +293,7 @@
           <div class="item">
             <p>Mi nombre es</p>
             <input class="name" type="text" placeholder="ingresa tu nombre completo">
+            <p>,</p>
           </div>
           <div class="item">
             <p>trabajo en </p>
@@ -369,6 +370,7 @@
       </div>
     </footer>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/select.js"></script>
     <script src="js/waves.js"></script>

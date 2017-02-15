@@ -1,4 +1,6 @@
 
+$(document).ready(function(){
+
 	$('select').each(function(){
 		var $this = $(this), numberOfOptions = $(this).children('option').length;
 
@@ -45,5 +47,10 @@
 	});
 
 	});
+
+});
+
+	
+
 
 

@@ -204,3 +204,44 @@ section.informacion-equipo .item{
 	display: block;
 	padding: 10px;
 }
+section.acordeon .container ul.accordion{
+	width: 100%;
+	padding: 0px 10px;
+}
+nav.preguntas-frecuentes ul{ display: none;}
+section.acordeon .container nav.preguntas-frecuentes .select-styled { display: block!important; margin: auto; }
+section.acordeon .container nav.preguntas-frecuentes{
+	width: 100%;
+}
+section.notas-prensa .container{
+	flex-direction: column;
+	align-items: center;
+}
+section.notas-prensa .container article{
+	margin-bottom: 15px;
+}
+section.publi-notas .item-content{
+	display: block;
+    width: 100%;
+}
+section.publi-notas .material-tabs{
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+section.prensa .container{
+	align-items: center;
+    justify-content: center;
+}
+
+section.nosotros-nota article{
+	display: block;
+}
+section.nosotros-nota article figure{
+	width: 100%;
+	display: block;
+}
+section.nosotros-nota article .item-content{
+	padding: 0px 10px;
+}
