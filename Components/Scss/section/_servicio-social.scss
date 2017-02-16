@@ -1,0 +1,171 @@
+section.intro-servicio-social{
+	h2{
+		text-align: center;
+		font-size: 50px;
+		color: #08405C;
+		margin-top: 0px;
+		margin-bottom: 59px;}
+	.item{
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 117px;
+		button{
+			background: #A40084;
+			border: none;
+			width: 341px;
+			font-size: 30px;
+			font-family: 'VAGRounded-bold';
+			height: 114px;
+			color: #fff;}
+	}
+	.admin{
+		width: 100%;
+		.item-content{
+			float: left;
+			width: 45%;
+			padding-left: 0.3125rem;
+			margin-bottom: 90px;
+			h2{
+				font-size: 2.5rem;
+				text-align: left;
+				color: #364659;
+				margin-top: 1.875rem;
+				margin-bottom: 1.625rem;}
+			p{
+				font-family: 'montserratlight';
+				font-size: 1.125rem;
+				color: #33414E;
+				span{
+					font-family: 'montserrat-bold';}
+				}
+
+		}
+		figure.image-intro{
+			float: right;
+			width: 50%;
+			img{
+				width: 100%;}
+		}
+
+	section.intro-cover-rigth{
+		overflow: hidden;
+		margin-bottom: 0px;
+		figure{
+			float: left;
+			max-width: 58.5%;
+			height: auto;
+			img{
+				width: 100%;}
+			}
+		.item-content{
+			float: right;
+			max-width: 40%;
+			margin-bottom: 0px;
+			h2{
+				font-size: 2.5rem;
+				text-align: left;
+				color: #364659;}
+			p{
+				font-size: 1.125rem;
+				color: #33414E;
+				font-family: 'montserratlight';
+				span{
+					font-family: 'montserrat-bold';}
+			}
+		}
+	}
+
+	figure.pendulo{
+		width: 37px;
+		height: auto;
+		margin: auto;
+		margin-bottom: 57px;
+		img{
+			width: 100%;}
+
+	}
+	section.areas-desarrollo{
+		background: #FAFAFA;
+		figure.pendulo{
+			width: 37px;
+			height: auto;
+			margin: auto;
+			margin-bottom: 57px;
+		img{
+			width: 100%;}
+
+		}
+
+		article.requisitos{
+			h3{
+				color: #CCD93B;
+				text-align: center;
+				font-size: 50px;}
+			.container-datos{
+				width: 100%;
+				justify-content: space-around;
+				.item{
+					width: 220px;
+					.circulo{
+						position: relative;
+						border-radius: 100px;
+						border: 4px solid #C1D42E;
+						text-align: center;
+						margin: auto;
+						width: 101px;
+						height: 101px;}
+					h4{
+						margin-top: 30px;
+						color: #08405C;
+						font-size: 22px;
+						font-family: 'montserratsemi-bold';
+						text-align: center;
+					}
+
+				}
+			}
+			
+		}
+		article.beneficios{
+				h3{
+					color: #E11D84;
+					text-align: center;
+					font-size: 50px;}
+				.container-datos{
+					width: 100%;
+					justify-content: space-around;
+					.item{
+						width: 220px;
+						.circulo{
+							border-radius: 100px;
+							border: 4px solid #E11D84;
+							text-align: center;
+							position: relative;
+							margin: auto;
+							width: 101px;
+							height: 101px;}
+						h4{
+							color:#E11D84;;
+							font-size: 22px;
+							font-family: 'montserratsemi-bold';
+							text-align: center;}
+						p{
+							text-align: center;
+							margin-top: 30px;
+							color: #08405C;
+							font-size: 16px;
+							font-family: 'montserratlight';}
+					}
+				}
+		}
+		article.areas{
+			h3{
+				color: #5D2B86;
+				text-align: center;
+				font-size: 50px;}
+		}
+	}
+
+	}
+}

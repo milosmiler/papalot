@@ -517,6 +517,66 @@ span.link {
   color: #29A9E2;
   font-size: 40px; }
 
+.icon-requisitos1_SSA:before {
+  content: '\0023';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #C1D42E; }
+
+.icon-requisitos3_SSA:before {
+  content: '\0027';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #C1D42E; }
+
+.icon-requisitos2_SSA:before {
+  content: '\0025';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #C1D42E; }
+
+.icon-beneficios1_SSA:before {
+  content: '\006c';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #E11D84; }
+
+.icon-beneficios2_SSA:before {
+  content: '\006e';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #E11D84; }
+
+.icon-beneficios3_SSA:before {
+  content: '\0070';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #E11D84; }
+
 .icon-controlador_izq:before {
   content: '\0056'; }
 
@@ -565,20 +625,11 @@ span.link {
 .icon-beneficios1_cuates:before {
   content: '\006b'; }
 
-.icon-beneficios1_SSA:before {
-  content: '\006c'; }
-
 .icon-beneficios2_cuates:before {
   content: '\006d'; }
 
-.icon-beneficios2_SSA:before {
-  content: '\006e'; }
-
 .icon-beneficios3_cuates:before {
   content: '\006f'; }
-
-.icon-beneficios3_SSA:before {
-  content: '\0070'; }
 
 .icon-beneficios4_cuates:before {
   content: '\0071'; }
@@ -622,20 +673,11 @@ span.link {
 .icon-requisitos1_cuates:before {
   content: '\0022'; }
 
-.icon-requisitos1_SSA:before {
-  content: '\0023'; }
-
 .icon-requisitos2_cuates:before {
   content: '\0024'; }
 
-.icon-requisitos2_SSA:before {
-  content: '\0025'; }
-
 .icon-requisitos3_cuates:before {
   content: '\0026'; }
-
-.icon-requisitos3_SSA:before {
-  content: '\0027'; }
 
 .icon-requisitos4_cuates:before {
   content: '\0028'; }
@@ -8627,6 +8669,152 @@ section.donar-paypal {
       margin-bottom: 1.1875rem; }
       section.donar-paypal .item-content figure img {
         width: 100%; }
+
+section.intro-servicio-social h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #08405C;
+  margin-top: 0px;
+  margin-bottom: 59px; }
+
+section.intro-servicio-social .item {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 117px; }
+  section.intro-servicio-social .item button {
+    background: #A40084;
+    border: none;
+    width: 341px;
+    font-size: 30px;
+    font-family: 'VAGRounded-bold';
+    height: 114px;
+    color: #fff; }
+
+section.intro-servicio-social .admin {
+  width: 100%; }
+  section.intro-servicio-social .admin .item-content {
+    float: left;
+    width: 45%;
+    padding-left: 0.3125rem;
+    margin-bottom: 90px; }
+    section.intro-servicio-social .admin .item-content h2 {
+      font-size: 2.5rem;
+      text-align: left;
+      color: #364659;
+      margin-top: 1.875rem;
+      margin-bottom: 1.625rem; }
+    section.intro-servicio-social .admin .item-content p {
+      font-family: 'montserratlight';
+      font-size: 1.125rem;
+      color: #33414E; }
+      section.intro-servicio-social .admin .item-content p span {
+        font-family: 'montserrat-bold'; }
+  section.intro-servicio-social .admin figure.image-intro {
+    float: right;
+    width: 50%; }
+    section.intro-servicio-social .admin figure.image-intro img {
+      width: 100%; }
+  section.intro-servicio-social .admin section.intro-cover-rigth {
+    overflow: hidden;
+    margin-bottom: 0px; }
+    section.intro-servicio-social .admin section.intro-cover-rigth figure {
+      float: left;
+      max-width: 58.5%;
+      height: auto; }
+      section.intro-servicio-social .admin section.intro-cover-rigth figure img {
+        width: 100%; }
+    section.intro-servicio-social .admin section.intro-cover-rigth .item-content {
+      float: right;
+      max-width: 40%;
+      margin-bottom: 0px; }
+      section.intro-servicio-social .admin section.intro-cover-rigth .item-content h2 {
+        font-size: 2.5rem;
+        text-align: left;
+        color: #364659; }
+      section.intro-servicio-social .admin section.intro-cover-rigth .item-content p {
+        font-size: 1.125rem;
+        color: #33414E;
+        font-family: 'montserratlight'; }
+        section.intro-servicio-social .admin section.intro-cover-rigth .item-content p span {
+          font-family: 'montserrat-bold'; }
+  section.intro-servicio-social .admin figure.pendulo {
+    width: 37px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 57px; }
+    section.intro-servicio-social .admin figure.pendulo img {
+      width: 100%; }
+  section.intro-servicio-social .admin section.areas-desarrollo {
+    background: #FAFAFA; }
+    section.intro-servicio-social .admin section.areas-desarrollo figure.pendulo {
+      width: 37px;
+      height: auto;
+      margin: auto;
+      margin-bottom: 57px; }
+      section.intro-servicio-social .admin section.areas-desarrollo figure.pendulo img {
+        width: 100%; }
+    section.intro-servicio-social .admin section.areas-desarrollo article.requisitos h3 {
+      color: #CCD93B;
+      text-align: center;
+      font-size: 50px; }
+    section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos {
+      width: 100%;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos .item {
+        width: 220px; }
+        section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos .item .circulo {
+          position: relative;
+          border-radius: 100px;
+          border: 4px solid #C1D42E;
+          text-align: center;
+          margin: auto;
+          width: 101px;
+          height: 101px; }
+        section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos .item h4 {
+          margin-top: 30px;
+          color: #08405C;
+          font-size: 22px;
+          font-family: 'montserratsemi-bold';
+          text-align: center; }
+    section.intro-servicio-social .admin section.areas-desarrollo article.beneficios h3 {
+      color: #E11D84;
+      text-align: center;
+      font-size: 50px; }
+    section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos {
+      width: 100%;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos .item {
+        width: 220px; }
+        section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos .item .circulo {
+          border-radius: 100px;
+          border: 4px solid #E11D84;
+          text-align: center;
+          position: relative;
+          margin: auto;
+          width: 101px;
+          height: 101px; }
+        section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos .item h4 {
+          color: #E11D84;
+          font-size: 22px;
+          font-family: 'montserratsemi-bold';
+          text-align: center; }
+        section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos .item p {
+          text-align: center;
+          margin-top: 30px;
+          color: #08405C;
+          font-size: 16px;
+          font-family: 'montserratlight'; }
+    section.intro-servicio-social .admin section.areas-desarrollo article.areas h3 {
+      color: #5D2B86;
+      text-align: center;
+      font-size: 50px; }
 
 /********** FOOTER *************/
 footer {
