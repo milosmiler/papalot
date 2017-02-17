@@ -70,7 +70,7 @@ html(lang="es")
 										i.fa.icon-requisitos3_SSA
 									h4 Promedio
 						figure.pendulo
-						img(src="images/pendulo.png")
+							img(src="images/pendulo.png")
 
 						article.beneficios
 							h3 Beneficios
@@ -89,13 +89,65 @@ html(lang="es")
 									p Desarrollo de habilidades y competencias
 						article.areas
 							h3 Áreas en las que podrás #[br] desarrollarte 
+							.container-datos.flex
+								.item
+									.circulo
+										i.fa.icon-areas1_SSA
+									h4 Mercadotecnia
+								.item
+									.circulo
+										i.fa.icon-areas2_SSA
+									h4 Administración
+								.item
+									.circulo
+										i.fa.icon-areas3_SSA
+									h4 Diseño Gráfico
+							.container-datos.flex
+								.item
+									.circulo
+										i.fa.icon-areas4_SSA
+									h4 Diseño Industrial 
+								.item
+									.circulo
+										i.fa.icon-areas5_SSA
+									h4 Servicio al Público
+								.item
+									.circulo
+										i.fa.icon-areas6_SSA
+									h4 Soporte Técnico 
+							.container-datos.flex
+								.item
+									.circulo
+										i.fa.icon-areas7_SSA
+									h4 Recursos Humanos
+								.item
+									.circulo
+										i.fa.icon-areas8_SSA
+									h4 Contenidos Educativos
 
-
+						h2 ¡Compártenos tu currículum! 
+							.custom-input-file.sombra
+								i.fa.icon-icn_adjuntar
+								input.input-file(type='file')
+				section.programas-cuates
+					.container
+						h2 o también conoce #[br] nuestro programa de Cuates
+						a.clic.sombra(href="#") clic aquí
+				section.informacion-equipo
+					.item
+						h2 ¿Necesitas más información?
+					.item
+						h3 Comunícate con:
+						p Claudia Yaneth Lecona Hurtado
+						.container-item
+							a.tel(href='tel:+5237 1719') 5237 1719
+						a.mail-info(href='mailto:claudia.lecona@papalote.org.mx') claudia.lecona@papalote.org.mx
 
 
 		span.ir-arriba
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery-ui.min.js")
 		script(src="js/jquery.flexslider-min.js")
 		script(src="js/select.js")
 		script(src="js/waves.js")

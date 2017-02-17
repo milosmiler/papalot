@@ -66,8 +66,7 @@
 }
 
 
-
-
+// icon face 1
 
 .icon-icon-mariposa:before{content:'\0041'; position: absolute; font-size: 2.5rem; left: -3.0625rem;}
 .icon-elviajeinicia:before{content:'\0042'; color: #3d36b1; font-style: normal; font-size: 2.5rem;margin-top: 0.625rem;}
@@ -91,6 +90,8 @@
 .icon-zonadelactancia:before{content:'\0054'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
 .icon-bahiadeautobuses:before{content:'\0055'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); color: #404042; font-size: 2.5rem;}
 
+// icon face 2
+
 .icon-reservaciones:before{content:'\002e'; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
 .icon-cupones:before{content:'\0030'; position: absolute;top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
 .icon-transparencia:before{content:'\0021';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);color: #08405C; font-size: 3.4375rem;}
@@ -109,6 +110,16 @@
 .icon-beneficios1_SSA:before{content:'\006c';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#E11D84;}
 .icon-beneficios2_SSA:before{content:'\006e';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#E11D84;}
 .icon-beneficios3_SSA:before{content:'\0070';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#E11D84;}
+.icon-areas1_SSA:before{content:'\0063';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#5D2B86;}
+.icon-areas2_SSA:before{content:'\0064';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#5D2B86;}
+.icon-areas3_SSA:before{content:'\0065';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#5D2B86;}
+.icon-areas4_SSA:before{content:'\0066';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#5D2B86;}
+.icon-areas5_SSA:before{content:'\0067';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#5D2B86;}
+.icon-areas6_SSA:before{content:'\0068';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#5D2B86;}
+.icon-areas7_SSA:before{content:'\0069';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#5D2B86;}
+.icon-areas8_SSA:before{content:'\006a';position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 2.5rem; color:#5D2B86;}
+.icon-icn_adjuntar:before{content:'\0035';;position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size:1.875rem;}
+
 
 .icon-controlador_izq:before{content:'\0056';}
 .icon-controlador_der:before{content:'\0057';}
@@ -117,19 +128,9 @@
 .icon-A:before{content:'\005a';}
 .icon-B:before{content:'\0061';}
 .icon-C:before{content:'\0062';}
-.icon-areas1_SSA:before{content:'\0063';}
-.icon-areas2_SSA:before{content:'\0064';}
-.icon-areas3_SSA:before{content:'\0065';}
-.icon-areas4_SSA:before{content:'\0066';}
-.icon-areas5_SSA:before{content:'\0067';}
-.icon-areas6_SSA:before{content:'\0068';}
-.icon-areas7_SSA:before{content:'\0069';}
-.icon-areas8_SSA:before{content:'\006a';}
 .icon-beneficios1_cuates:before{content:'\006b';}
 .icon-beneficios2_cuates:before{content:'\006d';}
-
 .icon-beneficios3_cuates:before{content:'\006f';}
-
 .icon-beneficios4_cuates:before{content:'\0071';}
 .icon-beneficios5_cuates:before{content:'\0072';}
 .icon-bien_form:before{content:'\0073';}
@@ -138,14 +139,12 @@
 .icon-cupones:before{content:'\0030';}
 .icon-exito:before{content:'\0031';}
 .icon-facebook_footer:before{content:'\0034';}
-.icon-icn_adjuntar:before{content:'\0035';}
 .icon-instagram_footer:before{content:'\0036'; font-size: 2.4375rem; margin-top: 0.1875rem; color: rgba(255, 255, 255, 0.5);}
 .icon-twitter_footer:before{content:'\0037';}
 .icon-mal_form:before{content:'\0039';}
 .icon-requisitos1_cuates:before{content:'\0022';}
 .icon-requisitos2_cuates:before{content:'\0024';}
 .icon-requisitos3_cuates:before{content:'\0026';}
-
 .icon-requisitos4_cuates:before{content:'\0028';}
 .icon-requisitos5_cuates:before{content:'\0029';}
 .icon-requisitos6_cuates:before{content:'\002a';}

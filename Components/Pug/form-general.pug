@@ -21,96 +21,90 @@ html(lang="es")
 		.contenedor-fixed
 			include block/sedes.pug
 			include block/header.pug
-		section.grupos-escolares
+		section.contactanos-form
+			h2 Contáctanos
 			.container-form
-				h2 Grupos escolares
-				h3 DATOS DE LA ESCUELA
-				form.flex
-					.item
-						input.name(type="text" placeholder="Nombre")
-					.item
-						select.nivel-educativo
-							option(value=" ") Nivel educativo*
-							option(value=" ") 
-					.item
-						input.tel(type="text" placeholder="Teléfono de la escuela*")
-						input.email(type="text" placeholder="Correo electrónico institucional*")
-					.item
-						input.cp(type="text" placeholder="Código postal")
-						input.estado(type="text" placeholder="¿En qué estado está?")
-					.item
-						select.nivel-educativo
-							option(value=" ") ¿En qué delegación o municipio?
-					.item
-						h3 DATOS DE CONTACTO
-					.item
-						input.name-contac(type="text" placeholder="Nombre")
-						input.ap(type="text" placeholder="Apellido paterno")
-						input.am(type="text" placeholder="Apellido materno")
-					.item
-						input.tel-local(type="text" placeholder="Télefono local*")
-						input.email-perso(type="text" placeholder="Correo electrónico*")
-					.item
-						select.nivel-educativo
-							option(value=" ") Dia
-							option(value=" ")
-						select.nivel-educativo
-							option(value=" ") Mes
-							option(value=" ")
-						select.nivel-educativo
-							option(value=" ") Año
-							option(value=" ") 
-					.item
-						input.total-per(type="text" placeholder="(de 15 a 7000 personas)") 
-					.item
-						textarea.comentario(placeholder="Comentarios:") 
-					.item
+				form
+					input(type="text" placeholder="Nombre*")
+					input(type="text" placeholder="Correo electronico*")
+					select
+						option ¿A qué departamento va dirigido tu comentario?*
+						option ¿A qué departamento va dirigido tu comentario?*
+						option ¿A qué departamento va dirigido tu comentario?*
+					textarea(placeholder= "Comentarios:")
+					.item-right.flex
 						input#cbtest(type='checkbox')
 						label.check-box(for='cbtest')
 						span.leyenda-privacidad He leído el aviso de privacidad
-						a.enviar(href="#") Enviar
+						a.enviar.sombra(href="#") Enviar
 
-		section.planea-visita
+		section.bolsa-trabajo-form
+			h2 Bolsa de trabajo
 			.container-form
-				h2 Planea tu visita #[br] a PAPALOTE
-				h4 Tu visita sería para:
-				.item
-					button#signInButton Grupos para empresas y Gobierno
-					button#signUpButton Día PAPALOTE
-				h3 DATOS DE CONTACTO
-				form#signInForm.flex
+				h3 DATOS DE PERSONALES
+				form
 					.item
-						input.name-contac(type="text" placeholder="Nombre")
-						input.ap(type="text" placeholder="Apellido paterno")
-						input.am(type="text" placeholder="Apellido materno")
-					.item
-						input.tel-local(type="text" placeholder="Télefono local*")
-						input.email-perso(type="text" placeholder="Correo electrónico*")
-					.item
-						input.name(type="text" placeholder="nombre de la Empresa")
-					.item
-						input.name(type="text" placeholder="Giro de la empresa")
-					.item
-						input.total-per(type="text" placeholder="(de 15 a 7000 personas)") 
-					.item
-						textarea.comentario(placeholder="Comentarios:") 
+						input(type="text" placeholder="Nombre*")
+						input(type="text" placeholder="Apellido paterno")
+						input(type="text" placeholder="Apellido materno")
+					.item1
+						input(type="text" placeholder="Edad")
+						.sexo
+							p Sexo:
+							button Mujer
+							button Hombre
+					.item2
+						input(type="text" placeholder="Télefono local*")
+						input(type="text" placeholder="Télefono celular")
+					.item3
+						input(type="text" placeholder="Correo electrónico*")
+					.item4
+						input(type="text" placeholder="Código postal")
+						select
+							option ¿En qué estado vives?
+							option ¿En qué estado vives?
+							option ¿En qué estado vives?
+					.item5
+						select
+							option ¿En qué delegación o municipio?
+					.item-text
+						h3 Historial profesional / Educación
+					.item5
+						select
+							option Grado último de estudios
+					.item3
+						input(type="text" placeholder="Carrera")
+					.item5
+						select
+							option Área de interés
+					.item5
+						select
+							option Sede de interés
+					.item5
+						select
+							option Disponibilidad
+					.item5
+						select
+							option Sueldo deseado
+					textarea(placeholder= "¿Por qué estás interesado en trabajar en PAPALOTE?*")
+					textarea(placeholder= "¿Cuál ha sido tu mayor logro profesional? ")
+					textarea(placeholder= "Menciona cuáles son tus objetivos a corto y largo plazo ")
+					.item-right.flex
+						input#cbtest(type='checkbox')
+						label.check-box(for='cbtest')
+						span.leyenda-privacidad He leído el aviso de privacidad
+						a.enviar.sombra(href="#") Enviar
 
-				form#signUpForm.flex
-					.item
-						input.name-contac(type="text" placeholder="Nombre")
-						input.ap(type="text" placeholder="Apellido paterno")
-						input.am(type="text" placeholder="Apellido materno")
-					.item
-						input.tel-local(type="text" placeholder="Télefono local*")
-						input.email-perso(type="text" placeholder="Correo electrónico*")
-					.item
-						input.name(type="text" placeholder="nombre de la Empresa")
-					.item
-						input.name(type="text" placeholder="Giro de la empresa")
-					.item
-						input.total-per(type="text" placeholder="(de 15 a 7000 personas)") 
-					.item
-						textarea.comentario(placeholder="Comentarios:") 
+
+
+
+
+
+
+
+
+
+		
 
 		span.ir-arriba
 		include block/footer.pug

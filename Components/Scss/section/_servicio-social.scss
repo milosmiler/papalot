@@ -1,22 +1,25 @@
 section.intro-servicio-social{
 	h2{
 		text-align: center;
-		font-size: 50px;
+		font-size: 3.125rem;
 		color: #08405C;
 		margin-top: 0px;
-		margin-bottom: 59px;}
+		position: relative;
+		margin-bottom: 3.6875rem;
+	
+	}
 	.item{
 		width: 100%;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 117px;
+		margin-bottom: 7.3125rem;
 		button{
 			background: #A40084;
 			border: none;
-			width: 341px;
-			font-size: 30px;
+			width: 21.3125rem;
+			font-size: 1.875rem;
 			font-family: 'VAGRounded-bold';
-			height: 114px;
+			height: 7.125rem;
 			color: #fff;}
 	}
 	.admin{
@@ -25,7 +28,7 @@ section.intro-servicio-social{
 			float: left;
 			width: 45%;
 			padding-left: 0.3125rem;
-			margin-bottom: 90px;
+			margin-bottom: 5.625rem;
 			h2{
 				font-size: 2.5rem;
 				text-align: left;
@@ -77,21 +80,58 @@ section.intro-servicio-social{
 	}
 
 	figure.pendulo{
-		width: 37px;
+		width: 2.3125rem;
 		height: auto;
 		margin: auto;
-		margin-bottom: 57px;
+		margin-bottom: 3.5625rem;
 		img{
 			width: 100%;}
 
 	}
 	section.areas-desarrollo{
 		background: #FAFAFA;
+		h2{
+			text-align: center;
+			font-size: 2.5rem;
+			color: #0098CC;
+			position: relative;
+			width: 52%;
+    		margin: auto;
+    		margin-bottom: 6.5rem;
+		.custom-input-file {
+		    overflow: hidden;
+		    position: absolute;
+		    right: 0px;
+		    bottom: 0.1875rem;
+		    cursor: pointer;
+		    background-color: #5D2B86;
+		    color: #fff;
+		    text-align: center;
+		    width: 3.125rem;
+		    height: 3.125rem;
+		    border-radius: 6.25rem;
+		    &:hover{
+		    	background-color: #fff;
+		    	color: #5D2B86;}
+			    .input-file {
+				    margin: 0;
+				    padding: 0;
+				    outline:0;
+				    border: 10000px solid transparent;
+				    opacity: 0;
+				    filter: alpha(opacity=0);
+				    position: absolute;
+				    right: -1000px;
+				    top: -1000px;
+				    cursor: pointer;}
+		}
+	}
+
 		figure.pendulo{
-			width: 37px;
+			width: 2.3125rem;
 			height: auto;
 			margin: auto;
-			margin-bottom: 57px;
+			margin-bottom: 3.5625rem;
 		img{
 			width: 100%;}
 
@@ -101,22 +141,22 @@ section.intro-servicio-social{
 			h3{
 				color: #CCD93B;
 				text-align: center;
-				font-size: 50px;}
+				font-size: 3.125rem;}
 			.container-datos{
 				width: 100%;
 				justify-content: space-around;
 				.item{
-					width: 220px;
+					width: 13.75rem;
 					.circulo{
 						position: relative;
 						border-radius: 100px;
-						border: 4px solid #C1D42E;
+						border: 0.25rem solid #C1D42E;
 						text-align: center;
 						margin: auto;
 						width: 101px;
 						height: 101px;}
 					h4{
-						margin-top: 30px;
+						margin-top: 1.875rem;
 						color: #08405C;
 						font-size: 22px;
 						font-family: 'montserratsemi-bold';
@@ -131,7 +171,7 @@ section.intro-servicio-social{
 				h3{
 					color: #E11D84;
 					text-align: center;
-					font-size: 50px;}
+					font-size: 3.125rem;}
 				.container-datos{
 					width: 100%;
 					justify-content: space-around;
@@ -139,7 +179,7 @@ section.intro-servicio-social{
 						width: 220px;
 						.circulo{
 							border-radius: 100px;
-							border: 4px solid #E11D84;
+							border: 0.25rem solid #E11D84;
 							text-align: center;
 							position: relative;
 							margin: auto;
@@ -147,14 +187,14 @@ section.intro-servicio-social{
 							height: 101px;}
 						h4{
 							color:#E11D84;;
-							font-size: 22px;
+							font-size: 1.375rem;
 							font-family: 'montserratsemi-bold';
 							text-align: center;}
 						p{
 							text-align: center;
-							margin-top: 30px;
+							margin-top: 1.875rem;
 							color: #08405C;
-							font-size: 16px;
+							font-size: 1rem;
 							font-family: 'montserratlight';}
 					}
 				}
@@ -163,8 +203,117 @@ section.intro-servicio-social{
 			h3{
 				color: #5D2B86;
 				text-align: center;
-				font-size: 50px;}
+				font-size: 3.125rem;}
+			.container-datos{
+				width: 100%;
+				justify-content: space-around;
+				.item{
+					width: 220px;
+					.circulo{
+						border-radius: 100px;
+						border: 0.25rem solid #5D2B86;
+						text-align: center;
+						position: relative;
+						margin: auto;
+						width: 101px;
+						height: 101px;}
+					h4{
+						color:#5D2B86;;
+						font-size: 1.375rem;
+						font-family: 'montserratsemi-bold';
+						text-align: center;}
+					p{
+						text-align: center;
+						margin-top: 1.875rem;
+						color: #5D2B86;
+						font-size: 1rem;
+						font-family: 'montserratlight';}
+				}
+			}
+
 		}
+	}
+	section.programas-cuates{
+		padding-top: 5rem;
+		padding-bottom: 8.625rem;
+		h2{
+			text-align: center;
+			color:#0098CC;
+			font-size: 1.875rem;}
+		a.clic{
+			@include boton($ancho: 12.5rem, $fondo: #5D2B86 , $color: #fff )
+			text-align: center;
+			margin: auto;
+
+		}
+	}
+	section.informacion-equipo{
+		width: 100%;
+		display: table;
+		.item{
+			width: 50%;
+			display: table-cell;
+			background: #BD95DB;
+			vertical-align: middle;
+			padding-top: 4.9375rem;
+			padding-bottom: 4.9375rem;
+			&:last-child{
+				padding-left: 90px;
+			}
+			h2{
+				color: #fff;
+				font-size: 2.5rem;
+				text-align: center;}
+			h3{
+				font-size: 1.375rem;
+				font-family: 'montserratsemi-bold';
+				color: #fff;}
+			p{
+				color: #fff;
+			}
+			.container-item{
+				width: 100%;
+				float: left;
+				padding-left: 21px;
+				a.tel{
+					font-size: 1.125rem;
+					color: #fff;
+					font-family: 'montserrat-regular';
+					margin-right: 20px;
+					text-decoration: none;
+					position: relative;
+					&:before{
+						font-family:'FontAwesome';
+						content: "\f095";
+						font-size: 0.8125rem;
+						color: #BD95DB;
+						background: #fff;
+						border-radius: 0.125rem;
+						padding: 0.0625rem 0.125rem;
+						left: -19px;
+	    				bottom: 3px;
+						position: absolute;}
+				}
+			}
+			a.mail-info{
+				color: #fff;
+				font-size: 1.125rem;
+				font-family: 'montserratlight';
+				position: relative;
+				padding-left: 1.375rem;
+				&:before{
+						font-family:'FontAwesome';
+						content: "\f0e0";
+						font-size: 1rem;
+						color: #fff;
+						border-radius: 0.125rem;
+						padding: 0.0625rem 0.125rem;
+						left: 0px;
+						bottom: 0px;
+						position: absolute;}
+			}
+		}
+
 	}
 
 	}

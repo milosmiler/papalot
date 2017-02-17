@@ -577,6 +577,95 @@ span.link {
   font-size: 2.5rem;
   color: #E11D84; }
 
+.icon-areas1_SSA:before {
+  content: '\0063';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #5D2B86; }
+
+.icon-areas2_SSA:before {
+  content: '\0064';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #5D2B86; }
+
+.icon-areas3_SSA:before {
+  content: '\0065';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #5D2B86; }
+
+.icon-areas4_SSA:before {
+  content: '\0066';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #5D2B86; }
+
+.icon-areas5_SSA:before {
+  content: '\0067';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #5D2B86; }
+
+.icon-areas6_SSA:before {
+  content: '\0068';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #5D2B86; }
+
+.icon-areas7_SSA:before {
+  content: '\0069';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #5D2B86; }
+
+.icon-areas8_SSA:before {
+  content: '\006a';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #5D2B86; }
+
+.icon-icn_adjuntar:before {
+  content: '\0035';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 1.875rem; }
+
 .icon-controlador_izq:before {
   content: '\0056'; }
 
@@ -597,30 +686,6 @@ span.link {
 
 .icon-C:before {
   content: '\0062'; }
-
-.icon-areas1_SSA:before {
-  content: '\0063'; }
-
-.icon-areas2_SSA:before {
-  content: '\0064'; }
-
-.icon-areas3_SSA:before {
-  content: '\0065'; }
-
-.icon-areas4_SSA:before {
-  content: '\0066'; }
-
-.icon-areas5_SSA:before {
-  content: '\0067'; }
-
-.icon-areas6_SSA:before {
-  content: '\0068'; }
-
-.icon-areas7_SSA:before {
-  content: '\0069'; }
-
-.icon-areas8_SSA:before {
-  content: '\006a'; }
 
 .icon-beneficios1_cuates:before {
   content: '\006b'; }
@@ -654,9 +719,6 @@ span.link {
 
 .icon-facebook_footer:before {
   content: '\0034'; }
-
-.icon-icn_adjuntar:before {
-  content: '\0035'; }
 
 .icon-instagram_footer:before {
   content: '\0036';
@@ -8180,339 +8242,408 @@ section.informado {
     padding-top: 0.625rem;
     margin: auto; }
 
-.container-form {
-  max-width: 586px;
-  margin: auto;
-  margin-top: 100px; }
+section.contactanos-form .container-form {
+  max-width: 582px;
+  height: auto;
+  margin: auto; }
 
-section.grupos-escolares {
-  text-align: center; }
-  section.grupos-escolares h2 {
-    color: #5D2B86;
-    font-size: 40px; }
-  section.grupos-escolares h3 {
-    color: #5D2B86;
-    font-size: 14px;
-    text-align: left;
-    margin-top: 43px;
-    margin-bottom: 28px; }
-  section.grupos-escolares ::-webkit-input-placeholder {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    color: #364659; }
-  section.grupos-escolares ::-moz-placeholder {
-    ont-family: 'montserrat-regular';
-    font-size: 12px;
-    color: #364659; }
-  section.grupos-escolares :-ms-input-placeholder {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    color: #364659; }
-  section.grupos-escolares :-moz-placeholder {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    color: #364659; }
-  section.grupos-escolares .item {
+section.contactanos-form h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #5D2B86;
+  margin-bottom: 100px; }
+
+section.contactanos-form ::-webkit-input-placeholder {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  color: rgba(54, 70, 89, 0.5); }
+
+section.contactanos-form ::-moz-placeholder {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  color: rgba(54, 71, 89, 0.4); }
+
+section.contactanos-form :-ms-input-placeholder {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  color: rgba(54, 71, 89, 0.4); }
+
+section.contactanos-form :-moz-placeholder {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  color: rgba(54, 71, 89, 0.4); }
+
+section.contactanos-form input[type="text"], section.contactanos-form input[type="email"] {
+  border-top: transparent;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+  padding-left: 18px;
+  border-left: transparent;
+  border-right: transparent;
+  height: 67px; }
+
+section.contactanos-form form {
+  width: 100%; }
+  section.contactanos-form form input[type="text"]:nth-child(1) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    width: 100%; }
+  section.contactanos-form form input[type="text"]:nth-child(2) {
+    width: 100%; }
+  section.contactanos-form form textarea {
     width: 100%;
-    display: table; }
-  section.grupos-escolares form {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    height: 130px;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+    padding-left: 18px;
+    margin-bottom: 50px; }
+  section.contactanos-form form .item-right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    section.grupos-escolares form input[type="text"], section.grupos-escolares form input[type="email"] {
-      border-top: 1px solid #9B9B9B;
-      border-bottom: 1px solid #9B9B9B;
-      padding-left: 18px;
-      border-left: transparent;
-      border-right: transparent;
-      height: 67px; }
-    section.grupos-escolares form input.name {
-      width: 100%;
-      display: table-cell; }
-    section.grupos-escolares form input.tel {
-      width: 50%;
-      display: table-cell;
-      border-right: 1px solid #9B9B9B;
-      border-top: transparent; }
-    section.grupos-escolares form input.email {
-      width: 50%;
-      border-top: transparent; }
-    section.grupos-escolares form input.cp {
-      border-right: 1px solid #9B9B9B;
-      border-top: transparent;
-      width: 50%;
-      display: table-cell; }
-    section.grupos-escolares form input.estado {
-      border-top: transparent;
-      width: 50%;
-      display: table-cell; }
-    section.grupos-escolares form input.name-contac {
-      width: 33%;
-      display: table-cell;
-      border-right: 1px solid #9B9B9B; }
-    section.grupos-escolares form input.ap {
-      width: 33%;
-      display: table-cell;
-      border-right: 1px solid #9B9B9B; }
-    section.grupos-escolares form input.am {
-      width: 33%;
-      display: table-cell; }
-    section.grupos-escolares form input.tel-local {
-      width: 50%;
-      display: table-cell;
-      border-right: 1px solid #9B9B9B;
-      border-top: transparent; }
-    section.grupos-escolares form input.email-perso {
-      width: 50%;
-      display: table-cell;
-      border-top: transparent; }
-    section.grupos-escolares form input.total-per {
-      width: 100%;
-      border-top: transparent; }
-    section.grupos-escolares form .select {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      width: 100%;
-      height: 67px;
-      background: transparent; }
-    section.grupos-escolares form .select-styled {
-      font-size: 12px;
-      height: 67px;
-      color: #364659;
-      font-family: 'montserrat-regular';
-      text-align: left;
-      border-top: transparent;
-      border-bottom: 1px solid #9B9B9B; }
-      section.grupos-escolares form .select-styled:after {
-        content: "\f107";
-        font-family: FontAwesome;
-        color: #5D2B86;
-        font-size: 18px;
-        position: absolute;
-        top: 16px;
-        right: 15px; }
-    section.grupos-escolares form select.nivel-educativo {
-      width: 33%; }
-    section.grupos-escolares form textarea.comentario {
-      border-top: transparent;
-      border-left: transparent;
-      border-right: transparent;
-      height: 130px;
-      margin-bottom: 52px;
-      width: 100%; }
-    section.grupos-escolares form a.enviar {
-      background-color: #5D2B86;
-      border-radius: 3.125rem;
-      clear: both;
-      cursor: pointer;
-      color: #fff;
-      font-family: 'VAGRounded-bold';
-      display: block;
-      font-size: 1.125rem;
-      height: 3.125rem;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      text-align: left;
-      padding-left: 1.125rem;
-      padding-top: 0.9375rem;
-      text-decoration: none;
-      width: 8.75rem;
-      float: right;
-      text-align: center;
-      padding-left: 0px; }
-      section.grupos-escolares form a.enviar:before {
-        content: "\f061";
-        position: absolute;
-        right: 1.4375rem;
-        font-family: 'FontAwesome'; }
-    section.grupos-escolares form span.leyenda-privacidad {
-      color: #5D2B86;
-      font-size: 'montserratlight';
-      font-size: 12px; }
-
-section.planea-visita {
-  text-align: center; }
-  section.planea-visita h2 {
-    color: #5D2B86;
-    font-size: 40px; }
-  section.planea-visita h3 {
-    color: #5D2B86;
-    font-size: 14px;
-    margin-top: 0px;
-    margin-bottom: 32px;
-    text-align: left; }
-  section.planea-visita h4 {
-    font-size: 30px;
+  section.contactanos-form form span.leyenda-privacidad {
+    margin-left: 0.625rem;
+    font-family: 'montserratlight';
+    color: #7B8990;
+    font-size: 12px; }
+  section.contactanos-form form a.enviar {
+    background-color: #5D2B86;
+    border-radius: 3.125rem;
+    clear: both;
+    cursor: pointer;
+    color: #fff;
     font-family: 'VAGRounded-bold';
-    color: #08405C;
-    margin-bottom: 30px; }
-  section.planea-visita ::-webkit-input-placeholder {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    color: #364659; }
-  section.planea-visita ::-moz-placeholder {
-    ont-family: 'montserrat-regular';
-    font-size: 12px;
-    color: #364659; }
-  section.planea-visita :-ms-input-placeholder {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    color: #364659; }
-  section.planea-visita :-moz-placeholder {
-    font-family: 'montserrat-regular';
-    font-size: 12px;
-    color: #364659; }
-  section.planea-visita .item {
+    display: block;
+    font-size: 1.125rem;
+    height: 3.125rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: left;
+    padding-left: 1.125rem;
+    padding-top: 0.9375rem;
+    text-decoration: none;
+    width: 140px;
+    text-align: center;
+    margin-left: 20px;
+    padding-left: 0px; }
+    section.contactanos-form form a.enviar:before {
+      content: "\f061";
+      position: absolute;
+      right: 1.4375rem;
+      font-family: 'FontAwesome'; }
+  section.contactanos-form form .select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+    color: #000;
     width: 100%;
-    display: table; }
-  section.planea-visita form {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    section.planea-visita form input[type="text"], section.planea-visita form input[type="email"] {
-      border-top: 1px solid #9B9B9B;
-      border-bottom: 1px solid #9B9B9B;
-      padding-left: 18px;
-      border-left: transparent;
-      border-right: transparent;
-      height: 67px; }
-    section.planea-visita form input.name {
-      width: 100%;
-      display: table-cell; }
-    section.planea-visita form input.tel {
-      width: 50%;
-      display: table-cell;
-      border-right: 1px solid #9B9B9B;
-      border-top: transparent; }
-    section.planea-visita form input.email {
-      width: 50%;
-      border-top: transparent; }
-    section.planea-visita form input.cp {
-      border-right: 1px solid #9B9B9B;
-      border-top: transparent;
-      width: 50%;
-      display: table-cell; }
-    section.planea-visita form input.estado {
-      border-top: transparent;
-      width: 50%;
-      display: table-cell; }
-    section.planea-visita form input.name-contac {
-      width: 33%;
-      display: table-cell;
-      border-right: 1px solid #9B9B9B; }
-    section.planea-visita form input.ap {
-      width: 33%;
-      display: table-cell;
-      border-right: 1px solid #9B9B9B; }
-    section.planea-visita form input.am {
-      width: 33%;
-      display: table-cell; }
-    section.planea-visita form input.tel-local {
-      width: 50%;
-      display: table-cell;
-      border-right: 1px solid #9B9B9B;
-      border-top: transparent; }
-    section.planea-visita form input.email-perso {
-      width: 50%;
-      display: table-cell;
-      border-top: transparent; }
-    section.planea-visita form input.total-per {
-      width: 100%;
-      border-top: transparent; }
-    section.planea-visita form .select {
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      width: 100%;
-      height: 67px;
-      background: transparent; }
-    section.planea-visita form .select-styled {
+    height: 67px;
+    background: transparent; }
+  section.contactanos-form form .select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: none;
+    height: 67px;
+    padding: 18px 23px 0px;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    color: rgba(54, 71, 89, 0.4);
+    font-family: 'montserrat-regular';
+    border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+    font-size: 0.75rem; }
+    section.contactanos-form form .select-styled:after {
+      content: "\f107";
+      font-family: 'FontAwesome';
+      color: #5D2B86;
+      font-size: 18px;
+      position: absolute;
+      top: 16px;
+      right: 15px; }
+  section.contactanos-form form .select-options {
+    background: #fff;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+    max-height: 200px;
+    padding: 0px; }
+    section.contactanos-form form .select-options li {
+      height: 53px;
+      font-family: 'montserratlight';
       font-size: 12px;
-      height: 67px;
-      color: #364659;
+      color: #3E525B;
+      padding-top: 20px; }
+      section.contactanos-form form .select-options li:last-child {
+        border: none; }
+      section.contactanos-form form .select-options li:nth-child(2n+1) {
+        background: #FAFAFA; }
+
+section.bolsa-trabajo-form .container-form {
+  max-width: 582px;
+  height: auto;
+  margin: auto; }
+  section.bolsa-trabajo-form .container-form h3 {
+    text-align: left;
+    color: #5D2B86;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-top: 0px; }
+
+section.bolsa-trabajo-form h2 {
+  font-size: 40px;
+  text-align: center;
+  color: #5D2B86;
+  margin-bottom: 100px; }
+
+section.bolsa-trabajo-form ::-webkit-input-placeholder {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  color: rgba(54, 70, 89, 0.5); }
+
+section.bolsa-trabajo-form ::-moz-placeholder {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  color: rgba(54, 71, 89, 0.4); }
+
+section.bolsa-trabajo-form :-ms-input-placeholder {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  color: rgba(54, 71, 89, 0.4); }
+
+section.bolsa-trabajo-form :-moz-placeholder {
+  font-family: 'montserrat-regular';
+  font-size: 12px;
+  color: rgba(54, 71, 89, 0.4); }
+
+section.bolsa-trabajo-form input[type="text"], section.bolsa-trabajo-form input[type="email"] {
+  border-top: transparent;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+  padding-left: 18px;
+  border-left: transparent;
+  border-right: transparent;
+  height: 67px; }
+
+section.bolsa-trabajo-form form textarea {
+  width: 100%;
+  height: 130px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+  padding-top: 27px;
+  padding-left: 18px;
+  margin-bottom: 50px; }
+
+section.bolsa-trabajo-form form .item-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+section.bolsa-trabajo-form form span.leyenda-privacidad {
+  margin-left: 0.625rem;
+  font-family: 'montserratlight';
+  color: #7B8990;
+  font-size: 12px; }
+
+section.bolsa-trabajo-form form a.enviar {
+  background-color: #5D2B86;
+  border-radius: 3.125rem;
+  clear: both;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'VAGRounded-bold';
+  display: block;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: left;
+  padding-left: 1.125rem;
+  padding-top: 0.9375rem;
+  text-decoration: none;
+  width: 140px;
+  text-align: center;
+  margin-left: 20px;
+  padding-left: 0px; }
+  section.bolsa-trabajo-form form a.enviar:before {
+    content: "\f061";
+    position: absolute;
+    right: 1.4375rem;
+    font-family: 'FontAwesome'; }
+
+section.bolsa-trabajo-form form .item {
+  display: table;
+  width: 100%; }
+  section.bolsa-trabajo-form form .item input[type="text"]:nth-child(1) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+  section.bolsa-trabajo-form form .item input[type="text"]:nth-child(2) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+  section.bolsa-trabajo-form form .item input[type="text"]:nth-child(3) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+
+section.bolsa-trabajo-form form .item1 {
+  display: table;
+  width: 100%; }
+  section.bolsa-trabajo-form form .item1 input[type="text"] {
+    display: table-cell;
+    border-top: transparent;
+    border-right: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+  section.bolsa-trabajo-form form .item1 .sexo {
+    width: 67%;
+    float: right;
+    border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+    padding: 13px 0px; }
+    section.bolsa-trabajo-form form .item1 .sexo p {
+      display: inline-block;
       font-family: 'montserrat-regular';
-      text-align: left;
-      border-top: transparent;
-      border-bottom: 1px solid #9B9B9B; }
-      section.planea-visita form .select-styled:after {
-        content: "\f107";
-        font-family: FontAwesome;
-        color: #5D2B86;
-        font-size: 18px;
-        position: absolute;
-        top: 16px;
-        right: 15px; }
-    section.planea-visita form textarea.comentario {
-      border-top: transparent;
-      border-left: transparent;
-      border-right: transparent;
-      height: 130px;
-      width: 100%; }
-    section.planea-visita form a.enviar {
-      background-color: #5D2B86;
-      border-radius: 3.125rem;
-      clear: both;
-      cursor: pointer;
+      font-size: 12px;
+      padding-left: 25px;
+      color: rgba(54, 70, 89, 0.5); }
+    section.bolsa-trabajo-form form .item1 .sexo button {
       color: #fff;
-      font-family: 'VAGRounded-bold';
-      display: block;
-      font-size: 1.125rem;
-      height: 3.125rem;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      text-align: left;
-      padding-left: 1.125rem;
-      padding-top: 0.9375rem;
-      text-decoration: none;
-      width: 12.5rem; }
-      section.planea-visita form a.enviar:before {
-        content: "\f061";
-        position: absolute;
-        right: 1.4375rem;
-        font-family: 'FontAwesome'; }
+      font-family: 'montserrat-regular';
+      font-size: 12px;
+      border-radius: 10px;
+      background: #5D2B86;
+      width: 26%;
+      border: none;
+      padding: 13px 0px;
+      margin-left: 64px;
+      opacity: 0.5; }
+      section.bolsa-trabajo-form form .item1 .sexo button:last-child {
+        margin-left: 36px; }
 
-#signInButton {
-  height: 93px;
-  width: 278px;
-  background: #A40084;
-  font-size: 22px;
-  font-family: 'VAGRounded-bold';
-  border: none;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
-  margin-bottom: 75px; }
+section.bolsa-trabajo-form form .item2 {
+  display: table;
+  width: 100%; }
+  section.bolsa-trabajo-form form .item2 input[type="text"]:nth-child(1) {
+    border-right: 1px solid rgba(154, 155, 155, 0.4);
+    width: 50%; }
+  section.bolsa-trabajo-form form .item2 input[type="text"]:nth-child(2) {
+    width: 50%; }
 
-#signUpButton {
-  height: 93px;
-  width: 278px;
-  background: #E8BFE0;
-  font-size: 22px;
-  font-family: 'VAGRounded-bold';
-  border: none;
-  color: white;
-  text-transform: uppercase;
+section.bolsa-trabajo-form form .item3 input[type="text"] {
+  width: 100%; }
+
+section.bolsa-trabajo-form form .item4 input[type="text"] {
+  border-right: 1px solid rgba(154, 155, 155, 0.4);
+  width: 40%; }
+
+section.bolsa-trabajo-form form .item4 .select {
   cursor: pointer;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
-  margin-bottom: 75px; }
+  display: inline-block;
+  position: relative;
+  font-size: 1rem;
+  color: #000;
+  float: right;
+  width: 60%;
+  height: 67px;
+  background: transparent; }
+
+section.bolsa-trabajo-form form .item4 .select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: none;
+  height: 67px;
+  padding: 18px 23px 0px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  color: rgba(54, 71, 89, 0.4);
+  font-family: 'montserrat-regular';
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+  font-size: 0.75rem; }
+  section.bolsa-trabajo-form form .item4 .select-styled:after {
+    content: "\f107";
+    font-family: 'FontAwesome';
+    color: #5D2B86;
+    font-size: 18px;
+    position: absolute;
+    top: 16px;
+    right: 15px; }
+
+section.bolsa-trabajo-form form .item4 .select-options {
+  background: #fff;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  max-height: 200px;
+  padding: 0px; }
+  section.bolsa-trabajo-form form .item4 .select-options li {
+    height: 53px;
+    font-family: 'montserratlight';
+    font-size: 12px;
+    color: #3E525B;
+    padding-top: 20px; }
+    section.bolsa-trabajo-form form .item4 .select-options li:last-child {
+      border: none; }
+    section.bolsa-trabajo-form form .item4 .select-options li:nth-child(2n+1) {
+      background: #FAFAFA; }
+
+section.bolsa-trabajo-form form .item5 {
+  width: 100%; }
+  section.bolsa-trabajo-form form .item5 .select {
+    height: 67px;
+    width: 100%; }
+  section.bolsa-trabajo-form form .item5 .select-styled {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: none;
+    height: 67px;
+    padding: 18px 23px 0px;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    color: rgba(54, 71, 89, 0.4);
+    font-family: 'montserrat-regular';
+    border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+    font-size: 0.75rem; }
+    section.bolsa-trabajo-form form .item5 .select-styled:after {
+      content: "\f107";
+      font-family: 'FontAwesome';
+      color: #5D2B86;
+      font-size: 18px;
+      position: absolute;
+      top: 16px;
+      right: 15px; }
+  section.bolsa-trabajo-form form .item5 .select-options {
+    background: #fff;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+    max-height: 200px;
+    padding: 0px; }
+    section.bolsa-trabajo-form form .item5 .select-options li {
+      height: 53px;
+      font-family: 'montserratlight';
+      font-size: 12px;
+      color: #3E525B;
+      padding-top: 20px; }
+      section.bolsa-trabajo-form form .item5 .select-options li:last-child {
+        border: none; }
+      section.bolsa-trabajo-form form .item5 .select-options li:nth-child(2n+1) {
+        background: #FAFAFA; }
+
+section.bolsa-trabajo-form form .item-text {
+  width: 100%;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4); }
+  section.bolsa-trabajo-form form .item-text h3 {
+    text-align: left;
+    color: #5D2B86;
+    font-size: 14px;
+    padding-top: 47px;
+    padding-bottom: 32px; }
 
 section.experiencia-group-todos {
   margin-top: 8.125rem;
@@ -8672,10 +8803,11 @@ section.donar-paypal {
 
 section.intro-servicio-social h2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 3.125rem;
   color: #08405C;
   margin-top: 0px;
-  margin-bottom: 59px; }
+  position: relative;
+  margin-bottom: 3.6875rem; }
 
 section.intro-servicio-social .item {
   width: 100%;
@@ -8685,14 +8817,14 @@ section.intro-servicio-social .item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 117px; }
+  margin-bottom: 7.3125rem; }
   section.intro-servicio-social .item button {
     background: #A40084;
     border: none;
-    width: 341px;
-    font-size: 30px;
+    width: 21.3125rem;
+    font-size: 1.875rem;
     font-family: 'VAGRounded-bold';
-    height: 114px;
+    height: 7.125rem;
     color: #fff; }
 
 section.intro-servicio-social .admin {
@@ -8701,7 +8833,7 @@ section.intro-servicio-social .admin {
     float: left;
     width: 45%;
     padding-left: 0.3125rem;
-    margin-bottom: 90px; }
+    margin-bottom: 5.625rem; }
     section.intro-servicio-social .admin .item-content h2 {
       font-size: 2.5rem;
       text-align: left;
@@ -8743,41 +8875,75 @@ section.intro-servicio-social .admin {
         section.intro-servicio-social .admin section.intro-cover-rigth .item-content p span {
           font-family: 'montserrat-bold'; }
   section.intro-servicio-social .admin figure.pendulo {
-    width: 37px;
+    width: 2.3125rem;
     height: auto;
     margin: auto;
-    margin-bottom: 57px; }
+    margin-bottom: 3.5625rem; }
     section.intro-servicio-social .admin figure.pendulo img {
       width: 100%; }
   section.intro-servicio-social .admin section.areas-desarrollo {
     background: #FAFAFA; }
+    section.intro-servicio-social .admin section.areas-desarrollo h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #0098CC;
+      position: relative;
+      width: 52%;
+      margin: auto;
+      margin-bottom: 6.5rem; }
+      section.intro-servicio-social .admin section.areas-desarrollo h2 .custom-input-file {
+        overflow: hidden;
+        position: absolute;
+        right: 0px;
+        bottom: 0.1875rem;
+        cursor: pointer;
+        background-color: #5D2B86;
+        color: #fff;
+        text-align: center;
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 6.25rem; }
+        section.intro-servicio-social .admin section.areas-desarrollo h2 .custom-input-file:hover {
+          background-color: #fff;
+          color: #5D2B86; }
+        section.intro-servicio-social .admin section.areas-desarrollo h2 .custom-input-file .input-file {
+          margin: 0;
+          padding: 0;
+          outline: 0;
+          border: 10000px solid transparent;
+          opacity: 0;
+          filter: alpha(opacity=0);
+          position: absolute;
+          right: -1000px;
+          top: -1000px;
+          cursor: pointer; }
     section.intro-servicio-social .admin section.areas-desarrollo figure.pendulo {
-      width: 37px;
+      width: 2.3125rem;
       height: auto;
       margin: auto;
-      margin-bottom: 57px; }
+      margin-bottom: 3.5625rem; }
       section.intro-servicio-social .admin section.areas-desarrollo figure.pendulo img {
         width: 100%; }
     section.intro-servicio-social .admin section.areas-desarrollo article.requisitos h3 {
       color: #CCD93B;
       text-align: center;
-      font-size: 50px; }
+      font-size: 3.125rem; }
     section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos {
       width: 100%;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
       section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos .item {
-        width: 220px; }
+        width: 13.75rem; }
         section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos .item .circulo {
           position: relative;
           border-radius: 100px;
-          border: 4px solid #C1D42E;
+          border: 0.25rem solid #C1D42E;
           text-align: center;
           margin: auto;
           width: 101px;
           height: 101px; }
         section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos .item h4 {
-          margin-top: 30px;
+          margin-top: 1.875rem;
           color: #08405C;
           font-size: 22px;
           font-family: 'montserratsemi-bold';
@@ -8785,7 +8951,7 @@ section.intro-servicio-social .admin {
     section.intro-servicio-social .admin section.areas-desarrollo article.beneficios h3 {
       color: #E11D84;
       text-align: center;
-      font-size: 50px; }
+      font-size: 3.125rem; }
     section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos {
       width: 100%;
       -ms-flex-pack: distribute;
@@ -8794,7 +8960,7 @@ section.intro-servicio-social .admin {
         width: 220px; }
         section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos .item .circulo {
           border-radius: 100px;
-          border: 4px solid #E11D84;
+          border: 0.25rem solid #E11D84;
           text-align: center;
           position: relative;
           margin: auto;
@@ -8802,19 +8968,135 @@ section.intro-servicio-social .admin {
           height: 101px; }
         section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos .item h4 {
           color: #E11D84;
-          font-size: 22px;
+          font-size: 1.375rem;
           font-family: 'montserratsemi-bold';
           text-align: center; }
         section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos .item p {
           text-align: center;
-          margin-top: 30px;
+          margin-top: 1.875rem;
           color: #08405C;
-          font-size: 16px;
+          font-size: 1rem;
           font-family: 'montserratlight'; }
     section.intro-servicio-social .admin section.areas-desarrollo article.areas h3 {
       color: #5D2B86;
       text-align: center;
-      font-size: 50px; }
+      font-size: 3.125rem; }
+    section.intro-servicio-social .admin section.areas-desarrollo article.areas .container-datos {
+      width: 100%;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      section.intro-servicio-social .admin section.areas-desarrollo article.areas .container-datos .item {
+        width: 220px; }
+        section.intro-servicio-social .admin section.areas-desarrollo article.areas .container-datos .item .circulo {
+          border-radius: 100px;
+          border: 0.25rem solid #5D2B86;
+          text-align: center;
+          position: relative;
+          margin: auto;
+          width: 101px;
+          height: 101px; }
+        section.intro-servicio-social .admin section.areas-desarrollo article.areas .container-datos .item h4 {
+          color: #5D2B86;
+          font-size: 1.375rem;
+          font-family: 'montserratsemi-bold';
+          text-align: center; }
+        section.intro-servicio-social .admin section.areas-desarrollo article.areas .container-datos .item p {
+          text-align: center;
+          margin-top: 1.875rem;
+          color: #5D2B86;
+          font-size: 1rem;
+          font-family: 'montserratlight'; }
+  section.intro-servicio-social .admin section.programas-cuates {
+    padding-top: 5rem;
+    padding-bottom: 8.625rem; }
+    section.intro-servicio-social .admin section.programas-cuates h2 {
+      text-align: center;
+      color: #0098CC;
+      font-size: 1.875rem; }
+    section.intro-servicio-social .admin section.programas-cuates a.clic {
+      background-color: #5D2B86;
+      border-radius: 3.125rem;
+      clear: both;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'VAGRounded-bold';
+      display: block;
+      font-size: 1.125rem;
+      height: 3.125rem;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      text-align: left;
+      padding-left: 1.125rem;
+      padding-top: 0.9375rem;
+      text-decoration: none;
+      width: 12.5rem;
+      text-align: center;
+      margin: auto; }
+      section.intro-servicio-social .admin section.programas-cuates a.clic:before {
+        content: "\f061";
+        position: absolute;
+        right: 1.4375rem;
+        font-family: 'FontAwesome'; }
+  section.intro-servicio-social .admin section.informacion-equipo {
+    width: 100%;
+    display: table; }
+    section.intro-servicio-social .admin section.informacion-equipo .item {
+      width: 50%;
+      display: table-cell;
+      background: #BD95DB;
+      vertical-align: middle;
+      padding-top: 4.9375rem;
+      padding-bottom: 4.9375rem; }
+      section.intro-servicio-social .admin section.informacion-equipo .item:last-child {
+        padding-left: 90px; }
+      section.intro-servicio-social .admin section.informacion-equipo .item h2 {
+        color: #fff;
+        font-size: 2.5rem;
+        text-align: center; }
+      section.intro-servicio-social .admin section.informacion-equipo .item h3 {
+        font-size: 1.375rem;
+        font-family: 'montserratsemi-bold';
+        color: #fff; }
+      section.intro-servicio-social .admin section.informacion-equipo .item p {
+        color: #fff; }
+      section.intro-servicio-social .admin section.informacion-equipo .item .container-item {
+        width: 100%;
+        float: left;
+        padding-left: 21px; }
+        section.intro-servicio-social .admin section.informacion-equipo .item .container-item a.tel {
+          font-size: 1.125rem;
+          color: #fff;
+          font-family: 'montserrat-regular';
+          margin-right: 20px;
+          text-decoration: none;
+          position: relative; }
+          section.intro-servicio-social .admin section.informacion-equipo .item .container-item a.tel:before {
+            font-family: 'FontAwesome';
+            content: "\f095";
+            font-size: 0.8125rem;
+            color: #BD95DB;
+            background: #fff;
+            border-radius: 0.125rem;
+            padding: 0.0625rem 0.125rem;
+            left: -19px;
+            bottom: 3px;
+            position: absolute; }
+      section.intro-servicio-social .admin section.informacion-equipo .item a.mail-info {
+        color: #fff;
+        font-size: 1.125rem;
+        font-family: 'montserratlight';
+        position: relative;
+        padding-left: 1.375rem; }
+        section.intro-servicio-social .admin section.informacion-equipo .item a.mail-info:before {
+          font-family: 'FontAwesome';
+          content: "\f0e0";
+          font-size: 1rem;
+          color: #fff;
+          border-radius: 0.125rem;
+          padding: 0.0625rem 0.125rem;
+          left: 0px;
+          bottom: 0px;
+          position: absolute; }
 
 /********** FOOTER *************/
 footer {
