@@ -10,7 +10,6 @@ html(lang="es")
 		link(rel="stylesheet" href="css/flexslider.css")
 		link(rel="stylesheet" href="css/jquery.bxslider.css")
 		link(rel="stylesheet" href="css/font-awesome.min.css")
-			
 		meta(property='og:title', content='Papalote museo del niño')
 		meta(property='og:site_name', content='Papalote')
 		meta(property='og:url', content='http://papalote.org.mx/')
@@ -27,10 +26,9 @@ html(lang="es")
 				form
 					input(type="text" placeholder="Nombre*")
 					input(type="text" placeholder="Correo electronico*")
-					select
-						option ¿A qué departamento va dirigido tu comentario?*
-						option ¿A qué departamento va dirigido tu comentario?*
-						option ¿A qué departamento va dirigido tu comentario?*
+					.item
+						select
+							option ¿A qué departamento va dirigido tu comentario?*
 					textarea(placeholder= "Comentarios:")
 					.item-right.flex
 						input#cbtest(type='checkbox')
@@ -62,8 +60,6 @@ html(lang="es")
 						input(type="text" placeholder="Código postal")
 						select
 							option ¿En qué estado vives?
-							option ¿En qué estado vives?
-							option ¿En qué estado vives?
 					.item5
 						select
 							option ¿En qué delegación o municipio?
@@ -94,17 +90,159 @@ html(lang="es")
 						label.check-box(for='cbtest')
 						span.leyenda-privacidad He leído el aviso de privacidad
 						a.enviar.sombra(href="#") Enviar
+		section.eventos-servicios
+			h2 Eventos y Servicios
+			.container-form
+				h3 DATOS DE CONTACTO
+				form
+					.item
+						input(type="text" placeholder="Nombre*")
+						input(type="text" placeholder="Apellido paterno")
+						input(type="text" placeholder="Apellido materno")
+					.item2
+						input(type="text" placeholder="Télefono local*")
+						input(type="text" placeholder="Correo electrónico*")
+					.item4
+						.leyenda-fecha
+							p Fecha tentativa del evento:
+						select
+							option Dia
+						select
+							option Mes
+						select
+							option Año
+
+					.item3
+						.leyenda-aprox
+							p Número aproximado de visitantes:
+						input(type="text" placeholder="(de 15 a 7000 personas)")
+
+					.item5
+						select
+							option Tipo de evento
+					.item5
+						select
+							option Lugar del evento
+					textarea(placeholder= "Comentarios:")
+					.item-right.flex
+						input#cbtest(type='checkbox')
+						label.check-box(for='cbtest')
+						span.leyenda-privacidad He leído el aviso de privacidad
+						a.enviar.sombra(href="#") Enviar
+		section.planea-visita
+			h2 Planea tu visita #[br] a PAPALOTE
+			h4 Tu visita sería para:
+			.container-form
+				.contenedor-boton
+					button Grupos para empresas y Gobierno
+					button Día PAPALOTE
+				h3 DATOS DE CONTACTO
+				form
+					.item
+						input(type="text" placeholder="Nombre*")
+						input(type="text" placeholder="Apellido paterno")
+						input(type="text" placeholder="Apellido materno")
+					.item2
+						input(type="text" placeholder="Télefono local*")
+						input(type="text" placeholder="Correo electrónico*")
+					.item3
+						input(type="text" placeholder="Nombre de la empresa")
+					.item3
+						input(type="text" placeholder="Giro de la empresa")
+					.item4
+						input(type="text" placeholder="Código postal")
+						select
+							option ¿En qué estado?
+					.item6
+						select
+							option ¿En qué delegación o municipio?
+					.item5
+						.leyenda-aprox
+							p Número aproximado de visitantes:
+						input(type="text" placeholder="(de 15 a 7000 personas)")
+					.item7
+						.leyenda-fecha
+							p Fecha tentativa del evento:
+						select
+							option Dia
+						select
+							option Mes
+						select
+							option Año
+					.item5
+						.leyenda-aprox
+							p Número aproximado de visitantes:
+						input(type="text" placeholder="(de 15 a 7000 personas)")
+
+					textarea(placeholder= "Comentarios:")
+					.item-right.flex
+						input#cbtest(type='checkbox')
+						label.check-box(for='cbtest')
+						span.leyenda-privacidad He leído el aviso de privacidad
+						a.enviar.sombra(href="#") Enviar
 
 
 
 
+				form
+					.item
+						input(type="text" placeholder="Nombre*")
+						input(type="text" placeholder="Apellido paterno")
+						input(type="text" placeholder="Apellido materno")
+					.item2
+						input(type="text" placeholder="Télefono local*")
+						input(type="text" placeholder="Correo electrónico*")
+					.item4
+						input(type="text" placeholder="Código postal")
+						select
+							option ¿En qué estado?
+					.item6
+						select
+							option ¿En qué delegación o municipio?
+					.item5
+						.leyenda-aprox
+							p Número aproximado de visitantes:
+						input(type="text" placeholder="(de 15 a 7000 personas)")
+					.item7
+						.leyenda-fecha
+							p Fecha tentativa de visita:
+						select
+							option Dia
+						select
+							option Mes
+						select
+							option Año
+					.item5
+						.leyenda-aprox
+							p Número aproximado de visitantes:
+						input(type="text" placeholder="(de 15 a 7000 personas)")
+
+					textarea(placeholder= "Comentarios:")
+					.item-right.flex
+						input#cbtest(type='checkbox')
+						label.check-box(for='cbtest')
+						span.leyenda-privacidad He leído el aviso de privacidad
+						a.enviar.sombra(href="#") Enviar
+
+		section.grupos-esolares
+			h2 Grupos escolares
+			.container-form
+				form
+					h3 DATOS DE LA ESCUELA
+					.item1
+						input(type="text" placeholder="Nombre*")
+					.item5
+						select
+							option ¿En qué delegación o municipio?
+					.item2
+						input(type="text" placeholder="Télefono local*")
+						input(type="text" placeholder="Correo electrónico*")
+
+
+					
 
 
 
-
-
-
-		
 
 		span.ir-arriba
 		include block/footer.pug
