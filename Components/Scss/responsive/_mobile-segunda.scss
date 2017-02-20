@@ -5,9 +5,30 @@ section.intro-group-event .item-content{
     transform: inherit;
     margin: auto;
     left: 0px;
+    padding: 90px;
+    box-shadow: none;
 }
+section.intro-group-event .item-content p{
+	font-size: 22px;
+}
+
+section.eventos h2{
+	font-size: 40px;
+}
+section.eventos p{
+	font-size: 18px;
+}
+
 section.intro-group-event figure{
 	width: 100%;
+}
+
+section.eventos h3{
+	font-size: 18px;
+}
+section.eventos a.evento-btn{
+	width: 180px;
+	text-align: center;
 }
 
 section.intro-group-event .container {
@@ -31,12 +52,32 @@ section.informacion-eventos .item{
 section.informacion-eventos .item h2, section.informacion-eventos .item h3{
 	text-align: left;
 	margin-left: 0px;
+	font-size: 22px;
+}
+
+section.informacion-eventos .item h3{
+	font-size: 18px;
 }
 
 section.informacion-eventos .item .container-item, section.informacion-eventos .item a.mail-info{
-	margin-left: 0px;
+	margin-left: 19px;
 }
 
+section.group-content article.item-right .item-content p{
+	font-size: 16px;
+}
+
+section.group-content article.item-right .item-content a.comprar-slider{
+	width: 180px;
+	text-align: center;
+	margin: auto;
+}
+
+section.informacion .item h2{
+	font-size: 30px;
+	text-align: left;
+	padding-left: 15px;
+}
 
 section.group-content article.item-right figure.image-group{
 	width: 100%;
@@ -62,8 +103,160 @@ section.group-content article.item-left .item-content{
 section.informacion, section.informacion .item{
 	width: 100%;
 	display: block;
+	padding-top: 31px;
+	padding-bottom: 1px;
 
 }
+section.informacion .item h3{
+	font-size: 16px;
+	margin-top: 0px;
+}
+section.donar-paypal .item-content:last-child{
+	padding-right: 15px;
+}
+section.item-intro .item-content h2{
+	font-size: 35px;
+	text-align: center;
+}
+section.donar-paypal .item-content h2{
+	font-size: 40px;
+}
+section.donar-paypal .item-content p{
+	font-size: 16px;
+}
+section.donar-paypal .item-content a.btn-donar{
+	width: 180px;
+	margin: auto;
+	text-align: center;
+}
+section.donar-paypal .item-content:last-child h2{
+	font-size: 32px;
+	text-align: right;
+
+}
+section.experiencia-group-todos article h3{
+	font-size: 25px;
+}
+section.experiencia-group-todos article p{
+	font-size: 16px;
+}
+section.transparencia p{
+	font-size: 16px;
+}
+section.certificaciones h2{
+	font-size: 35px;
+}
+
+
+section.item-intro .item-content p{
+	font-size: 16px;
+}
+section.download-material h2{
+	font-size: 25px;
+}
+section.download-material p{
+	font-size: 16px;
+}
+section.download-material .item-container article a.descarga{
+	width: 180px;
+	text-align: center;
+}
+
+section.download-material .item-container article a.conoce-descarga{
+	width: 180px;
+	text-align: center;
+}
+section.experiencia-group h2{
+	font-size: 40px;
+}
+section.experiencia-group article h3{
+	font-size: 35px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+section.experiencia-group article h4{
+	font-size: 22px;
+	text-align: left;
+}
+section.experiencia-group article p{
+	font-size: 18px;
+	text-align: left;
+}
+section.dia-papalote h2{
+	font-size : 40px;
+}
+section.informacion-gobierno .item h2{
+	font-size: 30px;
+	text-align: left;
+    margin-bottom: 0px;
+}
+section.informacion-gobierno .item h3{
+	font-size: 16px;
+}
+section.informacion-gobierno .item .container-item a.tel, section.informacion-gobierno .item a.mail-info{
+	margin-left: 17px;
+}
+
+section.conoce-areas h2{
+	font-size: 35px;
+}
+section.event-service h2{
+	font-size: 30px;
+}
+section.event-service article h3{
+	font-size: 35px;
+	text-align: left;
+	padding-left: 15px;
+}
+
+section.event-service article ul li{
+	font-size: 18px;
+}
+section.event-service article ul{
+	padding-left: 5px;
+}
+
+section.informacion-evento-servicio .item h2{
+	font-size: 30px;
+	text-align: left;
+	margin-bottom: 0px;
+}
+section.informacion-evento-servicio .item .container-item a.tel, section.informacion-evento-servicio .item a.mail-info{
+	margin-left: 15px;
+}
+
+section.intro-cover-rigth .item-content h2{
+	font-size: 35px;
+}
+section.intro-cover-rigth .item-content p{
+	font-size: 16px;
+}
+section.intro-cover-rigth .item-content a.btn-ayudar{
+	width: 180px;
+	text-align: center;
+	padding-left: 0px;
+	margin: auto;
+}
+section.transpariencias h2{
+	font-size: 30px;
+}
+section.transpariencias p{
+	font-size: 16px;
+}
+
+section.transpariencias a.btn-transpariencia, section.notas .container article.nota a.btn-social{
+	width: 180px;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
 section.informacion .item:last-child{
 	padding-bottom: 15px;
 	padding-top: 10px;
@@ -245,3 +438,43 @@ section.nosotros-nota article figure{
 section.nosotros-nota article .item-content{
 	padding: 0px 10px;
 }
+
+section.intro-servicio-social .admin .item-content, section.intro-servicio-social .admin figure.image-intro, {
+	width: 100%;
+}
+section.intro-servicio-social .admin section.intro-cover-rigth .item-content{
+	max-width: 100%;
+}
+section.intro-servicio-social .admin section.intro-cover-rigth figure{
+	max-width: 100%;
+}
+section.intro-servicio-social .admin .item-content h2{
+	font-size: 35px;
+}
+section.intro-servicio-social .admin section.intro-cover-rigth .item-content h2{
+	font-size: 35px;
+}
+section.intro-servicio-social .admin section.intro-cover-rigth .item-content p{
+	font-size: 16px;
+}
+section.intro-servicio-social .admin section.areas-desarrollo article.requisitos h3, section.intro-servicio-social .admin section.areas-desarrollo article.beneficios h3{
+	font-size: 35px;
+}
+
+section.intro-servicio-social .admin section.areas-desarrollo article.areas h3{
+	font-size: 35px;
+}
+
+section.intro-servicio-social .admin section.informacion-equipo{
+	display: block;
+}
+section.intro-servicio-social .admin section.informacion-equipo .item{
+	width: 100%;
+	display: block;
+	margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+
+
+
+

@@ -231,13 +231,49 @@ html(lang="es")
 					h3 DATOS DE LA ESCUELA
 					.item1
 						input(type="text" placeholder="Nombre*")
-					.item5
+					.item3
 						select
-							option ¿En qué delegación o municipio?
+							option Nivel educativo*
 					.item2
 						input(type="text" placeholder="Télefono local*")
 						input(type="text" placeholder="Correo electrónico*")
-
+					.item2
+						input(type="text" placeholder="Télefono local*")
+					.item4
+						input(type="text" placeholder="Código postal")
+						select
+							option ¿En qué estado está?
+					.item3
+						select
+							option ¿En qué delegación o municipio?
+					.item-text
+						h3 DATOS DE CONTACTO
+					.item5
+						input(type="text" placeholder="Nombre*")
+						input(type="text" placeholder="Apellido paterno")
+						input(type="text" placeholder="Apellido materno")
+					.item6
+						input(type="text" placeholder="Télefono local*")
+						input(type="text" placeholder="Correo electrónico*")
+					.item7
+						.leyenda-fecha
+							p Fecha tentativa de visita:
+						select
+							option Dia
+						select
+							option Mes
+						select
+							option Año
+					.item8
+						.leyenda-aprox
+							p Número aproximado de visitantes:
+						input(type="text" placeholder="(de 15 a 7000 personas)")
+					textarea(placeholder= "Comentarios:")
+					.item-right.flex
+						input#cbtest(type='checkbox')
+						label.check-box(for='cbtest')
+						span.leyenda-privacidad He leído el aviso de privacidad
+						a.enviar.sombra(href="#") Enviar
 
 					
 

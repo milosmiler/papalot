@@ -943,7 +943,8 @@ header {
               -webkit-transition: all .5s ease;
               transition: all .5s ease; }
             header .container nav ul li a:hover {
-              color: #00C0F2; }
+              color: #00C0F2;
+              content: none; }
               header .container nav ul li a:hover:after {
                 width: 100%;
                 left: 0; }
@@ -8676,11 +8677,93 @@ section.grupos-esolares form .item2 {
       border-left: 1px solid rgba(154, 155, 155, 0.4);
       width: 67%; }
 
-section.grupos-esolares form .item5 {
+section.grupos-esolares form .item3 {
   width: 100%; }
-  section.grupos-esolares form .item5 .select {
+  section.grupos-esolares form .item3 .select {
     height: 67px;
     width: 100%; }
+
+section.grupos-esolares form .item4 input[type="text"] {
+  border-right: 1px solid rgba(154, 155, 155, 0.4);
+  width: 40%; }
+
+section.grupos-esolares form .item4 .select {
+  float: right;
+  width: 60%;
+  height: 67px;
+  background: transparent; }
+
+section.grupos-esolares form .item-text {
+  width: 100%;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4); }
+  section.grupos-esolares form .item-text h3 {
+    text-align: left;
+    color: #5D2B86;
+    font-size: 14px;
+    padding-top: 47px;
+    padding-bottom: 32px; }
+
+section.grupos-esolares form .item5 {
+  display: table;
+  width: 100%; }
+  section.grupos-esolares form .item5 input[type="text"]:nth-child(1) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    border-right: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+  section.grupos-esolares form .item5 input[type="text"]:nth-child(2) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    border-right: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+  section.grupos-esolares form .item5 input[type="text"]:nth-child(3) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+
+section.grupos-esolares form .item6 {
+  display: table;
+  width: 100%; }
+  section.grupos-esolares form .item6 input[type="text"] {
+    width: 33%; }
+    section.grupos-esolares form .item6 input[type="text"]:nth-child(2) {
+      border-left: 1px solid rgba(154, 155, 155, 0.4);
+      width: 67%; }
+
+section.grupos-esolares form .item8 {
+  display: table;
+  width: 100%; }
+  section.grupos-esolares form .item8 input[type="text"] {
+    float: right;
+    width: 60%; }
+  section.grupos-esolares form .item8 .leyenda-aprox {
+    float: left;
+    width: 40%;
+    padding: 27px 0px 12px; }
+    section.grupos-esolares form .item8 .leyenda-aprox p {
+      color: #5D2B86;
+      font-size: 12px;
+      font-family: 'montserrat-regular'; }
+
+section.grupos-esolares form .item7 {
+  display: table;
+  width: 100%; }
+  section.grupos-esolares form .item7 .leyenda-fecha {
+    float: left;
+    width: 30%;
+    padding: 28px 0px 12px; }
+    section.grupos-esolares form .item7 .leyenda-fecha p {
+      color: #5D2B86;
+      font-size: 12px;
+      font-family: 'montserrat-regular'; }
+  section.grupos-esolares form .item7 .select {
+    height: 67px;
+    width: 100%; }
+    section.grupos-esolares form .item7 .select:nth-child(2) {
+      border-right: 1px solid rgba(154, 155, 155, 0.4);
+      width: 25%; }
+    section.grupos-esolares form .item7 .select:nth-child(3) {
+      border-right: 1px solid rgba(154, 155, 155, 0.4);
+      width: 25%; }
+    section.grupos-esolares form .item7 .select:nth-child(4) {
+      width: 20%; }
 
 section.experiencia-group-todos {
   margin-top: 8.125rem;
@@ -9697,11 +9780,11 @@ footer {
     font-size: 16px; }
   section.cover h2 {
     top: 33%;
-    left: 50%;
+    left: 33%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    font-size: 40px;
-    text-align: center; }
+    font-size: 35px;
+    text-align: left; }
   section.cover-intro figure.imagen-cover {
     display: none; }
   section.cover {
@@ -9821,7 +9904,8 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
   section.notas .container article.nota {
-    max-width: 100%;
+    max-width: 95%;
+    margin: auto;
     margin-bottom: 25px; }
   section.notas .container article.nota figure.imagen-nota {
     max-width: 100%; }
@@ -9829,7 +9913,11 @@ footer {
     margin: auto;
     margin-bottom: 20px; }
   section.notas .container article.nota h2 {
-    font-size: 26px; }
+    font-size: 40px;
+    margin-top: 16px; }
+  section.notas .container article.nota a.evento-nota {
+    width: 180px;
+    text-align: center; }
   section.position {
     position: relative;
     left: 0px;
@@ -9931,7 +10019,8 @@ footer {
   section.notas .container article.nota p {
     text-align: left;
     padding: 0px 15px;
-    margin-left: 0px; }
+    margin-left: 0px;
+    font-size: 16px; }
   section.slider-reino ul.bxslider li .content h2 {
     font-size: 28px; }
   .meta-incluye {
@@ -10016,9 +10105,22 @@ footer {
     -webkit-transform: inherit;
             transform: inherit;
     margin: auto;
-    left: 0px; }
+    left: 0px;
+    padding: 90px;
+    box-shadow: none; }
+  section.intro-group-event .item-content p {
+    font-size: 22px; }
+  section.eventos h2 {
+    font-size: 40px; }
+  section.eventos p {
+    font-size: 18px; }
   section.intro-group-event figure {
     width: 100%; }
+  section.eventos h3 {
+    font-size: 18px; }
+  section.eventos a.evento-btn {
+    width: 180px;
+    text-align: center; }
   section.intro-group-event .container {
     max-width: 1200px;
     margin: auto;
@@ -10044,9 +10146,22 @@ footer {
     display: block; }
   section.informacion-eventos .item h2, section.informacion-eventos .item h3 {
     text-align: left;
-    margin-left: 0px; }
+    margin-left: 0px;
+    font-size: 22px; }
+  section.informacion-eventos .item h3 {
+    font-size: 18px; }
   section.informacion-eventos .item .container-item, section.informacion-eventos .item a.mail-info {
-    margin-left: 0px; }
+    margin-left: 19px; }
+  section.group-content article.item-right .item-content p {
+    font-size: 16px; }
+  section.group-content article.item-right .item-content a.comprar-slider {
+    width: 180px;
+    text-align: center;
+    margin: auto; }
+  section.informacion .item h2 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 15px; }
   section.group-content article.item-right figure.image-group {
     width: 100%; }
   section.group-content article.item-right .item-content {
@@ -10069,7 +10184,105 @@ footer {
     padding: 0px 15px; }
   section.informacion, section.informacion .item {
     width: 100%;
-    display: block; }
+    display: block;
+    padding-top: 31px;
+    padding-bottom: 1px; }
+  section.informacion .item h3 {
+    font-size: 16px;
+    margin-top: 0px; }
+  section.donar-paypal .item-content:last-child {
+    padding-right: 15px; }
+  section.item-intro .item-content h2 {
+    font-size: 35px;
+    text-align: center; }
+  section.donar-paypal .item-content h2 {
+    font-size: 40px; }
+  section.donar-paypal .item-content p {
+    font-size: 16px; }
+  section.donar-paypal .item-content a.btn-donar {
+    width: 180px;
+    margin: auto;
+    text-align: center; }
+  section.donar-paypal .item-content:last-child h2 {
+    font-size: 32px;
+    text-align: right; }
+  section.experiencia-group-todos article h3 {
+    font-size: 25px; }
+  section.experiencia-group-todos article p {
+    font-size: 16px; }
+  section.transparencia p {
+    font-size: 16px; }
+  section.certificaciones h2 {
+    font-size: 35px; }
+  section.item-intro .item-content p {
+    font-size: 16px; }
+  section.download-material h2 {
+    font-size: 25px; }
+  section.download-material p {
+    font-size: 16px; }
+  section.download-material .item-container article a.descarga {
+    width: 180px;
+    text-align: center; }
+  section.download-material .item-container article a.conoce-descarga {
+    width: 180px;
+    text-align: center; }
+  section.experiencia-group h2 {
+    font-size: 40px; }
+  section.experiencia-group article h3 {
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 5px; }
+  section.experiencia-group article h4 {
+    font-size: 22px;
+    text-align: left; }
+  section.experiencia-group article p {
+    font-size: 18px;
+    text-align: left; }
+  section.dia-papalote h2 {
+    font-size: 40px; }
+  section.informacion-gobierno .item h2 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0px; }
+  section.informacion-gobierno .item h3 {
+    font-size: 16px; }
+  section.informacion-gobierno .item .container-item a.tel, section.informacion-gobierno .item a.mail-info {
+    margin-left: 17px; }
+  section.conoce-areas h2 {
+    font-size: 35px; }
+  section.event-service h2 {
+    font-size: 30px; }
+  section.event-service article h3 {
+    font-size: 35px;
+    text-align: left;
+    padding-left: 15px; }
+  section.event-service article ul li {
+    font-size: 18px; }
+  section.event-service article ul {
+    padding-left: 5px; }
+  section.informacion-evento-servicio .item h2 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0px; }
+  section.informacion-evento-servicio .item .container-item a.tel, section.informacion-evento-servicio .item a.mail-info {
+    margin-left: 15px; }
+  section.intro-cover-rigth .item-content h2 {
+    font-size: 35px; }
+  section.intro-cover-rigth .item-content p {
+    font-size: 16px; }
+  section.intro-cover-rigth .item-content a.btn-ayudar {
+    width: 180px;
+    text-align: center;
+    padding-left: 0px;
+    margin: auto; }
+  section.transpariencias h2 {
+    font-size: 30px; }
+  section.transpariencias p {
+    font-size: 16px; }
+  section.transpariencias a.btn-transpariencia, section.notas .container article.nota a.btn-social {
+    width: 180px;
+    margin: auto;
+    text-align: center; }
   section.informacion .item:last-child {
     padding-bottom: 15px;
     padding-top: 10px; }
@@ -10238,4 +10451,27 @@ footer {
     width: 100%;
     display: block; }
   section.nosotros-nota article .item-content {
-    padding: 0px 10px; } }
+    padding: 0px 10px; }
+  section.intro-servicio-social .admin .item-content, section.intro-servicio-social .admin figure.image-intro {
+    width: 100%; }
+  section.intro-servicio-social .admin section.intro-cover-rigth .item-content {
+    max-width: 100%; }
+  section.intro-servicio-social .admin section.intro-cover-rigth figure {
+    max-width: 100%; }
+  section.intro-servicio-social .admin .item-content h2 {
+    font-size: 35px; }
+  section.intro-servicio-social .admin section.intro-cover-rigth .item-content h2 {
+    font-size: 35px; }
+  section.intro-servicio-social .admin section.intro-cover-rigth .item-content p {
+    font-size: 16px; }
+  section.intro-servicio-social .admin section.areas-desarrollo article.requisitos h3, section.intro-servicio-social .admin section.areas-desarrollo article.beneficios h3 {
+    font-size: 35px; }
+  section.intro-servicio-social .admin section.areas-desarrollo article.areas h3 {
+    font-size: 35px; }
+  section.intro-servicio-social .admin section.informacion-equipo {
+    display: block; }
+  section.intro-servicio-social .admin section.informacion-equipo .item {
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+    padding-bottom: 5px; } }

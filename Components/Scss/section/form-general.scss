@@ -359,13 +359,105 @@ section.grupos-esolares{
 					width: 67%;}
 			}
 		}
-		.item5{
+		.item3{
 			width: 100%;
 			.select {
 				height: 67px;
 		    	width: 100%;}
 		
 		}
+		.item4{
+			input[type="text"]{
+			border-right:1px solid rgba(154, 155, 155, 0.4);
+			width: 40%;}
+			.select {
+				float: right;
+				width: 60%;
+				height: 67px;
+				background: transparent;}
+		}
+		.item-text{
+				width: 100%;
+				border-bottom:1px solid rgba(154, 155, 155, 0.4);
+
+			h3{
+			text-align: left;
+			color: #5D2B86;
+			font-size: 14px;
+			padding-top: 47px;
+			padding-bottom: 32px;}
+		}
+		.item5{
+			display: table;
+			width: 100%;
+			input[type="text"]{
+				&:nth-child(1){
+					border-top:1px solid rgba(154, 155, 155, 0.4);
+					border-right:1px solid rgba(154, 155, 155, 0.4);
+					width: 33%;}
+				&:nth-child(2){
+					border-top:1px solid rgba(154, 155, 155, 0.4);
+					border-right:1px solid rgba(154, 155, 155, 0.4);
+					width: 33%;}
+				&:nth-child(3){
+					border-top:1px solid rgba(154, 155, 155, 0.4);
+					width: 33%;}
+			}
+		} 
+		.item6{
+				display: table;
+				width: 100%;
+				input[type="text"]{
+					width: 33%;
+					&:nth-child(2){
+						border-left:1px solid rgba(154, 155, 155, 0.4);
+						width: 67%;}
+				}
+		}
+		.item8{
+			display: table;
+			width: 100%;
+			input[type="text"]{
+			float: right;
+			width: 60%;}
+		.leyenda-aprox{
+			float: left;
+			width: 40%;
+			
+			padding: 27px 0px 12px;
+			p{
+				color: #5D2B86;
+				font-size: 12px;
+				font-family: 'montserrat-regular';}
+			}
+	}
+		.item7{
+			display: table;
+			width: 100%;
+			.leyenda-fecha{
+				float: left;
+				width: 30%;
+				
+				padding: 28px 0px 12px;
+				p{
+					color: #5D2B86;
+					font-size: 12px;
+					font-family: 'montserrat-regular';}
+			}
+			.select{
+				height: 67px;
+			    width: 100%;
+				&:nth-child(2){
+					border-right:1px solid rgba(154, 155, 155, 0.4);
+					width: 25%;}
+				&:nth-child(3){
+					border-right:1px solid rgba(154, 155, 155, 0.4);
+					width: 25%;}
+				&:nth-child(4){
+					width: 20%;}
+			   }
+		}
+
 	}
 }
 

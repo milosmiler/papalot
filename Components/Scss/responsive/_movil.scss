@@ -395,10 +395,10 @@
 
     section.cover h2{
         top: 33%;
-        left: 50%;
+        left: 33%;
         transform: translate(-50%,-50%);
-        font-size: 40px;
-        text-align: center;
+        font-size: 35px;
+        text-align: left;
     }
 
     section.cover-intro figure.imagen-cover{
@@ -573,8 +573,9 @@
         flex-direction: column;
     }
     section.notas .container article.nota{
-        max-width: 100%;
-            margin-bottom: 25px;
+        max-width: 95%;
+        margin: auto;
+        margin-bottom: 25px;
     }
     section.notas .container article.nota figure.imagen-nota{
         max-width: 100%;
@@ -586,7 +587,12 @@
     }
 
     section.notas .container article.nota h2{
-        font-size: 26px;
+        font-size: 40px;
+        margin-top: 16px;
+    }
+    section.notas .container article.nota a.evento-nota{
+        width: 180px;
+        text-align: center;
     }
 
     section.position{
@@ -719,6 +725,7 @@
         text-align: left;
         padding: 0px 15px;
         margin-left: 0px;
+        font-size: 16px;
     }
 
     section.slider-reino ul.bxslider li .content h2{
