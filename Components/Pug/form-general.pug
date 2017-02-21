@@ -275,11 +275,101 @@ html(lang="es")
 						span.leyenda-privacidad He leído el aviso de privacidad
 						a.enviar.sombra(href="#") Enviar
 
+		section.cuates
+			h2 Registro de Cuates
+			.pasos.flex
+				span PASO 1
+				span PASO 2
+			.container-form
+				h3 DATOS PERSONALES
+				form
+					.item
+						input(type="text" placeholder="Nombre*")
+						input(type="text" placeholder="Apellido paterno")
+						input(type="text" placeholder="Apellido materno")
+					.item1
+						input(type="text" placeholder="Edad")
+						.sexo
+							p Sexo:
+							button Mujer
+							button Hombre
+					.item2
+						input(type="text" placeholder="Télefono local*")
+						input(type="text" placeholder="Télefono celular")
+					.item3
+						input(type="text" placeholder="Correo electrónico*")
+					.item4
+						input(type="text" placeholder="Código postal")
+						select
+							option ¿En qué estado vives?
+					.item5
+						select
+							option ¿En qué delegación o municipio?
+					.item-text
+						h3 Historial profesional / Educación
+					.item5
+						select
+							option Grado último de estudios
+					.item3
+						input(type="text" placeholder="Carrera")
+					.item3
+						input(type="text" placeholder="Escuela/Campus")
+					.item5
+						select
+							option Dominio del Inglés:
+					.item-boton
+						a.btn-siguiente(href="#") Siguiente
+				form
+					.item-interes
+						h3 Interés y aptitudes
+					.item-colaborar
+						p ¿En que deseas colaborar #[br] con nosotros?
+						button Prácticas Profesionales
+						button Servicio Social
+					.item-turno
+						h3 TURNO DE INTERÉS
+					.item-btn
+						.box
+							h2 Matutino
+							p Lunes a viernes
+							p 8:30 - 1330 hrs
+						.box
+							h2 Vespertino
+							p Lunes a viernes
+							p 8:30 - 1330 hrs
+						.box
+							h2 Fines de semana
+							p Lunes a viernes
+							p 8:30 - 1330 hrs
+					.item5
+						select
+							option ¿Por qué medio te enteraste del Programa Cuates?
+					.item-visita
+						p ¿Has visitado PAPALOTE MUSEO DEL NIÑO?
+						button No
+						button Si
+					textarea(placeholder= "¿Por qué te interesa hacer tu Servicio Social o Prácticas Profesionales en PAPALOTE?:")
+					textarea(placeholder= "¿Cuál ha sido tu mayor logro escolar?:")
+					textarea(placeholder= "¿Para ti qué es ser una persona responsable?:")
+					textarea(placeholder= "Menciona 3 cualidades que te agradan de ti:")
+					textarea(placeholder= "¿Qué te gustaría mejorar en ti?:")
+					textarea(placeholder= "Menciona 3 valores que te definen como persona:")
+					textarea(placeholder= "Menciona una meta personal y una profesional que te has propuesto en este año:")
+					textarea(placeholder= "¿Cuál ha sido la exposición en clase qué más te ha gustado y por qué?:")
+					textarea(placeholder= "¿Cómo te organizas para exponer un tema en clase?:")
+					textarea(placeholder= "Para ti: ¿Qué es un “Buen servicio”?:")
+					textarea(placeholder= "¿Has tenido experiencia en trabajar con niños? ¿Cuál?:")
+					.leido
+						input#cbtest(type='checkbox')
+						label.check-box(for='cbtest')
+						span.leyenda-privacidad He leído el aviso de privacidad
+
+
+
+
+
+
 					
-
-
-
-
 		span.ir-arriba
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")

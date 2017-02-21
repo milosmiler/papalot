@@ -666,6 +666,11 @@ span.link {
   transform: translate(-50%, -50%);
   font-size: 1.875rem; }
 
+.icon-cerrar_form:before {
+  content: '\0074';
+  color: #5D2B86;
+  font-size: 33px; }
+
 .icon-controlador_izq:before {
   content: '\0056'; }
 
@@ -8764,6 +8769,296 @@ section.grupos-esolares form .item7 {
       width: 25%; }
     section.grupos-esolares form .item7 .select:nth-child(4) {
       width: 20%; }
+
+section.cuates h2 {
+  text-align: center;
+  text-align: center;
+  font-size: 40px;
+  color: #5D2B86; }
+
+section.cuates .pasos {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 198px;
+  padding-bottom: 5px;
+  margin: auto;
+  margin-bottom: 60px; }
+  section.cuates .pasos span {
+    font-family: 'montserratlight';
+    color: #5D2B86;
+    font-size: 14px;
+    display: inline-block;
+    position: relative; }
+    section.cuates .pasos span:before {
+      content: '';
+      background: #5D2B86;
+      width: 80px;
+      height: 5px;
+      position: absolute;
+      bottom: -5px;
+      left: -15px; }
+
+section.cuates form .item {
+  display: table;
+  width: 100%; }
+  section.cuates form .item input[type="text"]:nth-child(1) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+  section.cuates form .item input[type="text"]:nth-child(2) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+  section.cuates form .item input[type="text"]:nth-child(3) {
+    border-top: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+
+section.cuates form .item1 {
+  display: table;
+  width: 100%; }
+  section.cuates form .item1 input[type="text"] {
+    display: table-cell;
+    border-top: transparent;
+    border-right: 1px solid rgba(154, 155, 155, 0.4);
+    width: 33%; }
+  section.cuates form .item1 .sexo {
+    width: 67%;
+    float: right;
+    padding: 13px 0px; }
+    section.cuates form .item1 .sexo p {
+      display: inline-block;
+      font-family: 'montserrat-regular';
+      font-size: 12px;
+      padding-left: 25px;
+      color: rgba(54, 70, 89, 0.5); }
+    section.cuates form .item1 .sexo button {
+      color: #fff;
+      font-family: 'montserrat-regular';
+      font-size: 12px;
+      border-radius: 10px;
+      background: #5D2B86;
+      width: 26%;
+      border: none;
+      padding: 13px 0px;
+      margin-left: 64px;
+      opacity: 0.5; }
+      section.cuates form .item1 .sexo button:last-child {
+        margin-left: 36px; }
+
+section.cuates form .item2 {
+  display: table;
+  width: 100%; }
+  section.cuates form .item2 input[type="text"]:nth-child(1) {
+    border-right: 1px solid rgba(154, 155, 155, 0.4);
+    width: 50%; }
+  section.cuates form .item2 input[type="text"]:nth-child(2) {
+    width: 50%; }
+
+section.cuates form .item3 input[type="text"] {
+  width: 100%; }
+
+section.cuates form .item4 input[type="text"] {
+  border-right: 1px solid rgba(154, 155, 155, 0.4);
+  width: 40%; }
+
+section.cuates form .item4 .select {
+  float: right;
+  width: 60%;
+  height: 67px;
+  background: transparent; }
+
+section.cuates form .item5 {
+  width: 100%; }
+  section.cuates form .item5 .select {
+    height: 67px;
+    width: 100%; }
+
+section.cuates form .item-text {
+  width: 100%;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4); }
+  section.cuates form .item-text h3 {
+    text-align: left;
+    color: #5D2B86;
+    font-size: 14px;
+    padding-top: 47px;
+    padding-bottom: 32px; }
+
+section.cuates form .item-boton {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 50px; }
+  section.cuates form .item-boton a.btn-siguiente {
+    background-color: #5D2B86;
+    border-radius: 3.125rem;
+    clear: both;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'VAGRounded-bold';
+    display: block;
+    font-size: 1.125rem;
+    height: 3.125rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-align: left;
+    padding-left: 1.125rem;
+    padding-top: 0.9375rem;
+    text-decoration: none;
+    width: 11.25rem;
+    position: relative;
+    float: right; }
+    section.cuates form .item-boton a.btn-siguiente:before {
+      content: "\f061";
+      position: absolute;
+      right: 1.4375rem;
+      font-family: 'FontAwesome'; }
+
+section.cuates form .item-interes {
+  font-size: 14px;
+  font-family: 'montserrat-regular';
+  color: #5D2B86;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+  padding-bottom: 28px; }
+
+section.cuates form .item-colaborar {
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+  padding-top: 13px;
+  padding-bottom: 13px; }
+  section.cuates form .item-colaborar p {
+    color: rgba(54, 71, 89, 0.4);
+    font-size: 12px;
+    font-family: 'montserrat-regular';
+    display: inline-block;
+    padding-left: 27px; }
+  section.cuates form .item-colaborar button {
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-family: 'montserrat-bold';
+    font-size: 12px;
+    background: #5D2B86;
+    opacity: 0.5;
+    float: right;
+    width: 101px;
+    height: 42px; }
+    section.cuates form .item-colaborar button:nth-child(2) {
+      width: 139px;
+      margin-right: 11px;
+      margin-left: 39px; }
+
+section.cuates form .item-turno {
+  font-size: 14px;
+  color: #5D2B86;
+  padding-top: 46px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4); }
+
+section.cuates form .item-btn {
+  display: table;
+  width: 100%; }
+  section.cuates form .item-btn .box {
+    width: 33%;
+    display: table-cell;
+    padding-top: 35px;
+    padding-bottom: 102px;
+    border-bottom: 1px solid rgba(154, 155, 155, 0.4);
+    border-left: 1px solid rgba(154, 155, 155, 0.4); }
+    section.cuates form .item-btn .box:nth-child(3) {
+      border-right: 1px solid rgba(154, 155, 155, 0.4); }
+    section.cuates form .item-btn .box:hover {
+      box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+      background: #5D2B86;
+      opacity: 0.5; }
+    section.cuates form .item-btn .box h2 {
+      text-align: center;
+      margin-bottom: 17px;
+      font-size: 12px;
+      font-family: 'montserrat-bold'; }
+    section.cuates form .item-btn .box p {
+      font-size: 12px;
+      font-family: 'montserratlight';
+      color: #364659;
+      text-align: center; }
+
+section.cuates form .item-visita {
+  padding-top: 11px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid rgba(154, 155, 155, 0.4); }
+  section.cuates form .item-visita p {
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'montserrat-regular';
+    color: #364659; }
+  section.cuates form .item-visita button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    float: right;
+    background: #5D2B86;
+    opacity: 0.5;
+    border: none; }
+    section.cuates form .item-visita button:nth-child(2) {
+      margin-left: 23px;
+      margin-right: 29px; }
+
+section.cuates form .leido {
+  text-align: center; }
+
+.modal,
+.modal-box {
+  z-index: 900; }
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent; }
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: white;
+  overflow: auto;
+  z-index: 99999; }
+
+.close-modal {
+  position: absolute;
+  right: 50px;
+  top: 46px;
+  cursor: pointer; }
+
+.modal-box {
+  position: relative;
+  width: 80%;
+  max-width: 920px;
+  margin: 100px auto;
+  -webkit-animation-name: modalbox;
+          animation-name: modalbox;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out; }
+
+@-webkit-keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes modalbox {
+  0% {
+    top: -250px;
+    opacity: 0; }
+  100% {
+    top: 0;
+    opacity: 1; } }
 
 section.experiencia-group-todos {
   margin-top: 8.125rem;
