@@ -1862,18 +1862,24 @@ section.padrinos article.leyenda-content {
     background: transparent;
     font-family: 'VAGRounded-bold';
     border: 4px solid #fff;
+    height: 3.125rem;
     clear: both;
     cursor: pointer;
     color: #fff;
     display: block;
-    font-size: 0.875rem;
     height: 2.8125rem;
     text-decoration: none;
+    padding-top: 0.625rem;
     width: 12.5rem;
-    font-size: 18px;
     height: auto;
     margin: auto;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    position: relative; }
+    section.padrinos article.leyenda-content a.descubre:before {
+      content: "\f061";
+      position: absolute;
+      right: 1.4375rem;
+      font-family: 'FontAwesome'; }
 
 /* slider */
 .slider {
@@ -6839,15 +6845,15 @@ section.download-material {
         background: transparent;
         font-family: 'VAGRounded-bold';
         border: 4px solid #08405C;
+        height: 3.125rem;
         clear: both;
         cursor: pointer;
         color: #08405C;
         display: block;
-        font-size: 0.875rem;
         height: 2.8125rem;
         text-decoration: none;
+        padding-top: 0.625rem;
         width: 12.5rem;
-        color: #08405C;
         font-size: 1.125rem;
         font-family: 'VAGRounded-bold';
         margin: auto;
@@ -7345,6 +7351,7 @@ section.conoce-areas {
       color: #08405C;
       padding-left: 1.125rem;
       padding-right: 1.125rem;
+      height: 6.875rem;
       margin-bottom: 3rem; }
     section.conoce-areas article span.capacidad {
       color: #718F26;
@@ -8460,13 +8467,14 @@ section.informado {
     background: transparent;
     font-family: 'VAGRounded-bold';
     border: 4px solid #fff;
+    height: 3.125rem;
     clear: both;
     cursor: pointer;
     color: #fff;
     display: block;
-    font-size: 0.875rem;
     height: 2.8125rem;
     text-decoration: none;
+    padding-top: 0.625rem;
     width: 8.75rem;
     position: relative;
     text-align: center;
@@ -9367,6 +9375,8 @@ section.donar-paypal {
         font-family: 'montserratlight';
         line-height: 1.75rem;
         margin-bottom: 2.0625rem; }
+        section.donar-paypal .item-content:last-child p span {
+          font-family: 'montserrat-bold'; }
       section.donar-paypal .item-content:last-child span.email a {
         text-align: right;
         color: #fff;
@@ -9971,13 +9981,14 @@ footer {
         background: transparent;
         font-family: 'VAGRounded-bold';
         border: 4px solid #00B3D0;
+        height: 3.125rem;
         clear: both;
         cursor: pointer;
         color: #00B3D0;
         display: block;
-        font-size: 0.875rem;
         height: 2.8125rem;
         text-decoration: none;
+        padding-top: 0.625rem;
         width: 8.75rem;
         font-family: 'VAGRounded-bold';
         padding-top: 0.625rem;

@@ -58,10 +58,15 @@ section.padrinos{
          }
          a.descubre{
           @include boton-borde(#fff, 12.5rem, $color: #fff);
-          font-size: 18px;
           height: auto;
           margin: auto;
           margin-bottom: 10px;
+          position: relative;
+          &:before{
+            content: "\f061";
+            position: absolute;
+            right: 1.4375rem;
+            font-family: 'FontAwesome';}
 
          }
     }

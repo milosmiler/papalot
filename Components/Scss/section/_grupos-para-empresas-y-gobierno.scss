@@ -55,7 +55,6 @@ section.download-material{
 				text-align: center;}
 			a.conoce-descarga{
 				@include boton-borde($color-azul100, 12.5rem, $color: $color-azul100);
-				color: $color-azul100;
 				font-size: 1.125rem;
 				font-family: 'VAGRounded-bold';
 				margin: auto;

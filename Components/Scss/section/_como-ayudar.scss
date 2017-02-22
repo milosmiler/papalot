@@ -34,8 +34,7 @@ section.intro-cover-rigth{
 		}
 		a.btn-ayudar{
 			@include boton($ancho: 12.5rem, $fondo: #9C52CB , $color: #fff );
-			position: relative;
-		}
+			position: relative;}
 		}
 }
 section.transpariencias{
