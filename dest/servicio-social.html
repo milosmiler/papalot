@@ -62,7 +62,7 @@
                     <li><a href="grupos-para-empresas-y-gobierno.html" data-url="images/menu/grupos_para_empresas_gobierno.jpg">Grupos para empresas y Gobiernos</a></li>
                     <li><a href="eventos-y-servicios.html" data-url="images/menu/eventos_servicios.jpg"> Eventos y Servicios</a></li>
                   </ul>
-                  <figure class="nav-images"><img class="secciones" src="images/menu/grupos_escolares.jpg" alt="familias"><img class="secciones" src="images/menu/grupos_para_empresas_gobierno.jpg" alt="familias"><img class="secciones" src="images/menu/eventos_servicios.jpg" alt="familias"></figure>
+                  <figure class="nav-images"><img src="images/grupos-eventos.png" alt="grupos y eventos"><img class="secciones" src="images/menu/grupos_escolares.jpg" alt="familias"><img class="secciones" src="images/menu/grupos_para_empresas_gobierno.jpg" alt="familias"><img class="secciones" src="images/menu/eventos_servicios.jpg" alt="familias"></figure>
                 </div>
               </li>
               <li id="image-nav"><a href="como-ayudar.html">¿Cómo ayudar?</a>
@@ -72,7 +72,7 @@
                     <li><a href="servicio-social.html" data-url="images/menu/servicio-social.jpg">Servicio Social</a></li>
                     <li><a href="transparencia.html" data-url="images/menu/"> Transpariencia</a></li>
                   </ul>
-                  <figure class="nav-images"><img src="images/img1.jpg" alt="familias"><img class="secciones" src="images/menu/papalote_todos.jpg" alt="familias"><img class="secciones" src="images/menu/servicio-social.jpg" alt="familias"></figure>
+                  <figure class="nav-images"><img src="images/como-ayudar.jpg" alt="familias"><img class="secciones" src="images/menu/papalote_todos.jpg" alt="familias"><img class="secciones" src="images/menu/servicio-social.jpg" alt="familias"></figure>
                 </div>
               </li>
             </ul>
@@ -111,11 +111,11 @@
       <h2>Conoce más de ambos <br> programas</h2>
       <div class="container">
         <div class="item flex">
-          <button>Servicio Social Administrativo</button>
-          <button>Cuates</button>
+          <button class="push" id="serv-social">Servicio Social Administrativo</button>
+          <button id="cuates">Cuates</button>
         </div>
       </div>
-      <div class="admin">
+      <div class="admin" id="selector-admin">
         <div class="container">
           <div class="item-content">
             <h2>Sé parte de nuestro Servicio Social Administrativo</h2>
@@ -221,7 +221,7 @@
         </section>
         <section class="programas-cuates">
           <div class="container">
-            <h2>o también conoce <br> nuestro programa de Cuates</h2><a class="clic sombra" href="#">clic aquí</a>
+            <h2>o también conoce <br> nuestro programa de Cuates</h2><a class="clic sombra" id="cuates" href="#">clic aquí</a>
           </div>
         </section>
         <section class="informacion-equipo">
@@ -234,6 +234,281 @@
             <div class="container-item"><a class="tel" href="tel:+5237 1719">5237 1719</a></div><a class="mail-info" href="mailto:claudia.lecona@papalote.org.mx">claudia.lecona@papalote.org.mx</a>
           </div>
         </section>
+        <div class="modal" id="modal-name">
+          <div class="modal-sandbox"></div>
+          <div class="modal-box">
+            <div class="modal-header">
+              <div class="close-modal icon-cerrar_form"></div>
+            </div>
+            <section class="upload-file">
+              <div class="container">
+                <h2>Paso 1 adjuntar currículum</h2>
+              </div>
+              <div class="marco">
+                <div class="container">
+                  <h2>Sube tu currículum</h2>
+                  <p>PDF, JPG, 2mb máx.</p>
+                  <label class="filupp flex" for="custom-file-upload"><span class="filupp-file-name js-value">Arrastra tu archivo aquí</span>
+                    <input id="custom-file-upload" type="file" name="attachment-file" value="1">
+                  </label>
+                  <div class="adjuntar">
+                    <h4>o adjuntar archivo
+                      <div class="custom-input-file sombra"><i class="fa icon-icn_adjuntar"></i>
+                        <input class="input-file" type="file">
+                      </div>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="admin" id="selector-cuates">
+        <div class="container">
+          <div class="item-content">
+            <h2>¡Únete a nuestro equipo de Cuates!</h2>
+            <p>En   <span>PAPALOTE </span>estamos seguros de contar con el equipo más creativo, divertido y responsable. Al ser Cuate tendrás la posibilidad de conocer el Museo Renovado, desarrollar habilidades de comunicación, trabajo colaborativo y liderazgo en un ambiente agradable y divertido.</p>
+          </div>
+          <figure class="image-intro"><img src="images/cuates.png"></figure>
+          <section class="intro-cover-rigth">
+            <div class="container">
+              <figure><img src="images/hacen-cuates.png"></figure>
+              <div class="item-content">
+                <h2>¿Qué hacen los Cuates?</h2>
+                <p>Un <span>Cuate </span>interactúa con los visitantes del Museo para comunicar los mensajes y contenidos de las exhibiciones. Se valen del diálogo y el juego como herramientas para construir un aprendizaje significativo.</p>
+              </div>
+            </div>
+          </section>
+          <figure class="pendulo"><img src="images/pendulo.png"></figure>
+        </div>
+        <section class="areas-desarrollo">
+          <div class="container">
+            <article class="requisitos">
+              <h3>Requisitos</h3>
+              <div class="container-datos flex">
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos1_cuates"></i></div>
+                  <h4>Tener</h4>
+                  <p>17 años cumplidos</p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos2_cuates"></i></div>
+                  <h4>Ser estudiante</h4>
+                  <p>o egresado</p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos3_cuates"></i></div>
+                  <h4>Contar</h4>
+                  <p>con el 70% de créditos académicos aprobados a nivel licenciatura y el 50% a nivel medio superior</p>
+                </div>
+              </div>
+              <div class="container-datos flex">
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos4_cuates"></i></div>
+                  <h4>Contar</h4>
+                  <p>con seguro facultativo vigente</p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos5_cuates"></i></div>
+                  <h4>Tener compromiso</h4>
+                  <p>y disposición para colaborar con niños.</p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos6_cuates"></i></div>
+                  <h4>Trabajar</h4>
+                  <p>en equipo</p>
+                </div>
+              </div>
+              <div class="container-datos flex">
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos7_cuates"></i></div>
+                  <h4>Ser</h4>
+                  <p>creativo</p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos8_cuates"></i></div>
+                  <h4>Hablar otro idioma</h4>
+                  <p>deseable</p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-requisitos9_cuates"></i></div>
+                  <h4>Acreditar</h4>
+                  <p>la Capacitación Inicial de Cuates</p>
+                </div>
+              </div>
+            </article>
+            <figure class="pendulo"><img src="images/pendulo.png"></figure>
+            <article class="beneficios">
+              <h3>Beneficios</h3>
+              <div class="container-datos flex">
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-beneficios1_cuates"></i></div>
+                  <p>Oportunidad de <span>participar</span> en los programas y actividades de una <span>institución con reconocido prestigio</span></p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-beneficios2_cuates"></i></div>
+                  <p> <span>Capacitación continua </span>con valor curricular</p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-beneficios3_cuates"></i></div>
+                  <p>Acceso a <span>conferencias y talleres </span>impartidas por especialistas</p>
+                </div>
+              </div>
+              <div class="container-datos flex">
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-beneficios4_cuates"></i></div>
+                  <p>Programa de <span>Comunicación y Motivación</span></p>
+                </div>
+                <div class="item">
+                  <div class="circulo"><i class="fa icon-beneficios5_cuates"></i></div>
+                  <p> <span>Descuentos</span>en entradas al Museo, ADO Megapantalla IMAX, domodigital Citibanamex y Tienda <span>PAPALOTE</span></p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <section class="nuestros-cuates">
+            <h2>Forma parte de nuestros Cuates</h2><a class="clic sombra modal-trigger" href="#" data-modal="modal-name">clic aquí</a>
+          </section>
+        </section>
+        <section class="programas-cuates">
+          <div class="container">
+            <h2>o también conoce nuestro programa  <br> de Servicio Social Administrativo</h2><a class="clic sombra" id="serv-social" href="#">clic aquí</a>
+          </div>
+        </section>
+        <section class="informacion-equipo">
+          <div class="item">
+            <h2>¿Necesitas más información?</h2>
+          </div>
+          <div class="item">
+            <h3>Comunícate con:</h3>
+            <p>Claudia Yaneth Lecona Hurtado</p>
+            <div class="container-item"><a class="tel" href="tel:+5237 1719">5237 1719</a></div><a class="mail-info" href="mailto:claudia.lecona@papalote.org.mx">claudia.lecona@papalote.org.mx</a>
+          </div>
+        </section>
+        <div class="modal" id="modal-name">
+          <div class="modal-sandbox"></div>
+          <div class="modal-box">
+            <div class="modal-header">
+              <div class="close-modal icon-cerrar_form"></div>
+            </div>
+            <section class="cuates">
+              <h2>Registro de Cuates</h2>
+              <div class="pasos flex"><span>PASO 1</span><span>PASO 2</span></div>
+              <div class="container-form">
+                <h3>DATOS PERSONALES</h3>
+                <form>
+                  <div class="item">
+                    <input type="text" placeholder="Nombre*">
+                    <input type="text" placeholder="Apellido paterno">
+                    <input type="text" placeholder="Apellido materno">
+                  </div>
+                  <div class="item1">
+                    <input type="text" placeholder="Edad">
+                    <div class="sexo">
+                      <p>Sexo:</p>
+                      <button>Mujer</button>
+                      <button>Hombre</button>
+                    </div>
+                  </div>
+                  <div class="item2">
+                    <input type="text" placeholder="Télefono local*">
+                    <input type="text" placeholder="Télefono celular">
+                  </div>
+                  <div class="item3">
+                    <input type="text" placeholder="Correo electrónico*">
+                  </div>
+                  <div class="item4">
+                    <input type="text" placeholder="Código postal">
+                    <select>
+                      <option>¿En qué estado vives?</option>
+                    </select>
+                  </div>
+                  <div class="item5">
+                    <select>
+                      <option>¿En qué delegación o municipio?</option>
+                    </select>
+                  </div>
+                  <div class="item-text">
+                    <h3>Historial profesional / Educación</h3>
+                  </div>
+                  <div class="item5">
+                    <select>
+                      <option>Grado último de estudios</option>
+                    </select>
+                  </div>
+                  <div class="item3">
+                    <input type="text" placeholder="Carrera">
+                  </div>
+                  <div class="item3">
+                    <input type="text" placeholder="Escuela/Campus">
+                  </div>
+                  <div class="item5">
+                    <select>
+                      <option>Dominio del Inglés:</option>
+                    </select>
+                  </div>
+                  <div class="item-boton"><a class="btn-siguiente" href="#">Siguiente</a></div>
+                </form>
+                <form>
+                  <div class="item-interes">
+                    <h3>Interés y aptitudes</h3>
+                  </div>
+                  <div class="item-colaborar">
+                    <p>¿En que deseas colaborar <br> con nosotros?</p>
+                    <button>Prácticas Profesionales</button>
+                    <button>Servicio Social</button>
+                  </div>
+                  <div class="item-turno">
+                    <h3>TURNO DE INTERÉS</h3>
+                  </div>
+                  <div class="item-btn">
+                    <div class="box">
+                      <h2>Matutino</h2>
+                      <p>Lunes a viernes</p>
+                      <p>8:30 - 1330 hrs</p>
+                    </div>
+                    <div class="box">
+                      <h2>Vespertino</h2>
+                      <p>Lunes a viernes</p>
+                      <p>8:30 - 1330 hrs</p>
+                    </div>
+                    <div class="box">
+                      <h2>Fines de semana</h2>
+                      <p>Lunes a viernes</p>
+                      <p>8:30 - 1330 hrs</p>
+                    </div>
+                  </div>
+                  <div class="item5">
+                    <select>
+                      <option>¿Por qué medio te enteraste del Programa Cuates?</option>
+                    </select>
+                  </div>
+                  <div class="item-visita">
+                    <p>¿Has visitado PAPALOTE MUSEO DEL NIÑO?</p>
+                    <button>No</button>
+                    <button>Si</button>
+                  </div>
+                  <textarea placeholder="¿Por qué te interesa hacer tu Servicio Social o Prácticas Profesionales en PAPALOTE?:"></textarea>
+                  <textarea placeholder="¿Cuál ha sido tu mayor logro escolar?:"></textarea>
+                  <textarea placeholder="¿Para ti qué es ser una persona responsable?:"></textarea>
+                  <textarea placeholder="Menciona 3 cualidades que te agradan de ti:"></textarea>
+                  <textarea placeholder="¿Qué te gustaría mejorar en ti?:"></textarea>
+                  <textarea placeholder="Menciona 3 valores que te definen como persona:"></textarea>
+                  <textarea placeholder="Menciona una meta personal y una profesional que te has propuesto en este año:"></textarea>
+                  <textarea placeholder="¿Cuál ha sido la exposición en clase qué más te ha gustado y por qué?:"></textarea>
+                  <textarea placeholder="¿Cómo te organizas para exponer un tema en clase?:"></textarea>
+                  <textarea placeholder="Para ti: ¿Qué es un “Buen servicio”?:"></textarea>
+                  <textarea placeholder="¿Has tenido experiencia en trabajar con niños? ¿Cuál?:"></textarea>
+                  <div class="leido">
+                    <input id="cbtest" type="checkbox">
+                    <label class="check-box" for="cbtest"></label><span class="leyenda-privacidad">He leído el aviso de privacidad</span>
+                  </div>
+                </form>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </section><span class="ir-arriba"></span>
     <footer>

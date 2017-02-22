@@ -1,4 +1,16 @@
 section.intro-servicio-social{
+	section.areas-desarrollo{
+			h2{
+				text-align: center;
+				font-size: 40px;
+				color: #0098CC;}
+			a.clic{
+			@include boton($ancho: 12.5rem, $fondo: #5D2B86 , $color: #fff )
+			text-align: center;
+			margin: auto;
+			margin-bottom: 92px;}
+	}
+
 	h2{
 		text-align: center;
 		font-size: 3.125rem;
@@ -14,13 +26,20 @@ section.intro-servicio-social{
 		align-items: center;
 		margin-bottom: 7.3125rem;
 		button{
-			background: #A40084;
+			 background: rgba(164, 0, 133, 0.4);
+			 transition: all 0.3s ease-out;
 			border: none;
-			width: 21.3125rem;
+			width:21.3125rem;
 			font-size: 1.875rem;
 			font-family: 'VAGRounded-bold';
-			height: 7.125rem;
-			color: #fff;}
+			height:6.25rem;
+			color: #fff;
+			&:focus{
+				outline:0px;}
+		}
+	}
+	#selector-cuates{
+		display: none;
 	}
 	.admin{
 		width: 100%;
@@ -162,7 +181,15 @@ section.intro-servicio-social{
 						font-family: 'montserratsemi-bold';
 						text-align: center;
 					}
-
+					p{
+						text-align: center;
+					    margin-top: 1.875rem;
+					    color: #08405C;
+					    font-size: 1rem;
+					    font-family: 'montserratlight';
+					    span{
+					    	font-family: 'montserrat-bold';
+					    	}}
 				}
 			}
 			

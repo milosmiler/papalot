@@ -115,7 +115,7 @@ html(lang="es")
 			img(src="images/mascotas.png")
 		section.integrar-equipo
 			h2 ¡Compártenos tu currículum! #[br] Si te interesa integrarte al equipo
-			a.btn-curriculum clic aquí
+			a.btn-curriculum.modal-trigger(href="", data-modal="modal-name") clic aquí
 		section.informacion-equipo
 			.item
 				h2 ¿Necesitas más información?
@@ -125,9 +125,69 @@ html(lang="es")
 				.container-item
 					a.tel(href='tel:+5237 1719') 5237 1719
 				a.mail-info(href='mailto:claudia.lecona@papalote.org.mx') claudia.lecona@papalote.org.mx
+		#modal-name.modal
+			.modal-sandbox
+			.modal-box
+				.modal-header
+					.close-modal.icon-cerrar_form
+				section.bolsa-trabajo-form
+					h2 Bolsa de trabajo
+					.container-form
+						h3 DATOS DE PERSONALES
+						form
+							.item
+								input(type="text" placeholder="Nombre*")
+								input(type="text" placeholder="Apellido paterno")
+								input(type="text" placeholder="Apellido materno")
+							.item1
+								input(type="text" placeholder="Edad")
+								.sexo
+									p Sexo:
+									button Mujer
+									button Hombre
+							.item2
+								input(type="text" placeholder="Télefono local*")
+								input(type="text" placeholder="Télefono celular")
+							.item3
+								input(type="text" placeholder="Correo electrónico*")
+							.item4
+								input(type="text" placeholder="Código postal")
+								select
+									option ¿En qué estado vives?
+							.item5
+								select
+									option ¿En qué delegación o municipio?
+							.item-text
+								h3 Historial profesional / Educación
+							.item5
+								select
+									option Grado último de estudios
+							.item3
+								input(type="text" placeholder="Carrera")
+							.item5
+								select
+									option Área de interés
+							.item5
+								select
+									option Sede de interés
+							.item5
+								select
+									option Disponibilidad
+							.item5
+								select
+									option Sueldo deseado
+							textarea(placeholder= "¿Por qué estás interesado en trabajar en PAPALOTE?*")
+							textarea(placeholder= "¿Cuál ha sido tu mayor logro profesional? ")
+							textarea(placeholder= "Menciona cuáles son tus objetivos a corto y largo plazo ")
+							.item-right.flex
+								input#cbtest(type='checkbox')
+								label.check-box(for='cbtest')
+								span.leyenda-privacidad He leído el aviso de privacidad
+								a.enviar.sombra(href="#") Enviar
 		span.ir-arriba
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery-ui.min.js")
 		script(src="js/jquery.flexslider-min.js")
 		script(src="js/select.js")
 		script(src="js/waves.js")

@@ -62,7 +62,7 @@
                     <li><a href="grupos-para-empresas-y-gobierno.html" data-url="images/menu/grupos_para_empresas_gobierno.jpg">Grupos para empresas y Gobiernos</a></li>
                     <li><a href="eventos-y-servicios.html" data-url="images/menu/eventos_servicios.jpg"> Eventos y Servicios</a></li>
                   </ul>
-                  <figure class="nav-images"><img class="secciones" src="images/menu/grupos_escolares.jpg" alt="familias"><img class="secciones" src="images/menu/grupos_para_empresas_gobierno.jpg" alt="familias"><img class="secciones" src="images/menu/eventos_servicios.jpg" alt="familias"></figure>
+                  <figure class="nav-images"><img src="images/grupos-eventos.png" alt="grupos y eventos"><img class="secciones" src="images/menu/grupos_escolares.jpg" alt="familias"><img class="secciones" src="images/menu/grupos_para_empresas_gobierno.jpg" alt="familias"><img class="secciones" src="images/menu/eventos_servicios.jpg" alt="familias"></figure>
                 </div>
               </li>
               <li id="image-nav"><a href="como-ayudar.html">¿Cómo ayudar?</a>
@@ -72,7 +72,7 @@
                     <li><a href="servicio-social.html" data-url="images/menu/servicio-social.jpg">Servicio Social</a></li>
                     <li><a href="transparencia.html" data-url="images/menu/"> Transpariencia</a></li>
                   </ul>
-                  <figure class="nav-images"><img src="images/img1.jpg" alt="familias"><img class="secciones" src="images/menu/papalote_todos.jpg" alt="familias"><img class="secciones" src="images/menu/servicio-social.jpg" alt="familias"></figure>
+                  <figure class="nav-images"><img src="images/como-ayudar.jpg" alt="familias"><img class="secciones" src="images/menu/papalote_todos.jpg" alt="familias"><img class="secciones" src="images/menu/servicio-social.jpg" alt="familias"></figure>
                 </div>
               </li>
             </ul>
@@ -173,7 +173,7 @@
       </div>
     </section>
     <section class="contact-group">
-      <h2>¿Deseas que nosotros te contactemos?  </h2><a class="form-contact sombra btn-efect" href="">click aquí</a>
+      <h2>¿Deseas que nosotros te contactemos?  </h2><a class="form-contact sombra btn-efect modal-trigger" href="" data-modal="modal-name">clic aquí</a>
     </section>
     <section class="informacion-evento-servicio">
       <div class="item">
@@ -184,6 +184,66 @@
         <div class="container-item"><a class="tel" href="tel:+5292 6370">5292 6370     </a></div><a class="mail-info" href="mailto:pbonnet@ambrosia.mx">pbonnet@ambrosia.mx</a>
       </div>
     </section>
+    <div class="modal" id="modal-name">
+      <div class="modal-sandbox"></div>
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="close-modal icon-cerrar_form"></div>
+        </div>
+        <section class="eventos-servicios">
+          <h2>Eventos y Servicios</h2>
+          <div class="container-form">
+            <h3>DATOS DE CONTACTO</h3>
+            <form>
+              <div class="item">
+                <input type="text" placeholder="Nombre*">
+                <input type="text" placeholder="Apellido paterno">
+                <input type="text" placeholder="Apellido materno">
+              </div>
+              <div class="item2">
+                <input type="text" placeholder="Télefono local*">
+                <input type="text" placeholder="Correo electrónico*">
+              </div>
+              <div class="item4">
+                <div class="leyenda-fecha">
+                  <p>Fecha tentativa del evento:</p>
+                </div>
+                <select>
+                  <option>Dia</option>
+                </select>
+                <select>
+                  <option>Mes</option>
+                </select>
+                <select>
+                  <option>Año</option>
+                </select>
+              </div>
+              <div class="item3">
+                <div class="leyenda-aprox">
+                  <p>Número aproximado de visitantes:</p>
+                </div>
+                <input type="text" placeholder="(de 15 a 7000 personas)">
+              </div>
+              <div class="item5">
+                <select>
+                  <option>Tipo de evento</option>
+                </select>
+              </div>
+              <div class="item5">
+                <select>
+                  <option>Lugar del evento</option>
+                </select>
+              </div>
+              <textarea placeholder="Comentarios:"></textarea>
+              <div class="item-right flex">
+                <input id="cbtest" type="checkbox">
+                <label class="check-box" for="cbtest"></label><span class="leyenda-privacidad">He leído el aviso de privacidad</span><a class="enviar sombra" href="#">Enviar</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
     <footer>
       <div class="container">
         <aside class="social flex">
@@ -244,6 +304,7 @@
       </div>
     </footer>
     <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/select.js"></script>
     <script src="js/waves.js"></script>

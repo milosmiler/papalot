@@ -156,7 +156,27 @@ html(lang="es")
 			figure
 				img(src="images/moustro.png")
 			h2 ¿No encontraste lo que buscabas? 
-			a.btn-contacto.sombra.btn-efect(href="#") Contáctanos
+			a.btn-contacto.sombra.btn-efect.modal-trigger(href="#", data-modal="modal-name") Contáctanos
+		#modal-name.modal
+			.modal-sandbox
+			.modal-box
+				.modal-header
+					.close-modal.icon-cerrar_form
+				section.contactanos-form
+					h2 Contáctanos
+					.container-form
+						form
+							input(type="text" placeholder="Nombre*")
+							input(type="text" placeholder="Correo electronico*")
+							.item
+								select
+									option ¿A qué departamento va dirigido tu comentario?*
+							textarea(placeholder= "Comentarios:")
+							.item-right.flex
+								input#cbtest(type='checkbox')
+								label.check-box(for='cbtest')
+								span.leyenda-privacidad He leído el aviso de privacidad
+								a.enviar.sombra(href="#") Enviar
 
 		span.ir-arriba
 		include block/footer.pug

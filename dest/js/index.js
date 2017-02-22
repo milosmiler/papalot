@@ -73,6 +73,8 @@ $(function(){
     NavToDropwn();
     prensaDesaparecer();
     Modal();
+    ServicioSocial();
+    drop();
 
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
@@ -347,9 +349,6 @@ function itemAcordeon(){
         var texto = $(this).text().trim();
 
         $('section.acordeon .container ul.accordion').removeClass('activa');     
-        // $('.menu-categoria dl dd a').css('color','#CFD8DC');
-        // $(this).css('color','#263238')  
-
         for (var i = 0; i <= arrayItems.length - 1; i++) {
             if (texto == arrayItems[i]) {
                 $('section.acordeon .container ul.accordion').each(function(indice){
@@ -372,17 +371,12 @@ function itemAcordeon(){
 }
 
 function NavToDropwn(){
-    // Create the dropdown base
       $("<select />").appendTo("nav.preguntas-frecuentes");
-      
-      // Create default option "Go to..."
       $("<option />", {
          "selected": "selected",
          "value"   : "",
          "text"    : "Compra"
       }).appendTo("nav.preguntas-frecuentes select");
-      
-      // Populate dropdown with menu items
       $("nav.preguntas-frecuentes a").each(function() {
        var el = $(this);
        $("<option />", {
@@ -391,8 +385,6 @@ function NavToDropwn(){
        }).appendTo("nav.preguntas-frecuentes select");
       });
       
-       // To make dropdown actually work
-       // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
       $("nav.preguntas-frecuentes select").change(function() {
         window.location = $(this).find("option:selected").val();
       });
@@ -476,6 +468,35 @@ function Modal(){
         $(".close-modal, .modal-sandbox").click(function(){
           $(".modal").css({"display":"none"});
         });
+}
+
+function ServicioSocial(){
+
+    $("#serv-social").click(function(event) {
+        event.preventDefault();
+        $(this).addClass( "push" );
+        $("#cuates").removeClass( "push" );
+
+        $("#selector-cuates").css("display", "none");  
+        $("#selector-admin").slideDown("slow");
+    })
+
+    $("#cuates").click(function(event) {
+        event.preventDefault();
+        $(this).addClass( "push" );
+        $("#serv-social").removeClass( "push" );
+
+        $("#selector-cuates").slideDown("slow");
+        $("#selector-admin").css("display", "none");
+    })
+}
+
+function drop(){
+    $('input[type="file"]').change(function(){
+        var value = $("input[type='file']").val();
+        $('.js-value').text(value);
+        console.log(value);
+    });
 }
 
 

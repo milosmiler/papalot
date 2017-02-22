@@ -10,11 +10,20 @@ section.intro-group-event{
 		background: #fff;
 		z-index: 999;
 		padding: 7% 6.9%;
+		&:before{
+			font-family: 'montserrat-bold';
+			content: "‘‘";
+			position: absolute;
+			font-size: 13.75rem;
+			color: #EEEEEE;
+			top: 1.25rem;
+			left: 1.25rem;}
 
 		p{
 			font-size: 1.375rem;
 			text-align: center;
 			color: #E21010;
+			position: relative;
 			font-family: 'montserratlight';
 			span{
 				font-family: 'montserrat-bold';}
@@ -131,12 +140,12 @@ section.informacion-eventos{
 		h3{
 			font-size: 1.375rem;
 			font-family: 'montserratsemi-bold';
-			margin-left: 16.25rem;
+			margin-left: 15.4375rem;
 			color: #D41672;}
 		.container-item{
 			width: 100%;
 			float: left;
-			margin-left: 16.25rem;
+			margin-left: 268px;
 			a.tel{
 				font-size: 1.125rem;
 				position: relative;
@@ -162,7 +171,7 @@ section.informacion-eventos{
 			color: #D41672;
 			font-size: 1.125rem;
 			font-family: 'montserratlight';
-			margin-left: 16.25rem;}
+			margin-left: 15.4375rem;}
 	}
 
 }

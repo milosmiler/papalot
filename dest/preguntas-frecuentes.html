@@ -62,7 +62,7 @@
                     <li><a href="grupos-para-empresas-y-gobierno.html" data-url="images/menu/grupos_para_empresas_gobierno.jpg">Grupos para empresas y Gobiernos</a></li>
                     <li><a href="eventos-y-servicios.html" data-url="images/menu/eventos_servicios.jpg"> Eventos y Servicios</a></li>
                   </ul>
-                  <figure class="nav-images"><img class="secciones" src="images/menu/grupos_escolares.jpg" alt="familias"><img class="secciones" src="images/menu/grupos_para_empresas_gobierno.jpg" alt="familias"><img class="secciones" src="images/menu/eventos_servicios.jpg" alt="familias"></figure>
+                  <figure class="nav-images"><img src="images/grupos-eventos.png" alt="grupos y eventos"><img class="secciones" src="images/menu/grupos_escolares.jpg" alt="familias"><img class="secciones" src="images/menu/grupos_para_empresas_gobierno.jpg" alt="familias"><img class="secciones" src="images/menu/eventos_servicios.jpg" alt="familias"></figure>
                 </div>
               </li>
               <li id="image-nav"><a href="como-ayudar.html">¿Cómo ayudar?</a>
@@ -72,7 +72,7 @@
                     <li><a href="servicio-social.html" data-url="images/menu/servicio-social.jpg">Servicio Social</a></li>
                     <li><a href="transparencia.html" data-url="images/menu/"> Transpariencia</a></li>
                   </ul>
-                  <figure class="nav-images"><img src="images/img1.jpg" alt="familias"><img class="secciones" src="images/menu/papalote_todos.jpg" alt="familias"><img class="secciones" src="images/menu/servicio-social.jpg" alt="familias"></figure>
+                  <figure class="nav-images"><img src="images/como-ayudar.jpg" alt="familias"><img class="secciones" src="images/menu/papalote_todos.jpg" alt="familias"><img class="secciones" src="images/menu/servicio-social.jpg" alt="familias"></figure>
                 </div>
               </li>
             </ul>
@@ -208,8 +208,35 @@
     </section>
     <section class="contactar">
       <figure><img src="images/moustro.png"></figure>
-      <h2>¿No encontraste lo que buscabas? </h2><a class="btn-contacto sombra btn-efect" href="#">Contáctanos</a>
-    </section><span class="ir-arriba"></span>
+      <h2>¿No encontraste lo que buscabas? </h2><a class="btn-contacto sombra btn-efect modal-trigger" href="#" data-modal="modal-name">Contáctanos</a>
+    </section>
+    <div class="modal" id="modal-name">
+      <div class="modal-sandbox"></div>
+      <div class="modal-box">
+        <div class="modal-header">
+          <div class="close-modal icon-cerrar_form"></div>
+        </div>
+        <section class="contactanos-form">
+          <h2>Contáctanos</h2>
+          <div class="container-form">
+            <form>
+              <input type="text" placeholder="Nombre*">
+              <input type="text" placeholder="Correo electronico*">
+              <div class="item">
+                <select>
+                  <option>¿A qué departamento va dirigido tu comentario?*</option>
+                </select>
+              </div>
+              <textarea placeholder="Comentarios:"></textarea>
+              <div class="item-right flex">
+                <input id="cbtest" type="checkbox">
+                <label class="check-box" for="cbtest"></label><span class="leyenda-privacidad">He leído el aviso de privacidad</span><a class="enviar sombra" href="#">Enviar</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div><span class="ir-arriba"></span>
     <footer>
       <div class="container">
         <aside class="social flex">

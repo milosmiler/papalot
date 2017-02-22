@@ -764,5 +764,120 @@ section.cuates{
   }
 }
 
+section.upload-file{
+	h2{
+		font-size: 40px;
+		color: #E2E3E4;
+	}
+	
+	p{
+		text-align: center;
+		font-family: 'montserratlight';
+		font-size: 14px;
+		color: #5D2B86;
+		opacity: 0.6;
+	}
+	.marco{
+		max-width: 1320px;
+		height: auto;
+		border: 1px solid #979797;
+		margin: auto;
+		h2{
+		text-align: center;
+		color: #5D2B86;
+		font-size: 30px;
+		padding-bottom: 56px;
+		margin-bottom: 69px;
+		border-bottom: 1px solid #9B9B9B;}
+	}
+
+.filupp > input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.filupp {
+  position: relative;
+  background: #fff;
+  max-width: 493px;
+  margin: auto;
+  height: 256px;
+  color: #fff;
+  cursor: pointer;
+  border-style: dashed;
+  border-color: #08405C;
+  color: #08405C;
+  font-size: 20px;
+  font-family: 'montserratlight';
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 54px;
+  justify-content: center;
+	align-items: center;
+}
+
+.filupp-file-name {
+  position: relative;
+  &:before{
+			position: absolute;
+			left: -62px;
+			font-size: 50px;
+			bottom: -6px;
+			color: #5D2B86;
+			content: "\f0ee";
+			font-family:'FontAwesome';
+		}
+}
+
+.adjuntar{
+	margin-top: 106px;
+	margin-bottom: 76px;
+
+	
+	h4{
+		font-size: 16px;
+		font-family: 'VAGRounded-bold';
+		position: relative;
+		color: #08405C;
+		margin: auto;
+    	text-align: center;
+   		width: 260px;
+	.custom-input-file {
+		    overflow: hidden;
+		    position: absolute;
+		    left: 0px;
+		    bottom: 0.1875rem;
+		    cursor: pointer;
+		    background-color: #5D2B86;
+		    color: #fff;
+		    text-align: center;
+		    width: 3.125rem;
+		    height: 3.125rem;
+		    border-radius: 6.25rem;
+		.input-file {
+		    margin: 0;
+		    padding: 0;
+		    outline: 0;
+		    border: 10000px solid transparent;
+		    opacity: 0;
+		    filter: alpha(opacity=0);
+		    position: absolute;
+		    right: -1000px;
+		    top: -1000px;
+		    cursor: pointer;}
+		}}
+}
+
+
+}
+
+
+
 
 

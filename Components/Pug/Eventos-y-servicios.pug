@@ -102,7 +102,7 @@ html(lang="es")
 
 		section.contact-group
 			h2 ¿Deseas que nosotros te contactemos?  
-			a.form-contact.sombra.btn-efect(href="") click aquí
+			a.form-contact.sombra.btn-efect.modal-trigger(href="", data-modal="modal-name") clic aquí
 		section.informacion-evento-servicio
 			.item
 				h2 ¿Necesitas más información?
@@ -111,9 +111,54 @@ html(lang="es")
 				.container-item
 					a.tel(href='tel:+5292 6370') 5292 6370     
 				a.mail-info(href='mailto:pbonnet@ambrosia.mx') pbonnet@ambrosia.mx
+		#modal-name.modal
+			.modal-sandbox
+			.modal-box
+				.modal-header
+					.close-modal.icon-cerrar_form
+				section.eventos-servicios
+					h2 Eventos y Servicios
+					.container-form
+						h3 DATOS DE CONTACTO
+						form
+							.item
+								input(type="text" placeholder="Nombre*")
+								input(type="text" placeholder="Apellido paterno")
+								input(type="text" placeholder="Apellido materno")
+							.item2
+								input(type="text" placeholder="Télefono local*")
+								input(type="text" placeholder="Correo electrónico*")
+							.item4
+								.leyenda-fecha
+									p Fecha tentativa del evento:
+								select
+									option Dia
+								select
+									option Mes
+								select
+									option Año
+
+							.item3
+								.leyenda-aprox
+									p Número aproximado de visitantes:
+								input(type="text" placeholder="(de 15 a 7000 personas)")
+
+							.item5
+								select
+									option Tipo de evento
+							.item5
+								select
+									option Lugar del evento
+							textarea(placeholder= "Comentarios:")
+							.item-right.flex
+								input#cbtest(type='checkbox')
+								label.check-box(for='cbtest')
+								span.leyenda-privacidad He leído el aviso de privacidad
+								a.enviar.sombra(href="#") Enviar
 
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
+		script(src="js/jquery-ui.min.js")
 		script(src="js/jquery.flexslider-min.js")
 		script(src="js/select.js")
 		script(src="js/waves.js")

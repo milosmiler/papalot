@@ -28,9 +28,9 @@ html(lang="es")
 			h2 Conoce más de ambos #[br] programas
 			.container
 				.item.flex
-					button Servicio Social Administrativo
-					button Cuates
-			.admin
+					button.push#serv-social Servicio Social Administrativo
+					button#cuates Cuates
+			.admin#selector-admin
 				.container
 					.item-content
 						h2 Sé parte de nuestro Servicio Social Administrativo
@@ -132,7 +132,7 @@ html(lang="es")
 				section.programas-cuates
 					.container
 						h2 o también conoce #[br] nuestro programa de Cuates
-						a.clic.sombra(href="#") clic aquí
+						a#cuates.clic.sombra(href="#") clic aquí
 				section.informacion-equipo
 					.item
 						h2 ¿Necesitas más información?
@@ -142,6 +142,249 @@ html(lang="es")
 						.container-item
 							a.tel(href='tel:+5237 1719') 5237 1719
 						a.mail-info(href='mailto:claudia.lecona@papalote.org.mx') claudia.lecona@papalote.org.mx
+				#modal-name.modal
+					.modal-sandbox
+					.modal-box
+						.modal-header
+							.close-modal.icon-cerrar_form
+						section.upload-file
+							.container
+								h2 Paso 1 adjuntar currículum
+							.marco
+								.container
+									h2 Sube tu currículum
+									p PDF, JPG, 2mb máx.
+									label.filupp.flex(for='custom-file-upload')
+										span.filupp-file-name.js-value Arrastra tu archivo aquí
+										input#custom-file-upload(type='file', name='attachment-file', value='1')
+									.adjuntar
+										h4 o adjuntar archivo
+											.custom-input-file.sombra
+													i.fa.icon-icn_adjuntar
+													input.input-file(type='file')
+			.admin#selector-cuates
+				.container
+					.item-content
+						h2 ¡Únete a nuestro equipo de Cuates!
+						p En   
+							span PAPALOTE 
+							| estamos seguros de contar con el equipo más creativo, divertido y responsable. Al ser Cuate tendrás la posibilidad de conocer el Museo Renovado, desarrollar habilidades de comunicación, trabajo colaborativo y liderazgo en un ambiente agradable y divertido.
+
+					figure.image-intro
+						img(src="images/cuates.png")
+					section.intro-cover-rigth
+						.container
+							figure
+								img(src="images/hacen-cuates.png")
+							.item-content
+								h2 ¿Qué hacen los Cuates?
+								p Un 
+									span Cuate 
+									| interactúa con los visitantes del Museo para comunicar los mensajes y contenidos de las exhibiciones. Se valen del diálogo y el juego como herramientas para construir un aprendizaje significativo.
+					figure.pendulo
+						img(src="images/pendulo.png")
+
+				section.areas-desarrollo
+					.container
+						article.requisitos
+							h3 Requisitos
+							.container-datos.flex
+								.item
+									.circulo
+										i.fa.icon-requisitos1_cuates
+									h4 Tener
+									p 17 años cumplidos
+								.item
+									.circulo
+										i.fa.icon-requisitos2_cuates
+									h4 Ser estudiante
+									p o egresado
+								.item
+									.circulo
+										i.fa.icon-requisitos3_cuates
+									h4 Contar
+									p con el 70% de créditos académicos aprobados a nivel licenciatura y el 50% a nivel medio superior
+							.container-datos.flex
+								.item
+									.circulo
+										i.fa.icon-requisitos4_cuates
+									h4 Contar
+									p con seguro facultativo vigente
+								.item
+									.circulo
+										i.fa.icon-requisitos5_cuates
+									h4 Tener compromiso
+									p y disposición para colaborar con niños.
+								.item
+									.circulo
+										i.fa.icon-requisitos6_cuates
+									h4 Trabajar
+									p en equipo
+							.container-datos.flex
+								.item
+									.circulo
+										i.fa.icon-requisitos7_cuates
+									h4 Ser
+									p creativo
+								.item
+									.circulo
+										i.fa.icon-requisitos8_cuates
+									h4 Hablar otro idioma
+									p deseable
+								.item
+									.circulo
+										i.fa.icon-requisitos9_cuates
+									h4 Acreditar
+									p la Capacitación Inicial de Cuates
+						figure.pendulo
+							img(src="images/pendulo.png")
+
+						article.beneficios
+							h3 Beneficios
+							.container-datos.flex
+								.item
+									.circulo
+										i.fa.icon-beneficios1_cuates
+									p Oportunidad de 
+										span participar
+										|  en los programas y actividades de una 
+										span institución con reconocido prestigio
+								.item
+									.circulo
+										i.fa.icon-beneficios2_cuates
+									p 
+										span Capacitación continua 
+										| con valor curricular
+								.item
+									.circulo
+										i.fa.icon-beneficios3_cuates
+									p Acceso a 
+										span conferencias y talleres 
+										| impartidas por especialistas
+							.container-datos.flex
+								.item
+									.circulo
+										i.fa.icon-beneficios4_cuates
+									p Programa de 
+										span Comunicación y Motivación
+								.item
+									.circulo
+										i.fa.icon-beneficios5_cuates
+									p 
+										span Descuentos
+										| en entradas al Museo, ADO Megapantalla IMAX, domodigital Citibanamex y Tienda 
+										span PAPALOTE
+					section.nuestros-cuates
+						h2 Forma parte de nuestros Cuates
+						a.clic.sombra.modal-trigger(href="#", data-modal="modal-name") clic aquí
+
+
+				section.programas-cuates
+					.container
+						h2 o también conoce nuestro programa  #[br] de Servicio Social Administrativo
+						a#serv-social.clic.sombra(href="#") clic aquí
+				section.informacion-equipo
+					.item
+						h2 ¿Necesitas más información?
+					.item
+						h3 Comunícate con:
+						p Claudia Yaneth Lecona Hurtado
+						.container-item
+							a.tel(href='tel:+5237 1719') 5237 1719
+						a.mail-info(href='mailto:claudia.lecona@papalote.org.mx') claudia.lecona@papalote.org.mx
+				#modal-name.modal
+					.modal-sandbox
+					.modal-box
+						.modal-header
+							.close-modal.icon-cerrar_form
+						section.cuates
+							h2 Registro de Cuates
+							.pasos.flex
+								span PASO 1
+								span PASO 2
+							.container-form
+								h3 DATOS PERSONALES
+								form
+									.item
+										input(type="text" placeholder="Nombre*")
+										input(type="text" placeholder="Apellido paterno")
+										input(type="text" placeholder="Apellido materno")
+									.item1
+										input(type="text" placeholder="Edad")
+										.sexo
+											p Sexo:
+											button Mujer
+											button Hombre
+									.item2
+										input(type="text" placeholder="Télefono local*")
+										input(type="text" placeholder="Télefono celular")
+									.item3
+										input(type="text" placeholder="Correo electrónico*")
+									.item4
+										input(type="text" placeholder="Código postal")
+										select
+											option ¿En qué estado vives?
+									.item5
+										select
+											option ¿En qué delegación o municipio?
+									.item-text
+										h3 Historial profesional / Educación
+									.item5
+										select
+											option Grado último de estudios
+									.item3
+										input(type="text" placeholder="Carrera")
+									.item3
+										input(type="text" placeholder="Escuela/Campus")
+									.item5
+										select
+											option Dominio del Inglés:
+									.item-boton
+										a.btn-siguiente(href="#") Siguiente
+								form
+									.item-interes
+										h3 Interés y aptitudes
+									.item-colaborar
+										p ¿En que deseas colaborar #[br] con nosotros?
+										button Prácticas Profesionales
+										button Servicio Social
+									.item-turno
+										h3 TURNO DE INTERÉS
+									.item-btn
+										.box
+											h2 Matutino
+											p Lunes a viernes
+											p 8:30 - 1330 hrs
+										.box
+											h2 Vespertino
+											p Lunes a viernes
+											p 8:30 - 1330 hrs
+										.box
+											h2 Fines de semana
+											p Lunes a viernes
+											p 8:30 - 1330 hrs
+									.item5
+										select
+											option ¿Por qué medio te enteraste del Programa Cuates?
+									.item-visita
+										p ¿Has visitado PAPALOTE MUSEO DEL NIÑO?
+										button No
+										button Si
+									textarea(placeholder= "¿Por qué te interesa hacer tu Servicio Social o Prácticas Profesionales en PAPALOTE?:")
+									textarea(placeholder= "¿Cuál ha sido tu mayor logro escolar?:")
+									textarea(placeholder= "¿Para ti qué es ser una persona responsable?:")
+									textarea(placeholder= "Menciona 3 cualidades que te agradan de ti:")
+									textarea(placeholder= "¿Qué te gustaría mejorar en ti?:")
+									textarea(placeholder= "Menciona 3 valores que te definen como persona:")
+									textarea(placeholder= "Menciona una meta personal y una profesional que te has propuesto en este año:")
+									textarea(placeholder= "¿Cuál ha sido la exposición en clase qué más te ha gustado y por qué?:")
+									textarea(placeholder= "¿Cómo te organizas para exponer un tema en clase?:")
+									textarea(placeholder= "Para ti: ¿Qué es un “Buen servicio”?:")
+									textarea(placeholder= "¿Has tenido experiencia en trabajar con niños? ¿Cuál?:")
+									.leido
+										input#cbtest(type='checkbox')
+										label.check-box(for='cbtest')
+										span.leyenda-privacidad He leído el aviso de privacidad
 
 
 		span.ir-arriba
