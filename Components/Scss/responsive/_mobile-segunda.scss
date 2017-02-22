@@ -135,10 +135,12 @@ section.donar-paypal .item-content:last-child h2{
 
 }
 section.experiencia-group-todos article h3{
-	font-size: 25px;
+	font-size: 35px;
+	text-align: left;
 }
 section.experiencia-group-todos article p{
 	font-size: 16px;
+	text-align: left;
 }
 section.transparencia p{
 	font-size: 16px;
@@ -242,6 +244,7 @@ section.transpariencias h2{
 }
 section.transpariencias p{
 	font-size: 16px;
+	padding: 0px 15px;
 }
 
 section.transpariencias a.btn-transpariencia, section.notas .container article.nota a.btn-social{
@@ -473,6 +476,48 @@ section.intro-servicio-social .admin section.informacion-equipo .item{
 	display: block;
 	margin-bottom: 0px;
     padding-bottom: 5px;
+}
+
+section.padrinos article.leyenda-content p{
+	text-align: right;
+	font-size: 16px;
+}
+
+section.item-intro .container{
+	flex-direction: column;
+	display: flex;
+
+}
+
+section.intro-servicio-social .item{
+	padding: 0px 15px;
+}
+section.intro-servicio-social .item button{
+	font-size: 18px;
+}
+
+section.intro-servicio-social .admin section.areas-desarrollo article.requisitos .container-datos, 
+section.intro-servicio-social .admin section.areas-desarrollo article.beneficios .container-datos,
+section.intro-servicio-social .admin section.areas-desarrollo article.areas .container-datos{
+	flex-direction: column;
+	align-items: center;
+}
+
+section.intro-servicio-social .admin section.areas-desarrollo h2 .custom-input-file{
+	bottom: -70px;
+    left: 38%;
+}
+
+section.intro-servicio-social .admin section.informacion-equipo .item:last-child{
+	padding-top: 1px;
+	padding-left: 15px
+}
+
+section.intro-servicio-social .admin section.informacion-equipo .item h2{
+	text-align: left;
+}
+section.intro-servicio-social .admin section.informacion-equipo .item h2{
+	font-size: 30px;
 }
 
 
