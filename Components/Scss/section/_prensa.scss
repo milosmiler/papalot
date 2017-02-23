@@ -55,6 +55,7 @@ section.notas-prensa{
             height: auto;
             background: #fff;
             margin: 0px 0.3125rem;
+            padding-bottom: 2.3125rem;
             figure{
                 max-width: 579px;
                 height: auto;
@@ -66,6 +67,7 @@ section.notas-prensa{
                 font-size: 1.875rem;
                 color: $color-azul100;
                 margin: 0px 2.1875rem 1.9375rem;
+                height: 5rem;
 
             }
             h3{
@@ -77,6 +79,7 @@ section.notas-prensa{
                 font-family: 'montserratlight';
                 color: $color-azul100;
                 margin-bottom: 1.5rem;
+                height: 6.875rem;
                 margin-left: 2.1875rem;
                 span{
                     font-family: 'montserrat-bold';
@@ -148,10 +151,19 @@ section.prensa{
             position: relative;
             margin-bottom: 2.375rem;
             overflow: hidden;
+            .item-social{
+                width: 150px;
+                margin: 0px;
+                display: inline-block;
+                overflow: hidden;
+                i{
+                    float: left;}
+
+            }
             a.btn-leer-mas{
-            @include boton($ancho: 11.25rem, $fondo: #E21010 , $color: #fff );
-            float: right;
-            position: relative;}
+                @include boton($ancho: 11.25rem, $fondo: #E21010 , $color: #fff );
+                float: right;
+                position: relative;}
         }
         .cat{
             text-align: center;
@@ -203,8 +215,7 @@ section.nosotros-nota{
                 display: inline-block;
                 overflow: hidden;
                 i{
-                    float: left;
-                }
+                    float: left;}
             }
                 a.btn-leer-mas{
                 @include boton($ancho: 11.25rem, $fondo: #00C0F2 , $color: #fff );

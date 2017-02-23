@@ -78,55 +78,51 @@ html(lang="es")
 			.modal-box
 				.modal-header
 					.close-modal.icon-cerrar_form
-				section.bolsa-trabajo-form
-					h2 Bolsa de trabajo
+				section.grupos-esolares
+					h2 Grupos escolares
 					.container-form
-						h3 DATOS DE PERSONALES
 						form
-							.item
-								input(type="text" placeholder="Nombre*")
-								input(type="text" placeholder="Apellido paterno")
-								input(type="text" placeholder="Apellido materno")
+							h3 DATOS DE LA ESCUELA
 							.item1
-								input(type="text" placeholder="Edad")
-								.sexo
-									p Sexo:
-									button Mujer
-									button Hombre
+								input(type="text" placeholder="Nombre*")
+							.item3
+								select
+									option Nivel educativo*
 							.item2
 								input(type="text" placeholder="Télefono local*")
-								input(type="text" placeholder="Télefono celular")
-							.item3
 								input(type="text" placeholder="Correo electrónico*")
+							.item2
+								input(type="text" placeholder="Télefono local*")
 							.item4
 								input(type="text" placeholder="Código postal")
 								select
-									option ¿En qué estado vives?
-							.item5
+									option ¿En qué estado está?
+							.item3
 								select
 									option ¿En qué delegación o municipio?
 							.item-text
-								h3 Historial profesional / Educación
+								h3 DATOS DE CONTACTO
 							.item5
+								input(type="text" placeholder="Nombre*")
+								input(type="text" placeholder="Apellido paterno")
+								input(type="text" placeholder="Apellido materno")
+							.item6
+								input(type="text" placeholder="Télefono local*")
+								input(type="text" placeholder="Correo electrónico*")
+							.item7
+								.leyenda-fecha
+									p Fecha tentativa de visita:
 								select
-									option Grado último de estudios
-							.item3
-								input(type="text" placeholder="Carrera")
-							.item5
+									option Dia
 								select
-									option Área de interés
-							.item5
+									option Mes
 								select
-									option Sede de interés
-							.item5
-								select
-									option Disponibilidad
-							.item5
-								select
-									option Sueldo deseado
-							textarea(placeholder= "¿Por qué estás interesado en trabajar en PAPALOTE?*")
-							textarea(placeholder= "¿Cuál ha sido tu mayor logro profesional? ")
-							textarea(placeholder= "Menciona cuáles son tus objetivos a corto y largo plazo ")
+									option Año
+							.item8
+								.leyenda-aprox
+									p Número aproximado de visitantes:
+								input(type="text" placeholder="(de 15 a 7000 personas)")
+							textarea(placeholder= "Comentarios:")
 							.item-right.flex
 								input#cbtest(type='checkbox')
 								label.check-box(for='cbtest')

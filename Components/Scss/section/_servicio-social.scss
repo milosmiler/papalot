@@ -117,6 +117,22 @@ section.intro-servicio-social{
 			width: 52%;
     		margin: auto;
     		margin-bottom: 6.5rem;
+    		a{
+    			 position: absolute;
+			    right: 0px;
+			    bottom: 0.1875rem;
+			    width: 50px;
+			    height: 50px;
+			    background-color: #5D2B86;
+			    color: #fff;
+			    border-radius: 50px;
+			    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+			    &:hover{
+			    	background-color: #fff;
+		    		color: #5D2B86;
+			    	
+			    }
+    		}
 		.custom-input-file {
 		    overflow: hidden;
 		    position: absolute;
@@ -180,6 +196,16 @@ section.intro-servicio-social{
 						font-size: 22px;
 						font-family: 'montserratsemi-bold';
 						text-align: center;
+					}
+					span.text{
+						font-family: 'montserratlight';
+						color: #08405C;
+						text-align: center;
+						display: block;
+						font-size: 16px;
+						&:first-letter{
+							font-size: 50px;
+						}
 					}
 					p{
 						text-align: center;
@@ -245,7 +271,7 @@ section.intro-servicio-social{
 						width: 101px;
 						height: 101px;}
 					h4{
-						color:#5D2B86;;
+						color:#08405C;
 						font-size: 1.375rem;
 						font-family: 'montserratsemi-bold';
 						text-align: center;}

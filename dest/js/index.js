@@ -74,7 +74,8 @@ $(function(){
     prensaDesaparecer();
     Modal();
     ServicioSocial();
-    drop();
+    formGobierno();
+    btnActivar();
 
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
@@ -491,12 +492,47 @@ function ServicioSocial(){
     })
 }
 
-function drop(){
-    $('input[type="file"]').change(function(){
-        var value = $("input[type='file']").val();
-        $('.js-value').text(value);
-        console.log(value);
-    });
+function formGobierno(){
+
+    $("#btn-gobierno").click(function(event) {
+        event.preventDefault();
+        $(this).addClass( "push" );
+        $("#btn-papalote").removeClass( "push" );
+
+        $("form#selector-papalote").css("display", "none");  
+        $("form#selector-gobierno").slideDown("slow");
+    })
+
+    $("#btn-papalote").click(function(event) {
+        event.preventDefault();
+        $(this).addClass( "push" );
+        $("#btn-gobierno").removeClass( "push" );
+
+        $("form#selector-papalote").slideDown("slow");
+        $("form#selector-gobierno").css("display", "none");
+    })
 }
+
+function btnActivar(){
+    $('.box').click(function() {
+        $(this).toggleClass('is-active');
+
+        if ( $('.box').hasClass('is-active') ) {
+
+             $('is-active').removeClass('is-active');
+
+        } else {
+
+            $('.box').addClass('is-active');
+        }
+    });
+
+   
+
+}
+
+
+
+
 
 

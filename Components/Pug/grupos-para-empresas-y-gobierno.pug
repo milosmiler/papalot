@@ -158,10 +158,10 @@ html(lang="es")
 					h4 Tu visita sería para:
 					.container-form
 						.contenedor-boton
-							button Grupos para empresas y Gobierno
-							button Día PAPALOTE
+							button.push#btn-gobierno Grupos para empresas y Gobierno
+							button#btn-papalote Día PAPALOTE
 						h3 DATOS DE CONTACTO
-						form
+						form#selector-gobierno
 							.item
 								input(type="text" placeholder="Nombre*")
 								input(type="text" placeholder="Apellido paterno")
@@ -208,7 +208,7 @@ html(lang="es")
 
 
 
-						form
+						form#selector-papalote
 							.item
 								input(type="text" placeholder="Nombre*")
 								input(type="text" placeholder="Apellido paterno")
