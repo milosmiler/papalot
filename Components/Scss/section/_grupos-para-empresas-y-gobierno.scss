@@ -55,7 +55,6 @@ section.download-material{
 				text-align: center;}
 			a.conoce-descarga{
 				@include boton-borde($color-azul100, 12.5rem, $color: $color-azul100);
-				color: $color-azul100;
 				font-size: 1.125rem;
 				font-family: 'VAGRounded-bold';
 				margin: auto;
@@ -172,12 +171,16 @@ section.dia-papalote{
 			justify-content: center;
 			align-items: center;
 			position: relative;
-			&:hover{
-				background: red;
-			}
+			transform-style: preserve-3d;
+  			transition: all 1s ease-in-out;
 			&:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7), &:nth-child(10), &:nth-child(12),&:nth-child(13),&:nth-child(15), &:nth-child(16) {
 				background: #fff;}
 			&:nth-child(1){
+				&:hover{
+				background: url('../images/hover-fondo.png');
+				p{
+					color: transparent;}}
+
 				&:before{
 					content: '';
 					width: 100%;
@@ -188,6 +191,10 @@ section.dia-papalote{
 					left: 0px;}
 			}
 			&:nth-child(3){
+				&:hover{
+					background: url('../images/hover-fondo2.png');
+					p{
+						color: transparent;}}
 				&:before{
 					content: '';
 					width: 100%;
@@ -198,6 +205,10 @@ section.dia-papalote{
 					left: 0px;}
 			}
 			&:nth-child(6){
+					&:hover{
+					background: url('../images/hover-fondo3.png');
+					p{
+						color: transparent;}}
 				&:before{
 					content: '';
 					width: 100%;
@@ -208,6 +219,10 @@ section.dia-papalote{
 					left: 0px;}
 			}
 			&:nth-child(8){
+				&:hover{
+					background: url('../images/hover-fondo4.png');
+					p{
+						color: transparent;}}
 				&:before{
 					content: '';
 					width: 100%;
@@ -218,6 +233,10 @@ section.dia-papalote{
 					left: 0px;}
 			}
 			&:nth-child(9){
+				&:hover{
+					background: url('../images/hover-fondo5.png');
+					p{
+						color: transparent;}}
 				&:before{
 					content: '';
 					width: 100%;
@@ -228,6 +247,10 @@ section.dia-papalote{
 					left: 0px;}
 			}
 			&:nth-child(11){
+				&:hover{
+					background: url('../images/hover-fondo6.png');
+					p{
+						color: transparent;}}
 				&:before{
 					content: '';
 					width: 100%;
@@ -238,6 +261,10 @@ section.dia-papalote{
 					left: 0px;}
 			}
 			&:nth-child(14){
+				&:hover{
+					background: url('../images/hover-fondo7.png');
+					p{
+						color: transparent;}}
 				&:before{
 					content: '';
 					width: 100%;

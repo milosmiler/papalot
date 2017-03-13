@@ -97,7 +97,11 @@ section.donar-paypal{
                 text-align: right;
                 font-family: 'montserratlight';
                 line-height: 1.75rem;
-                margin-bottom: 2.0625rem;}
+                margin-bottom: 2.0625rem;
+                span{
+                    font-family: 'montserrat-bold';
+                }
+            }
             span.email{
                 a{
                     text-align: right;

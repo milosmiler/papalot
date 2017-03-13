@@ -42,7 +42,7 @@ $duration: .4s;
     font-size: 1.125rem;
     height: 3.125rem;
     transition: all 0.5s;
-    text-align: left;
+    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -59,13 +59,14 @@ $duration: .4s;
     background: transparent;
     font-family: 'VAGRounded-bold';
     border: 4px solid $color-borde;
+    height: 3.125rem;
     clear: both;
     cursor: pointer;
     color: $color;
     display: block;
-    font-size: 0.875rem;
     height: 2.8125rem;
     text-decoration: none;
+    padding-top: 0.625rem;
     width: $ancho;}
 
 @mixin links($color, $tamano){

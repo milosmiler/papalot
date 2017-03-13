@@ -92,9 +92,14 @@ section.acordeon{
 					color: #364659;
 					span.enlace {
 						text-decoration: none;
+						display: inline-block;
 						font-family: 'montserratsemi-bold';
 						color: #0098CC;
-						display: inline-block;}
+						display: inline-block;
+						>a.click{
+							text-decoration: none;
+							color: #0098CC;
+							}}
 					span.rojo {
 						text-decoration: none;
 						font-family: 'montserratsemi-bold';
@@ -121,6 +126,7 @@ section.acordeon{
 					&.active:after {
 					  transition: all 0.2s ease-in-out;
 					  font-family:'FontAwesome';
+					  color: #364659;
 					  content: "\f056";}
 				}
 			}
