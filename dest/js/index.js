@@ -76,7 +76,6 @@ $(function(){
     ServicioSocial();
     formGobierno();
     btnActivar();
-
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
     $('.accordion a').click(function(j) {
@@ -530,6 +529,8 @@ function btnActivar(){
    
 
 }
+
+
 
 
 
