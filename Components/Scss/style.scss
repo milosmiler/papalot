@@ -291,6 +291,61 @@
         }
 }
 
+.file-drop-area {
+    position: relative;
+    background: #fff;
+    max-width: 493px;
+    margin: auto;
+    height: 256px;
+    cursor: pointer;
+    border-style: dashed;
+    border-color: #08405C;
+    color: #08405C;
+    font-size: 20px;
+    font-family: 'montserratlight';
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 54px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.file-drop-area.is-active {
+  background-color: #E2E3E4;
+}
+
+
+.file-msg {
+    position: relative;
+    font-size: 20px;
+    font-family: 'montserratlight';
+    text-align: center;
+    display: block;
+  &:before{
+        position: absolute;
+        left: -59px;
+        font-size: 50px;
+        bottom: -6px;
+        color: #5D2B86;
+        content: "\f0ee";
+        font-family: 'FontAwesome';
+
+  }
+}
+
+.file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.file-input:focus {
+  outline: none;
+}
+
 /********** HEADER ***********/
 @import "_header.scss";
 /********** SECCIONES ***********/
