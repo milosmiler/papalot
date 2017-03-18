@@ -132,7 +132,11 @@ section.informacion-evento-servicio{
 		padding-top: 4.9375rem;
 		padding-bottom: 4.9375rem;
 		&:last-child{
-			padding-left: 20px;
+			.justificado{
+				width: 50%;
+				margin: auto;
+				text-align: left;
+			}
 		}
 		h2{
 			color: #fff;
@@ -152,6 +156,7 @@ section.informacion-evento-servicio{
 				margin-right: 20px;
 				text-decoration: none;
 				position: relative; 
+				margin-left: 1.375rem;
 				&:before{
 					font-family:'FontAwesome';
 					content: "\f095";
@@ -170,6 +175,7 @@ section.informacion-evento-servicio{
 			font-size: 1.125rem;
 			font-family: 'montserratlight';
 			position: relative;
+			margin-left: 1.375rem;
 			&:before{
 					font-family:'FontAwesome';
 					content: "\f0e0";

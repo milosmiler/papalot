@@ -86,7 +86,11 @@ section.informacion{
 		padding-top: 4.9375rem;
 		padding-bottom: 4.9375rem;
 		&:last-child{
-			padding-left:1.875rem;
+			.justificado{
+				width: 50%;
+				margin: auto;
+				text-align: left;
+			}
 		}
 		h2{
 			color: #D41672;
@@ -104,6 +108,7 @@ section.informacion{
 		.container-item{
 			width: 100%;
 			float: left;
+			margin-left: 1.375rem;
 			a.tel{
 				font-size: 1.125rem;
 				color: #D41672;
@@ -130,6 +135,7 @@ section.informacion{
 			font-size: 1.125rem;
 			font-family: 'montserratlight';
 			position: relative;
+			margin-left: 1.375rem;
 			&:before{
 					font-family:'FontAwesome';
 					content: "\f0e0";

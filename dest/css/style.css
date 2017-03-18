@@ -963,9 +963,9 @@ span.link {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -1146,7 +1146,7 @@ header {
               header .container nav ul li a:hover:after {
                 width: 100%;
                 left: 0; }
-    header .container #menu-mobile {
+    header .container #menu-mobile, header .container #menu-mobile2, header .container #menu-mobile3 {
       display: none;
       position: absolute;
       width: 40px;
@@ -1224,14 +1224,14 @@ header {
           margin-right: 10px;
           color: #fff;
           font-size: 28px; }
-    header .mobile ul.container-movile {
+    header .mobile ul.container-movile, header .mobile ul.container-movile2, header .mobile ul.container-movile3 {
       width: 100%;
       margin: 0px;
       background-color: #4a5d74;
       display: none; }
-      header .mobile ul.container-movile li {
+      header .mobile ul.container-movile li, header .mobile ul.container-movile2 li, header .mobile ul.container-movile3 li {
         color: #fff; }
-        header .mobile ul.container-movile li:last-child {
+        header .mobile ul.container-movile li:last-child, header .mobile ul.container-movile2 li:last-child, header .mobile ul.container-movile3 li:last-child {
           border-bottom: none; }
   header .container-menu {
     display: none;
@@ -1509,9 +1509,9 @@ section.cover-intro {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -1718,9 +1718,9 @@ section.renovado {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -1766,7 +1766,7 @@ section.notas {
       section.notas .container article.nota h2 {
         font-size: 3.125rem;
         color: #08405C;
-        margin: 0px 2.1875rem 2.1875rem; }
+        margin: 1.25rem 2.1875rem 2.1875rem; }
       section.notas .container article.nota h3 {
         color: #A4CD40;
         font-size: 0.875rem;
@@ -1793,9 +1793,9 @@ section.notas {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -1818,9 +1818,9 @@ section.notas {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -1842,9 +1842,9 @@ section.notas {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -1866,9 +1866,9 @@ section.notas {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -1933,9 +1933,9 @@ section.padrinos article.leyenda-content {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -2305,9 +2305,9 @@ section.mega-pantalla {
           display: block;
           font-size: 1.125rem;
           height: 3.125rem;
+          text-align: left;
           -webkit-transition: all 0.5s;
           transition: all 0.5s;
-          text-align: center;
           padding-left: 1.125rem;
           padding-top: 0.9375rem;
           text-decoration: none;
@@ -2716,9 +2716,9 @@ section.precio-paquete section.paquetes-individuales {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -2806,9 +2806,9 @@ section#timeline article div.inner a.comprar-linea {
   display: block;
   font-size: 1.125rem;
   height: 3.125rem;
+  text-align: left;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  text-align: center;
   padding-left: 1.125rem;
   padding-top: 0.9375rem;
   text-decoration: none;
@@ -2831,9 +2831,9 @@ section#timeline article div.inner a.maps {
   display: block;
   font-size: 1.125rem;
   height: 3.125rem;
+  text-align: left;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  text-align: center;
   padding-left: 1.125rem;
   padding-top: 0.9375rem;
   text-decoration: none;
@@ -3166,9 +3166,9 @@ section.slider-reino ul.bxslider {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -3197,7 +3197,8 @@ section.slider-reino .bx-controls-direction {
 
 section.desplegado {
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  padding: 0px 30px; }
   section.desplegado article.column {
     float: left;
     padding-left: 8.625rem;
@@ -3357,9 +3358,9 @@ section.mega-familia {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -3420,9 +3421,9 @@ section.mega-familia-izquierdo {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -3494,9 +3495,9 @@ section.programas {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -3595,9 +3596,9 @@ section.cover-renovado {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -3917,9 +3918,9 @@ section.horarios {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -6742,9 +6743,9 @@ section.group-content article.item-right {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -6799,9 +6800,9 @@ section.contact-group {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -6828,8 +6829,10 @@ section.informacion {
     vertical-align: middle;
     padding-top: 4.9375rem;
     padding-bottom: 4.9375rem; }
-    section.informacion .item:last-child {
-      padding-left: 1.875rem; }
+    section.informacion .item:last-child .justificado {
+      width: 50%;
+      margin: auto;
+      text-align: left; }
     section.informacion .item h2 {
       color: #D41672;
       font-size: 2.5rem;
@@ -6844,7 +6847,8 @@ section.informacion {
       font-size: 18px; }
     section.informacion .item .container-item {
       width: 100%;
-      float: left; }
+      float: left;
+      margin-left: 1.375rem; }
       section.informacion .item .container-item a.tel {
         font-size: 1.125rem;
         color: #D41672;
@@ -6868,7 +6872,8 @@ section.informacion {
       color: #D41672;
       font-size: 1.125rem;
       font-family: 'montserratlight';
-      position: relative; }
+      position: relative;
+      margin-left: 1.375rem; }
       section.informacion .item a.mail-info:before {
         font-family: 'FontAwesome';
         content: "\f0e0";
@@ -6964,9 +6969,9 @@ section.download-material {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -7055,7 +7060,8 @@ section.dia-papalote {
     text-align: center;
     margin-bottom: 4.0625rem;
     font-family: 'montserratlight';
-    color: #08405C; }
+    color: #08405C;
+    line-height: 1.875rem; }
   section.dia-papalote .item-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -7186,24 +7192,27 @@ section.informacion-gobierno {
     vertical-align: middle;
     padding-top: 4.9375rem;
     padding-bottom: 4.9375rem; }
-    section.informacion-gobierno .item:last-child {
-      padding-left: 0.9375rem; }
+    section.informacion-gobierno .item:last-child .justificado {
+      width: 50%;
+      margin: auto;
+      text-align: left; }
     section.informacion-gobierno .item h2 {
       color: #364659;
       font-size: 2.5rem;
       text-align: center; }
     section.informacion-gobierno .item h3 {
       font-size: 1.375rem;
+      text-align: left;
       font-family: 'montserratsemi-bold';
       color: #364659; }
     section.informacion-gobierno .item .container-item {
       width: 100%;
-      float: left; }
+      float: left;
+      margin-left: 1.375rem; }
       section.informacion-gobierno .item .container-item a.tel {
         font-size: 1.125rem;
         color: #364659;
         font-family: 'montserrat-regular';
-        margin-right: 1.25rem;
         text-decoration: none;
         position: relative;
         margin-right: 2.5rem; }
@@ -7222,7 +7231,8 @@ section.informacion-gobierno {
       color: #364659;
       font-size: 1.125rem;
       font-family: 'montserratlight';
-      position: relative; }
+      position: relative;
+      margin-left: 1.375rem; }
       section.informacion-gobierno .item a.mail-info:before {
         font-family: 'FontAwesome';
         content: "\f0e0";
@@ -7321,9 +7331,9 @@ section.eventos a.evento-btn {
   display: block;
   font-size: 1.125rem;
   height: 3.125rem;
+  text-align: left;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  text-align: center;
   padding-left: 1.125rem;
   padding-top: 0.9375rem;
   text-decoration: none;
@@ -7345,6 +7355,10 @@ section.informacion-eventos {
     vertical-align: middle;
     padding-top: 4.9375rem;
     padding-bottom: 4.9375rem; }
+    section.informacion-eventos .item .justificado {
+      width: 50%;
+      margin: auto;
+      text-align: left; }
     section.informacion-eventos .item:last-child {
       background: #C1D42E; }
       section.informacion-eventos .item:last-child h2 {
@@ -7382,22 +7396,19 @@ section.informacion-eventos {
     section.informacion-eventos .item h2 {
       color: #D41672;
       font-size: 2.5rem;
-      text-align: center; }
+      text-align: left; }
     section.informacion-eventos .item h3 {
       font-size: 1.375rem;
       font-family: 'montserratsemi-bold';
-      margin-left: 15.4375rem;
       color: #D41672; }
     section.informacion-eventos .item .container-item {
       width: 100%;
-      float: left;
-      margin-left: 268px; }
+      margin-left: 1.1875rem; }
       section.informacion-eventos .item .container-item a.tel {
         font-size: 1.125rem;
         position: relative;
         color: #D41672;
         font-family: 'montserrat-regular';
-        margin-right: 2.5rem;
         text-decoration: none;
         margin-right: 2.5rem; }
         section.informacion-eventos .item .container-item a.tel:before {
@@ -7415,7 +7426,7 @@ section.informacion-eventos {
       color: #D41672;
       font-size: 1.125rem;
       font-family: 'montserratlight';
-      margin-left: 15.4375rem; }
+      margin-left: 1.1875rem; }
 
 section.conoce-areas {
   -ms-flex-pack: distribute;
@@ -7538,8 +7549,10 @@ section.informacion-evento-servicio {
     vertical-align: middle;
     padding-top: 4.9375rem;
     padding-bottom: 4.9375rem; }
-    section.informacion-evento-servicio .item:last-child {
-      padding-left: 20px; }
+    section.informacion-evento-servicio .item:last-child .justificado {
+      width: 50%;
+      margin: auto;
+      text-align: left; }
     section.informacion-evento-servicio .item h2 {
       color: #fff;
       font-size: 2.5rem;
@@ -7557,7 +7570,8 @@ section.informacion-evento-servicio {
         font-family: 'montserrat-regular';
         margin-right: 20px;
         text-decoration: none;
-        position: relative; }
+        position: relative;
+        margin-left: 1.375rem; }
         section.informacion-evento-servicio .item .container-item a.tel:before {
           font-family: 'FontAwesome';
           content: "\f095";
@@ -7573,7 +7587,8 @@ section.informacion-evento-servicio {
       color: #fff;
       font-size: 1.125rem;
       font-family: 'montserratlight';
-      position: relative; }
+      position: relative;
+      margin-left: 1.375rem; }
       section.informacion-evento-servicio .item a.mail-info:before {
         font-family: 'FontAwesome';
         content: "\f0e0";
@@ -7591,7 +7606,8 @@ section.intro-texto {
   section.intro-texto p {
     font-size: 22px;
     font-family: 'montserratlight';
-    color: #08405C; }
+    color: #08405C;
+    text-align: center; }
     section.intro-texto p span {
       font-family: 'montserrat-bold'; }
 
@@ -7625,9 +7641,9 @@ section.intro-cover-rigth {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -7675,9 +7691,9 @@ section.transpariencias {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -7702,7 +7718,8 @@ section.acordeon .container {
     width: 25%;
     float: left;
     margin: 0px;
-    height: auto; }
+    height: auto;
+    text-align: right; }
     section.acordeon .container nav.preguntas-frecuentes ul {
       list-style: none; }
       section.acordeon .container nav.preguntas-frecuentes ul li {
@@ -7833,9 +7850,9 @@ section.contactar {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -7941,7 +7958,23 @@ section.integrar-equipo {
   section.integrar-equipo h2 {
     font-size: 2.5rem;
     color: #0098CC;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    width: 37%;
+    margin: auto; }
+    section.integrar-equipo h2 a {
+      position: absolute;
+      right: 5.1875rem;
+      bottom: 2.625rem;
+      width: 50px;
+      height: 50px;
+      background-color: #5D2B86;
+      color: #fff;
+      border-radius: 50px;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+      section.integrar-equipo h2 a:hover {
+        background-color: #fff;
+        color: #5D2B86; }
   section.integrar-equipo a.btn-curriculum {
     background-color: #5D2B86;
     border-radius: 3.125rem;
@@ -7952,9 +7985,9 @@ section.integrar-equipo {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -7977,6 +8010,10 @@ section.informacion-equipo {
     vertical-align: middle;
     padding-top: 4.9375rem;
     padding-bottom: 4.9375rem; }
+    section.informacion-equipo .item:last-child .justificado {
+      width: 50%;
+      margin: auto;
+      text-align: left; }
     section.informacion-equipo .item h2 {
       color: #fff;
       font-size: 2.5rem;
@@ -7996,7 +8033,8 @@ section.informacion-equipo {
         font-family: 'montserrat-regular';
         margin-right: 20px;
         text-decoration: none;
-        position: relative; }
+        position: relative;
+        margin-left: 1.375rem; }
         section.informacion-equipo .item .container-item a.tel:before {
           font-family: 'FontAwesome';
           content: "\f095";
@@ -8012,7 +8050,8 @@ section.informacion-equipo {
       color: #fff;
       font-size: 1.125rem;
       font-family: 'montserratlight';
-      position: relative; }
+      position: relative;
+      margin-left: 1.375rem; }
       section.informacion-equipo .item a.mail-info:before {
         font-family: 'FontAwesome';
         content: "\f0e0";
@@ -8099,9 +8138,9 @@ section#timeline-trabajo article div.inner a.comprar-linea {
   display: block;
   font-size: 1.125rem;
   height: 3.125rem;
+  text-align: left;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  text-align: center;
   padding-left: 1.125rem;
   padding-top: 0.9375rem;
   text-decoration: none;
@@ -8124,9 +8163,9 @@ section#timeline-trabajo article div.inner a.maps {
   display: block;
   font-size: 1.125rem;
   height: 3.125rem;
+  text-align: left;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  text-align: center;
   padding-left: 1.125rem;
   padding-top: 0.9375rem;
   text-decoration: none;
@@ -8259,9 +8298,9 @@ section.notas-prensa {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -8284,9 +8323,9 @@ section.notas-prensa {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -8308,9 +8347,9 @@ section.notas-prensa {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -8332,9 +8371,9 @@ section.notas-prensa {
         display: block;
         font-size: 1.125rem;
         height: 3.125rem;
+        text-align: left;
         -webkit-transition: all 0.5s;
         transition: all 0.5s;
-        text-align: center;
         padding-left: 1.125rem;
         padding-top: 0.9375rem;
         text-decoration: none;
@@ -8402,9 +8441,9 @@ section.prensa article {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -8472,9 +8511,9 @@ section.nosotros-nota {
           display: block;
           font-size: 1.125rem;
           height: 3.125rem;
+          text-align: left;
           -webkit-transition: all 0.5s;
           transition: all 0.5s;
-          text-align: center;
           padding-left: 1.125rem;
           padding-top: 0.9375rem;
           text-decoration: none;
@@ -9160,9 +9199,9 @@ section.cuates form .item-boton {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -9301,9 +9340,9 @@ section.cuates form .container-btn {
     display: block;
     font-size: 1.125rem;
     height: 3.125rem;
+    text-align: left;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    text-align: center;
     padding-left: 1.125rem;
     padding-top: 0.9375rem;
     text-decoration: none;
@@ -9449,9 +9488,9 @@ section.upload-file .marco {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -9464,16 +9503,6 @@ section.upload-file .marco {
         position: absolute;
         right: 1.4375rem;
         font-family: 'FontAwesome'; }
-
-section.upload-file .filupp > input[type="file"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0; }
 
 section.upload-file .filupp {
   position: relative;
@@ -9564,9 +9593,9 @@ section.confirmacion a.aceptar {
   display: block;
   font-size: 1.125rem;
   height: 3.125rem;
+  text-align: left;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  text-align: center;
   padding-left: 1.125rem;
   padding-top: 0.9375rem;
   text-decoration: none;
@@ -9732,9 +9761,9 @@ section.donar-paypal {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -9771,9 +9800,9 @@ section.intro-servicio-social section.areas-desarrollo a.clic {
   display: block;
   font-size: 1.125rem;
   height: 3.125rem;
+  text-align: left;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  text-align: center;
   padding-left: 1.125rem;
   padding-top: 0.9375rem;
   text-decoration: none;
@@ -10045,9 +10074,9 @@ section.intro-servicio-social .admin {
       display: block;
       font-size: 1.125rem;
       height: 3.125rem;
+      text-align: left;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
-      text-align: center;
       padding-left: 1.125rem;
       padding-top: 0.9375rem;
       text-decoration: none;
@@ -10069,8 +10098,10 @@ section.intro-servicio-social .admin {
       vertical-align: middle;
       padding-top: 4.9375rem;
       padding-bottom: 4.9375rem; }
-      section.intro-servicio-social .admin section.informacion-equipo .item:last-child {
-        padding-left: 90px; }
+      section.intro-servicio-social .admin section.informacion-equipo .item:last-child .justificado {
+        width: 50%;
+        margin: auto;
+        text-align: left; }
       section.intro-servicio-social .admin section.informacion-equipo .item h2 {
         color: #fff;
         font-size: 2.5rem;
@@ -10083,8 +10114,7 @@ section.intro-servicio-social .admin {
         color: #fff; }
       section.intro-servicio-social .admin section.informacion-equipo .item .container-item {
         width: 100%;
-        float: left;
-        padding-left: 21px; }
+        float: left; }
         section.intro-servicio-social .admin section.informacion-equipo .item .container-item a.tel {
           font-size: 1.125rem;
           color: #fff;
@@ -10108,7 +10138,8 @@ section.intro-servicio-social .admin {
         font-size: 1.125rem;
         font-family: 'montserratlight';
         position: relative;
-        padding-left: 1.375rem; }
+        padding-left: 1.375rem;
+        margin-left: 0px; }
         section.intro-servicio-social .admin section.informacion-equipo .item a.mail-info:before {
           font-family: 'FontAwesome';
           content: "\f0e0";

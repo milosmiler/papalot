@@ -92,6 +92,11 @@ section.informacion-eventos{
 		vertical-align: middle;
 		padding-top: 4.9375rem;
 		padding-bottom: 4.9375rem;
+		.justificado{
+				width: 50%;
+				margin: auto;
+				text-align: left;
+			}
 		&:last-child{
 			background: #C1D42E;
 			h2{
@@ -132,26 +137,24 @@ section.informacion-eventos{
 			}
 
 
+
 		}
 		h2{
 			color: #D41672;
 			font-size: 2.5rem;
-			text-align: center;}
+			text-align: left;}
 		h3{
 			font-size: 1.375rem;
 			font-family: 'montserratsemi-bold';
-			margin-left: 15.4375rem;
 			color: #D41672;}
 		.container-item{
 			width: 100%;
-			float: left;
-			margin-left: 268px;
+			margin-left: 1.1875rem;
 			a.tel{
 				font-size: 1.125rem;
 				position: relative;
 				color: #D41672;
 				font-family: 'montserrat-regular';
-				margin-right: 2.5rem;
 				text-decoration: none;
 				margin-right: 2.5rem;
 				&:before{
@@ -171,7 +174,7 @@ section.informacion-eventos{
 			color: #D41672;
 			font-size: 1.125rem;
 			font-family: 'montserratlight';
-			margin-left: 15.4375rem;}
+			margin-left: 1.1875rem;}
 	}
 
 }

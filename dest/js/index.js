@@ -38,6 +38,20 @@ $(function(){
             $('#sub-menu').toggleClass('fa-plus-circle fa-minus-circle');
       })
 
+      $('#sub-menu2').click(function(event){
+            event.preventDefault();
+            $('.container-movile2').css('display', 'none');
+            $('.container-movile2').slideToggle('500');
+            $(this).toggleClass('fa-plus-circle fa-minus-circle');
+      })
+      $('#sub-menu3').click(function(event){
+            event.preventDefault();
+            $('.container-movile3').css('display', 'none');
+            $('.container-movile3').slideToggle('500');
+            $(this).toggleClass('fa-plus-circle fa-minus-circle');
+      })
+      
+
       $(".efect").click(function () {
             $(this).toggleClass("menu-on");
     });

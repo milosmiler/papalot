@@ -52,7 +52,29 @@ section.integrar-equipo{
 	h2{
 		font-size: 2.5rem;
 		color: #0098CC;
-		text-align: center;}
+		text-align: center;
+		position: relative;
+		width: 37%;
+    	margin: auto;
+		a{
+    			position: absolute;
+			    right: 5.1875rem;
+    			bottom:2.625rem;
+			    width: 50px;
+			    height: 50px;
+			    background-color: #5D2B86;
+			    color: #fff;
+			    border-radius: 50px;
+			    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+			    &:hover{
+			    	background-color: #fff;
+		    		color: #5D2B86;
+			    	
+			    }
+    		}
+
+
+	}
 	a.btn-curriculum{
 		@include boton($ancho: 12.5rem, $fondo: #5D2B86 , $color: #fff );
 		text-align: center;
@@ -70,6 +92,13 @@ section.informacion-equipo{
 		vertical-align: middle;
 		padding-top: 4.9375rem;
 		padding-bottom: 4.9375rem;
+		&:last-child{
+			.justificado{
+				width: 50%;
+				margin: auto;
+				text-align: left;
+			}
+		}
 		h2{
 			color: #fff;
 			font-size: 2.5rem;
@@ -91,6 +120,7 @@ section.informacion-equipo{
 				margin-right: 20px;
 				text-decoration: none;
 				position: relative;
+				margin-left: 1.375rem;
 				&:before{
 					font-family:'FontAwesome';
 					content: "\f095";
@@ -109,6 +139,7 @@ section.informacion-equipo{
 			font-size: 1.125rem;
 			font-family: 'montserratlight';
 			position: relative;
+			margin-left: 1.375rem;
 			&:before{
 					font-family:'FontAwesome';
 					content: "\f0e0";
