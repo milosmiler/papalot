@@ -276,6 +276,9 @@
                     font-size: 12px;
                     color: #3E525B;
                     padding-top: 20px;
+                    &:hover{
+                        color: #3E525B;
+                    }
                     &:last-child{
                         border: none;
                     }
