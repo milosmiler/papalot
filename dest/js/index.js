@@ -91,6 +91,7 @@ $(function(){
     formGobierno();
     btnActivar();
     dragAndDrop();
+    more();
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
 
     $('.accordion a').click(function(j) {
@@ -571,6 +572,28 @@ function dragAndDrop(){
     });
 }
 
+
+function more(){
+    $('.more-item p').hide();
+        $('div.more-item > p').each(function(e) {
+             e.preventDefault();
+        $(this).show(0).on('click', function(e) {
+            // prevent from following the anchor
+            e.preventDefault();
+            // Find the next "box" element in the DOM
+            $(this).next('.more-item p').slideToggle('fast');
+                    if ($(this).html() != "Show less.") {
+                        $(this).html("Show less.");
+
+                    }
+                    else {
+                        $(this).html("Read more...");
+
+                    }
+
+        });
+    });
+}
 
 
 

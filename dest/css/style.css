@@ -1006,7 +1006,7 @@ span.link {
     padding: 18px 23px 0px;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(54, 71, 89, 0.4);
     font-family: 'montserrat-regular';
     font-size: 0.75rem; }
   .container-form .select-options {
@@ -1019,7 +1019,8 @@ span.link {
       font-family: 'montserratlight';
       font-size: 12px;
       color: #3E525B;
-      padding-top: 20px; }
+      padding-top: 20px;
+      color: rgba(54, 71, 89, 0.4); }
       .container-form .select-options li:hover {
         color: #3E525B; }
       .container-form .select-options li:last-child {
